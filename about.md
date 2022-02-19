@@ -4,15 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+### Affiliation
+* Professor, Department of Computer Science and Engineering, Texas A&M University, September 2014–Present
+Corporate Vice President, Samsung Research, July 2017–December 31, 2019
+* Associate Professor, Department of Computer Science and Engineering, Texas A&M University, September 2007–August 2014
+* Assistant Professor, Department of Computer Science, Texas A&M University, September 2001–August 2007
+* Member, Graduate Faculty, School of Graduate Studies, Texas A&M Health Science Center, June 2011–Present (CSCE students: do not count me as an external member of your M.S./Ph.D. committee)
+* Director, Brain Networks Laboratory (at Texas A&M), September 2005-Present (Member: September 2001-2004).
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+### Education
+* Ph.D. in Computer Science, The University of Texas at Austin, Austin, TX, August 2001.
+* M.A. in Computer Science, The University of Texas at Austin, Austin, TX, December 1995.
+* B.S. in Computer Science, Yonsei University, Seoul, Korea, August 1993.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
