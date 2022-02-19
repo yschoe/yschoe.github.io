@@ -5,5 +5,5 @@
 layout: home
 ---
 
-Welcome 
+Welcome. This site is under construction, as of 2/19/2022.
 
