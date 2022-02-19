@@ -1,18 +1,18 @@
 - title: "About"
   href: "/about/"
 
-- title: "Publications"
-  href: "/pub/"
+- title: "Blog"
+  href: "/blog/"
 
-- title: "Projects"
-  href: "/prj/"
+- title: "CV"
+  href: "/cv/"
+
+- title: "Research"
+  href: "/research/"
 
 - title: "Teaching"
-  href: "/teaching/"
+  href: "/Teaching/"
 
-- title: "Students"
-  href: "/students/"
-
-- title: "Lab archives"
+- title: "Lab"
   href: "/lab/"
 
