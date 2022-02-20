@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Yoonsuck Choe's homepage
 permalink: /
 ---
 
