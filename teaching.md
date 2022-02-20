@@ -4,9 +4,9 @@ title: Teaching
 permalink: /teaching/
 ---
 
-### Courses Taught
+## Courses Taught
 
-Most often taught: 
+### Most often taught: 
 
 * Nerual Networks (CSCE 636)
 * Machine Learning (CSCE 421/633)
