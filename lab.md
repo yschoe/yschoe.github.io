@@ -4,12 +4,12 @@ title: Lab
 permalink: /lab/
 ---
 
-### Brain Networks Laboratory
+### Brain Networks Laboratory (BNL)
 
 * Knife-Edge Scanning Microscopy (KESM) research: [KESM Brain Atlas](http://kesm.org)
 * Lab web site: [Link](https://people.engr.tamu.edu/choe/choe/bnl/home.html)
 
-### Neural Intelligence Lab
+### Neural Intelligence Laboratory (Choe Lab)
 
 ### Ph.D.
 
@@ -31,7 +31,7 @@ permalink: /lab/
 1. Han Wang (CS): PhD student. 2013 Spring - 2020 Spring. Samsung Research America, Dallas.
 1. Qinbo Li (CS): PhD student. 2018 Fall - 2022 Spring. Facebook (Meta). 
 
-Current
+Current Ph.D. students
 1. Qing Wan (CS): PhD student. 2016 Fall - present
 1. Maryam Savari (CS): PhD student. 2020 Spring - present 
 
@@ -93,7 +93,7 @@ Current
 1. Cassandra Bub (TAMU, Computer Science): Fall 2016.
 1. Juliang Li (TAMU, Computer Science): Fall 2016.
 
-Current 
+Current undergrad students
 
 1. Yasin Alam (TAMU, Computer Science): Fall 2021-Spring-2022
 1. Aolin Yang (TAMU, Computer Science): Fall 2021-Spring-2022
