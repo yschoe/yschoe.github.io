@@ -1,10 +1,9 @@
 ---
 layout: page
-title: About
 permalink: /about/
 ---
 
-I am a professor in the Department of Computer Science and Engineering at Texas A&amp;M University. I am generally interested in brain and intelligence. My areas of research include computational neuroscience, brain imaging and analysis, neuroevolution, and neural networks (including deep learning).
+I am a professor in the Department of Computer Science and Engineering at Texas A&amp;M University. I am generally interested in the brain, mind, and intelligence. My areas of research include computational neuroscience, brain imaging and analysis, neuroevolution, and neural networks (including deep learning).
 
 ### Experience
 * Professor, [Department of Computer Science and Engineering](https://www.cs.tamu.edu), [Texas A&M University](https://www.tamu.edu), September 2014–Present
