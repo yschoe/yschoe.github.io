@@ -6,7 +6,7 @@ permalink: /cv/
 
 ### CV download
 
-* You can download my full CV here: [[Link](https://people.engr.tamu.edu/choe/choe/docs/vita.pdf)].
+* You can download my full CV here: [[Link](/docs/vita.pdf)].
 
 ### Short bio
 
