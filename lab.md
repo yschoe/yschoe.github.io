@@ -11,6 +11,8 @@ permalink: /lab/
 
 ### Neural Intelligence Laboratory (Choe Lab)
 
+Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab)
+
 ### Ph.D.
 
 1. Yingwei Yu: PhD (CS). Graduated, 8/2006. Seismic Micro-technology, Houston, TX. Now at Schlumberger.
