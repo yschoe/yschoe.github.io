@@ -73,7 +73,7 @@ h1 { font-size: 2.2rem; font-style: normal; margin-top: 2.6rem; }
 h2 { font-size: 1.9rem; margin-top: 4.2rem; }
 h3 { font-size: 1.7rem; margin-top: 2.6rem; }
 
-p,table,blockquote,pre,img,hr,.mini-note,ul li,ol li {
+p,table,blockquote,pre,hr,.mini-note,ul li,ol li {
     box-sizing: border-box;
     max-width: 55%;
 }
@@ -136,14 +136,14 @@ code {
 }
 
 img {
-    height: auto;
     margin-right: 4rem;
-    width: 100%;
 }
 
 .wrapped {
+    height: auto;
             float: right;
             margin: 5px;
+    width: 100%;
 }
 
 
@@ -313,7 +313,7 @@ nav {
 
     h2.title { margin-top: 2rem; }
 
-    p,table,blockquote,pre,img,hr,.mini-note,ul li,ol li {
+    p,table,blockquote,pre,hr,.mini-note,ul li,ol li {
         max-width: 100%;
     }
 
