@@ -1,8 +1,8 @@
---
+-
 layout: page
 title: Lab
 permalink: /lab/
---
+-
 
 ### Brain Networks Laboratory
 
@@ -33,5 +33,86 @@ permalink: /lab/
 
 ## M.S.
 
+1. S. Kumar Bhamidipati (CE): graduated 5/2004. Microsoft.
+1. Sejong Oh (CS): graduated 8/2004. the Republic of Korea Air Force.
+1. Subramonia P. Sarma (CS): graduated 12/2004. Amazon. Now at Microsoft.
+1. Navendu Misra (CS): graduated 8/2005. Visa/Paypal.
+1. Hari Shankar Muddana (CS; Co-advised by Bruce H. McCormick): graduated 8/2006. Penn State U. (Ph.D.). UCSD (postdoc).
+1. Bumsoon Jang (CS): graduated 8/2007. Republic of Korea Army.
+1. Jyothi Swaroop Guntupalli (CS; Co-advised by Bruce H. McCormick): graduated 12/2007. Ph.D., Dartmouth (2013), Postdoc, Dartmouth (current).
+1. Yoon H. Bai (CS): graduated 8/2008. University of Texas at Austin (Ph.D. program in psychology).
+1. Daniel C.-Y. Eng (CS): graduated 12/2008. PDX, Inc.
+1. Dongkun Kim (CS): graduated 8/2011. Republic of Korea Army.
+1. Jinho Choi (CS): graduated 8/2013. Republic of Korea Army.
+1. Ananth Dileepkumar (CS): graduated 8/2014. Cisco
+1. Raj Shah (CS): MS student. 2012 Fall - 2014 Fall. FactSet.
+1. Wenjie Yang (CS): MS student. 2013 Spring - 2014 Fall. Yahoo.
+1. Wencong Zhang (CS): MS student. 2013 Spring - 2014 Fall. Google.
+1. Shashwat Lal Das (CS): MS student. 2013 Spring - 2014 Fall. Google.
+1. Manisha Srivastava (CS): MS student. 2013 Spring - 2015 Summer. Tripadvisor.
+1. Ankur Singhal (CS): MS student. 2013 Fall - 2015 Summer. Bloomberg.
+1. Amey Parulkar (CS): MS student. 2014 Fall - 2015 Summer. Microsoft.
+1. Sungjune Lim (CS): MS student. 2014 Spring - 2015 Summer. Samsung Research.
+1. Qinbo Li (CS): MS student. 2014 Spring - 2016 Summer. Texas A&M Ph.D. program
+1. Wookyung An (CS): MS student. 2014 Spring - 2016 Summer. Hyundai Motor Co.
+1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
+1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): MCS student. 2014 Fall - 2017 summer.
 
 ## Undergraduate
+
+1. Brad Busse (CS): Summer 2003.
+1. Jeff Cheak (CS): Summer 2003.
+1. Josh Elkin (CE): Spring 2004.
+1. Gabriel Marquez (UT El Paso, CS): Summer 2003 Undergraduate Summer Research Grant program (TAMU College of Engineering sponsored).
+1. J. Perry Evans (Rose-Hulman Inst. Tech., CS): Summer 2004, NSF REU.
+1. Maritza Johnson (U of San Diego, CS): Summer 2004, CRA-W DMP (co-supervisor: Ricardo Gutierrez-Osuna).
+1. Stuart Heinrich (U of Vermont, CS): Summer 2005, NSF REU.
+1. Andrew Jones (CE): Summer 2005, TAMU COE USRG.
+1. Tim Mann (SUNY Potsdam, CS): Summer 2006, NSF REU.
+1. Erica Bolan (Carlton U, CS): Summer 2006, CRA-W DMP.
+1. Daniel Eng (CS): Fall 2006, CPSC 485
+1. Steven Snyder (CS): Summer 2007, NSF REU
+1. Gen Kazama (McGill, CS): Summer 2008, NSF REU (co-advised with John Keyser)
+1. Kasra Manavi (U of NM, CS): Summer 2008, NSF REU (co-advised with John Keyser)
+1. Sam Anzaroot (CUNY, CS): Summer 2009, NSF REU (co-advised with John Keyser)
+1. Aaron Panchal (Westmont U, CS): Summer 2010, NSF REU (co-advised with John Keyser).
+1. Janelle Fawver (TAMU, Biochem): Summer 2010, NSF REU (co-advised with John Keyser).
+1. Christopher Sinks (U of MO, Biomedical Engineering): Summer 2011, TAMU COE USRG.
+1. Jonathan Garcia (TAMU, Biomedical Engineering): Summer 2011, NSF REU.
+1. Jinsoo Kim (TAMU, Computer Science): Spring 2013. Summer 2013 TAMU COE USRG.
+1. Mitchell Priour (TAMU, Psychology/Neuroscience): Spring 2013. Summer 2013 NSF REU
+1. Marco Antonio Blanco Cocom (Instituto Technológico Superior Progreso, Mexico; Computer Science ): Summer 2014.
+1. Rachel Dorn (TAMU, Psychology/Neuroscience): Spring 2013-Spring 2014.
+1. Jeff Harrison (TAMU, Computer Science): Summer 2014-Fall 2014.
+1. Andrew Laramore (TAMU, Computer Science): Spring 2015.
+1. Dimitri Dobroskok (TAMU, Biomedical Engineering): Summer 2015.
+1. Cassandra Bub (TAMU, Computer Science): Fall 2016.
+1. Juliang Li (TAMU, Computer Science): Fall 2016.
+1. Yasin Alam (TAMU, Computer Science): Fall 2021-Spring-2022
+1. Aolin Yang (TAMU, Computer Science): Fall 2021-Spring-2022
+1. Thomas Goodwin (TAMU, Computer Science): Fall 2021-Spring-2022
+1. Lance Ondrej (TAMU, Computer Science): Fall 2021-Spring-2022
+1. Christian Smith (TAMU, Computer Science): Fall 2021-Spring-2022
+1. Richard Liu (TAMU, Computer Science): Fall 2021-Spring-2022
+
+## Visitors
+
+1. Suhan Ree (Kongju National University, Korea: 2006-2007)
+1. Heung Shik Kim (Inje University, Korea: 2006-2007)
+1. Changhee Han (Korea Military Academy, Korea: 2009-2010)
+1. Kwanyong Lee (Korea Open University, Korea: 2009-2010)
+1. Hyeyoung Park (Kyungpook National University, Korea: 2009-2010)
+1. Eunkyeong Kwon (Kyewon School of Art and Design, Korea: 2011-2012)
+1. Danhee Yang (Pyeongtaek University, Korea: 2012-2013)
+1. Sang Heon Lee (Daegu Gyeongbuk Institute of Science and Technology, Korea: 2014)
+1. Namhoon Kim (Dongyang Mirae University, Korea: 2016).
+1. Changyeol Yum (National IT Industry Promotion Agency, Korea: 2016-2017).
+1. Jin Wook Kim (Korea Open University, Korea: 2017-2018).
+1. Sang Heon Lee (Daegu Gyeongbuk Institute of Science and Technology, Korea: 2021-2022)
+1. Jinwoo Bae (Inha University, Korea: 2022)
+
+## Short-term visitors
+1. Kooseung (Bryan) Chung (McLean High School, McLean, VA: July 2016)
+1. Jin Park (Korean Army: 12/2010)
+1. Soyeon Park (Yonsei University: 12/2007-1/2008)
+
