@@ -1,17 +1,17 @@
 - title: "Home"
   href: "/"
 
-- title: "Blog"
-  href: "/blog/"
-
-- title: "CV"
-  href: "/cv/"
-
 - title: "Research"
   href: "/research/"
 
 - title: "Teaching"
   href: "/teaching/"
+
+- title: "CV"
+  href: "/cv/"
+
+- title: "Blog"
+  href: "/blog/"
 
 - title: "Lab"
   href: "/lab/"
