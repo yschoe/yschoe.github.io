@@ -4,9 +4,11 @@ title: Yoonsuck Choe
 permalink: /
 ---
 
-I am a professor in the Department of Computer Science and Engineering at Texas A&amp;M University. I am generally interested in the brain, 
-<img class="wrapped" alt="Yoonsuck Choe circa 2010" width="100px" src="images/choe-2010-3-desat.jpg"/>
-mind, and intelligence. My areas of research include computational neuroscience, brain imaging and analysis, neuroevolution, and neural networks (including deep learning). 
+|---|---|
+| I am a professor in the Department of Computer Science and Engineering at Texas A&amp;M University. I am generally interested in the brain, 
+mind, and intelligence. My areas of research include computational neuroscience, brain imaging and analysis, neuroevolution, and neural networks (including deep learning). |  [Yoonsuck Choe Circa 2010](images/choe-2010-3-desat.jpg) |
+|---|---|
+<!--img class="wrapped" alt="Yoonsuck Choe circa 2010" width="100px" src="images/choe-2010-3-desat.jpg"/-->
 
 ### Experience
 * Professor, [Department of Computer Science and Engineering](https://www.cs.tamu.edu), [Texas A&M University](https://www.tamu.edu), September 2014–Present
