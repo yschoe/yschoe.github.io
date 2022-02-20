@@ -9,6 +9,8 @@ permalink: /lab/
 * Knife-Edge Scanning Microscopy (KESM) research: [KESM Brain Atlas](http://kesm.org)
 * Lab web site: [Link](https://people.engr.tamu.edu/choe/choe/bnl/home.html)
 
+### Neural Intelligence Lab
+
 ### Ph.D.
 
 1. Yingwei Yu: PhD (CS). Graduated, 8/2006. Seismic Micro-technology, Houston, TX. Now at Schlumberger.
@@ -27,7 +29,9 @@ permalink: /lab/
 1. Michael Nowak: PhD student (CS). 2013 Fall - 2019 Fall. Visiting Professor, Texas A&M University. At present: Teaching assistant professor, University of Illinois, Urbana Champaign (Fall 2020-)
 1. Khuong Nguyen (CS): PhD student. 2016 Spring - 2019 Fall. Samsung Research America, Dallas.
 1. Han Wang (CS): PhD student. 2013 Spring - 2020 Spring. Samsung Research America, Dallas.
-1. Qinbo Li (CS): PhD student. 2018 Fall - 2022 Spring. Facebook (Meta). <hr>
+1. Qinbo Li (CS): PhD student. 2018 Fall - 2022 Spring. Facebook (Meta). 
+
+Current
 1. Qing Wan (CS): PhD student. 2016 Fall - present
 1. Maryam Savari (CS): PhD student. 2020 Spring - present 
 
@@ -87,7 +91,10 @@ permalink: /lab/
 1. Andrew Laramore (TAMU, Computer Science): Spring 2015.
 1. Dimitri Dobroskok (TAMU, Biomedical Engineering): Summer 2015.
 1. Cassandra Bub (TAMU, Computer Science): Fall 2016.
-1. Juliang Li (TAMU, Computer Science): Fall 2016.<hr>
+1. Juliang Li (TAMU, Computer Science): Fall 2016.
+
+Current 
+
 1. Yasin Alam (TAMU, Computer Science): Fall 2021-Spring-2022
 1. Aolin Yang (TAMU, Computer Science): Fall 2021-Spring-2022
 1. Thomas Goodwin (TAMU, Computer Science): Fall 2021-Spring-2022
