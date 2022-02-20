@@ -31,7 +31,7 @@ permalink: /lab/
 1. Qing Wan (CS): PhD student. 2016 Fall - present
 1. Maryam Savari (CS): PhD student. 2020 Spring - present 
 
-## M.S.
+### M.S.
 
 1. S. Kumar Bhamidipati (CE): graduated 5/2004. Microsoft.
 1. Sejong Oh (CS): graduated 8/2004. the Republic of Korea Air Force.
@@ -58,7 +58,7 @@ permalink: /lab/
 1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
 1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): MCS student. 2014 Fall - 2017 summer.
 
-## Undergraduate
+### Undergraduate
 
 1. Brad Busse (CS): Summer 2003.
 1. Jeff Cheak (CS): Summer 2003.
@@ -95,7 +95,7 @@ permalink: /lab/
 1. Christian Smith (TAMU, Computer Science): Fall 2021-Spring-2022
 1. Richard Liu (TAMU, Computer Science): Fall 2021-Spring-2022
 
-## Visitors
+### Visitors
 
 1. Suhan Ree (Kongju National University, Korea: 2006-2007)
 1. Heung Shik Kim (Inje University, Korea: 2006-2007)
@@ -111,7 +111,8 @@ permalink: /lab/
 1. Sang Heon Lee (Daegu Gyeongbuk Institute of Science and Technology, Korea: 2021-2022)
 1. Jinwoo Bae (Inha University, Korea: 2022)
 
-## Short-term visitors
+### Short-term visitors
+
 1. Kooseung (Bryan) Chung (McLean High School, McLean, VA: July 2016)
 1. Jin Park (Korean Army: 12/2010)
 1. Soyeon Park (Yonsei University: 12/2007-1/2008)
