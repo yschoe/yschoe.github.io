@@ -4,7 +4,7 @@ title: Yoonsuck Choe
 permalink: /
 ---
 
-<img align="right" alt="Yoonsuck Choe circa 2010" src="images/choe-2010-3-desat.jpg">
+<img align="right" alt="Yoonsuck Choe circa 2010" src="images/choe-2010-3-desat-bw.jpg">
 
 I am a professor in the Department of Computer Science and 
 Engineering at Texas A&amp;M University. I am generally interested in the brain, 
