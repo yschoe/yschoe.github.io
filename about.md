@@ -19,8 +19,6 @@ I am a professor in the Department of Computer Science and Engineering at Texas 
 * Ph.D. in Computer Science, The University of Texas at Austin, Austin, TX, August 2001.
 * M.A. in Computer Science, The University of Texas at Austin, Austin, TX, December 1995.
 * B.S. in Computer Science, Yonsei University, Seoul, Korea, August 1993.
-
-### Interesting bits
 * [Academic genealogy](/genealogy/)
 
 ### Contact

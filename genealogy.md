@@ -50,8 +50,9 @@ His advisors:  Jeremias Friedrich Reu&szlig;, Theology, T&uuml;bingen, Germany. 
 </li>
 <li>
 Reu&szlig;'s advisor:  Johann Albrecht Bengel, University of T&uuml;bingen, Germany.
-</li>
-</ol>
+</li></ol>
+
+
 
 Data from <a href="http://genealogy.math.ndsu.nodak.edu/id.php?id=110822">Mathematics Genealogy Project</a> and <a href="http://www.cs.utexas.edu/~mooney/genealogy.html">Raymond Mooney's Academic Genealogy page</a>.
 
