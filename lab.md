@@ -11,7 +11,7 @@ permalink: /lab/
 
 ### Neural Intelligence Laboratory (Choe Lab)
 
-Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab)
+* Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab)
 
 ### Ph.D.
 
