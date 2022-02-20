@@ -1,8 +1,8 @@
--
+---
 layout: page
 title: Lab
 permalink: /lab/
--
+---
 
 ### Brain Networks Laboratory
 
