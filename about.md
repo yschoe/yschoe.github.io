@@ -23,3 +23,8 @@ I am a professor in the Department of Computer Science and Engineering at Texas 
 ### Interesting bits
 * [Academic genealogy](/genealogy/)
 
+### Contact
+* Address: 3112 TAMU, College Station, TX 77843-3112.
+* Office: PETR 327
+* Phone: 979-845-5466 (rarely used)
+* email: choe@tamu.edu
