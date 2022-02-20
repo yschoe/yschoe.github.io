@@ -6,6 +6,8 @@ permalink: /teaching/
 
 ### Courses Taught
 
+Most commonly taught: 
+
 * Nerual Networks (CSCE 636)
 * Machine Learning (CSCE 421/633)
 * Artificial Intelligence (CSCE 420/625)
