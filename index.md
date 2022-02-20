@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Yoonsuck Choe's homepage
+title: Yoonsuck Choe
 permalink: /
 ---
 
