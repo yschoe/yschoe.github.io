@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /about/
+permalink: /
 ---
 
 I am a professor in the Department of Computer Science and Engineering at Texas A&amp;M University. I am generally interested in the brain, mind, and intelligence. My areas of research include computational neuroscience, brain imaging and analysis, neuroevolution, and neural networks (including deep learning).
