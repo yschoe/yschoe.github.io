@@ -15,7 +15,7 @@ mind, and intelligence. My areas of research include computational neuroscience,
 * Assistant Professor, Department of Computer Science, Texas A&M University, September 2001–August 2007
 * Member, Graduate Faculty, School of Graduate Studies, Texas A&M Health Science Center, June 2011–Present (CSCE students: do not count me as an external member of your M.S./Ph.D. committee)
 * Director, [Brain Networks Laboratory](https://people.engr.tamu.edu/choe/choe/bnl/home.html) (at Texas A&M), September 2005-Present (Member: September 2001-2004).
-* Intern, HNC Software Inc. (now (FICO)[https://en.wikipedia.org/wiki/FICO]), San Diego, CA. Summer 1999.
+* Intern, HNC Software Inc. Now (FICO)[https://en.wikipedia.org/wiki/FICO], San Diego, CA. Summer 1999.
 
 ### Education
 * Ph.D. in Computer Science, The University of Texas at Austin, Austin, TX, August 2001.
