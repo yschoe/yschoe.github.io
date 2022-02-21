@@ -6,7 +6,7 @@ permalink: /teaching/
 
 ### Most often taught: 
 
-* Nerual Networks (CSCE 636)
+* Neural Networks (CSCE 636)
 * Machine Learning (CSCE 421/633)
 * Artificial Intelligence (CSCE 420/625)
 * Programming Studio (CSCE 315)
