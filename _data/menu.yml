@@ -3,11 +3,11 @@
 
 - title: "Research"
   href: "/research/"
-#  subcategories:
-#    - subtitle: "Projects"
-#      subhref: "/research/projects/"
-#    - subtitle: "Publications"
-#      subhref: "/research/publications/"
+  subcategories:
+    - subtitle: "Projects"
+      subhref: "/research/projects/"
+    - subtitle: "Publications"
+      subhref: "/research/publications/"
 
 - title: "Teaching"
   href: "/teaching/"
