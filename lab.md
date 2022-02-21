@@ -13,7 +13,7 @@ permalink: /lab/
 
 * Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab)
 
-### Ph.D.
+### Ph.D. Students
 
 1. Yingwei Yu: PhD (CS). Graduated, 8/2006. Seismic Micro-technology, Houston, TX -> Schlumberger -> Amazon.
 1. Heejin Lim: PhD (CS).Graduated, 8/2006. University of Texas Medical School at Houston (post doc) -> Lecturer, Prairie View A&M University.
@@ -37,7 +37,7 @@ Current Ph.D. students
 1. Qing Wan (CS): PhD student. 2016 Fall - present
 1. Maryam Savari (CS): PhD student. 2020 Spring - present 
 
-### M.S.
+### M.S. Students
 
 1. S. Kumar Bhamidipati (CE): graduated 5/2004. Microsoft.
 1. Sejong Oh (CS): graduated 8/2004. the Republic of Korea Air Force.
@@ -64,7 +64,7 @@ Current Ph.D. students
 1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
 1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): MCS student. 2014 Fall - 2017 summer.
 
-### Undergraduate
+### Undergraduate Students
 
 1. Brad Busse (CS): Summer 2003.
 1. Jeff Cheak (CS): Summer 2003.
