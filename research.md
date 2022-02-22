@@ -4,3 +4,4 @@ title: Research
 permalink: /research/
 ---
 
+{% include pub_year.html %}
