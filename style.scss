@@ -109,16 +109,18 @@ blockquote footer {
 }
 
 .toc {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 0;
   margin:1rem;
+  line-height:70%;
 }
 
 ul.flattoc > li {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 0;
   margin:1rem;
   display: inline-block;
+  line-height:70%;
 }
 
 figure {

@@ -5,3 +5,5 @@ m4 -P year.m4 | ../fixhtml | ../tocyear > ../../_includes/pub_year.html
 m4 -P topic.m4 | ../fixhtml | ../toc > ../../_includes/pub_topic.html
 m4 -P medium.m4 | ../fixhtml | ../toc > ../../_includes/pub_medium.html
 cd ..
+
+./proctoc
