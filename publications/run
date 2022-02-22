@@ -1,7 +1,7 @@
 #!/bin/bash
 cp *.* scratch
 cd scratch
-m4 -P year.m4 > ../../_includes/pub_year.html
-m4 -P topic.m4 > ../../_includes/pub_topic.html
-m4 -P medium.m4 > ../../_includes/pub_medium.html
+m4 -P year.m4 | ../fixhtml > ../../_includes/pub_year.html
+m4 -P topic.m4 | ../fixhtml > ../../_includes/pub_topic.html
+m4 -P medium.m4 | ../fixhtml > ../../_includes/pub_medium.html
 cd ..
