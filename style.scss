@@ -75,7 +75,7 @@ h3 { font-size: 1.7rem; margin-top: 2.6rem; }
 
 p,table,blockquote,pre,hr,.mini-note,ul li,ol li {
     box-sizing: border-box;
-    max-width: 55%;
+    max-width: 85%;
 }
 .MathJax_SVG_Display {
     max-width: 55% !important;
@@ -366,4 +366,9 @@ nav {
     body{background:#191919;filter:invert(1);}
     .highlight{border-color: grey !important;}
     img,iframe,.highlight,a:hover,a:focus{filter:invert(1);}
+}
+
+/* li : general margins */
+li {
+  margin: 20px 0;
 }
