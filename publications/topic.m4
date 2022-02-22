@@ -18,4 +18,4 @@
  m4_bib2html_section(System Biology and Health Informatics,[[kim:bigdata15,xiong:epbs06,xiong:bioinfo08,xiong:bmcsysbio08,xiong:biocomp07]])
  m4_bib2html_section(Dissertations (by students),[[xiong:phd08,yang:phd11,sung:phd13,mann:phd12,chung:phd11,choi:phd10,han:phd09,kwon:phd09,park:phd09,lim:phd06,yu:phd06]])
  m4_bib2html_section(Theses (by students),[[zhang:ms14,laldas:ms14,srivastava:ms15,singhal:ms15,parulkar:ms15,yang:ms14,shah:ms14,dileepkumar:ms14,choi:ms13,kim:ms11,eng:ms08,bai:ms08,guntupalli:ms07,sarma:ms03,bhamidipati:ms04,oh:ms04,misra:ms05,muddana:ms06,jang:ms07]])
- m4_bib2html_section(General,[[lee:book11]])
+ m4_bib2html_section(CS General,[[lee:book11]])

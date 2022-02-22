@@ -26,6 +26,6 @@ permalink: /pub_topic/
 <li> <a href="#System">System Biology and Health Informatics</a></li>
 <li> <a href="#Dissertations">Dissertations (by students)</a></li>
 <li> <a href="#Theses">Theses (by students)</a></li>
-<li> <a href="#General">General</a></li>
+<li> <a href="#CS">General</a></li>
 </ol>
 {% include pub_topic.html %}
