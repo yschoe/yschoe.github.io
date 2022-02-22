@@ -1,0 +1,30 @@
+#!/usr/bin/perl
+
+$skip_LI = 0;
+
+while (<STDIN>) {
+
+  $_ =~ s/<P>//g;
+  $_ =~ s/<h2>/<h3>/g;
+  $_ =~ s/<\/h2>/<\/h3>/g;
+ 
+  if (/<UL>/) {
+    $skip_LI = 1;
+  }
+
+  if (/<LI>/) {
+    if ($skip_LI == 1) {
+      $skip_LI = 0;
+    } else {
+      print "<\/LI>\n"; 
+    }
+  }
+
+  if (/<\/UL>/) {
+    print "<\/LI>\n";
+  }
+
+  print;
+
+
+}

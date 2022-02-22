@@ -6,3 +6,4 @@ scratch/
 vendor/
 Gemfile-old
 .bundle/
+Gemfile.lock
