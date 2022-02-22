@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+open(FP,"grep h3 ../_includes/pub_*.html |");
+
+while (<FP>) {
+  $_ = /<a\ name=\"([^\"]+)\"><\/a>([^<]+)</;
+  print "<li> <a href=\"#$1\">$2<\/a><\/li>\n";
+}

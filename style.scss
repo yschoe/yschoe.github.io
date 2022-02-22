@@ -108,6 +108,19 @@ blockquote footer {
     text-align: right;
 }
 
+.toc {
+  font-size: 1.3rem;
+  padding: 0;
+  margin:1rem;
+}
+
+ul.flattoc > li {
+  font-size: 1.3rem;
+  padding: 0;
+  margin:1rem;
+  display: inline-block;
+}
+
 figure {
     align-items: flex-start;
     display: flex;
