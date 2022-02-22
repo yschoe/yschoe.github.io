@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Renovated web page"
+date:   2022-02-21 20:24:48 -0600
+categories: none
+---
+
+I migrated my old web page to github.io! 
