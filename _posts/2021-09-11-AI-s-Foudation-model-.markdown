@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AI's Foudation model?"
+title:  "Foundation models for AI?"
 date:   September 11, 2021
 categories: none
 ---

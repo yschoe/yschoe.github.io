@@ -35,9 +35,9 @@ Link: [Dissertations](/pub_topic/#Dissertations)
 1. Khuong Nguyen (CS): PhD student. 2016 Spring - 2019 Fall. Samsung Research America, Dallas.
 1. Han Wang (CS): PhD student. 2013 Spring - 2020 Spring. Samsung Research America, Dallas.
 1. Qinbo Li (CS): PhD student. 2018 Fall - 2022 Spring. Facebook (Meta). 
+1. Qing Wan (CS): PhD student. 2016 Fall - 2022 Spring. Samsung Research America.
 
 Current Ph.D. students
-1. Qing Wan (CS): PhD student. 2016 Fall - present
 1. Maryam Savari (CS): PhD student. 2020 Spring - present 
 
 ### M.S. Students
