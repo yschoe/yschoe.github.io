@@ -6,3 +6,5 @@ categories: none
 ---
 
 I migrated my old web page to github.io! 
+
+Here's the old web site archive: [https://people.engr.tamu.edu/choe/index-old.html](https://people.engr.tamu.edu/choe/index-old.html)

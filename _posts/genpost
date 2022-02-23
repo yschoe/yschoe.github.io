@@ -45,8 +45,11 @@ while (<STDIN>) {
     $fulldate = $fulldate.", $year";
   } else {
     $str = $_;
+    $str =~ s/\n/\n\n/g;
+    $str =~ s/\xEF\xBF\xBC/\n\n\n/;
     $str =~ s/(http[^\s]+)/\[$1\]\($1\)/g;
-    $content = $content.$str;
+    $str =~ s/(\.COM)/$1\n\n\n/;
+    $content = "$content$str";
   }
 }
 
@@ -67,6 +70,7 @@ $filename = "$year-$month_num-$day-$strip_title.markdown";
 
 if (-f $filename) {
   print "\n\n\n **** $filename exists. Overwriting. \n";
+  open(FP,"> $filename");
 } else {
   open(FP,"> $filename");
 }
@@ -84,3 +88,5 @@ $content
 EOF
 
 close(FP);
+
+print $content;
