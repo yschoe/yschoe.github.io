@@ -13,7 +13,7 @@ I am especially interested in the temporal aspects of brain function (delay, int
 
 ### News: 
 * I am porting over my posts from my private [facebook group](https://www.facebook.com/groups/choelab) to the [Blog](/blog/). Hope you enjoy it!
-* My Ph.D. students Qinbo Li (#17) and Qing Wan (#18) recently defended! Congrats to both! 
+* My Ph.D. students Qinbo Li (Ph.D.#17) and Qing Wan (Ph.D.#18) recently defended! Congrats to both! 
 * More news: [News archive](/news/)
 
 ### Experience
