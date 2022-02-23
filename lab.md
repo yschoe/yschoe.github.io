@@ -7,13 +7,11 @@ permalink: /lab/
 
 ### Brain Networks Laboratory (BNL)
 
-* Knife-Edge Scanning Microscopy (KESM) research: [KESM Brain Atlas](http://kesm.org)
-* Lab web site: [Link](https://people.engr.tamu.edu/choe/choe/bnl/home.html)
+* Knife-Edge Scanning Microscopy (KESM) research: [KESM Brain Atlas](http://kesm.org) ; Lab web site: [Link](https://people.engr.tamu.edu/choe/choe/bnl/home.html)
 
 ### Neural Intelligence Laboratory (Choe Lab)
 
-* Topographica cortical simulator: [Link](http://topographica.org)
-* Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab)
+* Topographica cortical simulator: [Link](http://topographica.org) ; Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab)
 
 <ol class="toc">
 <li> <a href="#phd">Ph.D. students</a></li>
