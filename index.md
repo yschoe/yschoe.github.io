@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <!--img align="right" alt="Yoonsuck Choe circa 2010" src="images/choe-2010-3-desat.jpg"-->
-<img align="left" alt="Yoonsuck Choe 2020" width="15%" src="images/choe-may-2020.jpg">
+<img align="left" alt="Yoonsuck Choe 2020" width="180px" src="images/choe-may-2020.jpg">
 
 I am a professor in the Department of Computer Science and 
 Engineering at Texas A&amp;M University. My research is broadly in computational neuroscience, brain imaging and analysis, neuroevolution, and neural networks (deep learning). 
