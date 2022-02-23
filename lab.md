@@ -5,19 +5,25 @@ permalink: /lab/
 ---
 
 <ol class="toc">
+<li> <a href="#bnl">Brain Networks Laboratory (BNL)</a></li>
+<li> <a href="#nil">Neural Intelligence Laboratory (NIL)</a></li>
 <li> <a href="#phd">Ph.D. students</a></li>
 <li> <a href="#ms">M.S. students</a></li>
 <li> <a href="#ug">Undergraduate students</a></li>
 <li> <a href="#visitors">Visitors</a></li>
 </ol>
 
+<a name="bnl"></a>
 ### Brain Networks Laboratory (BNL)
 
-* Knife-Edge Scanning Microscopy (KESM) research: [KESM Brain Atlas](http://kesm.org) ; Lab web site: [Link](https://people.engr.tamu.edu/choe/choe/bnl/home.html)
+* Knife-Edge Scanning Microscopy (KESM) research: [KESM Brain Atlas](http://kesm.org)
+* Lab web site: [Link](https://people.engr.tamu.edu/choe/choe/bnl/home.html)
 
-### Neural Intelligence Laboratory (Choe Lab)
+<a name="nil"></a>
+### Neural Intelligence Laboratory (NIL; Choe Lab)
 
-* Topographica cortical simulator: [Link](http://topographica.org) ; Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab)
+* Topographica cortical simulator: [Link](http://topographica.org)
+* Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab): Public mirror [Blog](/blog/)
 
 
 <a name="phd"></a>
