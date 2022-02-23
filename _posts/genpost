@@ -47,6 +47,7 @@ while (<STDIN>) {
     $str = $_;
     $str =~ s/\n/\n\n/g;
     $str =~ s/\xEF\xBF\xBC/\n\n\n/;
+    $str =~ s/\?fbclid.+//;
     $str =~ s/(http[^\s]+)/\[$1\]\($1\)/g;
     $str =~ s/(\.COM)/$1\n\n\n/;
     $content = "$content$str";
