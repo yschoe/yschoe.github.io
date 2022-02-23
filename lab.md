@@ -16,6 +16,8 @@ permalink: /lab/
 
 ### Ph.D. Students
 
+Link: [Dissertations](/pub_topic/#Dissertations)
+
 1. Yingwei Yu: PhD (CS). Graduated, 8/2006. Seismic Micro-technology, Houston, TX -> Schlumberger -> Amazon.
 1. Heejin Lim: PhD (CS).Graduated, 8/2006. University of Texas Medical School at Houston (post doc) -> Lecturer, Prairie View A&M University.
 1. Hao Xiong: PhD (CS). Graduated 12/2008. UCSF medical school (post doc) -> UC Berkeley (post doc).
@@ -39,6 +41,8 @@ Current Ph.D. students
 1. Maryam Savari (CS): PhD student. 2020 Spring - present 
 
 ### M.S. Students
+
+Link: [Theses](/pub_topic/#Theses)
 
 1. S. Kumar Bhamidipati (CE): graduated 5/2004. Microsoft.
 1. Sejong Oh (CS): graduated 8/2004. the Republic of Korea Air Force.
