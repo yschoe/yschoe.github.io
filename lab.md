@@ -4,6 +4,7 @@ title: Lab
 permalink: /lab/
 ---
 
+
 ### Brain Networks Laboratory (BNL)
 
 * Knife-Edge Scanning Microscopy (KESM) research: [KESM Brain Atlas](http://kesm.org)
@@ -14,6 +15,14 @@ permalink: /lab/
 * Topographica cortical simulator: [Link](http://topographica.org)
 * Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab)
 
+<ol class="toc">
+<li> <a href="#phd">Ph.D. students</a></li>
+<li> <a href="#ms">M.S. students</a></li>
+<li> <a href="#ug">Undergraduate students</a></li>
+<li> <a href="#visitors">Visitors</a></li>
+</ol>
+
+<a name="phd"></a>
 ### Ph.D. Students
 
 Link: [Dissertations](/pub_topic/#Dissertations)
@@ -40,6 +49,7 @@ Link: [Dissertations](/pub_topic/#Dissertations)
 Current Ph.D. students
 1. Maryam Savari (CS): PhD student. 2020 Spring - present 
 
+<a name="ms"></a>
 ### M.S. Students
 
 Link: [Theses](/pub_topic/#Theses)
@@ -69,6 +79,7 @@ Link: [Theses](/pub_topic/#Theses)
 1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
 1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): MCS student. 2014 Fall - 2017 summer.
 
+<a name="ug"></a>
 ### Undergraduate Students
 
 1. Brad Busse (CS): Summer 2003.
@@ -111,6 +122,7 @@ Current undergrad students
 1. Ryan Spruell (TAMU,  Computer Science): Spring 2022
 1. Zhan Lan (TAMU,  Computer Science): Spring 2022
 
+<a name="visitors"></a>
 ### Visitors
 
 1. Suhan Ree (Kongju National University, Korea: 2006-2007)
