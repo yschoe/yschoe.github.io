@@ -4,6 +4,8 @@ title: Blog
 permalink: /blog/
 ---
 
+I'm currently porting over old articles from my [private Facebook group](https://www.facebook.com/groups/choelab). Most of 2021 and 2020 articles are missing.
+
 <ul class="listing">
 {% for post in site.posts %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
