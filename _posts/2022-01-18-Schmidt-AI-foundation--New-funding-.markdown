@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Schmidt AI foundation: New funding!"
+title:  "Schmidt Futures Foundation: New AI funding!"
 date:   February 18, 2022
 categories: none
 ---
