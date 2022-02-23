@@ -4,6 +4,12 @@ title: Lab
 permalink: /lab/
 ---
 
+<ol class="toc">
+<li> <a href="#phd">Ph.D. students</a></li>
+<li> <a href="#ms">M.S. students</a></li>
+<li> <a href="#ug">Undergraduate students</a></li>
+<li> <a href="#visitors">Visitors</a></li>
+</ol>
 
 ### Brain Networks Laboratory (BNL)
 
@@ -13,12 +19,6 @@ permalink: /lab/
 
 * Topographica cortical simulator: [Link](http://topographica.org) ; Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab)
 
-<ol class="toc">
-<li> <a href="#phd">Ph.D. students</a></li>
-<li> <a href="#ms">M.S. students</a></li>
-<li> <a href="#ug">Undergraduate students</a></li>
-<li> <a href="#visitors">Visitors</a></li>
-</ol>
 
 <a name="phd"></a>
 ### Ph.D. Students
