@@ -28,14 +28,14 @@ $sys_year = $t->year;
 $content="";
 
 while (<STDIN>) {
-  if (/((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Oct|Nov|Dec)[a-z]+\ ([0-9]+),\ ([0-9]+))/) {
+  if (/((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Oct|Nov|Dec)[a-z]*\ ([0-9]+),\ ([0-9]+))/) {
     $fulldate = $1;
     $month=$2;
     $day = $3;
     $year = $4;
     $month_num = first_index { /$month/ } @months;
     $month_num ++;
-  } elsif (/((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Oct|Nov|Dec)[a-z]+\ ([0-9]+))/) {
+  } elsif (/((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Oct|Nov|Dec)[a-z]*\ ([0-9]+))/) {
     $fulldate = $1;
     $month=$2;
     $day = $3;
@@ -55,7 +55,7 @@ while (<STDIN>) {
 }
 
 if (length($fulldate)<1) {
-  print "\n\n\n **** Date string error: [$date]. Aborting\n";
+  print "\n\n\n **** Date string error: [$fulldate]. Aborting\n";
   exit;
 }
 
