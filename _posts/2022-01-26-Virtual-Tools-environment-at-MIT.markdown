@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Virtual Tools environment at MIT"
+title:  "Virtual Tools Game at MIT"
 date:   January 26, 2022
-categories: none
+categories: tool
 ---
 
 Very cool work from Tenenbaum's lab at MIT, on tool use. 

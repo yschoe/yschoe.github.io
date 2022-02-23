@@ -34,12 +34,14 @@ while (<STDIN>) {
     $day = $3;
     $year = $4;
     $month_num = first_index { /$month/ } @months;
-  } elsif (/((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Oct|Nov|Dec)[a-z]+\ ([0-9]+))\ at\ /) {
+    $month_num ++;
+  } elsif (/((Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Oct|Nov|Dec)[a-z]+\ ([0-9]+))/) {
     $fulldate = $1;
     $month=$2;
     $day = $3;
     $year = $sys_year;
     $month_num = first_index { /$month/ } @months;
+    $month_num ++;
     $fulldate = $fulldate.", $year";
   } else {
     $str = $_;
