@@ -24,6 +24,9 @@ while (<STDIN>) {
     print "<\/LI>\n";
   }
 
+  $_ =~ s/<UL>/<OL>/g;
+  $_ =~ s/<\/UL>/<\/OL>/g;
+
   print;
 
 
