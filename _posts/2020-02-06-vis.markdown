@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "[Allen Institute] Visual cortical neurons behave not like we thought"
+date:   2020-02-06 00:00:00 -0600
+categories: none
+---
+
+"These visual neurons don’t work the way scientists thought, study finds
+less than 10% of neurons in the mouse visual system behave the way scientists thought most such cells work to perceive the outside world. What the other 90% are doing is far from clear."
+
+[Link](https://alleninstitute.org/what-we-do/brain-science/news-press/articles/these-visual-neurons-dont-work-way-scientists-thought-study-finds?utm_source=Newsletter&utm_medium=email&utm_campaign=BrainFebNews20Variant&utm_content=VisualNeurons)
+

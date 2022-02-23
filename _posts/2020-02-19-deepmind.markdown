@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "[DeepMind] new RL papers - HT Khuong Nguyen"
+date:   February 19, 2020
+categories: none
+---
+
+[https://venturebeat.com/.../google-brain-deepmind.../](https://venturebeat.com/.../google-brain-deepmind.../)
+New DeepMind RL papers.
+

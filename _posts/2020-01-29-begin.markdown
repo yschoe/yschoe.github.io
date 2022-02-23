@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Facebook Group Mirror"
+date:   2020-01-29 00:00:00 -0600
+categories: none
+---
+
+This is a private group for discussion among members and former members of Yoonsuck Choe's lab at Texas A&M University. Feel free to post or share interesting news, articles, etc., or start a discussion on any topic.

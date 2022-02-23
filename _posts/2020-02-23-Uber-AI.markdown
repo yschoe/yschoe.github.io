@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "[Uber AI] Generative teaching network (GTN)"
+date:   February 23, 2020
+categories: none
+---
+
+UBER AI lab's generative teaching network (GTN) : [https://eng.uber.com/generative-teaching-networks/](https://eng.uber.com/generative-teaching-networks/)
+Basic idea: build deep neural networks that generate synthetic data and learn, so that good architecture can be found fast before training on real data.
+Jeff Clune, Ken Stanley et al.
+
