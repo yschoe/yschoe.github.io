@@ -23,7 +23,7 @@ permalink: /lab/
 ### Neural Intelligence Laboratory (NIL; Choe Lab)
 
 * Topographica cortical simulator: [Link](http://topographica.org)
-* Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab): Public mirror [Blog](/blog/)
+* Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab): Public mirror: [Blog](/blog/)
 
 
 <a name="phd"></a>
