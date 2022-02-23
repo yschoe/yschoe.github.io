@@ -7,7 +7,8 @@ categories: none
 
 Interesting comparison of CNN vs Transformers in vision.
 
-Vincent Boucher
+### quote
+ Vincent Boucher
 
 Admin
 

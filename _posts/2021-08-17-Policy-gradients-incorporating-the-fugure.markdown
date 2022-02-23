@@ -12,7 +12,8 @@ This looks interesting. Policy gradient reinforcement learning that takes into a
 
 
 
-Vincent Boucher
+### quote
+ Vincent Boucher
 
 Admin
 

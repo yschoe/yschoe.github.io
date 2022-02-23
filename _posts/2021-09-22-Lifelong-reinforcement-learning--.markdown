@@ -7,7 +7,8 @@ categories: none
 
 Lifelong Reinforcement Learning!
 
-Vincent Boucher
+### quote
+ Vincent Boucher
 
 Admin
 
