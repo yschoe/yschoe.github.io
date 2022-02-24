@@ -43,7 +43,7 @@ while (<STDIN>) {
     $month_num = first_index { /$month/ } @months;
     $month_num ++;
     $fulldate = $fulldate.", $year";
-  } elsif (/(http.*\.\.\..*\.\.\.)/) {
+  } elsif (/(http.*\.\.\.)/) {
     print "\n\n\n****** Skipping $1\n\n\n";
     $content = "$content\n\n\n";
   } else {
