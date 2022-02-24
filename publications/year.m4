@@ -1,5 +1,5 @@
  m4_include(bib2html.m4)
- m4_bib2html_section(2021,[[li:irosws21,choe:icdl21,nguyen:ijcnn21,savari:ijcnn21,jain:doceng21]])
+ m4_bib2html_section(2021,[[li:iconip21,li:irosws21,choe:icdl21,nguyen:ijcnn21,savari:ijcnn21,jain:doceng21]])
  m4_bib2html_section(2020,[[wan:aaai20,kim:aaai20]])
  m4_bib2html_section(2019,[[choe:innsbook18,wang:neucom19,nguyen:ijcnn19,lee:aaai19,jung:aaai19,nowak:embc19,wang:icassp19]])
  m4_bib2html_section(2018,[[nguyen:icdl18,nowak:embc18a,nowak:embc18b,lee:embc18]])
