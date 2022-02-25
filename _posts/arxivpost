@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $# != 3 ] ; then
+  echo "usage: ./arxivpost [arxiv-id] [title] [comments]"
+fi
+
+./fetch.pl "$1" "$3" | ./genpost "$2"
