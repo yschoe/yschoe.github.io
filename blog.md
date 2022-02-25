@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-I'm currently porting over old articles from my [private Facebook group](https://www.facebook.com/groups/choelab). 2022 and 2021 articles are now fully ported. Most 2020 articles are missing.
+Copying over articles from my [private Facebook group](https://www.facebook.com/groups/choelab) is now complete! Enjoy!
 
 <ul class="listing">
 {% for post in site.posts %}

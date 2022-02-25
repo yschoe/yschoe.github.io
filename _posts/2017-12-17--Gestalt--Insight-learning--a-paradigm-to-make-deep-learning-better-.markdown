@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Gestalt] Insight learning, a paradigm to make deep learning better?"
-date:   November 17, 2017
+date:   February 29, 2020
 categories: none
 ---
 
