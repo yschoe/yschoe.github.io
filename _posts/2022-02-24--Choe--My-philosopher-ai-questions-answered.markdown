@@ -7,7 +7,7 @@ categories: none
 
 
 
-These are some deep questions(!) I asked the Philosopher AI and the responses. I got these results when GPT3 was free. It is no longer free, but the old answers are thankfully accessible. 
+These are some deep questions(!) I asked the Philosopher AI and its responses. I got these results when GPT3 was free. It is no longer free, but the old answers are thankfully accessible. 
 
 
 
