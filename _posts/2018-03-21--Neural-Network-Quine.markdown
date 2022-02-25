@@ -7,7 +7,7 @@ categories: none
 
 
 
-### Neural Network Quine
+### [Lipson] Self-replicating neural networks: Neural Network Quine
 
 
 
