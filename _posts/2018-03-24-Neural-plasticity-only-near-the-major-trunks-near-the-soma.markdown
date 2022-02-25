@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Neural plasticity only near the major trunks near the soma"
+title:  "Neural plasticity only occurs near the major trunks near the soma"
 date:   2018/03/24
 categories: none
 ---
