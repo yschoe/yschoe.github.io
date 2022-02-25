@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  " Neural Network Quine"
+title:  "[Lipson] Self-replicating neural networks: Neural Network Quine"
 date:   2018/03/21
 categories: none
 ---
 
 
 
-### [Lipson] Self-replicating neural networks: Neural Network Quine
+### Neural Network Quine
 
 
 
