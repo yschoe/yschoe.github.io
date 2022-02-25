@@ -21,15 +21,19 @@ close(FP);
 # Date
 $file =~ /<meta\ name\=\"citation_date\"\ content\=\"([^\"]+)\"\/>/;
 $date = $1;
-print "$date\n\n";
-
-
-print "$comment \n\n";
+# print "$date\n\n";
+if ($comment =~ /\_\_DATE\_\_([0-9\/]+)\_\_/) {
+  print "$1\n\n";
+}
 
 # Title
 $file =~ /<meta\ name\=\"citation_title\"\ content\=\"([^\"]+)\"\/>/;
 $title= $1;
 print "### $title\n\n";
+
+if ($comment =~ /\_\_ARXIV\_\_TITLE/) {
+   print "$comment $title\n";
+} 
 
 # Authors
 @authors = ($file =~ /<meta\ name\=\"citation_author\"\ content\=\"([^\"]+)\"\/>/g);
