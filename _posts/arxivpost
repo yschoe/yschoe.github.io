@@ -2,6 +2,7 @@
 
 if [ $# != 3 ] ; then
   echo "usage: ./arxivpost [arxiv-id] [title] [comments]"
+  exit
 fi
 
 ./fetch.pl "$1" "$3" | ./genpost "$2"
