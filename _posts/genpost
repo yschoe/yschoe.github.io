@@ -56,6 +56,9 @@ while (<STDIN>) {
     if ($str =~ /shared\ a\ /) {
       $str = "\#\#\# quote \n\n$str\n";
     }
+    if ($str =~ /^\s*Vincent\ Boucher\s*$/) {
+      $str = "\#\#\# quote \n\n$str\n";
+    }
     $content = "$content$str";
   }
 }
