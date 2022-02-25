@@ -6,11 +6,11 @@ permalink: /teaching/
 
 ### Most often taught: 
 
-* Neural Networks (CSCE 636)
-* Machine Learning (CSCE 421/633)
-* Artificial Intelligence (CSCE 420/625)
-* Programming Studio (CSCE 315)
-* Cortical Networks (CSCE 644)
+* Neural Networks (CSCE 636): [Lecture notes, etc., 2015](https://people.engr.tamu.edu/choe/choe/courses/16spring/636/index.html)
+* Machine Learning (CSCE 421/633): [Lecture notes, etc., 2021](https://people.engr.tamu.edu/choe/choe/courses/21spring/633/index.html)
+* Artificial Intelligence (CSCE 420/625): [Lecture notes, etc., 2020](https://people.engr.tamu.edu/choe/choe/courses/20spring/625.html)
+* Programming Studio (CSCE 315): [Lecture notes, etc., 2020](https://people.engr.tamu.edu/choe/choe/courses/20fall/315/index.html)
+* Cortical Networks (CSCE 644): [Lecture notes, etc., 2012](https://people.engr.tamu.edu/choe/choe/courses/12fall/644.html)
 
 ### Current
 
