@@ -71,9 +71,12 @@ if (length($fulldate)<1) {
   exit;
 }
 
-if (length($month_num)<2) {
+$month_num =~ s/^0//;
+if ($month_num<10) {
   $month_num = "0$month_num";
 }
+
+$day =~ s/^0//;
 if ($day<10) {
   $day= "0$day";
 }
