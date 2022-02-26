@@ -10,7 +10,10 @@ More interesting work from Facebook AI.
 
 ￼
 JRODTHOUGHTS.MEDIUM.COM
+
 Meta’s Data2vec is a New Self-Supervised Model that Works for Speech, Vision and Text
+
+
 This is the first SSL model that can work across various ....
 
 

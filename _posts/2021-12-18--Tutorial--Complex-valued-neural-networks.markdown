@@ -6,9 +6,13 @@ categories: none
 ---
 
 A tutorial on complex-valued neural networks! 
+
+
 ￼
 MAKEYOUROWNNEURALNETWORK.BLOGSPOT.COM
+
 Complex Valued Neural Networks - Experiments
+
 Update: the link between the phase rotated by these neurons and frequency components of an image is not clear. Needs more work ... Th...
 ￼
 
