@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Standord] Weak Supervision: A New Programming Paradigm for Machine Learning"
+title:  "[Stanford] Weak Supervision: A New Programming Paradigm for Machine Learning"
 date:   2019/04/03
 categories: none
 ---
