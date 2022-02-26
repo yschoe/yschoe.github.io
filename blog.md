@@ -6,6 +6,7 @@ permalink: /blog/
 
 This is mostly a collection of articles I found to be interesting. The ones marked "[Choe]" are original articles.
 
+* [New] 2/26/2022: You can now press the [j] and [k] key inside the article to go back and forth between the articles.
 * Copying over articles from my [private Facebook group](https://www.facebook.com/groups/choelab) is now complete (2020 to present). 
 * Old articles from my private collection are now also available (2017 to 2019). 
 
