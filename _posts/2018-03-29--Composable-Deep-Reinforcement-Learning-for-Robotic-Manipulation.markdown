@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "[BAIR] Composable Deep Reinforcement Learning for Robotic Manipulation"
+date:   2018/03/29
+categories: none
+---
+
+
+
+### Composable Deep Reinforcement Learning for Robotic Manipulation
+
+
+
+* Haarnoja, Tuomas; 
+
+* Pong, Vitchyr; 
+
+* Zhou, Aurick; 
+
+* Dalal, Murtaza; 
+
+* Abbeel, Pieter; 
+
+* Levine, Sergey; 
+
+
+
+
+
+**Abstract**:  Model-free deep reinforcement learning has been shown to exhibit good performance in domains ranging from video games to simulated robotic manipulation and locomotion. However, model-free methods are known to perform poorly when the interaction time with the environment is limited, as is the case for most real-world robotic tasks. In this paper, we study how maximum entropy policies trained using soft Q-learning can be applied to real-world robotic manipulation. The application of this method to real-world manipulation is facilitated by two important features of soft Q-learning. First, soft Q-learning can learn multimodal exploration strategies by learning policies represented by expressive energy-based models. Second, we show that policies learned with soft Q-learning can be composed to create new policies, and that the optimality of the resulting policy can be bounded in terms of the divergence between the composed policies. This compositionality provides an especially valuable tool for real-world manipulation, where constructing new policies by composing existing skills can provide a large gain in efficiency over training from scratch. Our experimental evaluation demonstrates that soft Q-learning is substantially more sample efficient than prior model-free deep reinforcement learning methods, and that compositionality can be performed for both simulated and real-world tasks. 
+
+
+
+ [https://arxiv.org/abs/1803.06773v1](https://arxiv.org/abs/1803.06773v1) 
+

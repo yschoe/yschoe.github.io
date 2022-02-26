@@ -1,0 +1,35 @@
+---
+layout: post
+title:  " An Empirical Study of Example Forgetting during Deep Neural Network Learning"
+date:   2019/01/07
+categories: none
+---
+
+
+
+### An Empirical Study of Example Forgetting during Deep Neural Network Learning
+
+
+
+* Toneva, Mariya; 
+
+* Sordoni, Alessandro; 
+
+* Combes, Remi Tachet des; 
+
+* Trischler, Adam; 
+
+* Bengio, Yoshua; 
+
+* Gordon, Geoffrey J.; 
+
+
+
+
+
+**Abstract**:  Inspired by the phenomenon of catastrophic forgetting, we investigate the learning dynamics of neural networks as they train on single classification tasks. Our goal is to understand whether a related phenomenon occurs when data does not undergo a clear distributional shift. We define a `forgetting event&#39; to have occurred when an individual training example transitions from being classified correctly to incorrectly over the course of learning. Across several benchmark data sets, we find that: (i) certain examples are forgotten with high frequency, and some not at all; (ii) a data set&#39;s (un)forgettable examples generalize across neural architectures; and (iii) based on forgetting dynamics, a significant fraction of examples can be omitted from the training data set while still maintaining state-of-the-art generalization performance. 
+
+
+
+ [https://arxiv.org/abs/1812.05159v1](https://arxiv.org/abs/1812.05159v1) 
+
