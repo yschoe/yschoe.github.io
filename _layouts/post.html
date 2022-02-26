@@ -16,14 +16,17 @@ layout: compress
 
             <hr>
 
-            <p><a href="{{ site.baseurl }}/blog">← Back to all articles</a></p>
+            <p><a href="{{ site.baseurl }}/blog">← Back to all articles</a>
+
+	    &nbsp; &nbsp; &nbsp; &nbsp;
+	    Next:[j] &ndash; Prev:[k] &ndash; List:[l]</a></p>
         </article>
 
     </main>
 
     {% include footer-post.html %}
 
-    <!-- yschoe : Keyboard nav -->
+    <!-- Yoonsuck Choe : Keyboard navigation -->
     <script> 
     window.onload = function() {
 
@@ -31,18 +34,28 @@ layout: compress
 
 	const url = document.location.href;
 
-      /* Nothing here yet. 
-
-          window.location.href = ''; 
+        /* Thanks to : 
+		https://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html */
 
         if (event.key == "j") {
-	  console.log('j');
-	  console.log(url);
+
+	  {% if page.previous.url %}
+	  window.location.href="{{page.previous.url}}";
+	  {% endif %}
+
         } else if (event.key == "k") {
-	  console.log('k');
-	  console.log(url);
+
+	  {% if page.next.url %}
+	  window.location.href="{{page.next.url}}";
+	  {% endif %}
+
+        } else if (event.key == "l") {
+
+	  {% if page.next.url %}
+	  window.location.href="{{page.next.url}}";
+	  {% endif %}
+
         }
-      */
 
       });
     }
