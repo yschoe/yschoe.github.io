@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Consciousness][Choe] Machine consciousness and Buddhist philosophy"
+title:  "[Consciousness] Machine consciousness and Buddhist philosophy"
 date:   January 11, 2022
 categories: none
 ---
@@ -8,8 +8,11 @@ categories: none
 An interesting paper on machine consciousness. The paper includes some interesting discussion on ancient Indian and Buddhist philosophy and their relation to consciousness.
 
 The Limits to Machine Consciousness
-Subhash Kak
-It is generally accepted that machines can replicate cognitive tasks performed by conscious agents as long as they are not based on the capacity of awareness. We consider several views on the nature of subjective awareness, which is fundamental for self-reflection and review, and present reasons why this property is not computable. We argue that consciousness is more than an epiphenomenon and assuming it to be a separate category is consistent with both quantum mechanics and cognitive science. We speak of two kinds of consciousness, little-C and big-C, and discuss the significance of this classification in analyzing the current academic debates in the field. The interaction between the system and the measuring apparatus of the experimenter is examined both from the perspectives of decoherence and the quantum Zeno effect. These ideas are used as context to address the question of limits to machine consciousness.
+
+by Subhash Kak
+
+"It is generally accepted that machines can replicate cognitive tasks performed by conscious agents as long as they are not based on the capacity of awareness. We consider several views on the nature of subjective awareness, which is fundamental for self-reflection and review, and present reasons why this property is not computable. We argue that consciousness is more than an epiphenomenon and assuming it to be a separate category is consistent with both quantum mechanics and cognitive science. We speak of two kinds of consciousness, little-C and big-C, and discuss the significance of this classification in analyzing the current academic debates in the field. The interaction between the system and the measuring apparatus of the experimenter is examined both from the perspectives of decoherence and the quantum Zeno effect. These ideas are used as context to address the question of limits to machine consciousness.
+"
 
 
 Here's the arXiv version: [https://arxiv.org/abs/1707.06257](https://arxiv.org/abs/1707.06257)
