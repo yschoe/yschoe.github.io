@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Editable Neural Networks"
+date:   2019/10/08
+categories: none
+---
+
+
+
+
+
+Editable Neural Networks 
+
+
+
+
+Anton Sinitsin, Vsevolod Plokhotnyuk, Dmitry Pyrkin, Sergei Popov, Artem Babenko
+
+
+
+Abstract: These days deep neural networks are ubiquitously used in a wide range of tasks, from image classification and machine translation to face identification and self-driving cars. In many applications, a single model error can lead to devastating financial, reputational and even life-threatening consequences. Therefore, it is crucially important to correct model mistakes quickly as they appear. In this work, we investigate the problem of neural network editing - how one can efficiently patch a mistake of the model on a particular sample, without influencing the model behavior on other samples. Namely, we propose Editable Training, a model-agnostic training technique that encourages fast editing of the trained model. We empirically demonstrate the effectiveness of this method on large-scale image classification and machine translation tasks.
+
+
+
+[https://openreview.net/forum?id=HJedXaEtvS](https://openreview.net/forum?id=HJedXaEtvS)
+
+
+
+ 
+
