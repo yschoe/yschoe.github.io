@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Buzsaki] The brain from inside out - by Byorgy Buzsaki!"
+title:  "[Buzsaki] The brain from inside out - by Gyorgy Buzsaki!"
 date:   Sep 16, 2020
 categories: none
 ---
