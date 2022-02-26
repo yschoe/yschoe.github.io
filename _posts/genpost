@@ -1,7 +1,27 @@
 #!/usr/bin/perl
 
-# generate post from arxiv link
+# genpost
+# 
+# Yoonsuck Choe
+# 
+# A quick and dirty hack to generate Jekyll blog posts.
 #
+# usage: ./genpost "Article title"
+# 
+#  - The main blog article text taken from STDIN, which should include 
+#    DATE : "January, 1, 1970" or "1970/01/01" format
+#	    This can appear at any point in the input, but must appear at least once.
+#           If there are multiple occurrences, the last date will be used.
+#    TEXT : Any kind of text. Adds extra "\n" after each line.
+#    URL  : Any well formed URL will be turned into a link in the markdown language
+# 
+#    Example:
+#         Januaru 1, 1970
+#         Test post
+#         http://yschoe.github.io
+#  - output
+#         Creates a new file in this format: 1970-01-01-Article-title.markdown
+
 
 use List::MoreUtils 'first_index'; 
 
@@ -59,9 +79,12 @@ while (<STDIN>) {
     if ($str =~ /shared\ a\ /) {
       $str = "\#\#\# quote \n\n$str\n";
     }
+
+    # hack to give due attribution when scraping facebook posts
     if ($str =~ /^\s*Vincent\ Boucher\s*$/) {
       $str = "\#\#\# quote \n\n$str\n";
     }
+
     $content = "$content$str";
   }
 }
@@ -88,8 +111,9 @@ print "\n\n***$fulldate\n";
 $filename = "$year-$month_num-$day-$strip_title.markdown";
 
 if (-f $filename) {
-  print "\n\n\n **** $filename exists. Overwriting. \n";
-  open(FP,"> $filename");
+  print "\n\n\n **** $filename exists. Aborting. \n";
+  #open(FP,"> $filename");
+  exit;
 } else {
   open(FP,"> $filename");
 }
