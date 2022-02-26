@@ -4,7 +4,7 @@
 $arxiv=$ARGV[0];
 $comment=$ARGV[1];
 
-if ($arxiv !~ /[0-9]+\.[0-9]+v[0-9]+/) {
+if ($arxiv !~ /[0-9]+\.[0-9]+(v[0-9]+)*/) {
   print "Error: $arxiv is not a valid ArXiV ID. Aborting.\n";
   exit;
 }
