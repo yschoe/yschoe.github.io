@@ -4,7 +4,9 @@ title: Blog
 permalink: /blog/
 ---
 
-Copying over articles from my [private Facebook group](https://www.facebook.com/groups/choelab) is now complete! Enjoy!
+Copying over articles from my [private Facebook group](https://www.facebook.com/groups/choelab) is now complete (2020 to present)! 
+Old articles from my private collection is now also available (2017 to 2019).
+Enjoy!
 
 <ul class="listing">
 {% for post in site.posts %}
