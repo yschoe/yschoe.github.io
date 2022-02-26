@@ -2,6 +2,7 @@
 layout: post
 title:  "[Choe] Thoughts on learning motor primitives"
 date:   July 16, 2020
+tags: Choe 
 categories: none
 ---
 

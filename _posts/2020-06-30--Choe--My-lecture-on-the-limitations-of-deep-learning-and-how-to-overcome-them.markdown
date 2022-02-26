@@ -2,6 +2,8 @@
 layout: post
 title:  "[Choe] My lecture on the limitations of deep learning and how to overcome them"
 date:   June 30, 2020
+
+tags: Choe 
 categories: none
 ---
 

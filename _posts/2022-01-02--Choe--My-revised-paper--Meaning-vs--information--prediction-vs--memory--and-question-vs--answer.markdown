@@ -2,6 +2,7 @@
 layout: post
 title:  "[Choe] My revised paper: Meaning vs. information, prediction vs. memory, and question vs. answer"
 date:   January 2, 2022
+tags: Choe 
 categories: none
 ---
 
