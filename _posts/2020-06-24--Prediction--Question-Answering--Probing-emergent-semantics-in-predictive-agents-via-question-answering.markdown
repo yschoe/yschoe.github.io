@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Prediction] Probing emergent semantics in predictive agents via question answering"
+title:  "[Prediction][Choe] Probing emergent semantics in predictive agents via question answering"
 date:   June 24, 2020
 categories: none
 ---
