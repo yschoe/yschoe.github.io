@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Interesing neuroscience research on motor system and machine learning"
+title:  "[Motor] Interesing neuroscience research on motor system and machine learning"
 date:   March 24, 2021
 categories: none
 ---

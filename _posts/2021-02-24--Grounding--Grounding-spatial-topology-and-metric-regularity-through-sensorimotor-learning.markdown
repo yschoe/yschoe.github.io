@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Grounding] Grounding spatial topology and metric regularity through sensorimotor learning"
+title:  "[Grounding][Choe] Grounding spatial topology and metric regularity through sensorimotor learning"
 date:   February 24, 2021
 categories: none
 ---
@@ -8,7 +8,8 @@ categories: none
 This is another very interesting paper, exploring sensorimotor learning. The senior author is Kevin O'Regan, who wrote several influential papers on sensorimotor basis of understanding (his model is called sensorimotor contingency theory). He even tries to explain qualia ("redness" of red, etc.) using this approach, in his earlier paper. 
 
 
- You can see that he cites my paper. ￼
+
+ You can see that he cites my paper. Here are some related papers: [/pub/#Action](/pub/#Action).
 
 
 
