@@ -1,14 +1,17 @@
 ---
 layout: post
-title:  "[Mind] Need for a Copernican shift to understand the mind: Pamela Lyon"
+title:  "[Mind][Choe] Need for a Copernican shift to understand the mind: Pamela Lyon"
 date:   October 23, 2021
 categories: none
 ---
 
 This is a really good essay on the nature of cognition and how to go about unraveling its mystery. 
 Buzsaki's "inside-out" idea (which I mentioned several times in relation to our own work on sensorimotor grounding) is prominently covered in the discussion.
+
 The study of the mind needs a Copernican shift in perspective | Aeon Essays
+
 AEON.CO
+
 The study of the mind needs a Copernican shift in perspective | Aeon Essays
 
 
