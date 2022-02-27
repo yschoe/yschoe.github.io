@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Gestalt] Insight learning, a paradigm to make deep learning better?"
+title:  "[Gestalt][Choe] Insight learning, a paradigm to make deep learning better?"
 date:   February 29, 2020
 categories: none
 ---
