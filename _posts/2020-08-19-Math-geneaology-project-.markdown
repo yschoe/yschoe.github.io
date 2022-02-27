@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Math geneaology project!"
+title:  "[Choe] Math genealogy project!"
 date:   August 19, 2020
 categories: none
 ---
