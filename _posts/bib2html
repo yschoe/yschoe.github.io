@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# convert bibtex entry to html code
+
+cat > scratch/bib.m4 <<EOF 
+
+ m4_include(../../publications/bib2html.m4)
+ m4_bib2html_section("lab seminar", [[$1]])
+
+EOF
+
+cd scratch
+
+m4 -P bib.m4 
+
+cd ..

@@ -7,3 +7,5 @@ vendor/
 Gemfile-old
 .bundle/
 Gemfile.lock
+*.swp
+pending/

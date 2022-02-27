@@ -99,7 +99,7 @@ m4_dnl ----- routine is called.  The first argument is a list of .bib files, the
 m4_dnl ----- second is the (optional) name to use for the references section, and
 m4_dnl ----- the third (optional) is a list of arguments for the bib2html command.
 m4_dnl -----
-m4_dnl ----- Example: m4_bib2html_bibliography_base([[nilstrings,nil,analogy]],References,-a)
+m4_dnl ----- Example: m4_bib2html_bibliography_base([[nilstrings,nil,analogy,bnl]],References,-a)
 m4_dnl ----- 
 m4_define([[m4_bib2html_bibliography_base]], [[m4_dnl -----
 <h2>$2</h2>
@@ -127,7 +127,7 @@ m4_dnl -----
 m4_define([[m4_bib2html_section]],[[m4_dnl -----
 m4_bib2html_init[[]]
 m4_bib2html_nocite($2)
-m4_bib2html_bibliography_base([[nilstrings,nil,analogy]],[[$1]], )]])m4_dnl -----
+m4_bib2html_bibliography_base([[nilstrings,nil,analogy,bnl]],[[$1]], )]])m4_dnl -----
 m4_dnl ----- yschoe above
 m4_dnl ----- 
 m4_dnl ----- Other possible formats:

@@ -1,0 +1,101 @@
+#!/usr/bin/perl
+
+# genbib
+# 
+# Yoonsuck Choe
+# 
+# A quick and dirty hack to generate Jekyll blog posts.
+#
+# usage: ./genbib bibtex_tag DATE
+# 
+
+use List::MoreUtils 'first_index'; 
+
+$tag=$ARGV[0];
+$fulldate=$ARGV[1];
+
+@months = ("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Oct","Nov","Dec");
+
+use Time::Piece;
+
+my $t = Time::Piece->new();
+$sys_year = $t->year;
+
+if ($fulldate =~ /^(([0-9]+)\/([0-9][0-9])\/([0-9][0-9]))/) {
+    $fulldate = $1;
+    $year=$2;
+    $month_num=$3;
+    $day=$4;
+}
+
+# content: fetch from bib2html
+
+if (length($fulldate)<1) {
+  print "\n\n\n **** Date string error: [$fulldate]. Aborting\n";
+  exit;
+}
+
+$month_num =~ s/^0//;
+if ($month_num<10) {
+  $month_num = "0$month_num";
+}
+
+$day =~ s/^0//;
+if ($day<10) {
+  $day= "0$day";
+}
+
+
+open(FP,"./bib2html $tag |");
+
+## PARSE bib2html output ##
+
+$all = "";
+while (<FP>) {
+
+  $str = $_;
+  $str =~ s/(<\/UL>)/<\/LI>$1/;
+  $str =~ s/(<P>)//;
+
+  $content=$content.$str;
+  chop $str;
+  $all = $all.$str;
+
+}
+
+if ($all =~ /<A\ HREF=\"[^\"]+\">([^<]+)<\/A/) {
+    $title=$1;
+}
+$title = "[Lab Seminar] $title";
+
+print "*** $title\n";
+print "*** $year\/$month_num\/$day\n\n";
+
+$strip_title=$title;
+$strip_title=~s/[^a-zA-Z]/-/g;
+
+print "\n\n***$fulldate\n";
+$filename = "$year-$month_num-$day-$strip_title.markdown";
+
+if (-f $filename) {
+  print "\n\n\n **** $filename exists. Overwriting. \n";
+  open(FP,"> $filename");
+} else {
+  open(FP,"> $filename");
+}
+
+print FP <<EOF;
+---
+layout: post
+title:  "$title"
+date:   $fulldate
+categories: none
+---
+
+$content 
+
+EOF
+
+close(FP);
+
+print $content;
