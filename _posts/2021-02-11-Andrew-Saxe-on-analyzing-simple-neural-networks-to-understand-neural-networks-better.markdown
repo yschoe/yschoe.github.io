@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Andrew Saxe on analyzing simple neural networks to understand neural networks better"
+title:  "[Saxe][Choe] Andrew Saxe on analyzing simple neural networks to understand neural networks better"
 date:   February 11, 2021
 categories: none
 ---

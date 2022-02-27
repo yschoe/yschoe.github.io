@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Solitary bees can solve novel tasks"
+title:  "[Cognition][Insect] Solitary bees can solve novel tasks"
 date:   February 7, 2021
 categories: none
 ---
