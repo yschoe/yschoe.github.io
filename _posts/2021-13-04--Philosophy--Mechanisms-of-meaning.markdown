@@ -11,7 +11,7 @@ Meaning is an important problem in AI, which is not addressed sufficiently by cu
 
 
 Here are some of the papers from our lab relating to this issue:
-[/pub_topic/#Action][/pub_topic/#Action]
+[/pub_topic/#Action](/pub_topic/#Action)
 
  
 
