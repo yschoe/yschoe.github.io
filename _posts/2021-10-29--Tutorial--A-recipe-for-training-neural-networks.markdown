@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Tutorial] A recipe for training neural networks"
+title:  "[Tutorial][Choe] A recipe for training neural networks"
 date:   October 29, 2021
 categories: none
 ---

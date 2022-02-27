@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[NeurIPS] 2021 accepted papers"
+title:  "[NeurIPS][Choe] 2021 accepted papers"
 date:   November 5, 2021
 categories: none
 ---

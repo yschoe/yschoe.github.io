@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Philosophy] Mechanisms of meaning"
+title:  "[Philosophy][Choe] Mechanisms of meaning"
 date:   December 4, 2021
 categories: none
 ---

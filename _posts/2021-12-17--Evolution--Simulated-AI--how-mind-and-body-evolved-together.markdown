@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Evolution] Simulated AI: how mind and body evolved together"
+title:  "[Evolution][Choe] Simulated AI: how mind and body evolved together"
 date:   November 17, 2021
 categories: none
 ---
