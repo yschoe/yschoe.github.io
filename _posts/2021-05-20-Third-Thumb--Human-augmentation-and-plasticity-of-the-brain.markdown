@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Third Thumb: Human augmentation and plasticity of the brain"
+title:  "[Body][Choe] Third Thumb: Human augmentation and plasticity of the brain"
 date:   May 20, 2021
 categories: none
 ---
