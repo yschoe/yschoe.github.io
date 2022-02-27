@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Ph.D. student Han Wang graduated!"
+title:  "[Choe] My Ph.D. student Han Wang graduated!"
 date:   May 8, 2020
 categories: none
 ---
