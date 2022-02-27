@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Philosophy] Philosopher AI + GPT 2 = Awesome!!"
+title:  "[Philosophy][Choe] Philosopher AI + GPT 3 = Awesome!!"
 date:   August 22, 2020
 categories: none
 ---
