@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Grounding] Grounding natural language meaning based on physical interaction with the world - Yejin Choi lab"
+title: "[Grounding][Choe] Grounding natural language meaning based on physical interaction with the world - Yejin Choi lab"
 date:   June 3, 2021
 categories: none
 ---
