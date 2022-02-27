@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bayesian superorganism III: externalized memories facilitates ..."
+title:  "[Memory][Choe] Bayesian superorganism III: externalized memories facilitates ..."
 date:   March 31, 2020
 categories: none
 ---
