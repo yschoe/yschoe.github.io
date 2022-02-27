@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Neural code] Good decisions require more than information"
+title:  "[Neural code][Choe] Good decisions require more than information"
 date:   July 2, 2021
 categories: none
 ---
