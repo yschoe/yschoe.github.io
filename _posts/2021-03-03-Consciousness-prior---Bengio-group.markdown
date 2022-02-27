@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Consciousness prior - Bengio group"
+title:  "[Consiousness][Choe] Consciousness prior - Bengio group"
 date:   March 3, 2021
 categories: none
 ---
 
 Interesting papers from the Bengio group.
 
- Note: When Bengio says "conscious", he means "conscious, as in conscious and deliberate effort", not "I feel like this or that kind of conscious".
+ Note: When Bengio says "conscious", he means "conscious, as in conscious and deliberate effort", not "I feel like this or that kind of conscious". See our publications on consciousness: [/pub_topic/#Predictive](/pub_topic/#Predictive).
 
 
 
