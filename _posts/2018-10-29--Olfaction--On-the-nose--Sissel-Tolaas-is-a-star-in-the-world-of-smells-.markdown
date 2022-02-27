@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Olfaction] On the nose: Sissel Tolaas is a star in the world of smells."
+title:  "[Olfaction][Choe] On the nose: Sissel Tolaas is a star in the world of smells."
 date:   2018/10/29
 categories: none
 ---
