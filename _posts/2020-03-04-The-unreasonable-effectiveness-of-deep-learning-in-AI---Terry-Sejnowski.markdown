@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The unreasonable effectiveness of deep learning in AI - Terry Sejnowski"
+title:  "[Sejnowski][Choe] The unreasonable effectiveness of deep learning in AI - Terry Sejnowski"
 date:   March 4, 2020
 categories: none
 ---
