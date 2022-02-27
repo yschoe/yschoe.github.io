@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A documentary on the 1 billion Euro European brain project"
+title: [HBP][Choe] "A documentary on the 1 billion Euro European brain project"
 date:   December 8, 2020
 categories: none
 ---

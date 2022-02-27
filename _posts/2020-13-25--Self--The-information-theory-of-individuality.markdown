@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Self] The information theory of individuality"
+title:  "[Self][Choe] The information theory of individuality"
 date:   December 25, 2020
 categories: none
 ---
