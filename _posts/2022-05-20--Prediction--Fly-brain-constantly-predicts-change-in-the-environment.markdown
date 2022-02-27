@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Prediction] Fly brain constantly predicts change in the environment"
+title:  "[Prediction][Choe] Fly brain constantly predicts change in the environment"
 date:   May 24, 2021
 categories: none
 ---
