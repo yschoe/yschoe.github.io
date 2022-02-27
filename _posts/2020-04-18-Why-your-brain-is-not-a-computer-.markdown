@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why your brain is not a computer!"
+title:  "[Mind][Choe] Why your brain is not a computer!"
 date:   April 18, 2020
 categories: none
 ---
