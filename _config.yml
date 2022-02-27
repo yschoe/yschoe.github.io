@@ -37,6 +37,9 @@ sass:
 future: true
 timezone: America/Chicago
 
+# Google Analytics
+google_analytics: G-4WNVRNGGH5
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
