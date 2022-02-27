@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Intrinsic] Disentangling the independently controllable factors of variation by interacting with the world"
+title:  "[Intrinsic][Choe] Disentangling the independently controllable factors of variation by interacting with the world"
 date:   2018/01/01
 categories: none
 ---
