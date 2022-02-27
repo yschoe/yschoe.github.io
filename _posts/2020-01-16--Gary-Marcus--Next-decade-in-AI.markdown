@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Gary Marcus] Next decade in AI"
+title:  "[Gary Marcus][Choe] Next decade in AI"
 date:   February 16, 2020
 categories: none
 ---
