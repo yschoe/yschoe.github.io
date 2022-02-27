@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Hawkins] Jeff Hawkins' new book on the brain: A Thousand Brains"
+title:  "[Hawkins][Choe] Jeff Hawkins' new book on the brain: A Thousand Brains"
 date:   March 4, 2021
 categories: none
 ---

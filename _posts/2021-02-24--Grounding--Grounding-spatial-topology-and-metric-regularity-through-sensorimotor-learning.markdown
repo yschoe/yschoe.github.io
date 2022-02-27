@@ -9,7 +9,7 @@ This is another very interesting paper, exploring sensorimotor learning. The sen
 
 
 
- You can see that he cites my paper. Here are some related papers: [/pub/#Action](/pub/#Action).
+ You can see that he cites my paper. Here are some related papers: [/pub_topic/#Action](/pub_topic/#Action).
 
 
 
