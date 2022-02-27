@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Facebook] Self-supervised learning at Facebook"
+title:  "[Facebook][Choe] Self-supervised learning at Facebook"
 date:   October 12, 2021
 categories: none
 ---

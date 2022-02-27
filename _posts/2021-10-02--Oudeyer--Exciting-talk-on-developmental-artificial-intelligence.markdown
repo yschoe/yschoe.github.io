@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Oudeyer] Exciting talk on developmental artificial intelligence"
+title:  "[Oudeyer][Choe] Exciting talk on developmental artificial intelligence"
 date:   October 2, 2021
 categories: none
 ---
