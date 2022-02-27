@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Arxiv-sanity: excellent resource for finding and organizing papers"
+title:  "[Choe] Arxiv-sanity: excellent resource for finding and organizing papers"
 date:   March 25, 2020
 categories: none
 ---
