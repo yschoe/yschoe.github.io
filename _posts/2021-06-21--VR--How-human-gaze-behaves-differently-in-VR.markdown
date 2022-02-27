@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[VR] How human gaze behaves differently in VR"
+title:  "[VR][Gaze] How human gaze behaves differently in VR"
 date:   June 21, 2021
 categories: none
 ---
