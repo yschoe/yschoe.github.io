@@ -5,7 +5,7 @@
 cat > scratch/bib.m4 <<EOF 
 
  m4_include(../../publications/bib2html.m4)
- m4_bib2html_section("lab seminar", [[$1]])
+ m4_bib2html_section(lab seminar, [[$1]])
 
 EOF
 
