@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Philosophy][Kording] Philosophical understanding of representation in neuroscience"
+title:  "[Philosophy][Kording][Choe] Philosophical understanding of representation in neuroscience"
 date:   August 20, 2021
 categories: none
 ---
