@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[NEAT] How single-cell organisms can reach its life's goal with such simple machinary!"
+title:  "[NEAT][Choe] How single-cell organisms can reach its life's goal with such simple machinary!"
 date:   May 10, 2021
 categories: none
 ---
