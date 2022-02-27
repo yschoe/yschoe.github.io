@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ordering information into sequences improves cognitive performance"
+title:  "[Cognition][Choe] Ordering information into sequences improves cognitive performance"
 date:   December 23, 2021
 categories: none
 ---

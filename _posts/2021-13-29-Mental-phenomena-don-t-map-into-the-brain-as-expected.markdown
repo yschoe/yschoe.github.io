@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mental phenomena don't map into the brain as expected"
+title:  "[Mind][Choe] Mental phenomena don't map into the brain as expected"
 date:   December 29, 2021
 categories: none
 ---

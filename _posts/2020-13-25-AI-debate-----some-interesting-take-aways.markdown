@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AI debate 2 : some interesting take aways"
+title:  "[Choe] AI debate 2 : some interesting take aways"
 date:   December 25, 2020
 categories: none
 ---

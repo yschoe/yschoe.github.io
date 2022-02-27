@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Tool] Crows understand the concept of tool value!"
+title:  "[Tool][Choe] Crows understand the concept of tool value!"
 date:   December 25, 2021
 categories: none
 ---

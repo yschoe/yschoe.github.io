@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Proprioception and the importance of spatial intelligence / bodily experience"
+title:  "[Body][Choe] Proprioception and the importance of spatial intelligence / bodily experience"
 date:   December 22, 2021
 categories: none
 ---

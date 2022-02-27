@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[RIKEN] Free energy principle explains the brain?"
+title:  "[RIKEN][Choe] Free energy principle explains the brain?"
 date:   January 15, 2022
 categories: none
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Consciousness] Machine consciousness and Buddhist philosophy"
+title:  "[Consciousness][Choe] Machine consciousness and Buddhist philosophy"
 date:   January 11, 2022
 categories: none
 ---
