@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How bumble bees perceive the spatial layout of their surrounding relative to their body"
+title:  "[Body] How bumble bees perceive the spatial layout of their surrounding relative to their body"
 date:   February 7, 2021
 categories: none
 ---
