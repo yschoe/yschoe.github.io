@@ -11,9 +11,9 @@ This is quite related to the research related to "synthetic connectomics" in our
 
 See the following papers:
 
-Han Wang, Jaewook Yoo, Qinbo Li, and Yoonsuck Choe. Dynamical analysis of recurrent neural circuits in articulated limb controllers for tool use. In Proceedings of the International Joint Conference on Neural Networks, 2016. In press. [http://faculty.cs.tamu.edu/.../publications/wang-ijcnn16.pdf](http://faculty.cs.tamu.edu/choe/choe/ftp/publications/wang-ijcnn16.pdf)
+Han Wang, Jaewook Yoo, Qinbo Li, and Yoonsuck Choe. Dynamical analysis of recurrent neural circuits in articulated limb controllers for tool use. In Proceedings of the International Joint Conference on Neural Networks, 2016. In press. [http://faculty.cs.tamu.edu/.../publications/wang-ijcnn16.pdf](http://faculty.cs.tamu.edu/choe/ftp/publications/wang-ijcnn16.pdf)
 
-Qinbo Li, Jaewook Yoo, and Yoonsuck Choe. Emergence of tool use in an articulated limb controlled by evolved neural circuits. In Proceedings of the International Joint Conference on Neural Networks, 2015. DOI: 10.1109/IJCNN.2015.7280564.  [http://faculty.cs.tamu.edu/.../publications/li-ijcnn15.pdf](http://faculty.cs.tamu.edu/choe/choe/ftp/publications/li-ijcnn15.pdf)
+Qinbo Li, Jaewook Yoo, and Yoonsuck Choe. Emergence of tool use in an articulated limb controlled by evolved neural circuits. In Proceedings of the International Joint Conference on Neural Networks, 2015. DOI: 10.1109/IJCNN.2015.7280564.  [http://faculty.cs.tamu.edu/.../publications/li-ijcnn15.pdf](http://faculty.cs.tamu.edu/choe/ftp/publications/li-ijcnn15.pdf)
 
 [https://sites.google.com/njit.edu/diamonds](https://sites.google.com/njit.edu/diamonds)
 
