@@ -11,7 +11,7 @@ permalink: /lab/
 <li> <a href="#phd">[Students] Ph.D.</a></li>
 <li> <a href="#ms">[Students] M.S.</a></li>
 <li> <a href="#ug">[Students] Undergraduate</a></li>
-<li> <a href="#visitors">Visitors</a></li>
+<li> <a href="#visitors">Visiting Scholars</a></li>
 </ol>
 
 <a name="bnl"></a>
@@ -132,7 +132,7 @@ Current undergrad students
 1. Zhan Lan (TAMU,  Computer Science): Spring 2022
 
 <a name="visitors"></a>
-### Visitors
+### Visiting Scholars
 
 1. Suhan Ree (Kongju National University, Korea: 2006-2007)
 1. Heung Shik Kim (Inje University, Korea: 2006-2007)
