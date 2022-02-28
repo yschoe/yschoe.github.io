@@ -4,7 +4,7 @@ title: Lab
 permalink: /lab/
 ---
 
-<ol class="toc">
+<ol class="listing">
 <li> <a href="#bnl">Brain Networks Laboratory (BNL)</a></li>
 <li> <a href="#nil">Neural Intelligence Laboratory (NIL)</a></li>
 <li> <a href="#seminar">Lab Seminar Archive</a>: <a href="/seminar/">Direct Link</a></li>
