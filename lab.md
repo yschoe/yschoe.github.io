@@ -8,9 +8,9 @@ permalink: /lab/
 <li> <a href="#bnl">Brain Networks Laboratory (BNL)</a></li>
 <li> <a href="#nil">Neural Intelligence Laboratory (NIL)</a></li>
 <li> <a href="#seminar">Lab Seminar Archive</a></li>
-<li> <a href="#phd">Students: Ph.D.</a></li>
-<li> <a href="#ms">Students: M.S.</a></li>
-<li> <a href="#ug">students: Undergraduate</a></li>
+<li> [Students] <a href="#phd">Ph.D.</a></li>
+<li> [Students] <a href="#ms">M.S.</a></li>
+<li> [Students] <a href="#ug">Undergraduate</a></li>
 <li> <a href="#visitors">Visitors</a></li>
 </ol>
 
