@@ -6,11 +6,19 @@ permalink: /teaching/
 
 ### Most often taught: 
 
-* Neural Networks (CSCE 636): [Old lecture notes: 2015](https://people.engr.tamu.edu/choe/choe/courses/16spring/636/index.html)
-* Machine Learning (CSCE 421/633): [Old lecture notes: 2021](https://people.engr.tamu.edu/choe/choe/courses/21spring/633/index.html)
-* Artificial Intelligence (CSCE 420/625): [Old lecture notes: 2020](https://people.engr.tamu.edu/choe/choe/courses/20spring/625.html)
-* Programming Studio (CSCE 315): [Old lecture notes: 2020](https://people.engr.tamu.edu/choe/choe/courses/20fall/315/index.html)
-* Cortical Networks (CSCE 644): [Old lecture notes: 2012](https://people.engr.tamu.edu/choe/choe/courses/12fall/644.html)
+<ul class="tod">
+<li>
+ Neural Networks (CSCE 636): [Old lecture notes: 2015](https://people.engr.tamu.edu/choe/choe/courses/16spring/636/index.html)
+</li><li>
+ Machine Learning (CSCE 421/633): [Old lecture notes: 2021](https://people.engr.tamu.edu/choe/choe/courses/21spring/633/index.html)
+</li><li>
+ Artificial Intelligence (CSCE 420/625): [Old lecture notes: 2020](https://people.engr.tamu.edu/choe/choe/courses/20spring/625.html)
+</li><li>
+ Programming Studio (CSCE 315): [Old lecture notes: 2020](https://people.engr.tamu.edu/choe/choe/courses/20fall/315/index.html)
+</li><li>
+ Cortical Networks (CSCE 644): [Old lecture notes: 2012](https://people.engr.tamu.edu/choe/choe/courses/12fall/644.html)
+</li>
+</ul>
 
 ### Current
 
