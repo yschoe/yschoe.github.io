@@ -7,9 +7,10 @@ permalink: /lab/
 <ol class="toc">
 <li> <a href="#bnl">Brain Networks Laboratory (BNL)</a></li>
 <li> <a href="#nil">Neural Intelligence Laboratory (NIL)</a></li>
-<li> <a href="#phd">Ph.D. students</a></li>
-<li> <a href="#ms">M.S. students</a></li>
-<li> <a href="#ug">Undergraduate students</a></li>
+<li> <a href="#seminar">Lab Seminar Archive</a></li>
+<li> <a href="#phd">Students: Ph.D.</a></li>
+<li> <a href="#ms">Students: M.S.</a></li>
+<li> <a href="#ug">students: Undergraduate</a></li>
 <li> <a href="#visitors">Visitors</a></li>
 </ol>
 
@@ -25,6 +26,7 @@ permalink: /lab/
 * Topographica cortical simulator: [Link](http://topographica.org)
 * Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab): Public mirror: [Blog](/blog/)
 
+<a name="seminar"></a>
 ### Lab seminar archive
 
 * Lab seminar archive: [Link](/seminar/)
