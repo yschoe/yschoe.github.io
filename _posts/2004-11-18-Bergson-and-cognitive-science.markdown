@@ -14,7 +14,7 @@ categories: none
 
 An article by F. C. T. Moore on Bergson and cognitive science.
 
-Current info: [https://philosophy.hku.hk/tm/papers/bergson/bergson.html](https://philosophy.hku.hk/tm/papers/bergson/bergson.html)
+Current version (as of 2/28/2022): [https://philosophy.hku.hk/tm/papers/bergson/bergson.html](https://philosophy.hku.hk/tm/papers/bergson/bergson.html)
 
 
 Old archive: [https://web.archive.org/web/20041030130417/http://www.hku.hk/caut/Timmoore/papers/bergcog/bpage1.htm](https://web.archive.org/web/20041030130417/http://www.hku.hk/caut/Timmoore/papers/bergcog/bpage1.htm)
