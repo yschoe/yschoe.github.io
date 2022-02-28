@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "[Lab Seminar] Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with
-  a stochastic actor. "
+title:  "[Lab Seminar] Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor. "
 date:   2021/09/27
 categories: none
 ---

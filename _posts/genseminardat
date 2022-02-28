@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# automatically generate seminar.yml 
+
+echo "# Automatically generated from genseminar script : do not modify directly"
+echo "# - date format should be YYYY/MM/DD in the markdown !!"
+
+for f in `ls 2*-Lab-Seminar-*.markdown | perl -e 'print reverse <>' `; do
+
+  bname=`basename $f .markdown | sed -e "s/^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]--//" | sed -e "s/--/-/g" | sed -e "s/--/-/g" | sed -e "s/--/-/g" `
+
+  title=`grep "^title:" $f | sed -e "s/^title:\ \ //" | sed -e "s/\[Lab\ Seminar\]//"`
+
+  date=`grep "^date:" $f | sed -e "s/^date:\ \ \ //"`
+
+  echo "- title: $title"
+  echo "  date: \"$date\""
+  echo "  filename: \"$bname.html\""
+  echo 
+
+done
+
