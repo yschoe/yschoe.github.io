@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Buzsaki's interview in Neuron 2016"
+title:  "[Lab Seminar] Buzsaki's interview in Neuron 2016"
 date:   2021/09/06
 categories: none
 ---
