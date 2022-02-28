@@ -7,7 +7,7 @@ permalink: /lab/
 <ol class="toc">
 <li> <a href="#bnl">Brain Networks Laboratory (BNL)</a></li>
 <li> <a href="#nil">Neural Intelligence Laboratory (NIL)</a></li>
-<li> <a href="#seminar">Lab Seminar Archive</a></li>
+<li> <a href="#seminar">Lab Seminar Archive</a> [Direct Link](/seminar/)</li>
 <li> [Students] <a href="#phd">Ph.D.</a></li>
 <li> [Students] <a href="#ms">M.S.</a></li>
 <li> [Students] <a href="#ug">Undergraduate</a></li>
