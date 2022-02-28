@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./genpost "[Lab Seminar] $1"
