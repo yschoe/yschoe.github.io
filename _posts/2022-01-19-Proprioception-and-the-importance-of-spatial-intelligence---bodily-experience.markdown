@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "[Lab Seminar][Body][Choe] Proprioception and the importance of spatial intelligence / bodily experience"
-date:   December 22, 2021
+date:  2022/01/19 
 categ: seminar
 ---
+Oringallu posted: December 22, 2021
 
 Importance of spatial intelligence and bodily experience! 
 [https://www.wired.co.uk/article/new-sensory-capabilities](https://www.wired.co.uk/article/new-sensory-capabilities)
