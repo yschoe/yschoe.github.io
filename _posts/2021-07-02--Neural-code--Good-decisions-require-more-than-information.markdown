@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "[Neural code][Choe] Good decisions require more than information"
+title:  "[Lab Seminar][Neural code][Choe] Good decisions require more than information"
 date:   July 2, 2021
 categories: none
 ---
+
+Lab seminar: September 15, 2021
 
 This perspective piece in Nature Neuroscience talks about a really interesting recent result regarding the so-called "efficient coding" principle for neural coding. 
 

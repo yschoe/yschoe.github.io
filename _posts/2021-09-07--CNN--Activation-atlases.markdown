@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[CNN] Activation atlases"
+title:  "[Lab Seminar][CNN] Activation atlases"
 date:   September 7, 2021
 categories: none
 ---
