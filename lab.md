@@ -22,10 +22,12 @@ permalink: /lab/
 <a name="nil"></a>
 ### Neural Intelligence Laboratory (NIL; Choe Lab)
 
-* Lab seminar archive: [Link](/seminar/)
 * Topographica cortical simulator: [Link](http://topographica.org)
 * Facebook group: [Choe Lab (private)](https://www.facebook.com/groups/choelab): Public mirror: [Blog](/blog/)
 
+### Lab seminar archive
+
+* Lab seminar archive: [Link](/seminar/)
 
 <a name="phd"></a>
 ### Ph.D. Students
