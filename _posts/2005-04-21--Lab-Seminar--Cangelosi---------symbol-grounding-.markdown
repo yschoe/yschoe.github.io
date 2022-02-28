@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Cangelosi (2000): symbol grounding "
 date:   2005/04/21
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Essay by Christoph von der Malsburg 'AI: Tinned human thought?'"
 date:   2016/12/01
-categories: none
+categ: seminar
 ---
 
 

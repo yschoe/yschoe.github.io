@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Intrinsically Motivated Reinforcement Learning "
 date:   2006/01/17
-categories: none
+categ: seminar
 ---
 
 

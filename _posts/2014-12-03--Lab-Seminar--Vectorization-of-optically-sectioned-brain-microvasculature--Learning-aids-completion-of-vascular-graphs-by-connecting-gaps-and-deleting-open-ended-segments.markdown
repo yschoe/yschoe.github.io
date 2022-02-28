@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Vectorization of optically sectioned brain microvasculature: Learning aids completion of vascular graphs by connecting gaps and deleting open-ended segments"
 date:   2014/12/03
-categories: none
+categ: seminar
 ---
 
 

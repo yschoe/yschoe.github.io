@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Freeman] A neurobiological interpretation of semiotics: meaning, representation, and information"
 date:   2016/05/06
-categories: none
+categ: seminar
 ---
 
 

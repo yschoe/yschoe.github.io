@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Self][Body] Interoceptive inference, emotion, and the embodied self"
 date:   2015/02/25
-categories: none
+categ: seminar
 ---
 
 

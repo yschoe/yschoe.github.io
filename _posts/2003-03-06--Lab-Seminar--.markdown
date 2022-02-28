@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] When vision is not sight: dissociations between vision and action "
 date:   2003/03/06
-categories: none
+categ: seminar
 ---
 
 

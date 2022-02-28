@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Yang][Choe] Interactive editing tools for EM image analysis"
 date:   2010/11/09
-categories: none
+categ: seminar
 ---
 
 

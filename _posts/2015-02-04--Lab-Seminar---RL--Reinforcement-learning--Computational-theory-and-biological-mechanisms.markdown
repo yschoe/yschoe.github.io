@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [RL] Reinforcement learning: Computational theory and biological mechanisms"
 date:   2015/02/04
-categories: none
+categ: seminar
 ---
 
 

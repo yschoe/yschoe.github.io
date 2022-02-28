@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar][Consciousness]  Thinking as simulation of behaviour: an associationist view of cognitive function"
 date:   2006/09/27
-categories: none
+categ: seminar
 ---
 
 

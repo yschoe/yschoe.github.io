@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Towards Universal Representation Learning for Deep Face Recognition"
 date:   2020/09/21
-categories: none
+categ: seminar
 ---
 
 

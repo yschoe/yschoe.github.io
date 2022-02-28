@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] On vergence control model"
 date:   2010/09/28
-categories: none
+categ: seminar
 ---
 
 

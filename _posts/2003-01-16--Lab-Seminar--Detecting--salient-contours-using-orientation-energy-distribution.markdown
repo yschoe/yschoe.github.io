@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Detecting  salient contours using orientation energy distribution"
 date:   2003/01/16
-categories: none
+categ:  seminar
 ---
 
 

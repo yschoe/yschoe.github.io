@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Using Eye Gaze to Enhance Generalization of Imitation Networks to Unseen Environments"
 date:   2021/03/24
-categories: none
+categ: seminar
 ---
 
 

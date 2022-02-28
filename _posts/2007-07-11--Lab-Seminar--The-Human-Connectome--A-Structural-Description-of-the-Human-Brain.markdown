@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar][Sporns] The Human Connectome: A Structural Description of the Human Brain"
 date:   2007/07/11
-categories: none
+categ: seminar
 ---
 
 

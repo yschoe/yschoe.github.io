@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Predicting student performance"
 date:   2009/03/25
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] When machines think and feel"
 date:   2016/03/25
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Singularity and Slow Convergence of the EM algorithm for Gaussian Mixtures"
 date:   2010/05/13
-categories: none
+categ: seminar
 ---
 
 

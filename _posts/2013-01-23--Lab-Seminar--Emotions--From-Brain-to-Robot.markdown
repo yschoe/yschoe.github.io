@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Emotions: From Brain to Robot"
 date:   2013/01/23
-categories: none
+categ: seminar
 ---
 
 

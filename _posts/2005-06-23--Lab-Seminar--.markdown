@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Computational Role of Disinhibition in Brain Function"
 date:   2005/06/23
-categories: none
+categ: seminar
 ---
 
 

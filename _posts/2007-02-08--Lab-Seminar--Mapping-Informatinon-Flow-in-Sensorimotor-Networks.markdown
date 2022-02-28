@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar][Sporns] Mapping Informatinon Flow in Sensorimotor Networks"
 date:   2007/02/08
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Fast Delineation and Visualization of Vessels in 3-D Angiographic Images"
 date:   2011/03/29
-categories: none
+categ: seminar
 ---
 
 

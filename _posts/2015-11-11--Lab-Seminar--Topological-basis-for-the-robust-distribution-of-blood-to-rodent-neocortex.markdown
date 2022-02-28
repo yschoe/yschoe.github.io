@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Topological basis for the robust distribution of blood to rodent neocortex"
 date:   2015/11/11
-categories: none
+categ: seminar
 ---
 
 

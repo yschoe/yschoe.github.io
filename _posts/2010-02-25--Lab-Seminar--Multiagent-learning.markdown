@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Multiagent learning"
 date:   2010/02/25
-categories: none
+categ: seminar
 ---
 
 

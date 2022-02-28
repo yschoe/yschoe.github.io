@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] A biologically plausible model of associative memory which uses disinhibition rather than long-term potentiation"
 date:   2004/09/23
-categories: none
+categ: seminar
 ---
 
 

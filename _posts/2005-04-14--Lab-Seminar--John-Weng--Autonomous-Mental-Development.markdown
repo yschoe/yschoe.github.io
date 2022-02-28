@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] John Weng: Autonomous Mental Development"
 date:   2005/04/14
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [BMI] The brain–computer interface cycle"
 date:   2015/04/01
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Mirrors and feelings: Have you seen the actors outside?"
 date:   2016/09/08
-categories: none
+categ: seminar
 ---
 
 

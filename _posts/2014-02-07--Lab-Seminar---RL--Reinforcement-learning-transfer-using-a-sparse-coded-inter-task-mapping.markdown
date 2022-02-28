@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [RL] Reinforcement learning transfer using a sparse coded inter-task mapping"
 date:   2014/02/07
-categories: none
+categ: seminar
 ---
 
 

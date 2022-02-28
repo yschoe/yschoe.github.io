@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [DiCarlo] Spatial and Temporal Structure of Receptive Fields in Primate Somatosensory Area 3b: Effects of Stimulus Scanning Direction and Orientation"
 date:   2007/09/18
-categories: none
+categ: seminar
 ---
 
 

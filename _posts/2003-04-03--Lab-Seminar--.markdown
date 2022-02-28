@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Aspects and extensions of a theory of human image understanding"
 date:   2003/04/03
-categories: none
+categ: seminar
 ---
 
 

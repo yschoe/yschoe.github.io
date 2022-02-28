@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Robot][Semantics]  Natural Semantics for a Mobile Robot"
 date:   2008/01/29
-categories: none
+categ: seminar
 ---
 
 

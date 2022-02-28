@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Consicousness] A Mechanistic Theory of Consciousness"
 date:   2014/09/10
-categories: none
+categ: seminar
 ---
 
 

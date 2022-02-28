@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Han][Choe] Fast and Accurate Retinal Vasculature Tracing and Kernel-Isomap-based Feature Selection"
 date:   2009/03/04
-categories: none
+categ: seminar
 ---
 
 

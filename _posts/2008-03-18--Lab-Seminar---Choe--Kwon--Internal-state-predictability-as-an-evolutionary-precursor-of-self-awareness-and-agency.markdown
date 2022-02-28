@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Choe][Kwon] Internal state predictability as an evolutionary precursor of self-awareness and agency"
 date:   2008/03/18
-categories: none
+categ: seminar
 ---
 
 

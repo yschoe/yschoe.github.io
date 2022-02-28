@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [RL] Reinforcement learning in finite MDPs: PAC Analysis"
 date:   2010/11/30
-categories: none
+categ: seminar
 ---
 
 

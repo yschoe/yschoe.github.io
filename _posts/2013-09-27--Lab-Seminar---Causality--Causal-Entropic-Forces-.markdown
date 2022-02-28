@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Causality] Causal Entropic Forces "
 date:   2013/09/27
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Abnormalities in the awareness of action"
 date:   2006/04/18
-categories: none
+categ: seminar
 ---
 
 

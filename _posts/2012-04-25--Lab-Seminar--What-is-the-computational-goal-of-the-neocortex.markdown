@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] What is the computational goal of the neocortex"
 date:   2012/04/25
-categories: none
+categ: seminar
 ---
 
 

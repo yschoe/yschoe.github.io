@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Koch] Hacking the Soul"
 date:   2014/09/03
-categories: none
+categ: seminar
 ---
 
 

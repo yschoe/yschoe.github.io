@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Brain-machine interfaces: past, present and future"
 date:   2014/10/08
-categories: none
+categ: seminar
 ---
 
 

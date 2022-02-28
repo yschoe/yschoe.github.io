@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Self-taught learning: transfer learning from unlabeled data"
 date:   2015/03/25
-categories: none
+categ: seminar
 ---
 
 

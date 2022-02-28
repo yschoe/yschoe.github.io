@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  A novel tracing algorithm for high throughput imaging Screening of neuron-based assays"
 date:   2010/10/19
-categories: none
+categ: seminar
 ---
 
 

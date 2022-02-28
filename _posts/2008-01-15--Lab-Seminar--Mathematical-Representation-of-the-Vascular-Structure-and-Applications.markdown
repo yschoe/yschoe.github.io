@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Mathematical Representation of the Vascular Structure and Applications"
 date:   2008/01/15
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Differential retinal origins of separate anatomical channels for pattern and motion vision in rabbit"
 date:   2013/03/06
-categories: none
+categ: seminar
 ---
 
 

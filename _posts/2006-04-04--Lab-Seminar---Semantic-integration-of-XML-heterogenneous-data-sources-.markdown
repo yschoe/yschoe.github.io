@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Semantic integration of XML heterogenneous data sources "
 date:   2006/04/04
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The emergence of a 'Language' in an evolving population of neural netowrks"
 date:   2005/12/02
-categories: none
+categ: seminar
 ---
 
 

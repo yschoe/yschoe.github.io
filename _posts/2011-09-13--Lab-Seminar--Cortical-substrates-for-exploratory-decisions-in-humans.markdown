@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Cortical substrates for exploratory decisions in humans"
 date:   2011/09/13
-categories: none
+categ: seminar
 ---
 
 

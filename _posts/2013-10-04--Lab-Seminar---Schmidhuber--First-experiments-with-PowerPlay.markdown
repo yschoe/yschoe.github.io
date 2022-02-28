@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Schmidhuber] First experiments with PowerPlay"
 date:   2013/10/04
-categories: none
+categ: seminar
 ---
 
 First Experiments with PowerPlay

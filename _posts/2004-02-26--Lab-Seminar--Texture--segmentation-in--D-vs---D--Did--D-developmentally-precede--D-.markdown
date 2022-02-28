@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Texture  segmentation in 2D vs. 3D: Did 3D developmentally precede 2D?"
 date:   2004/02/26
-categories: none
+categ: seminar
 ---
 
 

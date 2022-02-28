@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] ./genlab"
 date:   2011/11/08
-categories: none
+categ: seminar
 ---
 
 

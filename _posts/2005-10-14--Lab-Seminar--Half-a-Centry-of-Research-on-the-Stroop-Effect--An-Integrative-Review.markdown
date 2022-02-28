@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Half a Centry of Research on the Stroop Effect: An Integrative Review"
 date:   2005/10/14
-categories: none
+categ: seminar
 ---
 
 

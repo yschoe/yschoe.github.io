@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The mouse that roared: neural mechanisms of social hierarchy"
 date:   2015/04/08
-categories: none
+categ: seminar
 ---
 
 

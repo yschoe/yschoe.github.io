@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] An Energy Minimization Approach to the Data Driven Editing of Presegmented Images/Volumes"
 date:   2009/04/15
-categories: none
+categ: seminar
 ---
 
 

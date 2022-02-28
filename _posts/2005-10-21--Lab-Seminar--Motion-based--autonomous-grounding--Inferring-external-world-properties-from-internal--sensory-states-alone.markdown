@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Motion-based  autonomous grounding: Inferring external world properties from internal  sensory states alone"
 date:   2005/10/21
-categories: none
+categ: seminar
 ---
 
 

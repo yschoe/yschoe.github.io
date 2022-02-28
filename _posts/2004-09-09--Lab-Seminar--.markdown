@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Optimal smoothing in visual motion perception"
 date:   2004/09/09
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Time] Time and brain: neurorelativity: The chronoarchitecture of the brain from the neuronal rather than the observer's perspective"
 date:   2013/04/03
-categories: none
+categ: seminar
 ---
 
 

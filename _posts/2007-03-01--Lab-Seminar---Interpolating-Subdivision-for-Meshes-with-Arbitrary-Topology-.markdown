@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Interpolating Subdivision for Meshes with Arbitrary Topology "
 date:   2007/03/01
-categories: none
+categ: seminar
 ---
 
 

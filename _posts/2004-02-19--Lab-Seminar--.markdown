@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The Man Who Mistook His Wife for a Hat and Other Clinical Tales"
 date:   2004/02/19
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Ecological expected utility and the mythical neural code"
 date:   2010/09/21
-categories: none
+categ: seminar
 ---
 
 

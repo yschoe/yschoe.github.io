@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The Brain's Connective Core and Its Role in Animal Cognition"
 date:   2013/10/18
-categories: none
+categ: seminar
 ---
 
 

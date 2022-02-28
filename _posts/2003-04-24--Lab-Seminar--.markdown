@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The current relevance of merleau-ponty’s phenomenology of embodiment"
 date:   2003/04/24
-categories: none
+categ: seminar
 ---
 
 

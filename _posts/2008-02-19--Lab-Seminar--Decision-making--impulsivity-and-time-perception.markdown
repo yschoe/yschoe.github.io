@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Decision making, impulsivity and time perception"
 date:   2008/02/19
-categories: none
+categ: seminar
 ---
 
 

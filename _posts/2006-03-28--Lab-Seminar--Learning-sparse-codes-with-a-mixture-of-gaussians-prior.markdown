@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Learning sparse codes with a mixture-of-gaussians prior"
 date:   2006/03/28
-categories: none
+categ: seminar
 ---
 
 

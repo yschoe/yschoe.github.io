@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Neural heterogeneity promotes robust learning"
 date:   2021/11/01
-categories: none
+categ: seminar
 ---
 
 

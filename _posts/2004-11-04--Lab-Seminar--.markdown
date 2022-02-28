@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Organization, development and function of complex brain networks"
 date:   2004/11/04
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] An Environment Model for Nonstationary Reinforcement Learning"
 date:   2012/02/01
-categories: none
+categ: seminar
 ---
 
 

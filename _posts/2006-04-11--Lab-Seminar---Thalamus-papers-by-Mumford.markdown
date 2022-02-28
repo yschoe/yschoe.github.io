@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Thalamus papers by Mumford"
 date:   2006/04/11
-categories: none
+categ: seminar
 ---
 
 

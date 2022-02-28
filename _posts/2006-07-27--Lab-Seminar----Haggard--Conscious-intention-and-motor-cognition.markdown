@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  [Haggard] Conscious intention and motor cognition"
 date:   2006/07/27
-categories: none
+categ: seminar
 ---
 
 

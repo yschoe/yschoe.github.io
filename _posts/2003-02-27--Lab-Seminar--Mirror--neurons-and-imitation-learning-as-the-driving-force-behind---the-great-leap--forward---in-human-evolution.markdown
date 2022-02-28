@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Mirror  neurons and imitation learning as the driving force behind ``the great leap  forward'' in human evolution"
 date:   2003/02/27
-categories: none
+categ: seminar
 ---
 
 

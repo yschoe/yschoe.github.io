@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Understanding and Self-Organization"
 date:   2017/04/04
-categories: none
+categ: seminar
 ---
 
 

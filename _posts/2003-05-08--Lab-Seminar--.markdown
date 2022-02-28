@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Bayesian modeling of human concept learning"
 date:   2003/05/08
-categories: none
+categ: seminar
 ---
 
 

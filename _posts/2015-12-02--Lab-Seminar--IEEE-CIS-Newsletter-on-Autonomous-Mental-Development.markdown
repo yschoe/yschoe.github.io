@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] IEEE CIS Newsletter on Autonomous Mental Development"
 date:   2015/12/02
-categories: none
+categ: seminar
 ---
 
 

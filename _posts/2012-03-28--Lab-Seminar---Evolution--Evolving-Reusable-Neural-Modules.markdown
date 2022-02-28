@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Evolution] Evolving Reusable Neural Modules"
 date:   2012/03/28
-categories: none
+categ: seminar
 ---
 
 

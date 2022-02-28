@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  The neuron classification problem"
 date:   2014/03/21
-categories: none
+categ: seminar
 ---
 
 

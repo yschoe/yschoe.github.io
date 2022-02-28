@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Spatio-temporal predictive neural coding found in Orientation flash-lag effect"
 date:   2005/10/07
-categories: none
+categ: seminar
 ---
 
 

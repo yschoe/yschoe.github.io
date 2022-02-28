@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [RNN][LeCun] Tracking the World State with Recurrent Entity Networks"
 date:   2017/03/07
-categories: none
+categ: seminar
 ---
 
 

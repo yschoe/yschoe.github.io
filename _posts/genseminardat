@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # automatically generate seminar.yml 
+#
+# -- obsolete: 2/28/2022 -- moved to posts. ... syntax
 
 echo "# Automatically generated from genseminar script : do not modify directly"
 echo "# - date format should be YYYY/MM/DD in the markdown !!"

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The IEEE CIS CDS newsletter, dialog section on representational redescription."
 date:   2016/02/12
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Pavlov's AI – What did it mean?"
 date:   2011/01/25
-categories: none
+categ: seminar
 ---
 
 

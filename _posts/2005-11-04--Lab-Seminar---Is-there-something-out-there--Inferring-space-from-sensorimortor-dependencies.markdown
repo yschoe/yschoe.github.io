@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Is there something out there? Inferring space from sensorimortor dependencies"
 date:   2005/11/04
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Bongard] Resilient Machines Through Continuous Self-Modeling"
 date:   2006/11/29
-categories: none
+categ: seminar
 ---
 
 

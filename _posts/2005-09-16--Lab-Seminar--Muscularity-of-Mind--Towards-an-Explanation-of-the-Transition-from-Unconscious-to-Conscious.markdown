@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Muscularity of Mind: Towards an Explanation of the Transition from Unconscious to Conscious"
 date:   2005/09/16
-categories: none
+categ: seminar
 ---
 
 

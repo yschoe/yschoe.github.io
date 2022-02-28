@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Lashley] The Problem of Serial Order in Behaviour"
 date:   2006/06/15
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Mann][Choe] Prenatal vs. postnatal developoment"
 date:   2010/02/04
-categories: none
+categ: seminar
 ---
 
 

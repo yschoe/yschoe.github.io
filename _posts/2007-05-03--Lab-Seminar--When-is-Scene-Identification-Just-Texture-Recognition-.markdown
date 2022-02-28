@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] When is Scene Identification Just Texture Recognition?"
 date:   2007/05/03
-categories: none
+categ: seminar
 ---
 
 

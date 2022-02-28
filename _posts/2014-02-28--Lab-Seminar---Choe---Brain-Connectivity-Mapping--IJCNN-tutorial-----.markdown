@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Choe]  Brain Connectivity Mapping. IJCNN tutorial 2013"
 date:   2014/02/28
-categories: none
+categ: seminar
 ---
 
 

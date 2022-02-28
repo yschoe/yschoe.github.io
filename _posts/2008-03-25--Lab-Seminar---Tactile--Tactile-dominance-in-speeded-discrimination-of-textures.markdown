@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Tactile] Tactile dominance in speeded discrimination of textures"
 date:   2008/03/25
-categories: none
+categ: seminar
 ---
 
 

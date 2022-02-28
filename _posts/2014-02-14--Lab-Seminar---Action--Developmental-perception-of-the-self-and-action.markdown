@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Action] Developmental perception of the self and action"
 date:   2014/02/14
-categories: none
+categ: seminar
 ---
 
 

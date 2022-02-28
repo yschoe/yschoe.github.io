@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] If deep learning is the answer, what is the question?"
 date:   2021/02/26
-categories: none
+categ: seminar
 ---
 
 

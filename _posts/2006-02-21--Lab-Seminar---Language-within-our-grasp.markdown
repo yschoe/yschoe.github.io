@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Language within our grasp"
 date:   2006/02/21
-categories: none
+categ: seminar
 ---
 
 

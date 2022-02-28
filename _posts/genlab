@@ -1,3 +1,6 @@
 #!/bin/bash
 
 ./genpost "[Lab Seminar] $1"
+
+
+echo "**** DO NOT FORGET TO CHANGE : "categ: seminar"

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Claxton] Wise up: the challenge of life long learning"
 date:   2006/09/06
-categories: none
+categ: seminar
 ---
 
 

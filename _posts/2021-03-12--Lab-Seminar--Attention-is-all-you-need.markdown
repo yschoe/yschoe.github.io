@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Attention is all you need"
 date:   2021/03/12
-categories: none
+categ: seminar
 ---
 
 

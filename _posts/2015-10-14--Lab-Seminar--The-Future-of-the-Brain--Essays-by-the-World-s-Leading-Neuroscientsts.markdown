@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The Future of the Brain: Essays by the World's Leading Neuroscientsts"
 date:   2015/10/14
-categories: none
+categ: seminar
 ---
 
 

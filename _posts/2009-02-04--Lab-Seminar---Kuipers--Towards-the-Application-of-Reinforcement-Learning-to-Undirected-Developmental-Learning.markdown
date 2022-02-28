@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Kuipers] Towards the Application of Reinforcement Learning to Undirected Developmental Learning"
 date:   2009/02/04
-categories: none
+categ: seminar
 ---
 
 

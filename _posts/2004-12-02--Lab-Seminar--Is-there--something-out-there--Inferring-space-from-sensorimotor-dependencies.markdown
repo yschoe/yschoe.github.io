@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Is there  something out there? Inferring space from sensorimotor dependencies"
 date:   2004/12/02
-categories: none
+categ: seminar
 ---
 
 

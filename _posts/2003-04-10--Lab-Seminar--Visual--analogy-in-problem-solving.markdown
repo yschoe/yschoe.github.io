@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Visual  analogy in problem solving"
 date:   2003/04/10
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Consciousness]  How to make a robot that is conscious and feels"
 date:   2013/09/13
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Parulkar][Choe] Autonomous Grounding of the Optical Flow Detectors in a Simulated Visuomotor System of the Fly"
 date:   2015/04/22
-categories: none
+categ: seminar
 ---
 
 

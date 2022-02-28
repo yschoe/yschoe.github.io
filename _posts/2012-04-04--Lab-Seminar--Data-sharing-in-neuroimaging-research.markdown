@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Data sharing in neuroimaging research"
 date:   2012/04/04
-categories: none
+categ: seminar
 ---
 
 

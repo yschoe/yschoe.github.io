@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Consciousness] The Inevitable Contrast: Conscious versus Unconscious Processes in Action Control"
 date:   2013/09/20
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The knife-edge scanning  microscope"
 date:   2003/02/13
-categories: none
+categ: seminar
 ---
 
 

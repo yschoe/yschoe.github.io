@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The Ingredients of Real-World Robotic Reinforcement Learning"
 date:   2021/11/08
-categories: none
+categ: seminar
 ---
 
 

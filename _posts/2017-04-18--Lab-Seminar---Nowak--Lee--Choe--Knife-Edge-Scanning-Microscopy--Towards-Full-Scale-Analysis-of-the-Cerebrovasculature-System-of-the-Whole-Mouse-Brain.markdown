@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Nowak][Lee][Choe] Knife-Edge Scanning Microscopy: Towards Full-Scale Analysis of the Cerebrovasculature System of the Whole Mouse Brain"
 date:   2017/04/18
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Stochastic Models, Estimation, and Control"
 date:   2008/02/05
-categories: none
+categ: seminar
 ---
 
 

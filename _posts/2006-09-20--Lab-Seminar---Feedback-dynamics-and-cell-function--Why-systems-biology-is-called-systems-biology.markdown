@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Feedback dynamics and cell function: Why systems biology is called systems biology"
 date:   2006/09/20
-categories: none
+categ: seminar
 ---
 
 

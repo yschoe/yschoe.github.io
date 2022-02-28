@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Park][Choe] Tactile or Visual?: Stimulus Characteristics Determine Receptive Field Type in a Self-Organizing Map Model of Cortical Development"
 date:   2009/02/18
-categories: none
+categ: seminar
 ---
 
 

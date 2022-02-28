@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Projecting Sensations to External Objects: Evidence from Skin Conductance Response"
 date:   2007/04/19
-categories: none
+categ: seminar
 ---
 
 

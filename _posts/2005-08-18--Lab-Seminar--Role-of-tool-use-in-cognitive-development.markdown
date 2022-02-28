@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar][Tool] Role of tool use in cognitive development"
 date:   2005/08/18
-categories: none
+categ: seminar
 ---
 
 

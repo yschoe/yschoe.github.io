@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Dan Pink on Motivation - TED talk"
 date:   2013/01/30
-categories: none
+categ: seminar
 ---
 
 

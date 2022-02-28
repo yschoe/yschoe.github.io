@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [RL]  Human-level control through deep reinforcement learning"
 date:   2015/03/04
-categories: none
+categ: seminar
 ---
 
 

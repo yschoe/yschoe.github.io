@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Representations in the brain."
 date:   2003/03/20
-categories: none
+categ: seminar
 ---
 
 

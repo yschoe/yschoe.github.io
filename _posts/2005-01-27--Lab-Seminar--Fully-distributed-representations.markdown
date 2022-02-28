@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Fully distributed representations"
 date:   2005/01/27
-categories: none
+categ: seminar
 ---
 
 

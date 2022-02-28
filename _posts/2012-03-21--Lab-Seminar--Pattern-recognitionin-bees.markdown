@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Pattern recognitionin bees"
 date:   2012/03/21
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Nowak][Choe] Knife-Edge Scanning Microscopy for in silico Study of Cerebral Blood Flow: from Biological Imaging Data to Flow Simulations"
 date:   2016/04/01
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [BBS][Evolution] Archaeology and Cognitive Evolution"
 date:   2007/09/25
-categories: none
+categ: seminar
 ---
 
 

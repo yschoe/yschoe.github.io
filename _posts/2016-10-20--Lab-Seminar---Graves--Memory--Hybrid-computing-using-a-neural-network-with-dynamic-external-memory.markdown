@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Graves][Memory] Hybrid computing using a neural network with dynamic external memory"
 date:   2016/10/20
-categories: none
+categ: seminar
 ---
 
 

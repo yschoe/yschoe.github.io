@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Conscious thought as simulation of behaviour and perception"
 date:   2004/04/22
-categories: none
+categ: seminar
 ---
 
 

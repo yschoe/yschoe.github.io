@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar][Polani] Empowerment: A Universal Agent-Centric Measure of Control"
 date:   2007/09/04
-categories: none
+categ: seminar
 ---
 
 

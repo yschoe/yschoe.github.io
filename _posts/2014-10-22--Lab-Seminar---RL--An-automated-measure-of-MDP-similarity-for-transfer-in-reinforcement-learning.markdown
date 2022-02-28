@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [RL] An automated measure of MDP similarity for transfer in reinforcement learning"
 date:   2014/10/22
-categories: none
+categ: seminar
 ---
 
 

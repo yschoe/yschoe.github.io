@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Clark (1997), The Dynamical Challenge"
 date:   2005/09/30
-categories: none
+categ: seminar
 ---
 
 

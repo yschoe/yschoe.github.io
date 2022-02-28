@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Leyton: Symmetry/Asymmetry in Memory"
 date:   2005/02/24
-categories: none
+categ: seminar
 ---
 
 

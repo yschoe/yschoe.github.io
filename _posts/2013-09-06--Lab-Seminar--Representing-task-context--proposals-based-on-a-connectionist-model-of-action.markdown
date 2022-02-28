@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Representing task context: proposals based on a connectionist model of action"
 date:   2013/09/06
-categories: none
+categ: seminar
 ---
 
 

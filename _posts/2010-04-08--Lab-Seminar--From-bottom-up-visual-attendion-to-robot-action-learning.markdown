@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] From bottom-up visual attendion to robot action learning"
 date:   2010/04/08
-categories: none
+categ: seminar
 ---
 
 

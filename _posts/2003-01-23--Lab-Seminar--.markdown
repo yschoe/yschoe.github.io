@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Introduction: A bayesian formulation of visual perception "
 date:   2003/01/23
-categories: none
+categ: seminar
 ---
 
 

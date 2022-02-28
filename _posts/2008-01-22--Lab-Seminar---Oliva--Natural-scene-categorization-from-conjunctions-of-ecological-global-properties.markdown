@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Oliva] Natural scene categorization from conjunctions of ecological global properties"
 date:   2008/01/22
-categories: none
+categ: seminar
 ---
 
 

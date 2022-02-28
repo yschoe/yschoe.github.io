@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Haptics] Geometrical haptic illusions: the role of exploration in the Muller-Lyer, vertical-horizontal, and Delboeuf illusions"
 date:   2008/02/26
-categories: none
+categ: seminar
 ---
 
 

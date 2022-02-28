@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Nguyen][Choe] Explanation of the perceptual oblique effect based on the fidelity of oculomotor control during saccades"
 date:   2016/11/10
-categories: none
+categ: seminar
 ---
 
 

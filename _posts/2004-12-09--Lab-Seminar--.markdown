@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Learning from uninterpreted experience in the SSH"
 date:   2004/12/09
-categories: none
+categ: seminar
 ---
 
 

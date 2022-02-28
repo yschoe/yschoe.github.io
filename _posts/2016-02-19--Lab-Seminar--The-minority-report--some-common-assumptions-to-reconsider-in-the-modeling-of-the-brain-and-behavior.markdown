@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The minority report: some common assumptions to reconsider in the modeling of the brain and behavior"
 date:   2016/02/19
-categories: none
+categ: seminar
 ---
 
 

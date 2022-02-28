@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Shared neural control of attentional shifts and eye movements"
 date:   2005/07/14
-categories: none
+categ: seminar
 ---
 
 

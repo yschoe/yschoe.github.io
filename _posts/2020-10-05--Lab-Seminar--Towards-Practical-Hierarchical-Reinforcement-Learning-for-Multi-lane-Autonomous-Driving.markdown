@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Towards Practical Hierarchical Reinforcement Learning for Multi-lane Autonomous Driving"
 date:   2020/10/05
-categories: none
+categ: seminar
 ---
 
 

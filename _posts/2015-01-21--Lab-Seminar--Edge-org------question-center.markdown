@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Edge.org 2015 question center"
 date:   2015/01/21
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Natural Image Statistics and Efficient Coding"
 date:   2008/09/24
-categories: none
+categ: seminar
 ---
 
 

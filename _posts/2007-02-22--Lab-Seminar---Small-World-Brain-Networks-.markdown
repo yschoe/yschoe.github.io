@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Small-World Brain Networks "
 date:   2007/02/22
-categories: none
+categ: seminar
 ---
 
 

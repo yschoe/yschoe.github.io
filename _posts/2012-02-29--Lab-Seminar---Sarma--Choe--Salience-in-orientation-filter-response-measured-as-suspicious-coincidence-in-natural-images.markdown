@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Sarma][Choe] Salience in orientation-filter response measured as suspicious coincidence in natural images"
 date:   2012/02/29
-categories: none
+categ: seminar
 ---
 
 

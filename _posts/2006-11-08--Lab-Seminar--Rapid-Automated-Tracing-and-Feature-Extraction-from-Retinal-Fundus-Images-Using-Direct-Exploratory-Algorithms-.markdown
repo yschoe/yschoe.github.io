@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Rapid Automated Tracing and Feature Extraction from Retinal Fundus Images Using Direct Exploratory Algorithms,"
 date:   2006/11/08
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  Modeling Sensorimotor Learning with Linear Dynamical Systems"
 date:   2006/04/25
-categories: none
+categ: seminar
 ---
 
 

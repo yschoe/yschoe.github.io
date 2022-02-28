@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Modular Neuroevolution for Multilegged Locomotion"
 date:   2008/09/10
-categories: none
+categ: seminar
 ---
 
 

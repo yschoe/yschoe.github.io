@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] High-frequency Component Helps Explain the Generalization of CNN"
 date:   2020/11/23
-categories: none
+categ: seminar
 ---
 
 

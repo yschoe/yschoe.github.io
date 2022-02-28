@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Evolution] Evolution of the brain and intelligence"
 date:   2011/09/20
-categories: none
+categ: seminar
 ---
 
 

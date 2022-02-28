@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Flash lag effect ; Dynamic synapses"
 date:   2005/02/17
-categories: none
+categ: seminar
 ---
 
 

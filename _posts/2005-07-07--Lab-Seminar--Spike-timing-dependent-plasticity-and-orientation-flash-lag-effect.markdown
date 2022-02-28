@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Spike-timing dependent plasticity and orientation flash-lag effect"
 date:   2005/07/07
-categories: none
+categ: seminar
 ---
 
 

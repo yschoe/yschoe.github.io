@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Fast and accurate retinal vasculature tracing and kernel-isomap-based feature selection"
 date:   2012/02/15
-categories: none
+categ: seminar
 ---
 
 

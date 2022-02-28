@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Seth][Edelman] Distinguishing Causal Interactions in Neural Populations"
 date:   2007/07/18
-categories: none
+categ: seminar
 ---
 
 

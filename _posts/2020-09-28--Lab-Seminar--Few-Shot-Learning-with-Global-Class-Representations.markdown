@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Few-Shot Learning with Global Class Representations"
 date:   2020/09/28
-categories: none
+categ: seminar
 ---
 
 

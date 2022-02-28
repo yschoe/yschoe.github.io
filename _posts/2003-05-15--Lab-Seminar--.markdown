@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Neural correlates of perceptual learning: a functional mri study of visual texture discrimination."
 date:   2003/05/15
-categories: none
+categ: seminar
 ---
 
 

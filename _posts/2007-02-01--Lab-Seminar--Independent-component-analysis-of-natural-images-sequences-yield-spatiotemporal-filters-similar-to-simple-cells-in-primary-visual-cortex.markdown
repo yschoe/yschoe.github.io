@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Independent component analysis of natural images sequences yield spatiotemporal filters similar to simple cells in primary visual cortex"
 date:   2007/02/01
-categories: none
+categ: seminar
 ---
 
 

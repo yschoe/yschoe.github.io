@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  A topographical method for the development of neural networks for artificial brain evolution"
 date:   2006/01/24
-categories: none
+categ: seminar
 ---
 
 

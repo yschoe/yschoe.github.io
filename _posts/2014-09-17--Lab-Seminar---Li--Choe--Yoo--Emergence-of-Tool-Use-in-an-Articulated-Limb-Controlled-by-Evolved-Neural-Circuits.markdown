@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Li][Choe][Yoo][Tool] Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
 date:   2014/09/17
-categories: none
+categ: seminar
 ---
 
 

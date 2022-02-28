@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Mikula] Internet-Enabled High-Resolution Brain Mapping and Virtual Microscopy"
 date:   2007/10/02
-categories: none
+categ: seminar
 ---
 
 

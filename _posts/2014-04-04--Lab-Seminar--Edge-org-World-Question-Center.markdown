@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Edge.org World Question Center"
 date:   2014/04/04
-categories: none
+categ: seminar
 ---
 
 

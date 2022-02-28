@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] We’ll never have true AI without first understanding the brain"
 date:   2021/04/16
-categories: none
+categ: seminar
 ---
 
 

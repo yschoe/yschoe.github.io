@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Fast cell detection in high-throughput imagery using gpu-accelerated machine learning"
 date:   2012/02/08
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar]  The dynamics of active categorical perception in an evolved model agent"
 date:   2006/03/21
-categories: none
+categ: seminar
 ---
 
 

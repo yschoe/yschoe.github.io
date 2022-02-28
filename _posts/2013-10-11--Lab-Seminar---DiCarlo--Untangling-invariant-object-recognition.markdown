@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [DiCarlo] Untangling invariant object recognition"
 date:   2013/10/11
-categories: none
+categ: seminar
 ---
 
 

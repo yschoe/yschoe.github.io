@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Waxholm space"
 date:   2010/10/05
-categories: none
+categ: seminar
 ---
 
 

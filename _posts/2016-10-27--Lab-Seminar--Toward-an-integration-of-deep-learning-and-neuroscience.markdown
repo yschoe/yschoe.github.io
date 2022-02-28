@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Toward an integration of deep learning and neuroscience"
 date:   2016/10/27
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Edge.org annaul questions"
 date:   2016/01/29
-categories: none
+categ: seminar
 ---
 
 

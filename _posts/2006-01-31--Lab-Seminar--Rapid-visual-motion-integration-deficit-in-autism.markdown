@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Rapid visual-motion integration deficit in autism"
 date:   2006/01/31
-categories: none
+categ: seminar
 ---
 
 

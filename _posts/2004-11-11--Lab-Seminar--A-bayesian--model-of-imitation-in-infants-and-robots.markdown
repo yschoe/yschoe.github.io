@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] A bayesian  model of imitation in infants and robots"
 date:   2004/11/11
-categories: none
+categ: seminar
 ---
 
 

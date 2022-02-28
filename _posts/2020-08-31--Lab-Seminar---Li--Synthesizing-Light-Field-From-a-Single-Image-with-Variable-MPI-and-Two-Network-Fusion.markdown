@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Li] Synthesizing Light Field From a Single Image with Variable MPI and Two Network Fusion"
 date:   2020/08/31
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Choi][Choe] Manifold integration with markov random walk"
 date:   2010/01/21
-categories: none
+categ: seminar
 ---
 
 

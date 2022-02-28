@@ -123,7 +123,7 @@ print FP <<EOF;
 layout: post
 title:  "$title"
 date:   $fulldate
-categories: none
+categ:  none
 ---
 
 $content 

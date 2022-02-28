@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Clune] Deep neural networks are easily fooled: High confidence predictions for unrecognizable images"
 date:   2016/04/22
-categories: none
+categ: seminar
 ---
 
 

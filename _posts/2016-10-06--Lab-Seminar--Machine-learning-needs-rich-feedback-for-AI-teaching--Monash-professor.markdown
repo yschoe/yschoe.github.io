@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Machine learning needs rich feedback for AI teaching: Monash professor"
 date:   2016/10/06
-categories: none
+categ: seminar
 ---
 
 Machine learning needs rich feedback for AI teaching: Monash professor

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Evolution] Evolving Deep Neural Networks"
 date:   2017/03/21
-categories: none
+categ: seminar
 ---
 
 

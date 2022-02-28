@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Stanley] Improving evolvability through novelty search and self-adaptation"
 date:   2015/10/07
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Stereo Pseudo 3D Rendering for Web-Based Display of Scientific Volumetric Data"
 date:   2008/09/17
-categories: none
+categ: seminar
 ---
 
 

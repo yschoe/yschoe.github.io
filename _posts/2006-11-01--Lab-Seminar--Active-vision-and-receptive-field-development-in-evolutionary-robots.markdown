@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Active vision and receptive field development in evolutionary robots"
 date:   2006/11/01
-categories: none
+categ: seminar
 ---
 
 

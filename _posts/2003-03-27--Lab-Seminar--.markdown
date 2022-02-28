@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] An introduction to the visual system"
 date:   2003/03/27
-categories: none
+categ: seminar
 ---
 
 

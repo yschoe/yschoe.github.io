@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Online virtual training in soft actor-critic for autonomous driving"
 date:   2021/04/30
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Neural circuit policies enabling auditable autonomy"
 date:   2020/11/09
-categories: none
+categ: seminar
 ---
 
 

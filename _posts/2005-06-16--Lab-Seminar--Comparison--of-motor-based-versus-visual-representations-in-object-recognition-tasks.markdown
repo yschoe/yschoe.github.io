@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Comparison  of motor-based versus visual representations in object recognition tasks"
 date:   2005/06/16
-categories: none
+categ: seminar
 ---
 
 

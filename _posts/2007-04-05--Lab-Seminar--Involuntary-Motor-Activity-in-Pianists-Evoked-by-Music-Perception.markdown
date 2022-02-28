@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Involuntary Motor Activity in Pianists Evoked by Music Perception"
 date:   2007/04/05
-categories: none
+categ: seminar
 ---
 
 

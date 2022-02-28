@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Cortical control of arm movements: a dynamical systems perspective"
 date:   2014/09/24
-categories: none
+categ: seminar
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] The Metaphorical Brain 2: Neural Networks and Beyond"
 date:   2004/03/04
-categories: none
+categ: seminar
 ---
 
 

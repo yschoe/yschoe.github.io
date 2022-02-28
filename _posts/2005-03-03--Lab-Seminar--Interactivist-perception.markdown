@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Interactivist perception"
 date:   2005/03/03
-categories: none
+categ: seminar
 ---
 
 

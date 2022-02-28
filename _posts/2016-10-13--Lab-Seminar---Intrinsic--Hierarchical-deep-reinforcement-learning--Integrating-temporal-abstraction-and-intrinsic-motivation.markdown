@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] [Intrinsic] Hierarchical deep reinforcement learning: Integrating temporal abstraction and intrinsic motivation"
 date:   2016/10/13
-categories: none
+categ: seminar
 ---
 
 

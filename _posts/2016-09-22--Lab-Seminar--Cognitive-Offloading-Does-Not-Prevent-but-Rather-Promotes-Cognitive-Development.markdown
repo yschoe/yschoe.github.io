@@ -2,7 +2,7 @@
 layout: post
 title:  "[Lab Seminar] Cognitive Offloading Does Not Prevent but Rather Promotes Cognitive Development"
 date:   2016/09/22
-categories: none
+categ: seminar
 ---
 
 
