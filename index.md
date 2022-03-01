@@ -9,7 +9,7 @@ permalink: /
 
 I am a professor in the Department of Computer Science and 
 Engineering at Texas A&amp;M University. My research is broadly in computational neuroscience, brain imaging and analysis, neuroevolution, and neural networks (deep learning). 
-I am especially interested in the temporal aspects of brain function (delay, internal brain dynamics, prediction, consciousness), sensorimotor learning and grounding (visual, tactile, proprioceptive, semantics, meaning), agent-environment interaction (including tool construction and tool use), and evolution of brain structure and function. [(old web site archive: 2001~2022)](http://people.engr.tamu.edu/choe/index-old.html)
+I am especially interested in the temporal aspects of brain function (delay, internal brain dynamics, prediction, consciousness), sensorimotor learning and grounding (visual, tactile, proprioceptive, semantics, meaning), agent-environment interaction (including tool construction and tool use), and evolution of brain structure and function. [(old web site archive: 2001~2022)](http://people.engr.tamu.edu/choe/index-old.html) [(old portraits)](/photos/)
 
 ### News: 
 * Moving articles from my [facebook group](https://www.facebook.com/groups/choelab) to the [Blog](/blog/) is now complete. Enjoy!
