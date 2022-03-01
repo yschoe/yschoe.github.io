@@ -6,7 +6,7 @@ permalink: /pub_topic/
 
 <a href="/pub_year/">By Year</a> &ndash; <a href="/pub_medium/">By Medium</a> 
 
-<ol class="toc">
+<ol class="listing">
 <li> <a href="#Action">Action Learning and Neural Semantics of Perception (selected)</a></li>
 <li> <a href="#Predictive">Predictive Dynamics and Consciousness (selected)</a></li>
 <li> <a href="#Reactive">Reactive agent's use of external markers for cognition (selected)</a></li>
