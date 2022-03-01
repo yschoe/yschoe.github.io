@@ -4,7 +4,7 @@ title: Portraits
 permalink: /photos/
 ---
 
-These are main portraits I used for my web pages since 1996 (Wayback machine links: 
+These are the main portraits I used for my web pages since 1996 (Wayback machine links: 
    [1996](https://web.archive.org/web/19961222234745/http://www.cs.utexas.edu/users/yschoe/)
    [1998](https://web.archive.org/web/19980123032039/http://www.cs.utexas.edu/users/yschoe/)
    [2001](https://web.archive.org/web/20020622062347/http://faculty.cs.tamu.edu/choe/)
