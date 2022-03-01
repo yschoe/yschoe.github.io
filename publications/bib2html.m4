@@ -44,7 +44,7 @@ m4_define([[m4_sourcefile_basename]],  [[m4_esyscmd(echo -n `basename "m4___file
 
 
 m4_dnl ----- Private variable: Location of the m4_bib2html command
-m4_define([[m4_bib2html_command]],  [[env BIBINPUTS="/home/yschoe/nn/bibs//:" BSTINPUTS="/home/yschoe/nn/tex//:" PATH="${PATH}:/lusr/tex/bin/" perl -W /home/yschoe/nn/tex/bib2html/bib2html]])
+m4_define([[m4_bib2html_command]],  [[env BIBINPUTS="/home/yschoe/nn/bibs//:" BSTINPUTS="/home/yschoe/nn/tex//:" PATH="${PATH}:/lusr/tex/bin/" perl -W ../bib2html]])
 m4_dnl -----
 m4_dnl ----- Private variable: Name of the .aux file to use
 m4_define([[m4_bib2html_aux_file]],  m4_sourcefile_basename.aux)
