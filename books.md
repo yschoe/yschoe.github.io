@@ -10,7 +10,24 @@ This is a collection of books I once borrowed from the university library, at so
 {% for item in site.data.books %}
   <li class="listing-item">
     
-    <a href="https://catalog.library.tamu.edu/Search/Results?lookfor={{ item.title }}&type=Title&limit=1" title="{{ item.title }}">{{ item.title | replace: "+", " "}}</a>
+  {% if item.author %}
+     {{ item.author }}<br/>
+  {% endif %}
+
+    {% if item.url %}
+        &nbsp; &nbsp;  &nbsp; <a href="{{ item.url }}" title="{{ item.title }}">
+    {% else %}
+        &nbsp; &nbsp;  &nbsp; <a href="https://catalog.library.tamu.edu/Search/Results?lookfor={{ item.title }}&type=Title&limit=1" title="{{ item.title }}">
+    {% endif %}
+
+
+  {{ item.title | replace: "+", " "}}</a>
+
+  {% if item.year%}
+     ({{ item.year }})
+  {% endif %}
+
   </li>
+
 {% endfor %}
 </ol>

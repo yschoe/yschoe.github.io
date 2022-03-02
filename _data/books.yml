@@ -1,127 +1,529 @@
-- title: Active+vision+the+psychology+of+looking+and+seeing
-- title: Analogy-making+as+perception+a+computer+model
-- title: Analogy+of+automated+reasoning
-- title: Anatomy+of+the+nervous+system+of+Octopus+vulgaris
-- title: Art+of+problem+posing
-- title: Being+no+one+the+self-model+theory+of+subjectivity
-- title: Bergson+thinking+backwards
-- title: Berkeleys+thought
-- title: Beyond+the+cognitive+map+from+place+cells+to+episodic+memory
-- title: Biologically+motivated+computer+vision+First+IEEE+International+Workshop+BMCV+2000+Seoul+Korea+May+2000+proceedings
-- title: Biorobotics+methods+and+applications
-- title: Body+and+brain+a+trophic+theory+of+neural+connections
-- title: Brain+facts+a+primer+on+the+brain+and+nervous+system	
-- title: Brain+processes+theories+and+models+an+international+conference+in+honor+of+WS+McCulloch+25+years+after+his+death
-- title: Brains+and+lives+of+cephalopods
-- title: Cajal+on+the+cerebral+cortex+an+annotated+translation+of+the+complete+writings
-- title: Calculus+of+several+variables
-- title: Circuits+of+the+mind
-- title: Cognitive+architectures+in+artificial+intelligence+the+evolution+of+research+programs
-- title: Complex+worlds+from+simpler+nervous+systems
-- title: Computational+neuroanatomy+principles+and+methods
-- title: Computational+neuroscience+realistic+modeling+for+experimentalists
-- title: Computational+vision+information+processing+in+perception+and+visual+behavior
-- title: Computation+for+metaphors+analogy+and+agents
-- title: Computer+vision
-- title: Consciousness+in+four+dimensions+biological+relativity+and+the+origins+of+thought
-- title: Constructive+evolution+origins+and+development+of+Piagets+thought
-- title: Cortex+and+mind+unifying+cognition
-- title: Corticothalamic+projections+and+sensorimotor+activities
-- title: Course+in+differential+geometry+and+Lie+groups
-- title: Creative+attitude+learning+to+ask+and+answer+the+right+questions
-- title: Cybernetics+of+living+matter+nature+man+information
-- title: Delay+learning+in+artificial+neural+networks
-- title: Designing+and+reporting+experiments
-- title: Developing+brain
-- title: Development+of+the+nervous+system
-- title: Dynamic+memory+revisited
-- title: Dynamics+in+action+intentional+behavior+as+a+complex+system
-- title: Essays+on+life+itself
-- title: Essential+histology
-- title: Exploratory+vision+the+active+eye
-- title: Exploring+the+thalamus
-- title: Face+and+mind
-- title: Filling-in+from+perceptual+completion+to+cortical+reorganization
-- title: Great+reckoning+protect+yourself+in+the+coming+depression
-- title: Handbook+of+affective+sciences
-- title: Handbook+of+basic+microtechnique
-- title: Hedonistic+neuron+a+theory+of+memory+learning+and+intelligence
-- title: Higher-order+processing+in+the+visual+system
-- title: High-throughput+image+reconstruction+and+analysis
-- title: Histological+and+illustrative+methods+for+entomologists
-- title: Human+brain+function
-- title: Human+language+and+our+reptilian+brain+the+subcortical+bases+of+speech+syntax+and+thought
-- title: Human+perception+of+objects+early+visual+processing+of+spatial+form+defined+by+luminance+color+texture+motion+and+binocular+disparity
-- title: Image+object+and+illusion+;+readings+from+Scientific+American
-- title: Imagery
-- title: Imagery+language+and+cognition+toward+a+theory+of+symbolic+activity+in+human+problem-solving
-- title: Imitation+in+animals+and+artifacts
-- title: Information+natural+law+and+the+self-assembly+of+rhythmic+movement
-- title: Intact+and+sliced+brain
-- title: Introduction+to+abstract+algebra
-- title: Introduction+to+biological+scanning+electron+microscopy
-- title: Introduction+to+the+visual+system
-- title: Life+itself+a+comprehensive+inquiry+into+the+nature+origin+and+fabrication+of+life
-- title: Linear+systems+theory
-- title: Looking+at+looking+an+introduction+to+the+intelligence+of+vision
-- title: Manual+of+basic+techniques+in+insect+histology
-- title: Mathematics+and+its+history
-- title: Meaning+and+the+growth+of+understanding+Wittgensteins+significance+for+developmental+psychology
-- title: Mechanics+of+the+mind
-- title: Metamagical+themas+questing+for+the+essence+of+mind+and+pattern
-- title: Microcognition+philosophy+cognitive+science+and+parallel+distributed+processing
-- title: Mind+and+mechanism
-- title: Mind+time+the+temporal+factor+in+consciousness
-- title: Mindwaves+thoughts+on+intelligence+identity+and+consciousness
-- title: Modeling+neural+development
-- title: Moving+and+knowing+in+sport+dance+physical+education+a+collection+of+speeches
-- title: Multiscale+modelling+and+simulation
-- title: Multiscale+phenomena+and+their+simulation+proceedings+of+the+international+conference+Bielefeld+Germany+30+September-4+October+1996
-- title: Naturalizing+the+mind
-- title: Nature+of+consciousness+philosophical+debates
-- title: Nerve+cells+and+insect+behavior
-- title: Neural+assemblies+an+alternative+approach+to+artificial+intelligence
-- title: Neural+codes+and+distributed+representations+foundations+of+neural+computation
-- title: Neuroanatomical+techniques+insect+nervous+system
-- title: Neuro-vision+systems+principles+and+applications
-- title: New+Bergson
-- title: New+ideas+on+the+structure+of+the+nervous+system+in+man+and+vertebrates
-- title: On+being+in+the+world+Wittgenstein+and+Heidegger+on+seeing+aspects
-- title: Perception+and+cognition+at+centurys+end
-- title: Perception+an+essay+on+classical+Indian+theories+of+knowledge
-- title: Perception+essays+in+honor+of+James+J+Gibson
-- title: Perception+knowledge+and+belief+selected+essays
-- title: Primitive+nervous+systems
-- title: Probabilistic+models+of+the+brain+perception+and+neural+function
-- title: Progress+in+neuroscience
-- title: Race+for+consciousness
-- title: Rhythms+of+the+brain
-- title: Scaling+in+biology
-- title: Scripts+plans+goals+and+understanding+an+inquiry+into+human+knowledge+structures
-- title: Seeing+and+knowing
-- title: Seeing+red+a+study+in+consciousness
-- title: Senses+of+touch+haptics+affects+and+technologies
-- title: Sleep+circuits+and+functions
-- title: Slim+book+about+narrow+content
-- title: Social+insects+ecology+and+behavioural+biology
-- title: Societies+of+brains+a+study+in+the+neuroscience+of+love+and+hate
-- title: Somatosensory+system+deciphering+the+brains+own+body+image
-- title: Somesthetic+system+of+the+rat
-- title: Speed+of+thought+information+processing+in+the+cerebral+cortex
-- title: Spider+communication+mechanisms+and+ecological+significance
-- title: Spiders+world+senses+and+behavior
-- title: Symmetry+causality+mind
-- title: Thalamic+oscillations+and+signaling
-- title: Thalamocortical+assemblies+how+ion+channels+single+neurons+and+large-scale+networks+organize+sleep+oscillations
-- title: Theoretical+approaches+in+neurobiology+based+on+a+work+session+of+the+Neurosciences+Research+Program
-- title: Theory+of+action
-- title: Tricks+of+time+Bergson+Merleau-Ponty+and+Ricoeur+in+search+of+time+self+and+meaning
-- title: Turings+connectionism+an+investigation+of+neural+network+architectures
-- title: Vision+and+action
-- title: Vision+of+the+brain
-- title: Visual+analogy+consciousness+as+the+art+of+connecting
-- title: Visual+attention+and+cortical+circuits
-- title: Visual+imagery+and+its+relation+to+problem+solving+a+theoretical+and+experimental+inquiry
-- title: Visual+neurosciences
-- title: Wider+than+the+sky+the+phenomenal+gift+of+consciousness
-- title: Wise+up+the+challenge+of+lifelong+learning
+- title:  Active+vision+the+psychology+of+looking+and+seeing+
+  author: "Findlay, John M. (John Malcolm), 1942-"
+  year:   2003
+
+- title:  Analogy+making+as+perception+a+computer+model+
+  author: "Mitchell, Melanie"
+  year:   1993
+
+- title:  Analogy+of+automated+reasoning+
+  author: "Owen, Stephen (Stephen G.)"
+  year:   1990
+
+- title:  Anatomy+of+the+nervous+system+of+Octopus+vulgaris+
+  author: "Young, J. Z. (John Zachary), 1907-1997"
+  year:   1971
+
+- title:  Art+of+problem+posing+
+  author: "Brown, Stephen I."
+  year:   1990
+
+- title:  Being+no+one+the+self+model+theory+of+subjectivity+
+  author: "Metzinger, Thomas, 1958-"
+  year:   2003
+
+- title:  Bergson+thinking+backwards+
+  author: "Moore, F. C. T. (Francis Charles Timothy)"
+  year:   1996
+
+- title:  Berkeleys+thought+
+  author: "Pappas, George Sotiros, 1942-"
+  year:   2000
+
+- title:  Beyond+the+cognitive+map+from+place+cells+to+episodic+memory+
+  author: "Redish, A. David"
+  year:   1999
+
+- title:  Biologically+motivated+computer+vision+First+IEEE+International+Workshop+BMCV+Seoul+Korea+May+proceedings+
+  author: "Seong-Whang Lee (Editor), Heinrich H. Bülthoff (Editor), Tomaso Poggio (Editor)"
+  year:   2000
+  url:    "https://www.amazon.com/Biologically-Motivated-Computer-Vision-International/dp/3540675604"
+
+- title:  Biorobotics+methods+and+applications+
+  author: "Chappell, Michael"
+  year:   2020
+
+- title:  Body+and+brain+a+trophic+theory+of+neural+connections+
+  author: "Northcutt, R. G."
+  url:    "https://pubmed.ncbi.nlm.nih.gov/17731884/"
+  year:   1988
+
+- title:  Brain+facts+a+primer+on+the+brain+and+nervous+system+
+  author: "Society for Neuroscience"
+  year:   2018
+  url:    "https://www.brainfacts.org/the-brain-facts-book#:~:text=Access%20Brain%20Facts%2C%20a%20primer,participate%20in%20the%20Brain%20Bee."
+
+- title:  Brain+processes+theories+and+models+an+international+conference+in+honor+of+WS+McCulloch+years+after+his+death+
+  author: "Jose Mira-Mira (Author), Roberto Moreno-Díaz (Editor)"
+  year:   1995
+  url:    "https://www.amazon.com/Brain-Processes-Theories-Models-International/dp/0262631709"
+
+- title:  Brains+and+lives+of+cephalopods+
+  author: "Nixon, Marion"
+  year:   2003
+
+- title:  Cajal+on+the+cerebral+cortex+an+annotated+translation+of+the+complete+writings+
+  author: "Ramón y Cajal"
+  year:   1988
+
+- title:  Calculus+of+several+variables+
+  author: "Sikorski, Roman"
+  year:   1969
+
+- title:  Circuits+of+the+mind+
+  author: "Valiant, Leslie"
+  year:   1994
+
+- title:  Cognitive+architectures+in+artificial+intelligence+the+evolution+of+research+programs+
+  author: "Clark, Andy"
+  url:    "https://www.amazon.com/Cognitive-Architectures-Artificial-Intelligence-Conceptual/dp/0815327692"
+  year:   1998
+
+- title:  Complex+worlds+from+simpler+nervous+systems+
+  author: "Prete, Frederick R. (Editor)"
+  url:    "https://www.amazon.com/Complex-Simpler-Nervous-Systems-Bradford/dp/B0064XJE3G"
+  year:   2004
+
+- title:  Computational+neuroanatomy+principles+and+methods+
+  author: "Ascoli, Giorgio A."
+  url:    "https://www.amazon.com/Computational-Neuroanatomy-Principles-Giorgio-Ascoli/dp/158829000X"
+  year:   2002
+
+- title:  Computational+neuroscience+realistic+modeling+for+experimentalists+
+  author: "De Schutter, Erik (Editor)"
+  url:    "https://www.amazon.com/Computational-Neuroscience-Realistic-Experimentalists-Frontiers/dp/0849320682"
+  year:   2000
+
+- title:  Computational+vision+information+processing+in+perception+and+visual+behavior+
+  author: "Mallot, Hanspeter A."
+  year:   2000
+
+- title:  Computation+for+metaphors+analogy+and+agents+
+  author: "Indurkhya, Bipin"
+  year:   1992
+
+- title:  Computer+vision+
+  author: "Szeliski, Richard, 1958-"
+  year:   2011
+
+- title:  Consciousness+in+four+dimensions+biological+relativity+and+the+origins+of+thought+
+  author: "Pico, Richard M."
+  year:   2002
+
+- title:  Constructive+evolution+origins+and+development+of+Piagets+thought+
+  author: "Chapman, Michael, 1947-"
+  year:   1988
+
+- title:  Cortex+and+mind+unifying+cognition+
+  author: "Fuster, Joaquin M."
+  year:   2003
+
+- title:  Corticothalamic+projections+and+sensorimotor+activities+
+  author: "Frigyesi, Tamas L.; Eric Rinvik; Melvin D. Yahr, Editors"
+  year:   1972
+  url:    "https://www.amazon.com/Corticothalamic-projections-and-sensorimotor-activities/dp/0911216359"
+
+- title:  Course+in+differential+geometry+and+Lie+groups+
+  author: "Gallier, Jean"
+  year:   2020
+
+- title:  Creative+attitude+learning+to+ask+and+answer+the+right+questions+
+  author: "Schank, Roger C., 1946-"
+  year:   1988
+
+- title:  Cybernetics+of+living+matter+nature+man+information+
+  author: "Sandywell, Barry"
+  year:   2011
+
+- title:  Delay+learning+in+artificial+neural+networks+
+  author: "White, Catherine Myers"
+  year:   1992
+
+- title:  Designing+and+reporting+experiments+
+  author: "Harris, Peter (Peter R.)"
+  year:   2008
+
+- title:  Developing+brain+
+  author: "Sprenger, Marilee, 1949-"
+  year:   2008
+
+- title:  Development+of+the+nervous+system+
+  author: "Sanes, Dan Harvey"
+  year:   2000
+
+- title:  Dynamic+memory+revisited+
+  author: "Schank, Roger C., 1946-"
+  year:   1999
+
+- title:  Dynamics+in+action+intentional+behavior+as+a+complex+system+
+  author: "Juarrero, Alicia"
+  year:   1999
+
+- title:  Essays+on+life+itself+
+  author: "Rosen, Robert, 1934-1998"
+  year:   2000
+
+- title:  Essential+histology+
+  author: "Cormack, David H."
+  year:   2001
+
+- title:  Exploratory+vision+the+active+eye+
+  author: "Landy, Michael S."
+  year:   1996
+
+- title:  Exploring+the+thalamus+
+  author: "Sherman, S. Murray"
+  year:   2001
+
+- title:  Face+and+mind+
+  author: "Young, Andrew W."
+  year:   1998
+
+- title:  Filling+in+from+perceptual+completion+to+cortical+reorganization+
+  author: "Pessoa, Luiz and De Weerd, Peter"
+  url:    "https://www.amazon.com/Filling-Perceptual-Completion-Cortical-Reorganization/dp/0195140133"
+  year:   2003
+
+- title:  Great+reckoning+protect+yourself+in+the+coming+depression+
+  author: "Davidson, James Dale"
+  year:   1993
+
+- title:  Handbook+of+affective+sciences+
+  author: "Archibugi, Daniele"
+  year:   2015
+
+- title:  Handbook+of+basic+microtechnique
+  author: "Gray, Peter"
+  url:    "https://www.amazon.com/Handbook-Basic-Microtechnique-Peter-Gray/dp/0343183803"
+  year:   1958
+
+- title:  Hedonistic+neuron+a+theory+of+memory+learning+and+intelligence+
+  author: "Klopf, "
+  year:   1982
+
+- title:  Higher+order+processing+in+the+visual+system
+  author: "Zhang, Feng, 1973-"
+  year:   2005
+
+- title:  High+throughput+image+reconstruction+and+analysis+
+  author: "Mayerich, David"
+  year:   2010
+
+- title:  Histological+and+illustrative+methods+for+entomologists+
+  author: "Eltringham, Harry"
+  year:   1930
+
+- title:  Human+brain+function+
+  author: "Asimov, Isaac, 1920-1992"
+  year:   1963
+
+- title:  Human+language+and+our+reptilian+brain+the+subcortical+bases+of+speech+syntax+and+thought+
+  author: "Lieberman, Philip"
+  year:   2000
+
+- title:  Human+perception+of+objects+early+visual+processing+of+spatial+form+defined+by+luminance+color+texture+motion+and+binocular+disparity+
+  author: "Regan, D. (David), 1935-"
+  year:   2000
+
+- title:  Image+object+and+illusion+readings+from+Scientific+American+
+  author: "Held, Richard"
+  year:   1974
+  url:    "https://www.amazon.com/Image-object-illusion-Readings-Scientific/dp/0716705052"
+
+- title:  Imagery+
+  author: "Hamon, Philippe"
+  year:   2007
+
+- title:  Imagery+language+and+cognition+toward+a+theory+of+symbolic+activity+in+human+problem+solving+
+  author: "Kaufmann, Geir"
+  year:   1980
+
+- title:  Imitation+in+animals+and+artifacts+
+  author: "Golden, Lauren"
+  year:   2001
+
+- title:  Information+natural+law+and+the+self+assembly+of+rhythmic+movement+
+  author: "Kugler, Peter Noble"
+  year:   1987
+
+- title:  Intact+and+sliced+brain+
+  author: "Steriade, Mircea"
+  year:   2001
+
+- title:  Introduction+to+abstract+algebra+
+  author: "McCoy, Neal Henry, 1905-"
+  year:   1960
+
+- title:  Introduction+to+biological+scanning+electron+microscopy+
+  author: "Hayat, M. A., 1940-"
+  year:   1978
+
+- title:  Introduction+to+the+visual+system+
+  author: "Tovée, Martin J. (Martin James)"
+  year:   2008
+
+- title:  Life+itself+a+comprehensive+inquiry+into+the+nature+origin+and+fabrication+of+life+
+  author: "Rosen, Robert, 1934-1998"
+  year:   1991
+
+- title:  Linear+systems+theory+
+  author: "Callier, Frank M."
+  year:   1991
+
+- title:  Looking+at+looking+an+introduction+to+the+intelligence+of+vision+
+  author: "Graham, Deryn"
+  year:   1997
+
+- title:  Manual+of+basic+techniques+in+insect+histology+
+  author: "Barbosa, Pedro, 1944-"
+  year:   2015
+
+- title:  Mathematics+and+its+history+
+  author: "Stillwell, John"
+  year:   2010
+
+- title:  Meaning+and+the+growth+of+understanding+Wittgensteins+significance+for+developmental+psychology+
+  author: "Chapman, Michael"
+  year:   1987
+
+- title:  Mechanics+of+the+mind+
+  author: "Blakemore, Colin"
+  year:   1977
+
+- title:  Metamagical+themas+questing+for+the+essence+of+mind+and+pattern+
+  author: "Hofstadter, Douglas"
+  url:    "https://www.amazon.com/Metamagical-Themas-Questing-Essence-Pattern/dp/0465045669"
+  year:   1996
+
+- title:  Microcognition+philosophy+cognitive+science+and+parallel+distributed+processing+
+  author: "Clark, Andy"
+  year:   1989
+
+- title:  Mind+and+mechanism+
+  author: "Nelson, R. J. (Raymond John), 1917-"
+  year:   1989
+
+- title:  Mind+time+the+temporal+factor+in+consciousness+
+  author: "Libet, Benjamin, 1916-2007"
+  year:   2004
+
+- title:  Mindwaves+thoughts+on+intelligence+identity+and+consciousness+
+  author: "Blakemore, Colin; Greenfield, Susan (Editors)"
+  url:    "https://www.amazon.com/Mindwaves-Thoughts-Intelligence-Identity-Consciousness/dp/0631146229"
+  year:   1987
+
+- title:  Modeling+neural+development+
+  author: "De Wilde, Philippe, 1958-"
+  year:   1997
+
+- title:  Moving+and+knowing+in+sport+dance+physical+education+a+collection+of+speeches+
+  author: "Metheny, Eleanor, 1908-1982"
+  year:   1975
+
+- title:  Multiscale+modelling+and+simulation+
+  author: "Attinger, Sabine"
+  year:   2004
+
+- title:  Multiscale+phenomena+and+their+simulation+proceedings+of+the+international+conference+Bielefeld+Germany+September+October+
+  author: "Karsch, Frithjof et al. (Editors)"
+  url:    "https://www.abebooks.com/9789810230906/Multiscale-Phenomena-Simulation-Proceedings-International-9810230907/plp"
+  year:   1997
+
+- title:  Naturalizing+the+mind+
+  author: "Dretske, Fred I."
+  year:   1995
+
+- title:  Nature+of+consciousness+philosophical+debates+
+  author: "Koksvik, Ole"
+  year:   2021
+
+- title:  Nerve+cells+and+insect+behavior+
+  author: "Roeder, Kenneth D. (Kenneth David), 1908-"
+  year:   1963
+
+- title:  Neural+assemblies+an+alternative+approach+to+artificial+intelligence+
+  author: "Palm, Günther"
+  year:   1982
+
+- title:  Neural+codes+and+distributed+representations+foundations+of+neural+computation+
+  author: "Calude, Cristian, 1952-"
+  year:   2000
+
+- title:  Neuroanatomical+techniques+insect+nervous+system+
+  author: "Strausfeld, N. J."
+  year:   1980
+
+- title:  Neuro+vision+systems+principles+and+applications+
+  author: "Jerald, Jason"
+  year:   2016
+
+- title:  New+Bergson+
+  author: "Le Roy, Edouard, 1870-1954"
+  year:   1913
+
+- title:  New+ideas+on+the+structure+of+the+nervous+system+in+man+and+vertebrates+
+  author: "Ramón y Cajal, Santiago, 1852-1934"
+  year:   1990
+
+- title:  On+being+in+the+world+Wittgenstein+and+Heidegger+on+seeing+aspects+
+  author: "Mulhall, Stephen"
+  url:    "https://www.amazon.com/Being-World-Routledge-Revivals-Wittgenstein/dp/113802452X"
+  year:   2015
+
+- title:  Perception+and+cognition+at+centurys+end+
+  author: "Engdahl, William"
+  year:   2018
+
+- title:  Perception+an+essay+on+classical+Indian+theories+of+knowledge+
+  author: "Matilal, Bimal Krishna"
+  year:   1986
+
+- title:  Perception+essays+in+honor+of+James+J+Gibson+
+  author: "Robert, B. ; Herbert, L. Pick Jr. (eds.)"
+  url:    "https://www.amazon.com/Perception-Essays-Honor-James-G-Gibson/dp/0801408350"
+  year:   1974
+
+- title:  Perception+knowledge+and+belief+selected+essays+
+  author: "Dretske, Fred I."
+  year:   2000
+
+- title:  Primitive+nervous+systems+
+  author: "Lentz, Thomas L."
+  year:   1968
+
+- title:  Probabilistic+models+of+the+brain+perception+and+neural+function+
+  author: "by Rajesh P. N. Rao (Author), Bruno A. Olshausen (Author), Michael S. Lewicki (Author)"
+  url:    "https://www.amazon.com/Probabilistic-Models-Brain-Perception-Information/dp/0262182246"
+  year:   2002
+
+- title:  Progress+in+neuroscience+
+  author: "Kursunoglu, Behram"
+  year:   1974
+
+- title:  Race+for+consciousness+
+  author: "Taylor, J. G. (John Gerald), 1931-2012"
+  year:   1999
+
+- title:  Rhythms+of+the+brain+
+  author: "Buzsáki, G."
+  year:   2006
+
+- title:  Scaling+in+biology+
+  author: "West, Geoffrey B."
+  year:   2017
+
+- title:  Scripts+plans+goals+and+understanding+an+inquiry+into+human+knowledge+structures+
+  author: "Schank, Roger C., 1946-"
+  year:   1977
+
+- title:  Seeing+and+knowing+
+  author: "Dretske, Fred I."
+  year:   1988
+
+- title:  Seeing+red+a+study+in+consciousness+
+  author: "Humphrey, Nicholas"
+  year:   2006
+
+- title:  Senses+of+touch+haptics+affects+and+technologies+
+  author: "Paterson, Mark, 1972-"
+  year:   2007
+
+- title:  Sleep+circuits+and+functions+
+  author: "Siegel, Jerome H., 1932-"
+  year:   2002
+
+- title:  Slim+book+about+narrow+content+
+  author: "Segal, Gabriel"
+  year:   2000
+
+- title:  Social+insects+ecology+and+behavioural+biology+
+  author: "Brian, M. V. (Michael Vaughan), 1919-"
+  year:   1983
+
+- title:  Societies+of+brains+a+study+in+the+neuroscience+of+love+and+hate+
+  author: "Freeman, Walter J."
+  year:   1995
+
+- title:  Somatosensory+system+deciphering+the+brains+own+body+image+
+  author: "Nelson, Randall J. (Editor)"
+  url:    "https://www.amazon.com/Somatosensory-System-Deciphering-Frontiers-Neuroscience/dp/0849323363"
+  year:   2001 
+
+- title:  Somesthetic+system+of+the+rat+
+  author: "Emmers, Raimond"
+  year:   1988
+
+- title:  Speed+of+thought+information+processing+in+the+cerebral+cortex+
+  author: "Tovée, Martin J. (Martin James)"
+  year:   1998
+
+- title:  Spider+communication+mechanisms+and+ecological+significance+
+  author: "Barth, Friedrich G."
+  year:   2002
+
+- title:  Spiders+world+senses+and+behavior+
+  author: "Barth, Friedrich G."
+  year:   2002
+
+- title:  Symmetry+causality+mind+
+  author: "Leyton, Michael"
+  year:   1992
+
+- title:  Thalamic+oscillations+and+signaling+
+  author: "Steriade, Mircea"
+  year:   1990
+
+- title:  Thalamocortical+assemblies+how+ion+channels+single+neurons+and+large+scale+networks+organize+sleep+oscillations+
+  author: "Destexhe, Alain"
+  year:   2001
+
+- title:  Theoretical+approaches+in+neurobiology+based+on+a+work+session+of+the+Neurosciences+Research+Program+
+  author: "Werner Reichardt, Tomaso Poggio"
+  url:    "https://books.google.com/books/about/Theoretical_Approaches_in_Neurobiology.html?id=bOZqAAAAMAAJ"
+  year:   1981
+
+- title:  Theory+of+action+
+  author: "Davis, Lawrence Howard, 1943-"
+  year:   1979
+
+- title:  Tricks+of+time+Bergson+Merleau+Ponty+and+Ricoeur+in+search+of+time+self+and+meaning+
+  author: "Muldoon, Mark"
+  year:   2006
+
+- title:  Turings+connectionism+an+investigation+of+neural+network+architectures+
+  author: "Teuscher, Christof"
+  year:   2002
+
+- title:  Vision+and+action+
+  author: "Ratner, Sidney, 1908-"
+  year:   1953
+
+- title:  Vision+of+the+brain+
+  author: "Stone, James V., Dr"
+  year:   2012
+
+- title:  Visual+analogy+consciousness+as+the+art+of+connecting+
+  author: "Stafford, Barbara Maria, 1941-"
+  year:   1999
+
+- title:  Visual+attention+and+cortical+circuits+
+  author: "Jochen Braun, Christof Koch, et al."
+  url:    "https://www.amazon.com/Visual-Attention-Cortical-Circuits-Bradford/dp/0262024934"
+  year:   2001
+
+- title:  Visual+imagery+and+its+relation+to+problem+solving+a+theoretical+and+experimental+inquiry+
+  author: "Kaufmann, Geir"
+  url:    "https://www.amazon.com/Visual-Imagery-Relation-Problem-Solving/dp/8200017885"
+  year:   1980
+ 
+- title:  Visual+neurosciences+
+  author: "Farah, Martha J."
+  year:   2000
+
+- title:  Wider+than+the+sky+the+phenomenal+gift+of+consciousness+
+  author: "Edelman, Gerald M."
+  year:   2004
+
+- title:  Wise+up+the+challenge+of+lifelong+learning+
+  author: "Claxton, Guy"
+  year:   1999
