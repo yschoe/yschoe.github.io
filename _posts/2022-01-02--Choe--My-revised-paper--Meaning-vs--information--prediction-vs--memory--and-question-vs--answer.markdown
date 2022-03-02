@@ -2,8 +2,8 @@
 layout: post
 title:  "[Choe] My revised paper: Meaning vs. information, prediction vs. memory, and question vs. answer"
 date:   January 2, 2022
-tags: Choe 
-categories: none
+tags:   Choe
+categ:  none
 ---
 
 A revised version of my paper, to appear in the second edition of the book. ￼ 
@@ -14,4 +14,3 @@ Yoonsuck Choe. Meaning vs. information, prediction vs. memory, and question vs. 
 
 [Choe-innsbook2021-submitted-1-2-2021.pdf](/pub/Choe-innsbook2021-submitted-1-2-2021.pdf)
  
-

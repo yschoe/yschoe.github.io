@@ -4,6 +4,14 @@ title: Blog
 permalink: /blog/
 ---
 
+<div>
+<ul class="flattoc">
+<li> Subset Collections: </li>
+<li> <a href="/seminar/">Lab Seminars</a> </li>
+<li> <a href="/blog-choe">[Choe]-tagged</a> </li>
+</ul>
+</div>
+
 This is mostly a collection of articles I found to be interesting. The ones marked "[Choe]" are original articles or those that include my commentary.
 
 * [New] 2/26/2022: You can now press the [ j ] and [ k ] key inside the article to go back and forth between the articles, and [ l ] key to come back to the listing.
