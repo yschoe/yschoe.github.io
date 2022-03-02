@@ -12,7 +12,7 @@ Engineering at Texas A&amp;M University. My research is broadly in computational
 I am especially interested in the temporal aspects of brain function (delay, internal brain dynamics, prediction, consciousness), sensorimotor learning and grounding (visual, tactile, proprioceptive, semantics, meaning), agent-environment interaction (including tool construction and tool use), and evolution of brain structure and function. [(old web site archive: 2001~2022)](http://people.engr.tamu.edu/choe/index-old.html) [(old portraits)](/photos/)
 
 ### News: 
-* Books! Library books I borrowed in the past: [/books/](/books/).
+* Books! Library books I borrowed in the past: [Books](/books/).
 * Moving articles from my [facebook group](https://www.facebook.com/groups/choelab) to the [Blog](/blog/) is now complete. Enjoy!
 * My Ph.D. students Qinbo Li (Ph.D.#17) and Qing Wan (Ph.D.#18) recently defended! Congrats to both! 
 * [News archive](/news/)
