@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Seminar
+title: "Blog: Lab Seminars"
 permalink: /seminar/
 ---
 
