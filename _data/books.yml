@@ -104,8 +104,9 @@
   year:   1992
 
 - title:  Computer+vision+
-  author: "Szeliski, Richard, 1958-"
-  year:   2011
+  author: "Ballard, Dana; Brown, Christopher M."
+  year:   1982
+  url:    "https://www.amazon.com/Computer-Vision-Dana-H-Ballard/dp/0131653164"
 
 - title:  Consciousness+in+four+dimensions+biological+relativity+and+the+origins+of+thought+
   author: "Pico, Richard M."
@@ -393,7 +394,7 @@
   year:   1968
 
 - title:  Probabilistic+models+of+the+brain+perception+and+neural+function+
-  author: "by Rajesh P. N. Rao (Author), Bruno A. Olshausen (Author), Michael S. Lewicki (Author)"
+  author: "Rajesh P. N. Rao (Author), Bruno A. Olshausen (Author), Michael S. Lewicki (Author)"
   url:    "https://www.amazon.com/Probabilistic-Models-Brain-Perception-Information/dp/0262182246"
   year:   2002
 
