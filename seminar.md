@@ -11,7 +11,7 @@ Enjoy!
 <ul class="listing">
 {% for post in site.posts %}
 
-{% if post.categ == 'seminar' %}
+{% if post.title contains '[Lab Seminar]' %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
   {% if year != y %}
     {% assign year = y %}
