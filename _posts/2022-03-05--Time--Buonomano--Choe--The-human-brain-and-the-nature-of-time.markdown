@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Time][Buonomano][Choe] The human brain and the nature of time"
+title:  "[Time][Buonomano][Choe][Lab Seminar] The human brain and the nature of time"
 date:   2022/03/05
 categ:  none
 ---
