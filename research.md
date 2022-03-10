@@ -13,7 +13,7 @@ permalink: /research/
 
 <a name="res"></a>
 ## Research Tips
-* [How to do research](/pub/choe-wise-up.pdf), based on Guy Claxton's book "Wise Up" (PDF slides)
+* [How to do research](/pub/choe-wise-up.pdf), partly based on Guy Claxton's book "Wise Up" (PDF slides)
 * [Critical thinking and more research tips](/pub/choe-crtical-thinking.pdf), based on Browne and Keeley's book (PDF slides)
 
 <a name="data"></a>
