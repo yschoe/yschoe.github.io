@@ -5,12 +5,12 @@ permalink: /research/
 ---
 
 ## Research Tips
-* [How to do good research](/pub/choe-wise-up.pdf)
-* [Critical thinking and more research tips](/pub/choe-crtical-thinking.pdf)
+* [How to do good research](/pub/choe-wise-up.pdf) (PDF slides)
+* [Critical thinking and more research tips](/pub/choe-crtical-thinking.pdf) (PDF slides)
 
 ## Data
-* [KESM Mouse Brain Atlas](http://kesm.org) / [KESM data downloader script](https://github.com/yschoe/kesm)
-* [C. elegans neuron position data and tools](https://github.com/yschoe/celegans)
+* [KESM Mouse Brain Atlas](http://kesm.org) / [KESM data downloader script](https://github.com/yschoe/kesm) (Web-based Atlas)
+* [C. elegans neuron position data and tools](https://github.com/yschoe/celegans) (GitHub)
 
 ## Research Topics
 
