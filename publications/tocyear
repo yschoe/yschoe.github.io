@@ -2,12 +2,12 @@
 
 while (<STDIN>) {
 
-  if (/abstracts/ && /<[hH]3>/) {
-    $_ =~ s/(<[hH]2>)([0-9a-zA-Z\.]+)/$1\ <a\ name=\"$2\_abstracts\"><\/a>$2/;
+  if (/abstracts/ && /<[hH][23]>/) {
+    $_ =~ s/(<[hH][23]>)([0-9a-zA-Z\.]+)/$1\ <a\ name=\"$2\_abstracts\"><\/a>$2/;
   } elsif (/thesis/ && /<[hH]3>/) {
-    $_ =~ s/(<[hH]2>)([0-9a-zA-Z\.]+)/$1\ <a\ name=\"$2\_thesis\"><\/a>$2/;
+    $_ =~ s/(<[hH][23]>)([0-9a-zA-Z\.]+)/$1\ <a\ name=\"$2\_thesis\"><\/a>$2/;
   } else {
-    $_ =~ s/(<[hH]2>)([0-9a-zA-Z\.]+)/$1\ <a\ name=\"$2\"><\/a>$2/;
+    $_ =~ s/(<[hH][23]>)([0-9a-zA-Z\.]+)/$1\ <a\ name=\"$2\"><\/a>$2/;
   }
 
   print;

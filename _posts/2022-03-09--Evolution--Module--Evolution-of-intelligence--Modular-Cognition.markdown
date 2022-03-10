@@ -19,12 +19,12 @@ A very interesing essay on how evolution of modules may have led to intelligence
 
 ### Modular cognition
 
-Powerful tricks from computer science and cybernetics show how evolution ‘hacked’ its way to intelligence from the bottom up
+"Powerful tricks from computer science and cybernetics show how evolution ‘hacked’ its way to intelligence from the bottom up"
 
 
-Michael Levinis the Vannevar Bush Chair and Distinguished Professor of Biology at Tufts University in Massachusetts, where he directs the Allen Discovery Center and the Tufts Center for Regenerative and Developmental Biology.
+* Michael Levin is the Vannevar Bush Chair and Distinguished Professor of Biology at Tufts University in Massachusetts, where he directs the Allen Discovery Center and the Tufts Center for Regenerative and Developmental Biology.
 
-Rafael Yusteis professor of biological sciences and neuroscience, co-director of the Kavil Institute for Brain Science, director of the NeuroTechnology Center and chair of the NeuroRights Foundation at Columbia University.
+* Rafael Yuste is professor of biological sciences and neuroscience, co-director of the Kavil Institute for Brain Science, director of the NeuroTechnology Center and chair of the NeuroRights Foundation at Columbia University.
 
 Some quotes:
 
