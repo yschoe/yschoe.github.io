@@ -5,8 +5,8 @@ permalink: /research/
 ---
 
 ## Research Tips
-* [How to do good research](/pub/choe-wise-up.pdf) (PDF slides)
-* [Critical thinking and more research tips](/pub/choe-crtical-thinking.pdf) (PDF slides)
+* [How to do research](/pub/choe-wise-up.pdf), based on Guy Claxton's book "Wise Up" (PDF slides)
+* [Critical thinking and more research tips](/pub/choe-crtical-thinking.pdf), based on Browne and Keeley's book (PDF slides)
 
 ## Data
 * [KESM Mouse Brain Atlas](http://kesm.org) / [KESM data downloader script](https://github.com/yschoe/kesm) (Web-based Atlas)
