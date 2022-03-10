@@ -10,9 +10,10 @@ permalink: /lab/
 <li> <a href="#seminar">Lab Seminar Archive</a></li>
 </ul>
 <ul class="flattoc">
-<li> <a href="#phd">[Students] Ph.D.</a></li>
-<li> <a href="#ms">[Students] M.S.</a></li>
-<li> <a href="#ug">[Students] Undergraduate</a></li>
+<li> Lab members: </li>
+<li> <a href="#phd">Ph.D.</a></li>
+<li> <a href="#ms">M.S.</a></li>
+<li> <a href="#ug">Undergraduate</a></li>
 <li> <a href="#visitors">Visiting Scholars</a></li>
 </ul>
 
