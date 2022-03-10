@@ -4,6 +4,14 @@ title: Teaching
 permalink: /teaching/
 ---
 
+<ul class="flattoc">
+<li> <a href="#often">Most often taught courses</a></li>
+<li> <a href="#current">Current Courses</a></li>
+<li> <a href="#future">Future Courses</a></li>
+<li> <a href="#past">Past Courses</a></li>
+</ul>
+
+<a name="often"></a>
 ### Most often taught: 
 
 * Neural Networks (CSCE 636): [Old lecture notes: 2015](https://people.engr.tamu.edu/choe/choe/courses/16spring/636/index.html)
@@ -12,14 +20,17 @@ permalink: /teaching/
 * Programming Studio (CSCE 315): [Old lecture notes: 2020](https://people.engr.tamu.edu/choe/choe/courses/20fall/315/index.html)
 * Cortical Networks (CSCE 644): [Old lecture notes: 2012](https://people.engr.tamu.edu/choe/choe/courses/12fall/644.html)
 
+<a name="current"></a>
 ### Current
 
 * Spring 2022: CSCE 421-200/500 Machine Learning. Lectures: TR 9:35am-10:50am ZACH 350.  [Course web page (Canvas)](https://canvas.tamu.edu/courses/137553)
 
+<a name="future"></a>
 ### Future
 
 * Fall 2022: TBD
 
+<a name="past"></a>
 ### Past
 
 * Fall 2021: CSCE 315-290 Honors Programming Studio. Lectures: TR 9:35am-10:50am HRBB 126. Labs: MW 8:00am-8:50am ZACH 590.  ([Course web page (Canvas)](https://canvas.tamu.edu/courses/103661))

@@ -4,15 +4,17 @@ title: Lab
 permalink: /lab/
 ---
 
-<ol class="listing">
+<ul class="flattoc">
 <li> <a href="#bnl">Brain Networks Laboratory (BNL)</a></li>
 <li> <a href="#nil">Neural Intelligence Laboratory (NIL)</a></li>
-<li> <a href="#seminar">Lab Seminar Archive</a>: <a href="/seminar/">Direct Link</a></li>
+<li> <a href="#seminar">Lab Seminar Archive</a></li>
+</ul>
+<ul class="flattoc">
 <li> <a href="#phd">[Students] Ph.D.</a></li>
 <li> <a href="#ms">[Students] M.S.</a></li>
 <li> <a href="#ug">[Students] Undergraduate</a></li>
 <li> <a href="#visitors">Visiting Scholars</a></li>
-</ol>
+</ul>
 
 <a name="bnl"></a>
 ### Brain Networks Laboratory (BNL)

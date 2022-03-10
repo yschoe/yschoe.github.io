@@ -4,14 +4,24 @@ title: Research
 permalink: /research/
 ---
 
+<ul class="flattoc">
+<li> <a href="#res">Research Tips</a> </li>
+<li> <a href="#data">Data</a> </li>
+<li> <a href="#topics">Research Topics</a> </li>
+<li> <a href="#pub">Publications</a> </li>
+</ul>
+
+<a name="res"></a>
 ## Research Tips
 * [How to do research](/pub/choe-wise-up.pdf), based on Guy Claxton's book "Wise Up" (PDF slides)
 * [Critical thinking and more research tips](/pub/choe-crtical-thinking.pdf), based on Browne and Keeley's book (PDF slides)
 
+<a name="data"></a>
 ## Data
 * [KESM Mouse Brain Atlas](http://kesm.org) / [KESM data downloader script](https://github.com/yschoe/kesm) (Web-based Atlas)
 * [C. elegans neuron position data and tools](https://github.com/yschoe/celegans) (GitHub)
 
+<a name="topics"></a>
 ## Research Topics
 
 <ol class="toc">
@@ -37,6 +47,7 @@ permalink: /research/
 <li> <a href="/pub_topic/#CS">CS General</a></li>
 </ol>
 
+<a name="pub"></a>
 ## Publications
 
 <a href="/pub_year/">By Year</a> &ndash; <a href="/pub_topic/">By Topic</a> &ndash; <a href="/pub_medium/">By Medium</a> 
