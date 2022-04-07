@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Google][LM] Pathways Language Model (PaLM) by Google"
+title:  "[Google][NLP][LM] Pathways Language Model (PaLM) by Google"
 date:   April 6, 2022
 categ:  none
 ---
