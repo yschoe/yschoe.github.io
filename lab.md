@@ -88,6 +88,7 @@ Link: [Theses](/pub_topic/#Theses)
 1. Sungjune Lim (CS): MS student. 2014 Spring - 2015 Summer. Samsung Research.
 1. Qinbo Li (CS): MS student. 2014 Spring - 2016 Summer. Texas A&M Ph.D. program
 1. Wookyung An (CS): MS student. 2014 Spring - 2016 Summer. Hyundai Motor Co.
+1. Raghav Hari Kris Vembu (CS): MS student. 2019 Fall - 2020 Spring. (co-advised by Prof. Hangue Park, TAMU ECE).
 1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
 1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): MCS student. 2014 Fall - 2017 summer.
 
