@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[NLP] Meta AI Opensources their lanauge model OPT-175B"
+title:  "[NLP][LM] Meta AI Opensources their lanauge model OPT-175B"
 date:   May 14, 2022
 categ:  none
 ---
