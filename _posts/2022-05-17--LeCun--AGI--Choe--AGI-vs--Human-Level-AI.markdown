@@ -47,8 +47,6 @@ Quote: from Facebook Posting by Yann LeCun
 
 Yann LeCun
 
-3h  ¡¤ 
-
 About the raging debate regarding the significance of recent progress in AI, it may be useful to (re)state a few obvious facts:
 
 (0) there is no such thing as AGI. Reaching "Human Level AI" may be a useful goal, but even humans are specialized.
