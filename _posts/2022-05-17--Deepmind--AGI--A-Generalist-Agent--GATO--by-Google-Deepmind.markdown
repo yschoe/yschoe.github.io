@@ -11,6 +11,8 @@ Deepmind built a single transformer-based model that can be trained and work on 
 
 [https://www.deepmind.com/publications/a-generalist-agent](https://www.deepmind.com/publications/a-generalist-agent)
 
+* My prediction: this paper will appear in the journal Nature.
+
 Quote from the blog: 
 
 During the training phase of Gato, data from different tasks and modalities are serialised into a flat sequence of tokens, batched, and processed by a transformer neural network similar to a large language model. The loss is masked so that Gato only predicts action and text targets.
