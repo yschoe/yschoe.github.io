@@ -29,8 +29,8 @@ permalink: /teaching/
 ### Future
 
 * Fall 2022 (tentative): 
-  * CSCE 420-501 Artificial Intelligence. Lectures: TR 11:10am-12:25am, ZACH 350.
-  * CSCE 633-600 Machine Learning. Lectures: TR 12:45am-2:00pm ZACH 350. 
+  * CSCE 420-501 Artificial Intelligence. Lectures: TR 11:10am-12:25am, ZACH 310.
+  * CSCE 633-600 Machine Learning. Lectures: TR 12:45am-2:00pm ZACH 310. 
 
 <a name="past"></a>
 ### Past
