@@ -2,5 +2,8 @@
 # sudo apt -y install jekyll
 # sudo apt install ruby-full build-essential
 # bundle install
+#
+# rvm pkg install openssl
+# rvm install ruby-2.7 --with-openssl-dir=/usr/share/rvm
 
 bundle exec jekyll serve --host 0.0.0.0
