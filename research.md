@@ -9,6 +9,7 @@ permalink: /research/
 <li> <a href="#data">Data</a> </li>
 <li> <a href="#topics">Research Topics</a> </li>
 <li> <a href="#pub">Publications</a> </li>
+<li> <a href="/books/">Library Books</a> </li>
 </ul>
 
 <a name="res"></a>
