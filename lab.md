@@ -124,7 +124,6 @@ Link: [Theses](/pub_topic/#Theses)
 1. Dimitri Dobroskok (TAMU, Biomedical Engineering): Summer 2015.
 1. Cassandra Bub (TAMU, Computer Science): Fall 2016.
 1. Juliang Li (TAMU, Computer Science): Fall 2016.
-1. Yasin Alam (TAMU, Computer Science): Fall 2021-Spring 2022
 1. Aolin Yang (TAMU, Computer Science): Fall 2021-Spring 2022
 1. Thomas Goodwin (TAMU, Computer Science): Fall 2021-Spring 2022
 1. Lance Ondrej (TAMU, Computer Science): Fall 2021-Spring 2022
@@ -132,6 +131,8 @@ Link: [Theses](/pub_topic/#Theses)
 1. Richard Liu (TAMU, Computer Science): Fall 2021-Spring 2022
 1. Ryan Spruell (TAMU,  Computer Science): Spring 2022
 1. Zhan Lan (TAMU,  Computer Science): Spring 2022
+1. Yasin Alam (TAMU, Computer Science): Fall 2021-present
+1. Shreyes Kaliyur (TAMU, Computer Science): Fall 2022-present
 
 Current undergrad students
 1. Shreyes Kaliyur (TAMU, Computer Science): Fall 2022
