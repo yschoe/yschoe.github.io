@@ -2,7 +2,7 @@
  m4_bib2html_section(Action Learning and Neural Semantics of Perception (selected),[[parulkar:ijcnn16,choe:aaai11,choe:icdl08,choe:ijhr07,choe:aaai06,choe:bioadit04]])
  m4_bib2html_section(Predictive Dynamics and Consciousness (selected),[[choe:icdl21,kwon:icdl08,choe:ijmc12,yoo:frontiers14]])
  m4_bib2html_section(Reactive agent's use of external markers for cognition (selected),[[chung:ictai09,chung:tamd11]])
- m4_bib2html_section(Tool Use (selected),[[li:irosws21,nguyen:ijcnn21,nguyen:ijcnn19,reams:ijcnn17,li:ijcnn15,freitag:ijcnn16,wang:ijcnn16]])
+ m4_bib2html_section(Tool Use (selected),[[li:innsbook22,li:irosws21,nguyen:ijcnn21,nguyen:ijcnn19,reams:ijcnn17,li:ijcnn15,freitag:ijcnn16,wang:ijcnn16]])
  m4_bib2html_section(Action Learning and Neural Semantics of Perception (full),[[nguyen:icdl17,parulkar:ijcnn16,choe:cns16,choe:aaai11,mann:bbs10,choi:cns10,choe:icdl08,misra:dyn07,yang:biovis07,choe:ijhr07,choe:aaai06,choe:tr03.8-3,choe:bioadit04,choe:bbs05,bhamidipati:ms04,misra:ms05,choe:sfn06,choe:cosyne08]])
  m4_bib2html_section(Sensorimotor Learning and Reinforcement Learning,[[mann:jmlr12,mann:ewrl12,choe:aaai11,mann:icdl10,mann:jnns11,mann:aaai11,mann:bbs10,choi:cns10,choe:icdl08,misra:dyn07,yang:biovis07,choe:ijhr07,choe:aaai06,choe:tr03.8-3,choe:bioadit04,choe:bbs05,bhamidipati:ms04,misra:ms05,choe:sfn06,choe:cosyne08,yamauchi:cogsci15,li:ijcnn15]])
  m4_bib2html_section(Evolutionary Perspectives on Brain Function,[[parulkar:ijcnn16,wang:ijcnn16,freitag:ijcnn16,chung:book11,kwon:nabic10,mann:cns10,chung:ictai09,kwon:nn09,choe:sfn08,chung:ijcnn09,kwon:icdl08,lim:niplr06,kwon:ijcnn07,lim:gecco06,li:ijcnn15]])
@@ -14,7 +14,7 @@
  m4_bib2html_section(Pattern Recognition etc.,[[yu:prl13,choi:nc13,choi:pricai10,choi:phd10,choi:icassp10a,choi:icassp10b,choi:icpr08,yu:tr05.2-3,choi:aaai08,choi:iconip09]])
  m4_bib2html_section(Neuroinformatics and Computational Neuroanatomy,[[nowak:embc19,nowak:embc18a,nowak:embc18b,lee:embc18,lee:embc17,nowak:embc16,lim:embc16,miller:embc16,nowak:embc16b,choe:ecn14-antihebbian,choe:ecn14-hebbian,choe:ecn14-connectomics,choe:ecn14-connectome-mouse,choe:ecn14-brainatlas,choe:ecn14-compneuroanat-overview,choe:ecn14-psm,mayerich:ecn14-recon,chung:frontiers11,choe:jove11,mayerich:bol11,yang:isvc11a,yang:isvc11b,choe:ijcnn11,kwon:isbi11,mayerich:isbi11,choe:cns10,choe:sfn09,han:isbi09,yang:isvc10,yang:isbi09,eng:ms08,han:ijcnn09,mayerich:miaab08,yang:cimsvp09,choe:hpc08,guntupalli:ms07,eng:vg08,kwon:isbi08,choe:sfn07,mayerich:sfn07,mccormick:cns03,bednar:cns03-sw,bednar:sfn05,mccormick:sfn06,mccormick:mm05a,mccormick:mm05b]])
  m4_bib2html_section(Big Data and Data Science,[[sung:dsaa16,kim:bigdata15]])
- m4_bib2html_section(General Topics on AI and Machine Learning,[[choe:bmm12,choe:innsbook18]])
+ m4_bib2html_section(General Topics on AI and Machine Learning,[[choe:innsbook22,choe:bmm12,choe:innsbook18]])
  m4_bib2html_section(System Biology and Health Informatics,[[kim:bigdata15,xiong:epbs06,xiong:bioinfo08,xiong:bmcsysbio08,xiong:biocomp07]])
  m4_bib2html_section(Dissertations (by students),[[wan:phd22,li:phd22,savari:phd22,xiong:phd08,yang:phd11,yoo:phd18,lee:phd18,nowak:phd19,nguyen:phd19,wang:phd20,sung:phd13,mann:phd12,chung:phd11,choi:phd10,han:phd09,kwon:phd09,park:phd09,lim:phd06,yu:phd06]])
 
