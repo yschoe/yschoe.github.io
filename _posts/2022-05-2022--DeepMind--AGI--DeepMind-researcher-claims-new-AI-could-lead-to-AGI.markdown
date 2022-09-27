@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[DeepMind][AGI] DeepMind researcher claims new AI could lead to AGI"
-date:   May 2022, 2022
+date:   September 26, 2022
 categ:  none
 ---
 
