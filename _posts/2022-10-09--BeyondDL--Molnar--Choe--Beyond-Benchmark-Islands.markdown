@@ -20,7 +20,7 @@ A lot of machine learning research has detached itself from solving real problem
 How does this happen? And why are researchers not escaping this pattern?
 
 
-[Choe] I had this same issue with benchmarks, which I mentioned many times in my recent talks. :-) Another way of looking at this problem is that benchmarks limit the capability of the models. Given a benchmark, by definition, any model cannot exceed 100% accuracy. We need models and algorithms that can exceed this limit. At the core of this problem is that the models are given the problem to solve in the form of a benchmark data set. That is, the models are only problem solvers. However, to exceed 100% accuracry, the models need to define their own problem, their own tasks. 
+[Choe] I had this same issue with benchmarks, which I mentioned many times in my recent talks. :-) Another way of looking at this problem is that benchmarks limit the capability of the models. Given a benchmark, by definition, any model cannot exceed 100% accuracy. We need models and algorithms that can exceed this limit. At the core of this problem is that the models are given the problem to solve in the form of a benchmark data set. That is, the models are only problem solvers. However, to exceed 100% accuracy, the models need to define their own problems, their own tasks. 
 
 
 
