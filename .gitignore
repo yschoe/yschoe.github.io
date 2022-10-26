@@ -4,6 +4,7 @@ _site/
 .jekyll-metadata
 scratch/
 vendor/
+Gemfile
 Gemfile-old
 .bundle/
 Gemfile.lock

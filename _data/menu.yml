@@ -9,6 +9,9 @@
     - subtitle: "Publications"
       subhref: "/research/publications/"
 
+- title: "Publications"
+  href: "/pub_year/"
+
 - title: "Teaching"
   href: "/teaching/"
 

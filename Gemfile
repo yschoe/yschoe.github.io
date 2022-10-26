@@ -8,6 +8,6 @@ source "https://rubygems.org"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
-# gem "jekyll", "~> 4.2"
+gem "jekyll", "~> 3.9"
 
 gem "webrick", "~> 1.7"
