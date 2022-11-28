@@ -11,7 +11,7 @@ This is a very interesting paper on how olfactory identification and spatial mem
 
 
 
-In our over 10 year old paper (below), we discussed this possibility, drawing parallels between the olfactory system (as external memory) and hippocampus (as internal memory), and their shared genetic/evolutionary origin, proximity, and characteristics (such as neurogenesis). See the introduction and the discussion. 
+In our over 10 year old paper (below), we discussed this possibility, drawing parallels between the olfactory system (as external memory) and hippocampus (as internal memory), and their shared genetic/evolutionary origin, anatomical proximity, and characteristics (such as neurogenesis). See the introduction and the discussion. 
 
 
 
