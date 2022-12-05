@@ -7,7 +7,7 @@ categ:  none
 
 
 
-Open-AI's now ChatGPT is quite amazing! 
+Open-AI's new ChatGPT is quite amazing! 
 
 
 
