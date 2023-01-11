@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Vision][Consciousness][Choe] Recent Trends in Visual Cognition Workshop"
+title: "[Vision][Consciousness][ORegan][Choe] Recent Trends in Visual Cognition Workshop"
 date:   Dec 8, 2022
 categ:  none
 ---
