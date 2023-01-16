@@ -7,6 +7,7 @@ permalink: /pub_year/
 <a href="/pub_topic/">By Topic</a> &ndash; <a href="/pub_medium/">By Medium</a> 
 
 <ul class="flattoc">
+<li> <a href="#2023">2023</a></li>
 <li> <a href="#2022">2022</a></li>
 <li> <a href="#2021">2021</a></li>
 <li> <a href="#2020">2020</a></li>
