@@ -11,8 +11,14 @@ I am a professor in the Department of Computer Science and
 Engineering at Texas A&amp;M University. My research is broadly in computational neuroscience, brain imaging and analysis, neuroevolution, and neural networks (deep learning). 
 I am especially interested in the temporal aspects of brain function (delay, internal brain dynamics, prediction, consciousness), sensorimotor learning and grounding (visual, tactile, proprioceptive, semantics, meaning), agent-environment interaction (including tool construction and tool use), and evolution of brain structure and function. [(old web site archive: 2001~2022)](http://people.engr.tamu.edu/choe/index-old.html) [(old portraits)](/photos/)
 
+<ul class="flattoc">
+ <li> <a href="https://github.com/yschoe">Github</a> </li>
+ <li> <a href="https://github.tamu.edu/choe/">TAMU Github</a> (requires login)</li>
+ <li> <a href="https://scholar.google.com/citations?user=nFb_T4wAAAAJ&hl=en">Google Scholar</a></li>
+</ul>
+
 ### News: 
-* [08/26/2022] My Ph.D. students Qinbo Li (Ph.D.#17), Qing Wan (Ph.D.#18), and Maryam Savari (Ph.D.#19) recently graduated! Congrats! 
+* [01/19/2022] [Chatgpt-fun : fun with ChatGPT (Github)](https://github.com/yschoe/chatgpt-fun)
 * [News archive](/news/)
 
 ### Experience
