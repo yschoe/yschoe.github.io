@@ -13,7 +13,6 @@ I am especially interested in the temporal aspects of brain function (delay, int
 
 <ul class="flattoc">
  <li> <a href="https://github.com/yschoe">Github</a> </li>
- <li> <a href="https://github.tamu.edu/choe/">TAMU Github</a> (requires login)</li>
  <li> <a href="https://scholar.google.com/citations?user=nFb_T4wAAAAJ&hl=en">Google Scholar</a></li>
 </ul>
 
