@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PaLM-E: An Embodied Multimodal Language Model"
+title:  "[LLM][Multimodal] PaLM-E: An Embodied Multimodal Language Model"
 date:   March 11, 2023
 categ:  none
 ---

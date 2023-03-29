@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Meaning][NLP] Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data"
+title:  "[LLM][Meaning][NLP] Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data"
 date:   March 11, 2023
 categ:  none
 ---
