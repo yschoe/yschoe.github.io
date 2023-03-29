@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[DL][Book] New deep learning book by Simon Prince"
-date:   March 19, 2022
+date:   March 19, 2023
 categ:  none
 ---
 
