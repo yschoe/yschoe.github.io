@@ -91,8 +91,9 @@ Link: [Theses](/pub_topic/#Theses)
 1. Wookyung An (CS): MS student. 2014 Spring - 2016 Summer. Hyundai Motor Co.
 1. Raghav Hari Kris Vembu (CS): MS student. 2019 Fall - 2020 Spring. SharkNinja. (co-advised by Prof. Hangue Park, TAMU ECE).
 1. Tanu Shree (CS): MS student. 2022 Fall - present. 
+1. Shivashriganesh Prasad Mahato (CS): MS student. 2023 Spring - present.
 1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
-1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): MCS student. 2014 Fall - 2017 summer.
+1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): MCS student. 2014 Fall - 2017 summer; Jiyoon Hwang (CS): MCS, Spring 2023; Rohith Kadivendi (CS): MCS, Spring 2023; Venkata Bhanu Teja Pallakonda (CS): MCS, Spring 2023.
 
 <a name="ug"></a>
 ### Undergraduate Students
@@ -132,12 +133,13 @@ Link: [Theses](/pub_topic/#Theses)
 1. Richard Liu (TAMU, Computer Science): Fall 2021-Spring 2022
 1. Ryan Spruell (TAMU,  Computer Science): Spring 2022
 1. Zhan Lan (TAMU,  Computer Science): Spring 2022
+1. Yasin Alam (TAMU, Computer Science): Fall 2021-Fall 2022
 
 Current undergrad students
-1. Yasin Alam (TAMU, Computer Science): Fall 2021-present
 1. Shreyes Kaliyur (TAMU, Computer Science): Fall 2022-present
 1. William Kang (TAMU, Computer Science): Fall 2022-present
 1. Hanbit Kang (TAMU, Computer Science): Fall 2022-present
+1. Christopher Anand (TAMU, Computer Science): Spring 2023-present
 
 <a name="visitors"></a>
 ### Visiting Scholars
