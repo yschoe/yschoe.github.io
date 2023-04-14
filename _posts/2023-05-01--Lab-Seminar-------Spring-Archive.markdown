@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Lab Seminar] 2023 Spring Archive"
-date:   May 1, 2023
+date:   April 14, 2023
 categ:  none
 ---
 
