@@ -1,9 +1,29 @@
-
 - title: "Inside vs. outside in neuroscience"
   inst: "K-BioX"
-  date: 4/13/2023
+  date: "April 13, 2023"
+
+- title: "From Simple Tools to Complex Cognition"
+  inst: "Society for Computational Neuroscience Winter School"
+  date: "Feb 7 2023"
+
+- title: "Time, Brain, and Neural Networks"
+  inst: "KOCSEA Tech Symposium 2022"
+  date: "Nov 12, 2022"
 
 - title: "Overcoming limitations of deep learning"
-  inst: "Artificial Intelligence and Future Convergence Technology Workshop (Pukyoung University)"
-  date: 11/10/2022
+  inst: "4th Artificial Intelligence and Future Convergence Technology Workshop (Pukyoung University)"
+  date: "Nov 10, 2022"
 
+- title: "시간, 뇌, 지능"
+  inst: "Yonsei University"
+  date: "July 29, 2022"
+  host: "Kyoungwoo Lee"
+
+- title: "Overcoming limitations of deep learning"
+  inst: "Handong Global University-POSTECH AI Workshop"
+  host: "Heeyoul Choi"
+  date: "Feb 7, 2022"
+
+- title: "Overcoming limitations of deep learning"
+  inst: "TAMU CSE graduate seminar"
+  date: "Sep 16, 2020"

@@ -9,25 +9,25 @@ This is a list of talks I gave over the years.
 <ul class="listing">
 {% for item in site.data.talks %}
 
-  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+  {% capture y %}{{item.date | date:"%Y"}}{% endcapture %}
   {% if year != y %}
     {% assign year = y %}
-    <li class="listing-seperator"> <b><font size="+3">{{ y }}</font></b> </li>
+    <li class="listing-seperator"> <b><font size="+2">{{ y }}</font></b> </li>
   {% endif %}
 
   <li class="listing-item">
     
   {% if item.date %}
-     {{ item.date }}<br/>
+     {{ item.date }}: &nbsp;&nbsp;
   {% endif %}
+  {{ item.title }}<br/>
 
-  {{ item.inst }} 
+   &nbsp;&nbsp;&nbsp; {{ item.inst }}
     {% if item.host %}
-    	({{ item.host }})
-    {% endif % }
+    	(Host: {{ item.host }})
+    {% endif %}
   <br/>
 
-  &nbsp;&nbsp;&nbsp; {{ item.title }}<br/>
 
   </li>
 
