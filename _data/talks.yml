@@ -19,11 +19,48 @@
   date: "July 29, 2022"
   host: "Kyoungwoo Lee"
 
+- title: "Evolution of Prediction"
+  inst: "NSF IRES at KAIST Transportation Institute"
+  date: "July 25, 2022"
+  host: "Kunhee Choi"
+
 - title: "Overcoming limitations of deep learning"
   inst: "Handong Global University-POSTECH AI Workshop"
   host: "Heeyoul Choi"
   date: "Feb 7, 2022"
 
+- title: "Time, Brain, and Intelligence"
+  inst: "2021 한국 계산 뇌신경과학회 연례 심포지움" 
+  date: "Nov 26, 2021"
+
+- title: "Overcoming limitations of deep learning"
+  inst: "Dongguk University AI Department Invited Seminar"
+  host: "Jihie Kim"
+  date: "Nov 11, 2021"
+
+- title: "Overcoming limitations of deep learning through insights from neuroscience"
+  inst: "Association of Korean Neuroscientists e-Talk series"
+  date: "Aug 30, 2021"
+
+- title: "인공지능이란?"
+  inst: "한국예술종합학교 무용원 초청강연"
+  host: "전수환"
+  date: "Nov 17, 2020"
+
+- title: "Discussion on AI"
+  inst: "KOSEF AI Panel"
+  date: "July 6, 2021"
+
+- title: "Time, Brain, and Neural Networks"
+  inst: "Samsung Research (Korea)"
+  host: "Joohyung Lee"
+  date: "Oct 20, 2020"
+
 - title: "Overcoming limitations of deep learning"
   inst: "TAMU CSE graduate seminar"
   date: "Sep 16, 2020"
+
+- title: "AI and Brain Science"
+  inst: "TAMU CSE Faculty Speaks Event"
+  date: "Feb 18, 2020"
+

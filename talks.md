@@ -17,10 +17,10 @@ This is a list of talks I gave over the years.
 
   <li class="listing-item">
     
-  {% if item.date %}
-     {{ item.date }}: &nbsp;&nbsp;
-  {% endif %}
   {{ item.title }}<br/>
+  {% if item.date %}
+     &nbsp;&nbsp;&nbsp; {{ item.date }} <br/>
+  {% endif %}
 
    &nbsp;&nbsp;&nbsp; {{ item.inst }}
     {% if item.host %}
