@@ -51,6 +51,14 @@
   inst: "KOSEF AI Panel"
   date: "July 6, 2021"
 
+- title: "Beyond Deep Learning"
+  inst: "KOCSEA Seminar Series #1"
+  date: "March 3, 2021"
+
+- title: "Reinforcement Learning Tutorial"
+  inst: "PRML Winter School 2021"
+  date: "Feb 17, 2021"
+
 - title: "Time, Brain, and Neural Networks"
   inst: "Samsung Research (Korea)"
   host: "Joohyung Lee"
@@ -60,7 +68,31 @@
   inst: "TAMU CSE graduate seminar"
   date: "Sep 16, 2020"
 
+- title: "Neural Network Control of Simulated Sensorimotor Agents"
+  inst: "CoMSO 2020 @ NIT Silchar, India"
+  date: "August 5, 2020"
+
 - title: "AI and Brain Science"
   inst: "TAMU CSE Faculty Speaks Event"
   date: "Feb 18, 2020"
+
+- title: "Understanding Deep Networks: From Within and From Without" 
+  inst: "NBNI 2018, Jeju, Korea"
+  date: "Oct 15, 2018"
+
+- title: "Tool Construction and Use in an Articulated Limb Controlled by Evolved Neural Networks"
+  inst: "KAIST Bio and Brain Engineering"
+  date: "June 19, 2017"
+
+- title: "Questioning Questions in Computational Neuroscience"
+  inst: "Society for Computational Neuroscience Winter School 2015"
+  date: "Dec 21, 2015"
+
+- title: "Relationship Between Visual Cortical Response Powerlaw and Perceptual Threshold"
+  inst: "Yonsei University"
+  date: "August 7, 2014"
+
+- title: "Evolution of Recollection and Prediction in Neural Networks"
+  inst: "Yonsei University"
+  date: "July 7, 2009"
 
