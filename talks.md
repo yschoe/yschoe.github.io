@@ -4,7 +4,7 @@ title: Talks
 permalink: /talks/
 ---
 
-This is a list of talks I gave over the years.
+This is a list of talks I gave over the years. This list is semi-automatically geneated from my LaTeX source files, so there may be some errors.
 
 <ul class="listing">
 {% assign count = 1 %}

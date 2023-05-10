@@ -205,11 +205,6 @@
   inst: "ksbns16-kesm-synthconn"
 
 
-- title: "Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
-  date: 2016-06-30
-  inst: "DGIST"
-
-
 - title: "Autonomous Understanding of Internal Neural Network States Through Action"
   date: 2013-06-28
   inst: "samsung16-sida"
@@ -225,11 +220,6 @@
   inst: "kabms16-questions"
 
 
-- title: " Questioning Questions in Computational Neuroscience"
-  date: 2016-11-20
-  inst: "TAMU CSE Honors program talk"
-
-
 - title: "Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
   date: 2015-02-23
   inst: "Cognoscenti (Texas A&M University)"
@@ -239,10 +229,6 @@
   date: 2014-12-12
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
 
-
-- title: "Relationship Between Visual Cortical Response Powerlaw andsPerceptual Threshold"
-  date: 2014-08-07
-  inst: "Yonsei University"
 
 
 - title: "Nature of Texture: Visual or Tactile?"
@@ -406,7 +392,7 @@
   inst: "University of Houston"
 
 
-- title: "tereo Pseudo-3D Rendering for Web-based Display of Scientific Volumetric Data"
+- title: "Stereo Pseudo-3D Rendering for Web-based Display of Scientific Volumetric Data"
   date: 2011-02-24
   inst: "TAMU IAMCS"
 
