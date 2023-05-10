@@ -1,809 +1,785 @@
 - title: "Inside vs. outside in neuroscience"
   inst: "K-BioX"
-  date: "April 13, 2023"
+  date: 2023-04-13
 
 - title: "From Simple Tools to Complex Cognition"
   inst: "Society for Computational Neuroscience Winter School"
-  date: "Feb 7 2023"
+  date: 2023-02-07
 
 - title: "Time, Brain, and Neural Networks"
   inst: "KOCSEA Tech Symposium 2022"
-  date: "Nov 12, 2022"
+  date: 2022-11-12
 
 - title: "Overcoming limitations of deep learning"
   inst: "4th Artificial Intelligence and Future Convergence Technology Workshop (Pukyoung University)"
-  date: "Nov 10, 2022"
+  date: 2022-11-10
 
 - title: "시간, 뇌, 지능"
   inst: "Yonsei University"
-  date: "July 29, 2022"
+  date: 2022-07-29
   host: "Kyoungwoo Lee"
 
 - title: "Evolution of Prediction"
   inst: "NSF IRES at KAIST Transportation Institute"
-  date: "July 25, 2022"
+  date: 2022-07-25
   host: "Kunhee Choi"
 
 - title: "Overcoming limitations of deep learning"
   inst: "Handong Global University-POSTECH AI Workshop"
   host: "Heeyoul Choi"
-  date: "Feb 7, 2022"
+  date: 2022-02-07
 
 - title: "Time, Brain, and Intelligence"
   inst: "2021 한국 계산 뇌신경과학회 연례 심포지움" 
-  date: "Nov 26, 2021"
+  date: 2021-11-26
 
 - title: "Overcoming limitations of deep learning"
   inst: "Dongguk University AI Department Invited Seminar"
   host: "Jihie Kim"
-  date: "Nov 11, 2021"
+  date: 2021-11-11
 
 - title: "Overcoming limitations of deep learning through insights from neuroscience"
   inst: "Association of Korean Neuroscientists e-Talk series"
-  date: "Aug 30, 2021"
+  date: 2021-08-30
 
 - title: "Discussion on AI"
   inst: "KOSEF AI Panel"
-  date: "July 6, 2021"
+  date: 2021-07-06
 
 - title: "Beyond Deep Learning"
   inst: "KOCSEA Seminar Series #1"
-  date: "March 3, 2021"
+  date: 2021-03-03
 
 - title: "Reinforcement Learning Tutorial"
   inst: "PRML Winter School 2021"
-  date: "Feb 17, 2021"
+  date: 2021-02-17
 
 - title: "인공지능이란?"
   inst: "한국예술종합학교 무용원 초청강연"
   host: "전수환"
-  date: "Nov 17, 2020"
+  date: 2020-11-17
 
 - title: "Time, Brain, and Neural Networks"
   inst: "Samsung Research (Korea)"
   host: "Joohyung Lee"
-  date: "Oct 20, 2020"
+  date: 2020-10-20
 
 - title: "Overcoming limitations of deep learning"
   inst: "TAMU CSE graduate seminar"
-  date: "Sep 16, 2020"
+  date: 2020-09-16
 
 - title: "Neural Network Control of Simulated Sensorimotor Agents"
   inst: "CoMSO 2020 @ NIT Silchar, India"
-  date: "August 5, 2020"
+  date: 2020-08-05
 
 - title: "AI and Brain Science"
   inst: "TAMU CSE Faculty Speaks Event"
-  date: "Feb 18, 2020"
+  date: 2020-02-18
 
 - title: "Understanding the Brain, From Within"
   inst: "Whole Brain Emulation Workshop, 2019"
-  date: "June 1, 2019"
+  date: 2019-06-01
 
 - title: "Overcoming limitations of deep learning"
   inst: "Yonsei University"
-  date: "March 13, 2019"
+  date: 2019-03-13
 
 - title: "Understanding Deep Networks: From Within and From Without" 
   inst: "NBNI 2018, Jeju, Korea"
-  date: "Oct 15, 2018"
+  date: 2018-10-15
 
 - title: "Tool Construction and Use in an Articulated Limb Controlled by Evolved Neural Networks"
   inst: "KAIST Bio and Brain Engineering"
-  date: "June 19, 2017"
+  date: 2017-06-19
 
 - title: "Questioning Questions in Computational Neuroscience"
   inst: "Texas A&M University CS Honors Program: Pasta and Profs"
-  date: "November 20, 2016"
+  date: 2016-11-20
 
 - title: "Questioning Questions in Computational Neuroscience"
   inst: "Society for Computational Neuroscience Winter School 2015"
-  date: "Dec 21, 2015"
+  date: 2015-12-21
 
 - title: "Relationship Between Visual Cortical Response Powerlaw and Perceptual Threshold"
   inst: "Yonsei University"
-  date: "August 7, 2014"
+  date: 2014-08-07
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
   inst: "Yonsei University"
-  date: "July 7, 2009"
+  date: 2009-07-07
 
 - title: "	Overcoming Limitations of Deep Learning"
-  date: "September 25, 2019"
+  date: 2019-09-25
   inst: "Samsung AI Center Cambridge"
 
 
 - title: "	Inside vs. Outside in Neuroscience and AI"
-  date: "December 2, 2019"
+  date: 2019-12-02
   inst: "Society of Computational Neuroscience (Korea)"
 
 
 - title: "Demystifying Deep Learning"
-  date: "March 25, 2019"
+  date: 2019-03-25
   inst: "Seoul National University"
 
 
 - title: "	Overcoming Limitations of Deep Learning"
-  date: "April 25, 2018"
+  date: 2018-04-25
   inst: "KAIST"
 
 
 - title: "	Overcoming Limitations of Deep Learning"
-  date: "May 2, 2019"
+  date: 2019-05-02
   inst: "Seoul National University"
 
 
-- title: "	Overcoming Limitations of Deep Learning"
-  date: "March 13, 2019"
-  inst: "Yonsei University"
-
 
 - title: "Tool Construction and Use in an Articulated Limb Controlled by Evolved Neural Networks"
-  date: "July 4, 2017"
+  date: 2017-07-04
   inst: "Kyungpook National University AI Flagship Project Workshop"
 
 
 - title: "Meaning and Consciousness in the Brain Unraveled Through Machine Learning"
-  date: "July 4, 2017"
+  date: 2017-07-04
   inst: "AI Korea"
 
 
 - title: "Meaning and Consciousness in the Brain Unraveled Through Machine Learning"
-  date: "July 6, 2017"
+  date: 2017-07-06
   inst: "2017 Brain and AI Summer Workshop, Brain Engineering Society of Korea"
 
 
 
-- title: "~Motor Aspect of Visual Perception"
-  date: "June 26, 2017"
+- title: "Motor Aspect of Visual Perception"
+  date: 2017-06-26
   inst: "ETRI"
 
 
 - title: "Tool Construction and Use in an Articulated Limb Controlled by Evolved Neural Networks"
-  date: "June 19, 2017"
+  date: 2017-06-19
   inst: "KAIST"
 
 
 - title: "	Computational Neuroscience Research "
-  date: "April 20, 2017"
+  date: 2017-04-20
   inst: "TAMU CSE Ace-scholars"
 
 
 - title: " Representation vs. Usage in Neural Code"
-  date: "February 24, 2017"
+  date: 2017-02-24
   inst: "kaba17-repr"
 
 
 - title: "AI in the Military:A Perspective from AI"
-  date: "February 22, 2017"
+  date: 2017-02-22
   inst: "TAMU MCS Wiley lecture"
 
 
 - title: " Understanding Neural Networks, from Without and from Within"
-  date: "December 22, 2016"
+  date: 2016-12-22
   inst: "Korea Institue for Advanced Studies"
 
 
 - title: "Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
-  date: "November 5, 2016"
+  date: 2016-11-05
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
 
 
 - title: "Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
-  date: "June 30, 2016"
+  date: 2016-06-30
   inst: "sfn16-synth-conn-poster"
 
 
 - title: " Questioning Questions in Computational Neuroscience"
-  date: "October 28, 2016"
+  date: 2016-10-28
   inst: "ece-bio16-probposing"
 
 
 - title: "Toward an Artificial Intelligence with Intrinsic Semantics"
-  date: "June 28, 2013"
+  date: 2013-06-28
   inst: "Yonsei University"
 
 
 - title: "	High-Throughtput, High-Resolution Whole Brain Imaging	(and Analysis)"
-  date: "January 1, 2016"
+  date: 2016-01-01
   inst: "ksbns16-kesm-synthconn"
 
 
 - title: "Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
-  date: "June 30, 2016"
+  date: 2016-06-30
   inst: "DGIST"
 
 
 - title: "Autonomous Understanding of Internal Neural Network States Through Action"
-  date: "June 28, 2013"
+  date: 2013-06-28
   inst: "samsung16-sida"
 
 
 - title: "From Problem Solving tosProblem Posing"
-  date: "December 10, 2015"
+  date: 2015-12-10
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
 
 
 - title: " Questioning Questions in Computational Neuroscience"
-  date: "November 19, 2016"
+  date: 2016-11-19
   inst: "kabms16-questions"
 
 
 - title: " Questioning Questions in Computational Neuroscience"
-  date: "Neuroscience 2015"
-  inst: "knu16-prob"
-
-
-- title: " Questioning Questions in Computational Neuroscience"
-  date: "Neuroscience 2015"
-  inst: "Society of Computational Neuroscience (Korea)"
-
-
-- title: " Questioning Questions in Computational Neuroscience"
-  date: "November 20, 2016"
+  date: 2016-11-20
   inst: "TAMU CSE Honors program talk"
 
 
 - title: "Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
-  date: "February 23, 2015"
-  inst: "Cognoscenti (Texas A&M University)"
-
-
-- title: "Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
-  date: "February 23, 2015"
+  date: 2015-02-23
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Natural and Synthetic Connectomics: Investigating Evolved Neural Circuits"
-  date: "December 12, 2014"
+  date: 2014-12-12
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
 
 
 - title: "Relationship Between Visual Cortical Response Powerlaw andsPerceptual Threshold"
-  date: "August 7, 2014"
+  date: 2014-08-07
   inst: "Yonsei University"
 
 
 - title: "Nature of Texture: Visual or Tactile?"
-  date: "January 1, 2014"
+  date: 2014-01-01
   inst: "Samsung Advanced Institute of Technology"
 
 
 - title: "Knife-Edge Scanning Microscopy for Brain Connectivity Mapping (and Beyond)"
-  date: "November 20, 2013"
+  date: 2013-11-20
   inst: "UT Southwestern"
 
 
 - title: "Knife-Edge Scanning Microscopy for Brain Circuit Mapping"
-  date: "November 14, 2013"
+  date: 2013-11-14
   inst: "TAMU Engineering-LIfe Science"
 
 
 - title: "Learning About The Outside World While Sitting Inside the Brain"
-  date: "November 5, 2013"
+  date: 2013-11-05
   inst: "tacs13"
 
 
 - title: "The BRAIN Initiative and Other Federal Funding"
-  date: "October 29, 2013"
+  date: 2013-10-29
   inst: "TAMU College of Engineering Brain Meeting"
 
 
 - title: "Knife-Edge Scanning Microscopy for Brain Connectivity Mapping"
-  date: "September 2, 2013"
+  date: 2013-09-02
   inst: "bcn13"
 
 
 - title: "Imaging and Mining Brain Circuitry at Submicrometer Resolution"
-  date: "July 19, 2013"
+  date: 2013-07-19
   inst: "University of California, San Diego"
 
 
 - title: "Autonomous Semantic Grounding Through Sensorimotor Learning"
-  date: "July 3, 2013"
+  date: 2013-07-03
   inst: "Yonsei University"
 
 
 - title: "Mouse Connectomics: Exploring the Mouse Brain's Wiring Diagram"
-  date: "July 3, 2013"
+  date: 2013-07-03
   inst: "Korea University"
 
 
 - title: "Learning About the Meaning of Deep RepresentationssThrough Action"
-  date: "June 28, 2013"
+  date: 2013-06-28
   inst: "samsung13"
 
 
 - title: " Autonomous Semantics in Natural and Artificial Agents"
-  date: "June 26, 2013"
+  date: 2013-06-26
   inst: "LG Electronics"
 
 
 - title: "Agent Autonomy Through Action"
-  date: "June 20, 2013"
+  date: 2013-06-20
   inst: "DGIST"
 
 
 - title: "Nature of Texture: Visual or Tactile?"
-  date: "January 1, 2013"
+  date: 2013-01-01
   inst: "Yonsei University"
 
 
 - title: "Intelligent Systems and Robotics Research at Texas A&M CSE"
-  date: "November 14, 2012"
+  date: 2012-11-14
   inst: "TAMU CSE grad seminar"
 
 
 - title: " Neuroevolution and Other Techniques for Generating Realistic Behavior"
-  date: "November 14, 2012"
+  date: 2012-11-14
   inst: "Texas Aggies Game Developers"
 
 
 - title: " Evolving Neural Network Controllers for Complex Behavior"
-  date: "November 12, 2012"
+  date: 2012-11-12
   inst: "TAMU CSE grad seminar"
 
 
 
 - title: "Visual Cortical Response Power Law and Perceptual Thresholding"
-  date: "October 3, 2012"
+  date: 2012-10-03
   inst: "TAMU IAMCS"
 
 
 - title: "Relationship Between Visual Cortical Response Powerlaw andsPerceptual Threshold"
-  date: "September 18, 2012"
+  date: 2012-09-18
   inst: "TAMU ECE"
 
 
 - title: "centerline{Strange Relationship Between "
-  date: "August 9, 2012"
+  date: 2012-08-09
   inst: "Kyungpook National University"
 
 
 - title: "centerline{Strange Relationship Between "
-  date: "August 1, 2012"
+  date: 2012-08-01
   inst: "KAIST"
 
 
 - title: "centerline{Strange Relationship Between "
-  date: "July 22, 2012"
+  date: 2012-07-22
   inst: "ETRI"
 
 
 - title: "Imaging and Mining Brain Circuitry at Submicrometer Resolution"
-  date: "May 19, 2012"
+  date: 2012-05-19
   inst: "austin12"
 
 
 - title: "Temporal Dynamics at Multiple Levels of Brain Function"
-  date: "April 2, 2012"
+  date: 2012-04-02
   inst: "Braincorp"
 
 
 - title: "Understanding The External World While Sitting Inside the Brain"
-  date: "March 2, 2012"
+  date: 2012-03-02
   inst: "TAMU Health and Kineseology"
 
 
 - title: "Strange Relationship Between Perceptual Threshold and Power Lawsin Cortical Response Distribution"
-  date: "February 27, 2012"
+  date: 2012-02-27
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Understanding The External World While Sitting Inside the Brain"
-  date: "December 5, 2011"
+  date: 2011-12-05
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Emergence of Past and Future in Evolving Neural Networks"
-  date: "January 1, 2011"
+  date: 2011-01-01
   inst: "TAMU UPE"
 
 
 - title: "Computational Modeling of the Thalamocortical Loop"
-  date: "January 1, 2011"
+  date: 2011-01-01
   inst: "KABMS"
 
 
 - title: "Evolution of Time in Neural Networks: Present to Past to Future"
-  date: "January 1, 2011"
+  date: 2011-01-01
   inst: "Forum for AI: University of Texas at Austin"
 
 
 - title: "Understanding the Brain, From Within"
-  date: "July 7, 2011"
+  date: 2011-07-07
   inst: "TAMU CSE REU program"
 
 
 - title: "Global Sub-Micrometer-Level Survey of the Mouse Brain Neural CircuitsUsing the Knife-Edge Scanning Microscope"
-  date: "April 6, 2011"
+  date: 2011-04-06
   inst: "TAMU IAMCS"
 
 
 - title: "Global Sub-Micrometer-Level Survey of the Mouse Brain Neural CircuitsUsing the Knife-Edge Scanning Microscope"
-  date: "March 4, 2011"
+  date: 2011-03-04
   inst: "University of Houston"
 
 
 - title: "tereo Pseudo-3D Rendering for Web-based Display of Scientific Volumetric Data"
-  date: "February 24, 2011"
+  date: 2011-02-24
   inst: "TAMU IAMCS"
 
 
 - title: "Nature of Texture: Visual or Tactile?"
-  date: "January 1, 2010"
+  date: 2010-01-01
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
-  date: "January 1, 2010"
+  date: 2010-01-01
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
 
 
 - title: " Global Sub-Micrometer-Level Survey of the Mouse ConnectomeUsing the Knife-Edge Scanning Microscope"
-  date: "October 26, 2010"
+  date: 2010-10-26
   inst: "Indiana University"
 
 
 - title: "Motor Exploration Is Key to Decoding Perceptual Primitives"
-  date: "October 22, 2010"
+  date: 2010-10-22
   inst: "Armadillo"
 
 
 - title: "Emergence of Past and Future in Evolving Neural Networks"
-  date: "January 1, 2010"
+  date: 2010-01-01
   inst: "TAMU CSE IAP"
 
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
-  date: "January 1, 2009"
+  date: 2009-01-01
   inst: "Yonsei University"
 
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
-  date: "January 1, 2009"
-  inst: "Yonsei University"
-
-
-- title: "Evolution of Recollection and Prediction in Neural Networks"
-  date: "January 1, 2010"
+  date: 2010-01-01
   inst: "samsung10"
 
 
 - title: "Motor System's Role in Grounding, Development, and Recognition in Vision"
-  date: "July 9, 2010"
+  date: 2010-07-09
   host: "Li Zhaoping"
   inst: "Tsinghua University"
 
 
 - title: "	Investigating Objective Necessary Conditions of Consciousness in Simulated Evolution"
-  date: "January 1, 2010"
+  date: 2010-01-01
   inst: "Society of Computational Neuroscience (Korea)"
 
 
 - title: " Are Conceptual as well as Technological/Computational Breakthroughs Necessary for Progress in Brain Emulation?"
-  date: "June 5, 2010"
+  date: 2010-06-05
   inst: "asim10"
 
 
 - title: "Motor System's Role in Grounding, Development, and Recognition in Vision"
-  date: "May 6, 2010"
+  date: 2010-05-06
   inst: "nrl10"
 
 
 - title: "Motor System's Role in Grounding, Development, and Recognition in Vision"
-  date: "April 14, 2010"
+  date: 2010-04-14
   inst: "bcse10-pres"
 
 
 - title: "Current Trends in Autonomous Intelligent Agent Technology"
-  date: "April 1, 2010"
+  date: 2010-04-01
   inst: "Samsung Thales"
 
 
 - title: " Global Sub-Micrometer-Level Survey of the Mouse ConnectomeUsing the Knife-Edge Scanning Microscope"
-  date: "January 1, 2010"
+  date: 2010-01-01
   inst: "conn10-pres"
 
 
 - title: " Global Sub-Micrometer-Level Survey of the Mouse ConnectomeUsing the Knife-Edge Scanning Microscope"
-  date: "March 9, 2010"
+  date: 2010-03-09
   inst: "TAMU ECE"
 
 
 
 - title: " Imaging the Whole Mouse Brain at Submicromter ResolutionsUsing the Knife-Egde Scanning Microscope"
-  date: "November 6, 2009"
+  date: 2009-11-06
   inst: "University of Texas Medical Branch, Galveston"
 
 
 - title: "Nature of Texture: Visual or Tactile?"
-  date: "January 1, 2010"
+  date: 2010-01-01
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Nature of Texture: Visual or Tactile?"
-  date: "January 1, 2009"
+  date: 2009-01-01
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
 
 
 - title: " Complete submicrometer scans of mouse brain microstructure using the Knife-Edge Scanning Microscope"
-  date: "November 13, 2009"
+  date: 2009-11-13
   inst: "KABMS"
 
 
 - title: "Multi-scale Imaging and Multi-scale Modeling of the Brain"
-  date: "September 23, 2009"
+  date: 2009-09-23
   inst: "tamut09-v2"
 
 
 - title: "Multi-scale Imaging and Multi-scale Modeling of the Brain"
-  date: "September 16, 2009"
+  date: 2009-09-16
   inst: "tamut09"
 
 
 - title: "Whole Mouse Brain Imaging at Submicrometer Resolution with	the Knife-Edge Scanning Microscope"
-  date: "September 11, 2009"
+  date: 2009-09-11
   inst: "nano09"
 
 
 - title: "From Connectomics to Theories of Brain Function: An Internal,	Dynamical Perspective"
-  date: "July 31, 2009"
+  date: 2009-07-31
   inst: "compneuro09-pres"
 
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
-  date: "January 1, 2009"
+  date: 2009-01-01
   inst: "knu09"
 
 
 - title: "Nature of Texture: Visual or Tactile?"
-  date: "January 1, 2009"
+  date: 2009-01-01
   inst: "ETRI"
 
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
-  date: "January 1, 2009"
+  date: 2009-01-01
   inst: "POSTECH"
 
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
-  date: "January 1, 2009"
+  date: 2009-01-01
   inst: "Seoul National University"
 
 
 - title: "Evolution of Self-Awarenesssand Agency:largeInternal State Predictability as a Precondition?"
-  date: "January 1, 2009"
+  date: 2009-01-01
   inst: "fac09"
 
 
 - title: "Dissecting, Imaging, and Modeling the Mouse Brain Network"
-  date: "March 5, 2009"
+  date: 2009-03-05
   inst: "U Texas Medical School, Houston"
 
 
 - title: " External Material Interaction: An Evolutionary Precursor ofsInternalized Memory?"
-  date: "February 9, 2008"
+  date: 2008-02-09
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Dissecting, Imaging, and Modeling Brain Networks"
-  date: "October 26, 2008"
+  date: 2008-10-26
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
 
 
 - title: "Motor System's Role in Grounding, Development, and Recognition in Vision"
-  date: "October 10, 2008"
+  date: 2008-10-10
   inst: "Forum for AI: University of Texas at Austin"
 
 
 - title: "Dissecting, Imaging, and Modeling Brain Networks"
-  date: "October 2, 2008"
+  date: 2008-10-02
   inst: "ugrc08-pres"
 
 
 - title: "Knife-Edge Scanning Microscopy: normalsize {em High-throughput Imaging andsAnalysis of Massive Volumes of Neuronal Microstructures and Networks"
-  date: "August 19, 2008"
+  date: 2008-08-19
   inst: "nsi08-pres"
 
 
 - title: "From Brain Anatomy to Theory ofsNeural Computation and Beyond"
-  date: "September 26, 2008"
+  date: 2008-09-26
   inst: "fac08"
 
 
 - title: "Dissecting, Imaging, and Modeling Brain Networks"
-  date: "August 21, 2008"
+  date: 2008-08-21
   inst: "tamut08"
 
 
 - title: "Action as a Foundation of Autonomous Visual Understanding"
-  date: "May 28, 2007"
+  date: 2007-05-28
   inst: "bcn07"
 
 
-  date: "January 1, 2007"
+  date: 2007-01-01
   inst: "nil07-fall"
 
 
 - title: "Action as a Foundation of Autonomous Visual Understanding"
-  date: "August 16, 2007"
+  date: 2007-08-16
   inst: "ucf07"
 
 
 - title: "Multiscale Imaging, Analysis, and Integration ofsBrain Networks"
-  date: "June 7, 2007"
+  date: 2007-06-07
   inst: "ETRI"
 
 
 - title: "Detecting Salient Contours in Natural Images Using Orientation-Filter Response Distribution"
-  date: "June 4, 2007"
+  date: 2007-06-04
   inst: "ETRI"
 
 
 - title: "Prediction, a Prerequisite to Goal-directed Behavior, and Its Possible Origin in Delay Compensation"
-  date: "January 1, 2007"
+  date: 2007-01-01
   inst: "KAIST"
 
 
 - title: "Action as a Foundation of Autonomous Visual Understanding"
-  date: "May 28, 2007"
+  date: 2007-05-28
   inst: "KAIST"
 
 
 - title: "The Simultaneous Chain: A New Look at Serially OrganizedsBehavior, by Herbert Terrace"
-  date: "January 1, 2007"
+  date: 2007-01-01
   inst: "blab07"
 
 
 - title: "Autonomous Grounding in Natural and Artificial Agents"
-  date: "March 26, 2007"
+  date: 2007-03-26
   inst: "freshmen07"
 
 
 - title: "Autonomous Semantics: Towards a Meaningful Information Technology"
-  date: "January 1, 2006"
+  date: 2006-01-01
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
 
 
 - title: "Prediction, a Prerequisite to Goal-directed Behavior, and Its Possible Origin in Delay Compensation"
-  date: "January 1, 2006"
+  date: 2006-01-01
   inst: "mind06"
 
 
 - title: "Exploring the Structure and Function of Brain Networks"
-  date: "September 20, 2006"
+  date: 2006-09-20
   inst: "TAMU CSE IAP"
 
 
 - title: "What Makes Your Thought March Forward?"
-  date: "September 14, 2006"
+  date: 2006-09-14
   inst: "neuro06"
 
 
 - title: "Binding Problem for Input vs. Output Representationssand the Role of the Thalamus in Its Solution"
-  date: "April 3, 2006"
+  date: 2006-04-03
   inst: "bme06"
 
 
 - title: "Relationship between Flash-Lag Effect and Delay Compensation in the Nervous System"
-  date: "January 1, 2006"
+  date: 2006-01-01
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Learning about the Outside World, Trapped within Your Brain"
-  date: "February 15, 2006"
+  date: 2006-02-15
   inst: "grad06"
 
 
 - title: "Autonomous Learning of the Semantics of Internal Sensory StatessThrough Sensorimotor Development"
-  date: "October 20, 2005"
+  date: 2005-10-20
   inst: "Korea University"
 
 
 - title: "Importance of Temporal Factors in Inferring Network Function from ItssStructure: A Lesson from the Thalamocortical Circuit in the Brain"
-  date: "October 20, 2005"
+  date: 2005-10-20
   inst: "mcn05"
 
 
 - title: "Understanding of Agent's Own Inner State through VoluntarysAction that Forces Equilibrium in Agent--Environment Dynamics"
-  date: "August 5, 2005"
+  date: 2005-08-05
   inst: "ids05-pres"
 
 
 - title: "The Main Question"
-  date: "January 1, 2005"
+  date: 2005-01-01
   host: "Stevan Harnad"
   inst: "University of Quebec, Montreal (UQAM)"
 
 
 - title: "Inferring External Stimulus Properties from Internal Sensory State Alone Through Action and Invariance"
-  date: "August 3, 2005"
+  date: 2005-08-03
   inst: "McGill University"
 
 
 - title: "Binding Problem for Input vs. Output Representationssand the Role of the Thalamus in Its Solution"
-  date: "June 14, 2005"
+  date: 2005-06-14
   inst: "Salk Institute"
 
 
 - title: "Binding Problem of the Second Kind: Can the Brain	Confuse Its Inputs from Its Outputs?"
-  date: "November 15, 2004"
+  date: 2004-11-15
   inst: "grad04"
 
 
 - title: "Autonomous Semantics in Natural and Artificial Agents"
-  date: "January 1, 2004"
+  date: 2004-01-01
   inst: "ship04"
 
 
 - title: "Neural Intelligence Lab"
-  date: "January 1, 2004"
+  date: 2004-01-01
   inst: "display04"
 
 
 - title: "Learning the Meaning of Neural Activity	Through Sensory-Invariance Driven Action"
-  date: "March 2, 2004"
+  date: 2004-03-02
   inst: "phil04"
 
 
 - title: "Autonomous Semantics in Natural and Artificial Agents"
-  date: "January 1, 2003"
+  date: 2003-01-01
   inst: "cpsc681-2003"
 
 
 - title: "Learning the Semantics of Neural Representations ThroughsInvariance-Driven Action"
-  date: "Armadillo 2003"
+  date: 2003-01-01
   inst: "arma03"
 
 
 - title: "Learning the Meaning of Neural Spikes ThroughsSensory-Invariance Driven Action"
-  date: "September 8, 2003"
+  date: 2003-09-08
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Neural Intelligence Lab"
-  date: "January 1, 2003"
+  date: 2003-01-01
   inst: "TAMU CSE grad orientation"
 
 
 - title: "Analogical Cascade: A Theory on the Role of the Thalamo-CorticalsLoop in Brain Function"
-  date: "January 1, 2002"
+  date: 2002-01-01
   inst: "Forum for AI: University of Texas at Austin"
 
 
 - title: "Analogical Cascade: A Theory on the Role of the Thalamo-CorticalsLoop in Brain Function"
-  date: "January 1, 2003"
+  date: 2003-01-01
   inst: "hp2003"
 
 
 - title: "Analogical Cascade: A Theory on the Role of the Thalamo-CorticalsLoop in Brain Function"
-  date: "January 1, 2003"
+  date: 2003-01-01
   inst: "bts-hp-2003"
 
 
 - title: "Analogical Cascade: A Theory on the Role of the Thalamo-CorticalsLoop in Brain Function"
-  date: "January 1, 2002"
+  date: 2002-01-01
   inst: "Armadillo"
 
 
 - title: "Analogical Cascade: A Theory on the Role of the Thalamo-CorticalsLoop in Brain Function"
-  date: "January 1, 2002"
+  date: 2002-01-01
   inst: "ai-robotics2002"
 
 
 - title: "Neural Intelligence Lab"
-  date: "January 1, 2002"
+  date: 2002-01-01
   inst: "TAMU CSE grad orientation"
 
 
 - title: "Second-Order Isomorphism: A Reinterpretation and	Its Implications in Brain and Cognitive Sciences"
-  date: "January 1, 2002"
+  date: 2002-01-01
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Perceptual Grouping in a Self-Organizing Map of	Spiking Neurons"
-  date: "March 08, 2002"
+  date: 2002-03-08
   inst: "cs320-2002"
 
 
