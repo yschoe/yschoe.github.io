@@ -7,6 +7,7 @@ permalink: /talks/
 This is a list of talks I gave over the years.
 
 <ul class="listing">
+{% assign count = 1 %}
 {% for item in site.data.talks %}
 
   {% capture y %}{{item.date | date:"%Y"}}{% endcapture %}
@@ -17,7 +18,8 @@ This is a list of talks I gave over the years.
 
   <li class="listing-item">
     
-  {{ item.title }}<br/>
+  {{ count }}. {{ item.title }}<br/>
+  {% assign count = count|plus: 1 %}
   {% if item.date %}
      &nbsp;&nbsp;&nbsp; {{ item.date }} <br/>
   {% endif %}

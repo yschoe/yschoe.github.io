@@ -42,11 +42,6 @@
   inst: "Association of Korean Neuroscientists e-Talk series"
   date: "Aug 30, 2021"
 
-- title: "인공지능이란?"
-  inst: "한국예술종합학교 무용원 초청강연"
-  host: "전수환"
-  date: "Nov 17, 2020"
-
 - title: "Discussion on AI"
   inst: "KOSEF AI Panel"
   date: "July 6, 2021"
@@ -58,6 +53,11 @@
 - title: "Reinforcement Learning Tutorial"
   inst: "PRML Winter School 2021"
   date: "Feb 17, 2021"
+
+- title: "인공지능이란?"
+  inst: "한국예술종합학교 무용원 초청강연"
+  host: "전수환"
+  date: "Nov 17, 2020"
 
 - title: "Time, Brain, and Neural Networks"
   inst: "Samsung Research (Korea)"
