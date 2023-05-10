@@ -8,7 +8,8 @@ This is a list of talks I gave over the years.
 
 <ul class="listing">
 {% assign count = 1 %}
-{% for item in site.data.talks %}
+{% assign sorted = site.data.talks | sofr: 'date' %}
+{% for item in sorted %}
 
   {% capture y %}{{item.date | date:"%Y"}}{% endcapture %}
   {% if year != y %}
