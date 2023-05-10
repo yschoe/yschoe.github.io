@@ -76,6 +76,14 @@
   inst: "TAMU CSE Faculty Speaks Event"
   date: "Feb 18, 2020"
 
+- title: "Understanding the Brain, From Within"
+  inst: "Whole Brain Emulation Workshop, 2019"
+  date: "June 1, 2019"
+
+- title: "Overcoming limitations of deep learning"
+  inst: "Yonsei University"
+  date: "March 13, 2019"
+
 - title: "Understanding Deep Networks: From Within and From Without" 
   inst: "NBNI 2018, Jeju, Korea"
   date: "Oct 15, 2018"
@@ -83,6 +91,10 @@
 - title: "Tool Construction and Use in an Articulated Limb Controlled by Evolved Neural Networks"
   inst: "KAIST Bio and Brain Engineering"
   date: "June 19, 2017"
+
+- title: "Questioning Questions in Computational Neuroscience"
+  inst: "Texas A&M University CS Honors Program: Pasta and Profs"
+  date: "November 20, 2016"
 
 - title: "Questioning Questions in Computational Neuroscience"
   inst: "Society for Computational Neuroscience Winter School 2015"
