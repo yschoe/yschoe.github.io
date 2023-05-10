@@ -110,7 +110,7 @@
 
 - title: "	Overcoming Limitations of Deep Learning"
   date: "September 25, 2019"
-  inst: "saic-cam2019-dl"
+  inst: "Samsung AI Center Cambridge"
 
 
 - title: "	Inside vs. Outside in Neuroscience and AI"
@@ -140,17 +140,18 @@
 
 - title: "Tool Construction and Use in an Articulated Limb Controlled by Evolved Neural Networks"
   date: "July 4, 2017"
-  inst: "ai-flagship17-tool"
+  inst: "Kyungpook National University AI Flagship Project Workshop"
 
 
 - title: "Meaning and Consciousness in the Brain Unraveled Through Machine Learning"
   date: "July 4, 2017"
-  inst: "ai-korea17-sida-pred"
+  inst: "AI Korea"
 
 
 - title: "Meaning and Consciousness in the Brain Unraveled Through Machine Learning"
   date: "July 6, 2017"
-  inst: "brain-eng17-sida-pred"
+  inst: "2017 Brain and AI Summer Workshop, Brain Engineering Society of Korea"
+
 
 
 - title: "~Motor Aspect of Visual Perception"
@@ -165,22 +166,22 @@
 
 - title: "	Computational Neuroscience Research "
   date: "April 20, 2017"
-  inst: "ace-scholars16-questions"
+  inst: "TAMU CSE Ace-scholars"
 
 
-- title: " Representation vs. Usage insNeural Code"
+- title: " Representation vs. Usage in Neural Code"
   date: "February 24, 2017"
   inst: "kaba17-repr"
 
 
 - title: "AI in the Military:A Perspective from AI"
   date: "February 22, 2017"
-  inst: "msc-wiley17-ai"
+  inst: "TAMU MCS Wiley lecture"
 
 
 - title: " Understanding Neural Networks, from Without and from Within"
   date: "December 22, 2016"
-  inst: "kias2016-nnet"
+  inst: "Korea Institue for Advanced Studies"
 
 
 - title: "Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
@@ -240,17 +241,7 @@
 
 - title: " Questioning Questions in Computational Neuroscience"
   date: "November 20, 2016"
-  inst: "tamu-honors16-questions"
-
-
-- title: "Synthetic Connectomics to Tackle Big Data Challenges in Its Natural Counterpart"
-  date: "January 1, 2015"
-  inst: "ukc15-pres"
-
-
-- title: "Synthetic Connectomics to Tackle Big Data Challenges in Its Natural Counterpart"
-  date: "January 1, 2015"
-  inst: "ukc15-draft"
+  inst: "TAMU CSE Honors program talk"
 
 
 - title: "Emergence of Tool Use in an Articulated Limb Controlled by Evolved Neural Circuits"
@@ -263,14 +254,9 @@
   inst: "Cognoscenti (Texas A&M University)"
 
 
-- title: "sNatural and Synthetic Connectomics: Investigating Evolved Neural Circuits"
+- title: "Natural and Synthetic Connectomics: Investigating Evolved Neural Circuits"
   date: "December 12, 2014"
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
-
-
-- title: "	Open Web Atlas for High-Resolution 3D Mouse Brain Datas"
-  date: "January 1, 2014"
-  inst: "crcns14-pres"
 
 
 - title: "Relationship Between Visual Cortical Response Powerlaw andsPerceptual Threshold"
@@ -280,21 +266,17 @@
 
 - title: "Nature of Texture: Visual or Tactile?"
   date: "January 1, 2014"
-  inst: "samsung14"
-
-
-  date: "January 1, 2014"
-  inst: "tamin14-datablitz"
+  inst: "Samsung Advanced Institute of Technology"
 
 
 - title: "Knife-Edge Scanning Microscopy for Brain Connectivity Mapping (and Beyond)"
   date: "November 20, 2013"
-  inst: "utsw13"
+  inst: "UT Southwestern"
 
 
 - title: "Knife-Edge Scanning Microscopy for Brain Circuit Mapping"
   date: "November 14, 2013"
-  inst: "englife13"
+  inst: "TAMU Engineering-LIfe Science"
 
 
 - title: "Learning About The Outside World While Sitting Inside the Brain"
@@ -302,9 +284,9 @@
   inst: "tacs13"
 
 
-- title: "sThe BRAIN Initiative and Other Federal Funding"
+- title: "The BRAIN Initiative and Other Federal Funding"
   date: "October 29, 2013"
-  inst: "coe-brain13-intro2"
+  inst: "TAMU College of Engineering Brain Meeting"
 
 
 - title: "Knife-Edge Scanning Microscopy for Brain Connectivity Mapping"
@@ -312,19 +294,9 @@
   inst: "bcn13"
 
 
-- title: "sThe BRAIN Initiative and Other Federal Funding"
-  date: "August 16, 2013"
-  inst: "coe-brain13-intro"
-
-
-- title: "Brain Networks Laboratory"
-  date: "August 16, 2013"
-  inst: "coe-brain13"
-
-
 - title: "Imaging and Mining Brain Circuitry at Submicrometer Resolution"
   date: "July 19, 2013"
-  inst: "ucsd13"
+  inst: "University of California, San Diego"
 
 
 - title: "Autonomous Semantic Grounding Through Sensorimotor Learning"
@@ -334,7 +306,7 @@
 
 - title: "Mouse Connectomics: Exploring the Mouse Brain's Wiring Diagram"
   date: "July 3, 2013"
-  inst: "korea13"
+  inst: "Korea University"
 
 
 - title: "Learning About the Meaning of Deep RepresentationssThrough Action"
@@ -344,12 +316,7 @@
 
 - title: " Autonomous Semantics in Natural and Artificial Agents"
   date: "June 26, 2013"
-  inst: "lg13"
-
-
-- title: "	Brief Introduction to Knife-Edge Scanning Microscopy"
-  date: "January 1, 2013"
-  inst: "kesm-intro13"
+  inst: "LG Electronics"
 
 
 - title: "Agent Autonomy Through Action"
@@ -364,32 +331,28 @@
 
 - title: "Intelligent Systems and Robotics Research at Texas A&M CSE"
   date: "November 14, 2012"
-  inst: "csce18113"
+  inst: "TAMU CSE grad seminar"
 
 
 - title: " Neuroevolution and Other Techniques for Generating Realistic Behavior"
   date: "November 14, 2012"
-  inst: "tagd12"
+  inst: "Texas Aggies Game Developers"
 
 
 - title: " Evolving Neural Network Controllers for Complex Behavior"
   date: "November 12, 2012"
-  inst: "cs181-12"
+  inst: "TAMU CSE grad seminar"
 
-
-- title: "Navigating Through Your Life:sSome Useful Tips"
-  date: "October 25, 2012"
-  inst: "ksea-tamu12"
 
 
 - title: "Visual Cortical Response Power Law and Perceptual Thresholding"
   date: "October 3, 2012"
-  inst: "iamcs12"
+  inst: "TAMU IAMCS"
 
 
 - title: "Relationship Between Visual Cortical Response Powerlaw andsPerceptual Threshold"
   date: "September 18, 2012"
-  inst: "ece12"
+  inst: "TAMU ECE"
 
 
 - title: "centerline{Strange Relationship Between "
@@ -414,22 +377,17 @@
 
 - title: "Temporal Dynamics at Multiple Levels of Brain Function"
   date: "April 2, 2012"
-  inst: "braincorp12"
+  inst: "Braincorp"
 
 
 - title: "Understanding The External World While Sitting Inside the Brain"
   date: "March 2, 2012"
-  inst: "hlkn12"
+  inst: "TAMU Health and Kineseology"
 
 
 - title: "Strange Relationship Between Perceptual Threshold and Power Lawsin Cortical Response Distribution"
   date: "February 27, 2012"
   inst: "Cognoscenti (Texas A&M University)"
-
-
-- title: "Random Tips from a Random Prof"
-  date: "Feb 16, 2012"
-  inst: "cse-lwp12"
 
 
 - title: "Understanding The External World While Sitting Inside the Brain"
@@ -439,42 +397,37 @@
 
 - title: "Emergence of Past and Future in Evolving Neural Networks"
   date: "January 1, 2011"
-  inst: "upe11"
+  inst: "TAMU UPE"
 
 
 - title: "Computational Modeling of the Thalamocortical Loop"
   date: "January 1, 2011"
-  inst: "kabms11"
+  inst: "KABMS"
 
 
 - title: "Evolution of Time in Neural Networks: Present to Past to Future"
   date: "January 1, 2011"
-  inst: "fai11"
+  inst: "Forum for AI: University of Texas at Austin"
 
 
 - title: "Understanding the Brain, From Within"
   date: "July 7, 2011"
-  inst: "reu11-pres"
+  inst: "TAMU CSE REU program"
 
 
-- title: "largeGlobal Sub-Micrometer-Level Survey of the Mouse Brain Neural CircuitsUsing the Knife-Edge Scanning Microscope"
+- title: "Global Sub-Micrometer-Level Survey of the Mouse Brain Neural CircuitsUsing the Knife-Edge Scanning Microscope"
   date: "April 6, 2011"
-  inst: "iamcs11-coffee"
+  inst: "TAMU IAMCS"
 
 
-- title: "Nature of Texture: Visual or Tactile?"
-  date: "January 1, 2011"
-  inst: "fac11"
-
-
-- title: "largeGlobal Sub-Micrometer-Level Survey of the Mouse Brain Neural CircuitsUsing the Knife-Edge Scanning Microscope"
+- title: "Global Sub-Micrometer-Level Survey of the Mouse Brain Neural CircuitsUsing the Knife-Edge Scanning Microscope"
   date: "March 4, 2011"
-  inst: "uh11"
+  inst: "University of Houston"
 
 
-- title: "[Advertised] ~ Stereo Pseudo-3D Rendering for Web-based Display of ScientificsVolumetric Data"
+- title: "tereo Pseudo-3D Rendering for Web-based Display of Scientific Volumetric Data"
   date: "February 24, 2011"
-  inst: "iamcs11"
+  inst: "TAMU IAMCS"
 
 
 - title: "Nature of Texture: Visual or Tactile?"
@@ -489,22 +442,17 @@
 
 - title: " Global Sub-Micrometer-Level Survey of the Mouse ConnectomeUsing the Knife-Edge Scanning Microscope"
   date: "October 26, 2010"
-  inst: "indiana10-pres"
+  inst: "Indiana University"
 
 
 - title: "Motor Exploration Is Key to Decoding Perceptual Primitives"
   date: "October 22, 2010"
-  inst: "arma10"
-
-
-- title: "Texas A&M CSE Contest"
-  date: "October 2, 2010"
-  inst: "texting10"
+  inst: "Armadillo"
 
 
 - title: "Emergence of Past and Future in Evolving Neural Networks"
   date: "January 1, 2010"
-  inst: "iap10"
+  inst: "TAMU CSE IAP"
 
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
@@ -533,11 +481,6 @@
   inst: "Society of Computational Neuroscience (Korea)"
 
 
-- title: "Whole Mouse Brain Neuronal Morphology and NeurovasculaturesBrowser"
-  date: "June 7, 2010"
-  inst: "crcns10-pres"
-
-
 - title: " Are Conceptual as well as Technological/Computational Breakthroughs Necessary for Progress in Brain Emulation?"
   date: "June 5, 2010"
   inst: "asim10"
@@ -555,7 +498,7 @@
 
 - title: "Current Trends in Autonomous Intelligent Agent Technology"
   date: "April 1, 2010"
-  inst: "Thales"
+  inst: "Samsung Thales"
 
 
 - title: " Global Sub-Micrometer-Level Survey of the Mouse ConnectomeUsing the Knife-Edge Scanning Microscope"
@@ -565,22 +508,13 @@
 
 - title: " Global Sub-Micrometer-Level Survey of the Mouse ConnectomeUsing the Knife-Edge Scanning Microscope"
   date: "March 9, 2010"
-  inst: "ece10-v2"
+  inst: "TAMU ECE"
 
-
-- title: " Global Sub-Micrometer-Level Survey of the Mouse ConnectomeUsing the Knife-Edge Scanning Microscope"
-  date: "March 9, 2010"
-  inst: "ece10"
 
 
 - title: " Imaging the Whole Mouse Brain at Submicromter ResolutionsUsing the Knife-Egde Scanning Microscope"
   date: "November 6, 2009"
-  inst: "utmb09"
-
-
-- title: "Wise Up by Guy Claxtonsand Research Tips"
-  date: "October 11, 2002"
-  inst: "nil06"
+  inst: "University of Texas Medical Branch, Galveston"
 
 
 - title: "Nature of Texture: Visual or Tactile?"
@@ -595,7 +529,7 @@
 
 - title: " Complete submicrometer scans of mouse brain microstructure using the Knife-Edge Scanning Microscope"
   date: "November 13, 2009"
-  inst: "kabms09"
+  inst: "KABMS"
 
 
 - title: "Multi-scale Imaging and Multi-scale Modeling of the Brain"
@@ -630,7 +564,7 @@
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
   date: "January 1, 2009"
-  inst: "postech09"
+  inst: "POSTECH"
 
 
 - title: "Evolution of Recollection and Prediction in Neural Networks"
@@ -645,7 +579,7 @@
 
 - title: "Dissecting, Imaging, and Modeling the Mouse Brain Network"
   date: "March 5, 2009"
-  inst: "utmed09"
+  inst: "U Texas Medical School, Houston"
 
 
 - title: " External Material Interaction: An Evolutionary Precursor ofsInternalized Memory?"
@@ -660,7 +594,7 @@
 
 - title: "Motor System's Role in Grounding, Development, and Recognition in Vision"
   date: "October 10, 2008"
-  inst: "fai08-pres"
+  inst: "Forum for AI: University of Texas at Austin"
 
 
 - title: "Dissecting, Imaging, and Modeling Brain Networks"
@@ -717,11 +651,6 @@
   inst: "KAIST"
 
 
-- title: "Academic Life Outside Classrooms/Labs for the New Aggies"
-  date: "May 10, 2007"
-  inst: "ksa07"
-
-
 - title: "The Simultaneous Chain: A New Look at Serially OrganizedsBehavior, by Herbert Terrace"
   date: "January 1, 2007"
   inst: "blab07"
@@ -732,19 +661,9 @@
   inst: "freshmen07"
 
 
-- title: "Critical Thinking"
-  date: "January 18, 2007"
-  inst: "nil07-spring"
-
-
 - title: "Autonomous Semantics: Towards a Meaningful Information Technology"
   date: "January 1, 2006"
   inst: "Korean Computer Scientists and Engineers Association (KOCSEA)"
-
-
-- title: "Resilient Machines Through Continuous Self-Modeling"
-  date: "November 29, 2006"
-  inst: "nil06-fall2"
 
 
 - title: "Prediction, a Prerequisite to Goal-directed Behavior, and Its Possible Origin in Delay Compensation"
@@ -752,14 +671,9 @@
   inst: "mind06"
 
 
-- title: "A Model of the Ventral Visual System Based on Temporal Stability	and Local Memory"
-  date: "October 25, 2006"
-  inst: "nil06-fall"
-
-
 - title: "Exploring the Structure and Function of Brain Networks"
   date: "September 20, 2006"
-  inst: "iap06"
+  inst: "TAMU CSE IAP"
 
 
 - title: "What Makes Your Thought March Forward?"
@@ -784,12 +698,7 @@
 
 - title: "Autonomous Learning of the Semantics of Internal Sensory StatessThrough Sensorimotor Development"
   date: "October 20, 2005"
-  inst: "korea05"
-
-
-- title: "Autonomous Learning of the Semantics of Internal Sensory StatessThrough Sensorimotor Development"
-  date: "October 20, 2005"
-  inst: "nil05"
+  inst: "Korea University"
 
 
 - title: "Importance of Temporal Factors in Inferring Network Function from ItssStructure: A Lesson from the Thalamocortical Circuit in the Brain"
@@ -804,17 +713,18 @@
 
 - title: "The Main Question"
   date: "January 1, 2005"
-  inst: "montreal05-uqam"
+  host: "Stevan Harnad"
+  inst: "University of Quebec, Montreal (UQAM)"
 
 
-- title: "The Main Question"
-  date: "January 1, 2005"
-  inst: "montreal05-mg"
+- title: "Inferring External Stimulus Properties from Internal Sensory State Alone Through Action and Invariance"
+  date: "August 3, 2005"
+  inst: "McGill University"
 
 
 - title: "Binding Problem for Input vs. Output Representationssand the Role of the Thalamus in Its Solution"
   date: "June 14, 2005"
-  inst: "salk05"
+  inst: "Salk Institute"
 
 
 - title: "Binding Problem of the Second Kind: Can the Brain	Confuse Its Inputs from Its Outputs?"
@@ -848,23 +758,18 @@
 
 
 - title: "Learning the Meaning of Neural Spikes ThroughsSensory-Invariance Driven Action"
-  date: "September 11, 2003"
-  inst: "nil03fall"
-
-
-- title: "Learning the Meaning of Neural Spikes ThroughsSensory-Invariance Driven Action"
   date: "September 8, 2003"
   inst: "Cognoscenti (Texas A&M University)"
 
 
 - title: "Neural Intelligence Lab"
   date: "January 1, 2003"
-  inst: "gradori03-final"
+  inst: "TAMU CSE grad orientation"
 
 
 - title: "Analogical Cascade: A Theory on the Role of the Thalamo-CorticalsLoop in Brain Function"
   date: "January 1, 2002"
-  inst: "fai03"
+  inst: "Forum for AI: University of Texas at Austin"
 
 
 - title: "Analogical Cascade: A Theory on the Role of the Thalamo-CorticalsLoop in Brain Function"
@@ -879,7 +784,7 @@
 
 - title: "Analogical Cascade: A Theory on the Role of the Thalamo-CorticalsLoop in Brain Function"
   date: "January 1, 2002"
-  inst: "arma2002"
+  inst: "Armadillo"
 
 
 - title: "Analogical Cascade: A Theory on the Role of the Thalamo-CorticalsLoop in Brain Function"
