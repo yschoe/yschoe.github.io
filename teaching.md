@@ -26,12 +26,14 @@ permalink: /teaching/
   * CSCE 625-600 Artificial Intelligence. TR 11:10am-12:25pm, HRBB 124.
   * CSCE 420-501 Artificial Intelligence. TR 12:45am-2:00pm, HRBB 124.
   * CSCE 689-700 SPTP on Artificial Intelligence. DIST
+
 <a name="future"></a>
 ### Future
 
 * Fall 2023 (TBA)
 
 <a name="past"></a>
+
 ### Past
 
 * Spring 2023: CSCE 625-600 Artificial Intelligence. Lectures: TR 9:35am-10:50am, HRBB124.
