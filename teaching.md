@@ -22,18 +22,22 @@ permalink: /teaching/
 
 <a name="current"></a>
 ### Current
-* Fall 2022 (tentative): 
-  * CSCE 420-501 Artificial Intelligence. Lectures: TR 11:10am-12:25am, ZACH 310.
-  * CSCE 633-600 Machine Learning. Lectures: TR 12:45am-2:00pm ZACH 310. 
-
+* Spring 2023:
+  * CSCE 625-600 Artificial Intelligence. TR 11:10am-12:25pm, HRBB 124.
+  * CSCE 420-501 Artificial Intelligence. TR 12:45am-2:00pm, HRBB 124.
+  * CSCE 689-700 SPTP on Artificial Intelligence. DIST
 <a name="future"></a>
 ### Future
 
-* Spring 2023 (TBA)
+* Fall 2023 (TBA)
 
 <a name="past"></a>
 ### Past
 
+* Spring 2023: CSCE 625-600 Artificial Intelligence. Lectures: TR 9:35am-10:50am, HRBB124.
+* Fall 2022: 
+  * CSCE 420-501 Artificial Intelligence. Lectures: TR 11:10am-12:25am, ZACH 310.
+  * CSCE 633-600 Machine Learning. Lectures: TR 12:45am-2:00pm ZACH 310. 
 * Spring 2022: CSCE 421-200/500 Machine Learning. Lectures: TR 9:35am-10:50am ZACH 350.  [Course web page (Canvas)](https://canvas.tamu.edu/courses/137553)
 * Fall 2021: CSCE 315-290 Honors Programming Studio. Lectures: TR 9:35am-10:50am HRBB 126. Labs: MW 8:00am-8:50am ZACH 590.  ([Course web page (Canvas)](https://canvas.tamu.edu/courses/103661))
 * Fall 2021: CSCE 420-501 (&amp;201 HNR) Artificial Intelligence. Lectures: TR 12:45pm-2:00pm.  ([Course web page (Canvas)](https://canvas.tamu.edu/courses/113498))
