@@ -17,7 +17,7 @@ I am especially interested in the temporal aspects of brain function (delay, int
 </ul>
 
 ### News: 
-* [01/19/2022] [Chatgpt-fun : fun with ChatGPT (Github)](https://github.com/yschoe/chatgpt-fun)
+* [01/19/2023] [Chatgpt-fun : fun with ChatGPT (Github)](https://github.com/yschoe/chatgpt-fun)
 * [News archive](/news/)
 
 ### Experience
