@@ -1,5 +1,6 @@
  m4_include(bib2html.m4)
- m4_bib2html_section(2023,[[huang:ijcnn23,wan:nn23,li:innsbook22,choe:innsbook22,lee:frontiers23]])
+ m4_bib2html_section(2024,[[li:innsbook22,choe:innsbook22,wan:nn23]])
+ m4_bib2html_section(2023,[[huang:ijcnn23,lee:frontiers23]])
  m4_bib2html_section(2022,[[savari:mdpi22,wan:nn22]])
  m4_bib2html_section(2021,[[kim2021ai,li:iconip21,li:irosws21,choe:icdl21,nguyen:ijcnn21,savari:ijcnn21,jain:doceng21]])
  m4_bib2html_section(2020,[[wan:aaai20,kim:aaai20]])
