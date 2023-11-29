@@ -6,7 +6,7 @@ categ:  none
 ---
 
 
-Aug 30: Shiva Mahato's MS Thesis presentation. 
+Aug 30: Shiva Mahato's MS Thesis presentation. Comparison of evolved memory mechanisms in neural networks.
 
 Sep 13: Sharma et al. Assembly Theory Explains and Quantifies the Emergence of Selection and Evolution. https://arxiv.org/ftp/arxiv/papers/2206/2206.02279.pdf
 
