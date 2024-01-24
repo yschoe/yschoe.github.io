@@ -125,26 +125,27 @@ Link: [Theses](/pub_topic/#Theses)
 1. Jeff Harrison (TAMU, Computer Science): Summer 2014-Fall 2014.
 1. Andrew Laramore (TAMU, Computer Science): Spring 2015.
 1. Dimitri Dobroskok (TAMU, Biomedical Engineering): Summer 2015.
-1. Cassandra Bub (TAMU, Computer Science): Fall 2016.
+1. Cassandra Bub (TAMU, Computer Science): Fall 2016. Thesis
 1. Juliang Li (TAMU, Computer Science): Fall 2016.
 1. Aolin Yang (TAMU, Computer Science): Fall 2021-Spring 2022
 1. Thomas Goodwin (TAMU, Computer Science): Fall 2021-Spring 2022
-1. Lance Ondrej (TAMU, Computer Science): Fall 2021-Spring 2022
-1. Christian Smith (TAMU, Computer Science): Fall 2021-Spring 2022
-1. Richard Liu (TAMU, Computer Science): Fall 2021-Spring 2022
+1. Lance Ondrej (TAMU, Computer Science): Fall 2021-Spring 2022. Thesis
+1. Christian Smith (TAMU, Computer Science): Fall 2021-Spring 2022. Thesis
+1. Richard Liu (TAMU, Computer Science): Fall 2021-Spring 2022. Thesis
 1. Ryan Spruell (TAMU,  Computer Science): Spring 2022
 1. Zhan Lan (TAMU,  Computer Science): Spring 2022
-1. Yasin Alam (TAMU, Computer Science): Fall 2021-Fall 2022
-1. William Kang (TAMU, Computer Science): Fall 2022-Fall 2023
-1. Christopher Anand (TAMU, Computer Science): Spring 2023-Fall 2023
+1. Yasin Alam (TAMU, Computer Science): Fall 2021-Fall 2022. Thesis
+1. William Kang (TAMU, Computer Science): Fall 2022-Fall 2023. Thesis
+1. Christopher Anand (TAMU, Computer Science): Spring 2023-Fall 2023. Thesis
 1. Hanbit Kang (TAMU, Computer Science): Fall 2022-Spring 2023
+1. Vijay Seetharam (TAMU, Computer Science): Fall 2023
 
 Current undergrad students
-1. Shreyes Kaliyur (TAMU, Computer Science): Fall 2022-present
-1. Stephen Johnson (TAMU, Computer Science): Fall 2023-present
-1. John Powell (TAMU, Computer Science): Fall 2023-present
-1. Varun Somarouthu (TAMU, Computer Science): Fall 2023-present
-1. Anish Karthik (TAMU, Computer Science): Fall 2023-present
+1. Shreyes Kaliyur (TAMU, Computer Science): Fall 2022-present. Thesis
+1. Stephen Johnson (TAMU, Computer Science): Fall 2023-present. Thesis
+1. John Powell (TAMU, Computer Science): Fall 2023-present. Thesis
+1. Varun Somarouthu (TAMU, Computer Science): Fall 2023-present. Thesis
+1. Anish Karthik (TAMU, Computer Science): Fall 2023-present. Thesis
 
 <a name="visitors"></a>
 ### Visiting Scholars
