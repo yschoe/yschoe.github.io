@@ -165,6 +165,7 @@ Current undergrad students
 1. Jin Wook Kim (Korea Open University, Korea: 2017-2018).
 1. Sang Heon Lee (Daegu Gyeongbuk Institute of Science and Technology, Korea: 2021-2022)
 1. Jinwoo Bae (Inha University, Korea: 2022)
+1. Yoonsik Son (Dongguk University, Korea: 2024-2025)
 
 ### Short-term visitors
 
