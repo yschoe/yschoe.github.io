@@ -7,7 +7,7 @@
  m4_bib2html_section(2019,[[choe:innsbook18,wang:neucom19,nguyen:ijcnn19,lee:aaai19,jung:aaai19,nowak:embc19,wang:icassp19]])
  m4_bib2html_section(2018,[[nowak:embc18a,nowak:embc18b,lee:embc18]])
  m4_bib2html_section(2017,[[nguyen:ijcnn17,nguyen:icdl17,reams:ijcnn17,sung:ijcnn17,lee:embc17]])
- m4_bib2html_section(2016,[[sung:dsaa16,wang:ijcnn16,parulkar:ijcnn16,freitag:ijcnn16,nowak:embc16,lim:embc16,miller:embc16,nowak:embc16b]])
+ m4_bib2html_section(2016,[[choe:sfn16,sung:dsaa16,wang:ijcnn16,parulkar:ijcnn16,freitag:ijcnn16,nowak:embc16,lim:embc16,miller:embc16,nowak:embc16b]])
  m4_bib2html_section(2015,[[kim:bigdata15,choe:aaai15,zhang:tnn15,zhang:isbi15,choe:ecn14-connectomics,choe:ecn14-connectome-mouse,choe:ecn14-brainatlas,choe:ecn14-compneuroanat-overview,choe:ecn14-psm,mayerich:ecn14-recon,choe:ecn14-antihebbian,choe:ecn14-hebbian,yamauchi:cogsci15,laldas:ijcnn15,li:ijcnn15]])
  m4_bib2html_section(2014,[[maniadakis2014toward,yoo:frontiers14,yoo:wsom14,yu:prl13]])
  m4_bib2html_section(2013,[[park:jnm13,mann:tamd12,choi:nc13,sung:ijcnn13]])
