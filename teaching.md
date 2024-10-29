@@ -28,8 +28,10 @@ permalink: /teaching/
 
 <a name="future"></a>
 ### Future
-
 * Spring 2025 (TBA)
+  * CSCE 625-601 Artificial Intelligence. MWF10:20am-11:10am EABB 106
+  *  CSCE 625-700 Artificial Intelligence. ONLINE. Midterm exam 3/5/2025 Wed 5:30pm-7pm. Final exam: 5/5/2025 Mon 5:30pm-7pm.
+  * CSCE 331-908/909/910/911 Foundations of Software Engineering. MWF 9:10am-10:00am EABB 106. LAB MW 12:40pm-1:30pm ZACH 598.
 
 <a name="past"></a>
 
