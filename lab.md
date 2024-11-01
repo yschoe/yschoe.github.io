@@ -90,9 +90,8 @@ Link: [Theses](/pub_topic/#Theses)
 1. Qinbo Li (CS): MS student. 2014 Spring - 2016 Summer. Texas A&M Ph.D. program
 1. Wookyung An (CS): MS student. 2014 Spring - 2016 Summer. Hyundai Motor Co.
 1. Raghav Hari Kris Vembu (CS): MS student. 2019 Fall - 2020 Spring. SharkNinja. (co-advised by Prof. Hangue Park, TAMU ECE).
-1. Shivashriganesh Prasad Mahato (CS): MS student. 2023 Spring - 2023 Spring.
-1. Tanu Shree (CS): MS student. 2022 Fall - present. 
-1. Nicholas Robert (TAMU, Computer Science): 2023 Fall-present
+1. Shivashriganesh Prasad Mahato (CS): MS student. 2023 Spring - 2023 Spring. Georgia Tech Phd program.
+1. Tanu Shree (CS): MS student. 2022 Fall - 2024 Spring. 
 1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
 1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): 2014 Fall - 2017 summer; Jiyoon Hwang (CS): Spring 2023; Rohith Kadivendi (CS): Spring 2023; Venkata Bhanu Teja Pallakonda (CS): Spring 2023.
 
