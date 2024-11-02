@@ -136,7 +136,7 @@ Link: [Theses](/pub_topic/#Theses)
 1. Zhan Lan (TAMU,  Computer Science): Spring 2022
 1. Yasin Alam (TAMU, Computer Science): Fall 2021-Fall 2022. Thesis
 1. Hanbit Kang (TAMU, Computer Science): Fall 2022.
-1. Shreyes Kaliyur (TAMU, Computer Science) Fall 2022-present. Thesis
+1. Shreyes Kaliyur (TAMU, Computer Science) Fall 2022-Spring 2023. Thesis
 1. William Kang (TAMU, Computer Science): Fall 2022-Fall 2023. Thesis
 1. Christopher Anand (TAMU, Computer Science): Spring 2023-Fall 2023. Thesis
 1. Vijay Seetharam (TAMU, Computer Science): Fall 2023
