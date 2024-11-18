@@ -22,18 +22,24 @@ permalink: /teaching/
 
 <a name="current"></a>
 ### Current
-* Spring 2024:
-  * CSCE 625-600 Artificial Intelligence. MWF 3:00pm-3:50pm, HRBB 124.
-  * CSCE 689-701 SPTP on Artificial Intelligence. DIST
+* Fall 2024:
+  * CSCE 625-600 Artificial Intelligence. TR 2:20pm-3:35pm, HRBB 124.
+  * CSCE 625-700 Artificial Intelligence. ONLINE. Midterm exam: 10/11 5:30pm. Final exam: 12/6 5:40pm.
 
 <a name="future"></a>
 ### Future
-
-* Fall 2024 (TBA)
+* Spring 2025 (TBA)
+  * CSCE 625-601 Artificial Intelligence. MWF10:20am-11:10am EABB 106
+  *  CSCE 625-700 Artificial Intelligence. ONLINE. Midterm exam 3/5/2025 Wed 5:30pm-7pm. Final exam: 5/5/2025 Mon 5:30pm-7pm.
+  * CSCE 331-908/909/910/911 Foundations of Software Engineering. MWF 9:10am-10:00am EABB 106. LAB MW 12:40pm-1:30pm ZACH 598.
 
 <a name="past"></a>
 
 ### Past
+
+* Spring 2024:
+  * CSCE 625-600 Artificial Intelligence. MWF 3:00pm-3:50pm, HRBB 124.
+  * CSCE 689-701 SPTP on Artificial Intelligence. DIST
 
 * Fall 2023:
   * CSCE 625-600 Artificial Intelligence. TR 11:10am-12:25pm, HRBB 124.

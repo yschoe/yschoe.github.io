@@ -39,7 +39,7 @@ These are the main portraits I used for my web pages since 1996 (Wayback machine
 
   <figure class="gallery-frame">
    <img src="/images/choe-may-2020.jpg" height="220px"/>
-   <figcaption>02/22/2022
+   <figcaption>05/16/2020
    </figcaption>
   </figure>
 
