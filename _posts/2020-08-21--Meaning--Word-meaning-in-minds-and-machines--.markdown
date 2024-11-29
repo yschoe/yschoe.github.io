@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Meaning][Choe] Word meaning in minds and machines!!"
+title:  "[Meaning][Lake][Choe] Word meaning in minds and machines!!"
 date:   August 21, 2020
 categories: none
 ---
