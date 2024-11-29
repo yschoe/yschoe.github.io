@@ -90,9 +90,9 @@ Link: [Theses](/pub_topic/#Theses)
 1. Qinbo Li (CS): MS student. 2014 Spring - 2016 Summer. Texas A&M Ph.D. program
 1. Wookyung An (CS): MS student. 2014 Spring - 2016 Summer. Hyundai Motor Co.
 1. Raghav Hari Kris Vembu (CS): MS student. 2019 Fall - 2020 Spring. SharkNinja. (co-advised by Prof. Hangue Park, TAMU ECE).
-1. Shivashriganesh Prasad Mahato (CS): MS student. 2023 Spring - 2023 Spring.
-1. Tanu Shree (CS): MS student. 2022 Fall - present. 
-1. Nicholas Robert (TAMU, Computer Science): 2023 Fall-present
+1. Shivashriganesh Prasad Mahato (CS): MS student. 2023 Spring - 2023 Spring. Georgia Tech Phd program.
+1. Tanu Shree (CS): MS student. 2022 Fall - 2024 Spring. 
+1. Vinodheni Ramasrinivasan (CS): MS student. 2024 Fall.
 1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
 1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): 2014 Fall - 2017 summer; Jiyoon Hwang (CS): Spring 2023; Rohith Kadivendi (CS): Spring 2023; Venkata Bhanu Teja Pallakonda (CS): Spring 2023.
 
@@ -136,18 +136,23 @@ Link: [Theses](/pub_topic/#Theses)
 1. Zhan Lan (TAMU,  Computer Science): Spring 2022
 1. Yasin Alam (TAMU, Computer Science): Fall 2021-Fall 2022. Thesis
 1. Hanbit Kang (TAMU, Computer Science): Fall 2022.
-1. Shreyes Kaliyur (TAMU, Computer Science) Fall 2022-present. Thesis
+1. Shreyes Kaliyur (TAMU, Computer Science): Fall 2022-Spring 2023. Thesis
 1. William Kang (TAMU, Computer Science): Fall 2022-Fall 2023. Thesis
 1. Christopher Anand (TAMU, Computer Science): Spring 2023-Fall 2023. Thesis
 1. Vijay Seetharam (TAMU, Computer Science): Fall 2023
 1. Jason Xie (TAMU, Computer Science): Spring 2023-present
+1. Stephen Johnson (TAMU, Computer Science): Fall 2023-Spring 2024. Thesis
+1. John Powell (TAMU, Computer Science): Fall 2023-Spring 2024. Thesis
+1. Varun Somarouthu (TAMU, Computer Science): Fall 2023-Spring 2024. Thesis
+1. Anish Karthik (TAMU, Computer Science): Fall 2023-Spring 2024. Thesis
 
 Current undergrad students
-1. Shreyes Kaliyur (TAMU, Computer Science): Fall 2022-present. Thesis
-1. Stephen Johnson (TAMU, Computer Science): Fall 2023-present. Thesis
-1. John Powell (TAMU, Computer Science): Fall 2023-present. Thesis
-1. Varun Somarouthu (TAMU, Computer Science): Fall 2023-present. Thesis
-1. Anish Karthik (TAMU, Computer Science): Fall 2023-present. Thesis
+
+1. Alex Alvarez (TAMU, Computer Science): Fall 2024-present.
+1. Seo Hyeon Beom (TAMU, Computer Science): Fall 2024-present.
+1. Cyril John (TAMU, Computer Science): Fall 2024-present.
+1. Vijay Seetharam (TAMU, Computer Science): Fall 2024-present.
+1. Arjun Madana (TAMU, Computer Science): Fall 2024-present. Thesis
 
 <a name="visitors"></a>
 ### Visiting Scholars
@@ -165,7 +170,7 @@ Current undergrad students
 1. Jin Wook Kim (Korea Open University, Korea: 2017-2018).
 1. Sang Heon Lee (Daegu Gyeongbuk Institute of Science and Technology, Korea: 2021-2022)
 1. Jinwoo Bae (Inha University, Korea: 2022)
-1. Yoonsik Son (Dongguk University, Korea: 2024-2025)
+1. Yunsik Son (Dongguk University, Korea: 2024-2025)
 
 ### Short-term visitors
 
