@@ -40,7 +40,7 @@ permalink: /lab/
 Link: [Dissertations](/pub_topic/#Dissertations)
 
 1. Yingwei Yu: PhD (CS). Graduated, 8/2006. Seismic Micro-technology, Houston, TX -> Schlumberger -> Amazon.
-1. Heejin Lim: PhD (CS).Graduated, 8/2006. University of Texas Medical School at Houston (post doc) -> Lecturer, Prairie View A&M University.
+1. Heejin Lim: PhD (CS).Graduated, 8/2006. University of Texas Medical School at Houston (post doc) -> Instructor, Prairie View A&M University.
 1. Hao Xiong: PhD (CS). Graduated 12/2008. UCSF medical school (post doc) -> UC Berkeley (post doc).
 1. Choon Seog Park: PhD (CE). Graduated 8/2009. Republic of Korea Army (Retired).
 1. Jae Rock Kwon: PhD (CE). Graduated 8/2009. Associate professor at Kettering University -> Associate professor at University of Michigan, Dearborn.
