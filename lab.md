@@ -145,12 +145,12 @@ Link: [Theses](/pub_topic/#Theses)
 1. John Powell (TAMU, Computer Science): Fall 2023-Spring 2024. Thesis
 1. Varun Somarouthu (TAMU, Computer Science): Fall 2023-Spring 2024. Thesis
 1. Anish Karthik (TAMU, Computer Science): Fall 2023-Spring 2024. Thesis
+1. Seo Hyeon Beom (TAMU, Computer Science): Fall 2024.
+1. Cyril John (TAMU, Computer Science): Fall 2024.
 
 Current undergrad students
 
 1. Alex Alvarez (TAMU, Computer Science): Fall 2024-present.
-1. Seo Hyeon Beom (TAMU, Computer Science): Fall 2024-present.
-1. Cyril John (TAMU, Computer Science): Fall 2024-present.
 1. Vijay Seetharam (TAMU, Computer Science): Fall 2024-present.
 1. Arjun Madana (TAMU, Computer Science): Fall 2024-present. Thesis
 
