@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Theses
+title: BS Honors Theses
 permalink: /theses/
 ---
 
