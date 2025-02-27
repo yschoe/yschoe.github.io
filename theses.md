@@ -4,9 +4,7 @@ title: Theses
 permalink: /theses/
 ---
 
-UNDER CONSTRUCTION
-
-This is a collection of theses (MS, BS honors) and dissertations from our lab. Direct link to TAMU library.
+This is a collection of BS honors theses from our lab.
 
 <ol class="listing">
 
@@ -22,8 +20,12 @@ This is a collection of theses (MS, BS honors) and dissertations from our lab. D
      {{ item.lastname }}, 
   {% endif %}
   {% if item.firstname%}
-     {{ item.firstname | replace: "%20", " " }}:
+     {{ item.firstname | replace: "%20", " " }}
   {% endif %}
+  {% if item.coauthor %}
+     ; {{ item.coauthor }}
+  {% endif %}:
+
      ({{ item.year }}).
    <a href="https://oaktrust.library.tamu.edu/search?spc.page=1&query=%22yoonsuck%20choe%22&f.author={{ item.lastname }},%20{{ item.firstname }},equals">
   {% if item.title %}  
