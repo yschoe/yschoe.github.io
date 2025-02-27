@@ -1,6 +1,38 @@
 
-- title: LimHeeJin
-  firstname: "Hee%20Jin"
+- firstname: "Hee%20Jin"
   lastname: "Lim"
-  year: 2009
+  type: "Ph.D."
+  title: "Facilitatory neural dynamics for predictive extrapolation"
+  year: 2006
+
+- firstname: "Yingwei"
+  lastname: "Yu"
+  type: "Ph.D."
+  title: "Computational role of disinhibition in brain function"
+  year: 2006
+
+- firstname: "Hao"
+  lastname: "Xiong"
+  type: "Ph.D."
+  title: "Dynamical pathway analysis"
+  year: 2008
+
+- firstname: "Hee%20Youl"
+  lastname: "Choi"
+  type: "Ph.D."
+  title: "Manifold Integration: Data Integration on Multiple Manifolds"
+  year: 2010
+
+- firstname: "William" 
+  lastname:  "Kang"
+  type: "B.S."
+  title: "Emergence of Prediction in Delayed Reaching Task Through Neuroevolution (co-author Chris Anand)"
+  year: 2025
+
+
+- firstname: "" 
+  lastname:  ""
+  type: "Ph.D."
+  title: ""
+  year: 2025
 

@@ -4,35 +4,34 @@ title: Theses
 permalink: /theses/
 ---
 
-This is a collection of theses (MS, BS honors) and dissertations from our lab.
+UNDER CONSTRUCTION
+
+This is a collection of theses (MS, BS honors) and dissertations from our lab. Direct link to TAMU library.
 
 <ol class="listing">
-{% for item in site.data.theses %}
+
+{% assign count = 1 %}
+{% assign sorted = site.data.theses | sort: 'year' | reverse %}
+{% for item in sorted %}
+
   <li class="listing-item">
+
+  <b> [{{ item.type }}] </b>
     
   {% if item.lastname %}
      {{ item.lastname }}, 
   {% endif %}
   {% if item.firstname%}
-     {{ item.firstname }}, 
+     {{ item.firstname | replace: "%20", " " }}:
   {% endif %}
-     <br/>
-
-    {% if item.url %}
-        &nbsp; &nbsp;  &nbsp; <a href="{{ item.url }}" title="{{ item.title }}">
-    {% else %}
-        &nbsp; &nbsp;  &nbsp; <a href="https://catalog.library.tamu.edu/Search/Results?lookfor={{ item.title }}&type=Title&limit=1" title="{{ item.title }}">
-        &nbsp; &nbsp;  &nbsp; <a href="https://oaktrust.library.tamu.edu/search?spc.page=1&query="yoonsuck%20choe"&f.author={{ item.lastname }},%20{{ item.firstname }},equals">
-
-    {% endif %}
-
-
-
-  {{ item.lastname }}, {{ item.firstname }}</a>
-
-  {% if item.year%}
-     ({{ item.year }})
+     ({{ item.year }}).
+   <a href="https://oaktrust.library.tamu.edu/search?spc.page=1&query=%22yoonsuck%20choe%22&f.author={{ item.lastname }},%20{{ item.firstname }},equals">
+  {% if item.title %}  
+   {{ item.title }}
+  {% else %}
+   Link 
   {% endif %}
+  </a>
 
   </li>
 
