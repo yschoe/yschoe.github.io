@@ -1,0 +1,63 @@
+- firstname: "William" 
+  lastname:  "Kang"
+  coauthor: "Anand, Chris"
+  type: "B.S. honors"
+  title: "Emergence of Prediction in Delayed Reaching Task Through Neuroevolution"
+  year: 2025
+
+- firstname: "Yasin%20Ferdous" 
+  lastname:  "Alam"
+  type: "B.S. honors"
+  title: "A Metric for Intrinsic Motivation in Reinforcement Learning Agents"
+  year: 2022
+
+- firstname: "Shreyes" 
+  lastname:  "Kaliyur"
+  type: "B.S. honors"
+  title: "publication hold"
+  year: 2023
+
+- firstname: "Stephen" 
+  lastname:  "Johnson"
+  type: "B.S. honors"
+  title: "publication hold"
+  year: 2024
+
+- firstname: "John" 
+  lastname:  "Powell"
+  type: "B.S. honors"
+  title: "publication hold"
+  year: 2024
+
+- firstname: "Varun" 
+  lastname:  " Somarouthu"
+  type: "B.S. honors"
+  title: "publication hold"
+  year: 2024
+
+- firstname: "Anish" 
+  lastname:  "Karthik"
+  type: "B.S. honors"
+  title: "publication hold"
+  year: 2024
+
+- firstname: "Cassandra" 
+  lastname:  "Bub"
+  type: "B.S. honors"
+  title: "Analysis of Time-Delay Artificial Neural Networks in Ball Catching Task"
+  year: 2016
+
+- firstname: "Aolin" 
+  lastname:  "Yang"
+  coauthor: "Goodwin, Thomas"
+  type: "B.S. honors"
+  title: "The Effect of Various Temperature Schedules on the Comfort and Energy Efficiency of Radiant Room Heating"
+  year: 2022
+
+- firstname: "Lance%20Holden" 
+  lastname:  "Ondrej"
+  coauthor: "Smith, Christian; Liu, Richard"
+  type: "B.S. honors"
+  title: "Analyzing Cricket Songs with Machine Learning"
+  year: 2022
+

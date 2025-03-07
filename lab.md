@@ -92,9 +92,11 @@ Link: [Theses](/pub_topic/#Theses)
 1. Raghav Hari Kris Vembu (CS): MS student. 2019 Fall - 2020 Spring. SharkNinja. (co-advised by Prof. Hangue Park, TAMU ECE).
 1. Shivashriganesh Prasad Mahato (CS): MS student. 2023 Spring - 2023 Spring. Georgia Tech Phd program.
 1. Tanu Shree (CS): MS student. 2022 Fall - 2024 Spring. 
-1. Vinodheni Ramasrinivasan (CS): MS student. 2024 Fall.
+1. William Kang (CS): MS student. 2024 Fall - present.
+1. Chris Anand (CS): MS student. 2024 Fall - present.
+1. Aayush Bhandari (CS): MS student. 2024 Fall - present.
 1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
-1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): 2014 Fall - 2017 summer; Jiyoon Hwang (CS): Spring 2023; Rohith Kadivendi (CS): Spring 2023; Venkata Bhanu Teja Pallakonda (CS): Spring 2023.
+1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): 2014 Fall - 2017 summer; Jiyoon Hwang (CS): Spring 2023; Rohith Kadivendi (CS): Spring 2023; Venkata Bhanu Teja Pallakonda (CS): Spring 2023. Vinodheni Ramasrinivasan (CS): 2024 Fall.
 
 <a name="ug"></a>
 ### Undergraduate Students
