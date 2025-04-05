@@ -156,6 +156,11 @@ Current undergrad students
 1. Vijay Seetharam (TAMU, Computer Science): Fall 2024-present.
 1. Arjun Madana (TAMU, Computer Science): Fall 2024-present. Thesis
 
+<a name="intern"></a>
+### Interns (Volunteer)
+1. Jiyoon Hwang (TAMU, Computer Science): Spring 2023.
+1. Kwangkyu Hwang (TAMU, Computer Science): Summer 2024.
+
 <a name="visitors"></a>
 ### Visiting Scholars
 
