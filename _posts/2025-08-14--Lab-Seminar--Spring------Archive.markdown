@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Lab Seminar] Fall 2024 Archive"
-date:   November 14, 2024
+title:  "[Lab Seminar] Spring 2025 Archive"
+date:   August 15, 2025
 categ:  none
 ---
 
