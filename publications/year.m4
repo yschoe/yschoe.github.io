@@ -1,5 +1,5 @@
  m4_include(bib2html.m4)
- m4_bib2html_section(2025,[[kang:ab25]])
+ m4_bib2html_section(2025,[[kang:ab25,alvarez:neurreps25]])
  m4_bib2html_section(2024,[[mahato:ijcnn24,kang:sab24,choi:ijns24,raghav2024proportional,morabito:innsbook24,li:innsbook22,choe:innsbook22,wan:nn23]])
  m4_bib2html_section(2023,[[huang:ijcnn23,lee:frontiers23]])
  m4_bib2html_section(2022,[[savari:mdpi22,wan:nn22]])
