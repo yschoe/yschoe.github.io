@@ -29,7 +29,9 @@ permalink: /teaching/
 
 <a name="future"></a>
 ### Future
-* Fall 2026 (TBA) 
+* Fall 2026
+  * CSCE 625 TR 9:35am-10:50am EABB 106
+  * CSCE 420 TR 11:10am-12:25pm EABB 106
 
 <a name="past"></a>
 
