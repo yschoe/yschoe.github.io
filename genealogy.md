@@ -16,7 +16,7 @@ permalink: /genealogy/
 1. His advisor: Heinrich Friedrich Zimmer, Ph.D., Indology and Sanskrit, 1878, University of T&uuml;bingen, Germany.
 1. His advisor: Rudolf von Roth, Ph.D., Semitic Linguistics, 1843, University of T&uuml;bingen, Germany.
 1. His advisors : Georg Heinrich August Ewald, Ph.D., Oriental Languages, 1823, University of G&ouml;ttingen, Germany; 
-1. Ferdinand Christian Baur, Theology, 1817, University of T&uuml;bingen, Germany.
+   Ferdinand Christian Baur, Theology, 1817, University of T&uuml;bingen, Germany.
 1. His advisor: Ernst Gottlieb Bengel, Theology, University of T&uuml;bingen, Germany.
 1. His advisor: Gottlob Christian Storr, Theology, 1768, University of T&uuml;bingen, Germany.
 1. His advisors:  Jeremias Friedrich Reu&szlig;, Theology, T&uuml;bingen, Germany. Professor of Theology at University of Copenhagen; and Johann Friedrich Cotta
