@@ -150,11 +150,11 @@ Link: [Theses](/pub_topic/#Theses)
 1. Seo Hyeon Beom (TAMU, Computer Science): Fall 2024.
 1. Cyril John (TAMU, Computer Science): Fall 2024.
 
-Current undergrad students
+1. Alex Alvarez (TAMU, Computer Science): Fall 2024-2025.
+1. Vijay Seetharam (TAMU, Computer Science): Fall 2024-2025.
+1. Arjun Madana (TAMU, Computer Science): Fall 2024-2025. Thesis
 
-1. Alex Alvarez (TAMU, Computer Science): Fall 2024-present.
-1. Vijay Seetharam (TAMU, Computer Science): Fall 2024-present.
-1. Arjun Madana (TAMU, Computer Science): Fall 2024-present. Thesis
+Current undergrad students
 
 <a name="intern"></a>
 ### Interns (Volunteer)
