@@ -51,7 +51,7 @@ Link: [Dissertations](/pub_topic/#Dissertations)
 1. Timothy Mann: PhD student (CS). Graduated 12/2012. Postdoc at Technion (Prof. Shie Mannor's lab). Google DeepMind (2015-2022). Facebook/Meta (2022-2023). Google DeepMind (2023-).
 1. Chul Sung: PhD student (CS). Graduated 5/2014. IBM Research, Austin, TX -> NLP Research Scientist, Pryon Inc.
 1. Jaewook Yoo: PhD student (CS). 2012 Fall - 2018 Summer. Samsung Advanced Institute of Technology, Korea. Now at Samsung System LSI.
-1. Junseok Lee (CS): PhD student. 2013 Fall - 2018 Summer. Korea Army Academy at Yeongcheon.
+1. Junseok Lee (CS): PhD student. 2013 Fall - 2018 Summer. Korea Army Academy at Yeongcheon -> Associate Professor, Hanyang Women's University, Korea.
 1. Michael Nowak: PhD student (CS). 2013 Fall - 2019 Fall. Visiting Professor, Texas A&M University. At present: Teaching assistant professor, University of Illinois, Urbana Champaign (Fall 2020-)
 1. Khuong Nguyen (CS): PhD student. 2016 Spring - 2019 Fall. Samsung Research America, Dallas.
 1. Han Wang (CS): PhD student. 2013 Spring - 2020 Spring. Samsung Research America, Dallas.
