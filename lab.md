@@ -46,7 +46,7 @@ Link: [Dissertations](/pub_topic/#Dissertations)
 1. Jae Rock Kwon: PhD (CE). Graduated 8/2009. Associate professor at Kettering University -> Associate professor at University of Michigan, Dearborn.
 1. Donghyeop Han: PhD (CS). Graduated 8/2009. Samsung Electronics.
 1. Heeyoul "Henry" Choi: PhD (CS). Graduated 5/2010. Postdoc at Indiana University, Bloomington (Dr. Chen Yu's lab). Samsung Advanced Institute of Technology. At present: Assistant professor, Handong University, Korea.
-1. Huei-Fang Yang: PhD student (CS). Graduated 8/2011. INRIA Sophia Antipolis (Postdoc). Academia Sinica, Taiwan (Postdoc). At present: Assistant professor, National Sun Yat-Sen University, Taiwan.
+1. Huei-Fang Yang: PhD student (CS). Graduated 8/2011. INRIA Sophia Antipolis (Postdoc). Academia Sinica, Taiwan (Postdoc). At present: Associate professor, National Sun Yat-Sen University, Taiwan.
 1. Ji Ryang Chung: PhD (CS). Graduated 12/2011. Samsung Electronics. -> CEO, Tilda Corp, Korea. 
 1. Timothy Mann: PhD student (CS). Graduated 12/2012. Postdoc at Technion (Prof. Shie Mannor's lab). Google DeepMind (2015-2022). Facebook/Meta (2022-2023). Google DeepMind (2023-).
 1. Chul Sung: PhD student (CS). Graduated 5/2014. IBM Research, Austin, TX -> NLP Research Scientist, Pryon Inc.
