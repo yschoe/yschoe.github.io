@@ -1,0 +1,2750 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive, biologically inspired Paramecium simulation with live electrochemical telemetry.">
+  <title>Paramecium — an electrochemical extended present</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #0f1318;
+      --surface: #161b21;
+      --surface-alt: #1c2229;
+      --arena: #1a2228;
+      --grid: #374149;
+      --text: #e1e8eb;
+      --muted: #8f9ea4;
+      --accent: #6dd0da;
+      --food: #64cf6f;
+      --food-core: #cdf28e;
+      --contact: #e56f5f;
+      --avoidance: #e9b955;
+      --selected: #fffabf;
+      --focus: #9ae8ef;
+      --border: rgba(143, 158, 164, 0.42);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--background);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 0%, rgba(109, 208, 218, 0.08), transparent 34rem),
+        linear-gradient(180deg, #11171c 0%, var(--background) 36rem);
+    }
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    button {
+      color: inherit;
+    }
+
+    button:focus-visible,
+    select:focus-visible,
+    canvas:focus-visible,
+    dialog:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .page {
+      width: min(1680px, 100%);
+      margin: 0 auto;
+      padding: 20px clamp(14px, 2.4vw, 34px) 28px;
+    }
+
+    .masthead {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow {
+      margin: 0 0 5px;
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 750;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 1050px;
+      overflow-wrap: anywhere;
+      font-size: clamp(1.65rem, 3vw, 2.65rem);
+      line-height: 1.04;
+      letter-spacing: -0.035em;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      max-width: 980px;
+      color: var(--muted);
+      font-size: clamp(0.86rem, 1.4vw, 1rem);
+      line-height: 1.5;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    .live-status {
+      color: var(--muted);
+      font: 700 0.75rem/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .button,
+    .tool-button,
+    .icon-button {
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      background: rgba(28, 34, 41, 0.92);
+      min-height: 34px;
+      padding: 7px 11px;
+      cursor: pointer;
+      transition: border-color 140ms ease, background 140ms ease, color 140ms ease, transform 140ms ease;
+    }
+
+    .button:hover,
+    .tool-button:hover,
+    .icon-button:hover {
+      border-color: rgba(109, 208, 218, 0.75);
+      background: #232c33;
+    }
+
+    .button:active,
+    .tool-button:active,
+    .icon-button:active {
+      transform: translateY(1px);
+    }
+
+    .button.primary {
+      border-color: rgba(109, 208, 218, 0.72);
+      color: #dffcff;
+      background: rgba(60, 119, 126, 0.34);
+    }
+
+    .help-button {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: var(--accent);
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 10px;
+      margin-bottom: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(22, 27, 33, 0.92);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+    }
+
+    .control-group {
+      display: flex;
+      min-width: 0;
+      align-items: center;
+      gap: 6px;
+      padding-right: 8px;
+      margin-right: 2px;
+      border-right: 1px solid rgba(143, 158, 164, 0.2);
+    }
+
+    .control-group:last-child {
+      padding-right: 0;
+      border-right: 0;
+    }
+
+    .control-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 750;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    select {
+      min-height: 34px;
+      padding: 5px 28px 5px 9px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      color: var(--text);
+      background: #1c2229;
+    }
+
+    .button[aria-pressed="true"],
+    .tool-button[aria-pressed="true"] {
+      border-color: var(--accent);
+      color: #e8feff;
+      background: rgba(109, 208, 218, 0.18);
+      box-shadow: inset 0 0 0 1px rgba(109, 208, 218, 0.2);
+    }
+
+    .workspace {
+      display: grid;
+      min-width: 0;
+      grid-template-columns: minmax(480px, 1.16fr) minmax(420px, 0.84fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .card {
+      min-width: 0;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      background: rgba(22, 27, 33, 0.96);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .arena-card {
+      position: sticky;
+      top: 12px;
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 46px;
+      padding: 9px 12px;
+      border-bottom: 1px solid rgba(143, 158, 164, 0.2);
+    }
+
+    .card-title {
+      margin: 0;
+      font-size: 0.86rem;
+      font-weight: 760;
+      letter-spacing: 0.02em;
+    }
+
+    .card-note {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-align: right;
+    }
+
+    .arena-wrap {
+      position: relative;
+      background: var(--arena);
+      isolation: isolate;
+    }
+
+    #arena {
+      display: block;
+      width: 100%;
+      aspect-ratio: 920 / 700;
+      cursor: crosshair;
+      touch-action: none;
+    }
+
+    .arena-overlay {
+      position: absolute;
+      z-index: 2;
+      inset: auto 9px 9px 9px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-end;
+      pointer-events: none;
+    }
+
+    .arena-hint,
+    .color-key {
+      padding: 6px 8px;
+      border: 1px solid rgba(225, 232, 235, 0.12);
+      border-radius: 6px;
+      color: rgba(225, 232, 235, 0.78);
+      background: rgba(15, 19, 24, 0.72);
+      backdrop-filter: blur(4px);
+      font-size: 0.68rem;
+      line-height: 1.35;
+    }
+
+    .color-key {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .swatch {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    .swatch::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--swatch);
+      content: "";
+    }
+
+    .tool-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 10px 12px;
+      border-top: 1px solid rgba(143, 158, 164, 0.2);
+      background: rgba(18, 23, 28, 0.82);
+    }
+
+    .tool-button {
+      min-height: 31px;
+      padding: 5px 9px;
+      font-size: 0.75rem;
+    }
+
+    .telemetry {
+      padding-bottom: 10px;
+    }
+
+    .telemetry-head {
+      padding: 12px 13px 8px;
+    }
+
+    .organism-line {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    .organism-name {
+      margin: 0;
+      font-size: 1.12rem;
+      letter-spacing: -0.01em;
+    }
+
+    .mode-pill,
+    .display-pill {
+      padding: 3px 7px;
+      border-radius: 999px;
+      font: 760 0.66rem/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .mode-pill {
+      color: #d8e1e4;
+      background: #303940;
+    }
+
+    .display-pill {
+      color: #0f1318;
+      background: var(--accent);
+    }
+
+    .quick-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 7px;
+      margin-top: 10px;
+    }
+
+    .stat {
+      min-width: 0;
+      padding: 7px 8px;
+      border-radius: 6px;
+      background: var(--surface-alt);
+    }
+
+    .stat-label {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 750;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .stat-value {
+      display: block;
+      overflow: hidden;
+      font: 720 0.78rem/1.25 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .event-legend {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 0 13px 8px;
+      color: var(--muted);
+      font-size: 0.7rem;
+    }
+
+    .event-marker {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 5px;
+      vertical-align: 0;
+      background: currentColor;
+    }
+
+    .event-marker.food {
+      border-radius: 50%;
+      color: var(--food);
+    }
+
+    .event-marker.contact {
+      color: var(--contact);
+      transform: rotate(45deg);
+    }
+
+    .event-marker.avoidance {
+      width: 0;
+      height: 0;
+      margin-right: 7px;
+      border-right: 5px solid transparent;
+      border-bottom: 9px solid var(--avoidance);
+      border-left: 5px solid transparent;
+      background: transparent;
+    }
+
+    .charts {
+      display: grid;
+      gap: 7px;
+      padding: 0 9px;
+    }
+
+    .chart {
+      display: block;
+      width: 100%;
+      height: 136px;
+      border: 1px solid rgba(143, 158, 164, 0.24);
+      border-radius: 6px;
+      background: var(--surface-alt);
+    }
+
+    .telemetry-foot {
+      padding: 9px 13px 2px;
+      color: var(--muted);
+      font: 0.68rem/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .recent-event {
+      margin-top: 3px;
+      overflow: hidden;
+      color: var(--text);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      line-height: 1.5;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .toast {
+      position: fixed;
+      z-index: 20;
+      right: 20px;
+      bottom: 20px;
+      max-width: min(420px, calc(100vw - 40px));
+      padding: 10px 13px;
+      border: 1px solid rgba(109, 208, 218, 0.58);
+      border-radius: 8px;
+      color: #e5fdff;
+      background: rgba(18, 40, 44, 0.94);
+      box-shadow: var(--shadow);
+      font-size: 0.82rem;
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    dialog {
+      width: min(920px, calc(100vw - 28px));
+      max-height: min(860px, calc(100vh - 28px));
+      padding: 0;
+      border: 1px solid rgba(109, 208, 218, 0.52);
+      border-radius: 12px;
+      color: var(--text);
+      background: #141a20;
+      box-shadow: 0 30px 100px rgba(0, 0, 0, 0.72);
+    }
+
+    dialog::backdrop {
+      background: rgba(5, 8, 10, 0.82);
+      backdrop-filter: blur(3px);
+    }
+
+    .help-head {
+      position: sticky;
+      z-index: 3;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 17px 18px 14px;
+      border-bottom: 1px solid rgba(143, 158, 164, 0.25);
+      background: rgba(20, 26, 32, 0.97);
+    }
+
+    .help-head h2 {
+      margin: 0;
+      font-size: 1.38rem;
+      letter-spacing: -0.02em;
+    }
+
+    .help-head p {
+      margin: 5px 0 0;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.45;
+    }
+
+    .icon-button {
+      flex: 0 0 auto;
+      min-width: 38px;
+      padding: 6px 10px;
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+
+    .help-menu {
+      position: sticky;
+      z-index: 2;
+      top: 82px;
+      display: flex;
+      gap: 7px;
+      overflow-x: auto;
+      padding: 9px 18px;
+      border-bottom: 1px solid rgba(143, 158, 164, 0.18);
+      background: rgba(20, 26, 32, 0.96);
+    }
+
+    .help-menu a {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid rgba(143, 158, 164, 0.28);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-decoration: none;
+    }
+
+    .help-menu a:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    .help-content {
+      padding: 4px 18px 24px;
+      scroll-behavior: smooth;
+    }
+
+    .help-section {
+      padding-top: 18px;
+      scroll-margin-top: 138px;
+    }
+
+    .help-section h3 {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 1.02rem;
+    }
+
+    .help-section h4 {
+      margin: 17px 0 6px;
+      font-size: 0.87rem;
+    }
+
+    .help-section p,
+    .help-section li,
+    .help-section td,
+    .help-section th {
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+
+    .help-section p {
+      margin: 7px 0;
+      color: #ced8dc;
+    }
+
+    .help-section ul,
+    .help-section ol {
+      margin: 7px 0;
+      padding-left: 1.25rem;
+      color: #ced8dc;
+    }
+
+    .mechanism-flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(120px, 1fr));
+      gap: 7px;
+      margin: 12px 0;
+    }
+
+    .flow-node {
+      position: relative;
+      padding: 9px;
+      border: 1px solid rgba(109, 208, 218, 0.27);
+      border-radius: 7px;
+      background: #1c242b;
+      font-size: 0.73rem;
+      line-height: 1.4;
+    }
+
+    .flow-node:not(:last-child)::after {
+      position: absolute;
+      top: 50%;
+      right: -8px;
+      color: var(--muted);
+      content: "→";
+      transform: translateY(-50%);
+    }
+
+    .help-table {
+      width: 100%;
+      margin: 10px 0;
+      border-collapse: collapse;
+    }
+
+    .help-table th,
+    .help-table td {
+      padding: 7px 8px;
+      border: 1px solid rgba(143, 158, 164, 0.22);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .help-table th {
+      color: var(--text);
+      background: #202830;
+    }
+
+    .help-table td {
+      color: #c8d3d7;
+    }
+
+    .caution {
+      padding: 10px 12px;
+      border-left: 3px solid var(--avoidance);
+      border-radius: 3px;
+      background: rgba(233, 185, 85, 0.08);
+    }
+
+    kbd {
+      padding: 1px 5px;
+      border: 1px solid rgba(225, 232, 235, 0.28);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+      color: var(--text);
+      background: #252d34;
+      font: 0.74rem/1.3 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    @media (max-width: 1120px) {
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+
+      .arena-card {
+        position: static;
+      }
+
+      .chart {
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 13px 9px 20px;
+      }
+
+      .masthead {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .header-actions {
+        justify-content: space-between;
+      }
+
+      .controls {
+        gap: 6px;
+      }
+
+      .control-group {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0 0 7px;
+        margin: 0 0 1px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(143, 158, 164, 0.2);
+      }
+
+      .control-group:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+
+      .quick-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .arena-hint {
+        display: none;
+      }
+
+      .color-key {
+        max-width: 100%;
+        margin-left: auto;
+      }
+
+      .footer {
+        display: block;
+      }
+
+      .footer p + p {
+        margin-top: 6px;
+      }
+
+      .mechanism-flow {
+        grid-template-columns: 1fr;
+      }
+
+      .flow-node:not(:last-child)::after {
+        top: auto;
+        right: 50%;
+        bottom: -13px;
+        transform: translateX(50%) rotate(90deg);
+      }
+
+      .help-menu {
+        top: 103px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Interactive mechanistic model</p>
+        <h1>Paramecium: an electrochemical extended present</h1>
+        <p class="subtitle">
+          Food attraction emerges from changes in swimming and turning—not from direct gradient steering.
+          Watch membrane voltage, Ca²⁺, cAMP, adaptation, energy, and behavior evolve together.
+        </p>
+      </div>
+      <div class="header-actions">
+        <span id="liveStatus" class="live-status" aria-live="polite">running · 1×</span>
+        <button id="helpButton" class="button help-button" type="button" aria-haspopup="dialog">[help]</button>
+      </div>
+    </header>
+
+    <section class="controls" aria-label="Simulation controls">
+      <div class="control-group">
+        <button id="pauseButton" class="button primary" type="button">Pause</button>
+        <label class="control-label" for="speedSelect">Speed</label>
+        <select id="speedSelect" aria-label="Simulation speed">
+          <option value="0.25">0.25×</option>
+          <option value="1" selected>1×</option>
+          <option value="4">4×</option>
+          <option value="10">10×</option>
+        </select>
+        <button id="resetButton" class="button" type="button">Reset</button>
+      </div>
+      <div class="control-group">
+        <button id="frontTouchButton" class="button" type="button">Touch front</button>
+        <button id="rearTouchButton" class="button" type="button">Touch rear</button>
+        <button id="addAgentButton" class="button" type="button">+ organism</button>
+        <button id="selectAgentButton" class="button" type="button">Select next</button>
+      </div>
+      <div class="control-group">
+        <button id="fieldButton" class="button" type="button" aria-pressed="true">Food field</button>
+        <button id="trailButton" class="button" type="button" aria-pressed="true">Trails</button>
+        <button id="csvButton" class="button" type="button">CSV</button>
+        <button id="pngButton" class="button" type="button">Arena PNG</button>
+        <button id="clearFoodButton" class="button" type="button">Clear food</button>
+        <button id="clearObstaclesButton" class="button" type="button">Clear obstacles</button>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <section class="card arena-card" aria-labelledby="arenaHeading">
+        <div class="card-head">
+          <h2 id="arenaHeading" class="card-title">Chemical arena</h2>
+          <span id="arenaToolNote" class="card-note">Click to add a food source</span>
+        </div>
+        <div class="arena-wrap">
+          <canvas id="arena" width="920" height="700" tabindex="0" aria-label="Interactive Paramecium chemical arena"></canvas>
+          <div class="arena-overlay">
+            <span class="arena-hint">Right-click: obstacle · Shift-click: relocate · Middle-click: front probe</span>
+            <span class="color-key" aria-label="Body color key">
+              <span class="swatch" style="--swatch:#5acbdd">normal</span>
+              <span class="swatch" style="--swatch:#e56f5f">contact</span>
+              <span class="swatch" style="--swatch:#64cf6f">feeding</span>
+              <span class="swatch" style="--swatch:#e9b955">avoidance</span>
+            </span>
+          </div>
+        </div>
+        <div class="tool-strip" role="group" aria-label="Arena click tool">
+          <span class="control-label">Arena tool</span>
+          <button class="tool-button" type="button" data-tool="food" aria-pressed="true">Add food</button>
+          <button class="tool-button" type="button" data-tool="obstacle" aria-pressed="false">Add obstacle</button>
+          <button class="tool-button" type="button" data-tool="move" aria-pressed="false">Move selected</button>
+          <button class="tool-button" type="button" data-tool="probe" aria-pressed="false">Probe front</button>
+        </div>
+      </section>
+
+      <aside class="card telemetry" aria-labelledby="telemetryHeading">
+        <div class="telemetry-head">
+          <div class="organism-line">
+            <h2 id="telemetryHeading" class="organism-name">Organism 1</h2>
+            <span id="modePill" class="mode-pill">FORWARD</span>
+            <span id="displayPill" class="display-pill">NORMAL</span>
+          </div>
+          <div class="quick-stats">
+            <div class="stat"><span class="stat-label">time</span><span id="timeValue" class="stat-value">0.0 s</span></div>
+            <div class="stat"><span class="stat-label">speed</span><span id="speedValue" class="stat-value">0.0</span></div>
+            <div class="stat"><span class="stat-label">food</span><span id="foodValue" class="stat-value">0.00</span></div>
+            <div class="stat"><span class="stat-label">energy</span><span id="energyValue" class="stat-value">0.78</span></div>
+          </div>
+        </div>
+
+        <div class="event-legend" aria-label="Plot event marker key">
+          <span>Events:</span>
+          <span><i class="event-marker food"></i>food</span>
+          <span><i class="event-marker contact"></i>contact</span>
+          <span><i class="event-marker avoidance"></i>avoidance</span>
+        </div>
+
+        <div class="charts">
+          <canvas id="voltageChart" class="chart" aria-label="Scrolling membrane potential plot"></canvas>
+          <canvas id="calciumChart" class="chart" aria-label="Scrolling calcium plot"></canvas>
+          <canvas id="chemicalChart" class="chart" aria-label="Scrolling chemical state plot"></canvas>
+          <canvas id="organismChart" class="chart" aria-label="Scrolling organism-level state plot"></canvas>
+        </div>
+
+        <div class="telemetry-foot">
+          <div id="hiddenStats">channel availability 1.00 · food rate +0.00 · turns 0 · contacts 0</div>
+          <div id="recentEvent" class="recent-event">No events yet</div>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <p>Runs entirely in this page. No library, server, account, or network connection is required.</p>
+      <p>Hypothesis-generating model—not a quantitative species fit or evidence of consciousness.</p>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="helpDialog" aria-labelledby="helpTitle">
+    <div class="help-head">
+      <div>
+        <h2 id="helpTitle">About this simulation</h2>
+        <p>A guide to the project’s background, the modeled electrochemical mechanism, controls, colors, events, and live plots.</p>
+      </div>
+      <button id="closeHelpButton" class="icon-button" type="button" aria-label="Close help">×</button>
+    </div>
+
+    <nav class="help-menu" aria-label="Help topics">
+      <a href="#background">Background</a>
+      <a href="#mechanism">Mechanism</a>
+      <a href="#play">How to play</a>
+      <a href="#plots">Reading plots</a>
+      <a href="#scope">Scope</a>
+    </nav>
+
+    <div class="help-content">
+      <section id="background" class="help-section">
+        <h3>Background and purpose</h3>
+        <p>
+          This project asks how a very small organism can let recent events remain causally active in its
+          present behavior. A <em>Paramecium</em>-like cell has no nervous system, yet its membrane voltage,
+          ion-channel state, intracellular calcium, second messengers, chemical adaptation, and energy all
+          decay on different time scales. Together those overlapping traces form a compact “extended present.”
+        </p>
+        <p>
+          The swimmer does not read a mathematical food-gradient arrow and point toward it. Attraction instead
+          emerges through <strong>klinokinesis</strong>: improving conditions promote fast, smooth forward
+          swimming; worsening conditions make a voltage/Ca²⁺ avoidance event more likely. Random paths are
+          therefore retained longer when they happen to improve the chemical situation.
+        </p>
+      </section>
+
+      <section id="mechanism" class="help-section">
+        <h3>Technical mechanism</h3>
+        <div class="mechanism-flow" aria-label="Mechanism flow">
+          <div class="flow-node">Food change or touch</div>
+          <div class="flow-node">Membrane voltage</div>
+          <div class="flow-node">Ciliary Ca²⁺ channels</div>
+          <div class="flow-node">Reverse / pivot / forward</div>
+          <div class="flow-node">New chemical sample</div>
+        </div>
+
+        <h4>Membrane and ion-channel abstraction</h4>
+        <p>
+          Resting voltage is near −25 mV. Attractant tone, cAMP, attractant onset, posterior touch, Ca²⁺
+          feedback, and correlated channel noise all contribute to a continuously changing voltage target.
+          Anterior touch and attractant loss depolarize the model; food onset and posterior touch tend to
+          hyperpolarize it.
+        </p>
+        <p>
+          Crossing about −17.5 mV opens an abstracted voltage-gated ciliary Ca²⁺ pathway. The resulting fast
+          Ca²⁺ pulse reverses ciliary beating and makes the cell swim backward. As ciliary Ca²⁺ falls, the cell
+          pivots, then resumes forward swimming. Channel availability falls after a Ca²⁺ event and recovers
+          slowly, representing Ca-channel inactivation/refractoriness. Somatic Ca²⁺ supplies a slower memory
+          and a compact biphasic surrogate for Ca-sensitive Ca²⁺ and K⁺ conductances; individual channel
+          species are not fitted separately.
+        </p>
+
+        <h4>Chemical memory, cAMP, and energy</h4>
+        <p>
+          Current food affects a glutamate-like cAMP pathway. A separate slow adaptation variable remembers
+          recent food concentration. Food below that memory produces an “off-response”; food rising faster
+          than memory produces an onset signal. cAMP and adaptation therefore preserve chemical history after
+          the immediate concentration has changed. Feeding replenishes energy, while basal metabolism and
+          rapid movement consume it.
+        </p>
+
+        <table class="help-table">
+          <thead><tr><th>Modeled state</th><th>Typical time scale / role</th></tr></thead>
+          <tbody>
+            <tr><td>Membrane voltage</td><td>0.12 s relaxation; integrates chemical, touch, Ca²⁺, and noisy channel influences.</td></tr>
+            <tr><td>Ciliary Ca²⁺</td><td>0.58 s decay; high values reverse motion, intermediate values pivot.</td></tr>
+            <tr><td>Somatic Ca²⁺</td><td>1.8 s decay; slower trace of positive voltage excursions.</td></tr>
+            <tr><td>Channel availability</td><td>1.25 s recovery; creates refractoriness after an avoidance event.</td></tr>
+            <tr><td>cAMP</td><td>1.6 s relaxation; food-linked second-messenger trajectory.</td></tr>
+            <tr><td>Chemical adaptation</td><td>8 s relaxation; slow memory used to detect leaving a food-rich region.</td></tr>
+            <tr><td>Energy</td><td>Slow reserve; decreases with time and motion, increases with actual feeding.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="play" class="help-section">
+        <h3>How to play</h3>
+        <ol>
+          <li>Select <strong>Add food</strong>, then click or tap in the arena. The green chemical field spreads beyond the bright food core.</li>
+          <li>Select <strong>Add obstacle</strong> and place barriers. A front collision usually evokes backward swimming and a pivot.</li>
+          <li>Use <strong>Move selected</strong> to place the highlighted organism near a patch or barrier.</li>
+          <li>Use <strong>Probe front</strong>, <strong>Touch front</strong>, or <strong>Touch rear</strong> to inject controlled mechanical events.</li>
+          <li>Add multiple organisms, then use <strong>Select next</strong> to change which history appears in the plots.</li>
+        </ol>
+        <p>
+          Desktop shortcuts: <kbd>Space</kbd> pause, <kbd>1</kbd>–<kbd>4</kbd> speed,
+          <kbd>A</kbd>/<kbd>P</kbd> front/rear touch, <kbd>N</kbd> add organism,
+          <kbd>C</kbd> cycle the selected organism, <kbd>G</kbd> food field, <kbd>T</kbd> trails,
+          <kbd>E</kbd> CSV, <kbd>S</kbd> arena image, <kbd>R</kbd> reset,
+          and <kbd>H</kbd> or <kbd>?</kbd> help. Right-click adds an obstacle,
+          Shift-click relocates, and middle-click probes the front.
+        </p>
+
+        <h4>Body colors</h4>
+        <ul>
+          <li><strong style="color:#5acbdd">Cyan</strong>: ordinary swimming.</li>
+          <li><strong style="color:#e56f5f">Red</strong>: recent physical contact or a contact-evoked avoidance sequence.</li>
+          <li><strong style="color:#64cf6f">Green</strong>: meaningful uptake very near the center of a food patch.</li>
+          <li><strong style="color:#e9b955">Amber</strong>: a non-contact avoidance or reorientation sequence.</li>
+        </ul>
+      </section>
+
+      <section id="plots" class="help-section">
+        <h3>How to read the scrolling plots</h3>
+        <p>Every plot shows the most recent 42 simulated seconds. The right edge is “now.” Markers align events across all four charts: a green circle is a food encounter, a red diamond is contact, and an amber triangle is non-contact avoidance.</p>
+        <table class="help-table">
+          <thead><tr><th>Plot</th><th>What to watch</th></tr></thead>
+          <tbody>
+            <tr><td>Membrane potential</td><td>Depolarization moves upward. A crossing near −17.5 mV can initiate the fast ciliary Ca²⁺ event.</td></tr>
+            <tr><td>Calcium compartments</td><td>Orange ciliary Ca²⁺ changes quickly and controls reverse/pivot modes; purple somatic Ca²⁺ is slower.</td></tr>
+            <tr><td>Chemical present</td><td>Green is current food, blue is cAMP, and ochre is slow adaptation. Food falling below adaptation supports an off-response.</td></tr>
+            <tr><td>Organism-level state</td><td>Energy is mint, derived valence is pink, and mode is white: 0 forward, 0.5 pivot, 1 reverse.</td></tr>
+          </tbody>
+        </table>
+        <p>
+          “Valence” is only a compact derived summary of improving/worsening conditions, avoidance Ca²⁺,
+          and energy. It drives no special conscious faculty and should not be interpreted as a measured
+          biological emotion.
+        </p>
+      </section>
+
+      <section id="scope" class="help-section">
+        <h3>Scope and scientific caution</h3>
+        <div class="caution">
+          This is a transparent, hypothesis-generating educational model. It is not a quantitative fit to a
+          particular species, does not resolve individual channel molecular kinetics or hydrodynamics, and is
+          not evidence that <em>Paramecium</em> is conscious. Its parameters are deliberately compact and
+          editable so measured channel kinetics, spatial Ca²⁺ compartments, and recorded trajectories can
+          replace the simplified terms later.
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var CONFIG = {
+        worldWidth: 920,
+        worldHeight: 700,
+        bodyLength: 46,
+        bodyWidth: 22,
+        collisionRadius: 14,
+        fixedDt: 1 / 120,
+
+        restingVoltageMv: -25,
+        voltageTauS: 0.12,
+        spikeThresholdMv: -17.5,
+        refractoryS: 0.55,
+        voltageNoiseTauS: 0.70,
+        voltageNoiseSigmaMv: 1.55,
+
+        caRest: 0.10,
+        somaCaTauS: 1.8,
+        ciliaryCaTauS: 0.58,
+        ciliaryCaSpike: 2.65,
+        ciliaryCaReverseThreshold: 1.10,
+        ciliaryCaTurnThreshold: 0.36,
+        channelRecoveryTauS: 1.25,
+
+        campTauS: 1.6,
+        adaptationTauS: 8.0,
+        foodRateTauS: 0.35,
+
+        baseForwardSpeed: 72,
+        baseBackwardSpeed: 50,
+        pivotSpeed: 17,
+        pivotAngularSpeed: 4.2,
+        forwardCurvatureRadS: 0.17,
+        headingNoiseTauS: 0.9,
+        headingNoiseSigmaRadS: 0.28,
+        spontaneousTurnIntervalS: 7.2,
+
+        basalEnergyCostS: 0.0012,
+        motionEnergyCostS: 0.0015,
+        feedingEnergyGain: 0.11,
+        lowEnergySpeedFloor: 0.35,
+
+        foodRegrowthRateS: 0.003,
+        foodConsumptionRateS: 0.018,
+        defaultFoodSigma: 78,
+
+        contactColorHoldS: 0.45,
+        feedingColorHoldS: 0.20,
+        feedingColorRateFraction: 0.05,
+        feedingColorRadiusSigma: 0.55,
+
+        historyWindowS: 42,
+        historySampleHz: 24,
+        trailWindowS: 24,
+        trailSampleHz: 12
+      };
+
+      var COLORS = {
+        background: "#0f1318",
+        arena: "#1a2228",
+        arenaGrid: "#263138",
+        panelAlt: "#1c2229",
+        text: "#e1e8eb",
+        muted: "#8f9ea4",
+        accent: "#6dd0da",
+        food: "#64cf6f",
+        foodCore: "#cdf28e",
+        obstacle: "#645b4f",
+        obstacleEdge: "#9e8c74",
+        body: "#5acbdd",
+        bodyContact: "#e56f5f",
+        bodyFeeding: "#64cf6f",
+        bodyAvoidance: "#e9b955",
+        nucleus: "#2e697f",
+        cilia: "#aee8ef",
+        selected: "#fffabf",
+        vm: "#ef6c67",
+        caCil: "#ffb74d",
+        caSoma: "#9c79e3",
+        camp: "#58bcdd",
+        foodLine: "#6fd179",
+        adaptation: "#c19e56",
+        energy: "#72dbb0",
+        valence: "#e888c1",
+        mode: "#dedede",
+        chartGrid: "#374149"
+      };
+
+      function clamp(value, low, high) {
+        return value < low ? low : value > high ? high : value;
+      }
+
+      function smoothToward(current, target, tau, dt) {
+        if (tau <= 0) {
+          return target;
+        }
+        return target + (current - target) * Math.exp(-dt / tau);
+      }
+
+      function hill(value, half, power) {
+        var safeValue = Math.max(0, value);
+        var safeHalf = Math.max(1e-12, half);
+        var p = power === undefined ? 1 : power;
+        var vp = Math.pow(safeValue, p);
+        var hp = Math.pow(safeHalf, p);
+        return vp / (vp + hp);
+      }
+
+      function wrapAngle(angle) {
+        var twoPi = Math.PI * 2;
+        return ((angle + Math.PI) % twoPi + twoPi) % twoPi - Math.PI;
+      }
+
+      function dot(ax, ay, bx, by) {
+        return ax * bx + ay * by;
+      }
+
+      function normalized(x, y) {
+        var magnitude = Math.hypot(x, y);
+        if (magnitude <= 1e-12) {
+          return [1, 0];
+        }
+        return [x / magnitude, y / magnitude];
+      }
+
+      function pushBounded(array, value, maximum) {
+        array.push(value);
+        if (array.length > maximum) {
+          array.splice(0, array.length - maximum);
+        }
+      }
+
+      class RandomSource {
+        constructor(seed) {
+          this.state = seed >>> 0;
+          this.spareGaussian = null;
+        }
+
+        random() {
+          this.state = (this.state + 0x6D2B79F5) >>> 0;
+          var t = this.state;
+          t = Math.imul(t ^ (t >>> 15), t | 1);
+          t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+          return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+        }
+
+        uniform(low, high) {
+          return low + (high - low) * this.random();
+        }
+
+        choice(values) {
+          return values[Math.floor(this.random() * values.length)];
+        }
+
+        gauss() {
+          if (this.spareGaussian !== null) {
+            var spare = this.spareGaussian;
+            this.spareGaussian = null;
+            return spare;
+          }
+          var u = Math.max(1e-12, this.random());
+          var v = this.random();
+          var magnitude = Math.sqrt(-2 * Math.log(u));
+          var angle = 2 * Math.PI * v;
+          this.spareGaussian = magnitude * Math.sin(angle);
+          return magnitude * Math.cos(angle);
+        }
+      }
+
+      class FoodSource {
+        constructor(x, y, sigma, mass, maxMass, regrowthRateS, name) {
+          this.x = x;
+          this.y = y;
+          this.sigma = sigma;
+          this.mass = mass;
+          this.maxMass = maxMass;
+          this.regrowthRateS = regrowthRateS;
+          this.name = name || "food";
+        }
+
+        concentration(x, y) {
+          var dx = x - this.x;
+          var dy = y - this.y;
+          if (this.sigma <= 1e-9 || this.mass <= 0) {
+            return 0;
+          }
+          return this.mass * Math.exp(-(dx * dx + dy * dy) / (2 * this.sigma * this.sigma));
+        }
+
+        update(dt) {
+          if (this.mass < this.maxMass) {
+            this.mass = Math.min(this.maxMass, this.mass + this.regrowthRateS * dt);
+          }
+        }
+
+        consume(amount) {
+          var eaten = Math.min(this.mass, Math.max(0, amount));
+          this.mass -= eaten;
+          return eaten;
+        }
+      }
+
+      class ChemicalField {
+        constructor(sources) {
+          this.sources = sources || [];
+        }
+
+        concentration(x, y) {
+          var total = 0;
+          for (var i = 0; i < this.sources.length; i += 1) {
+            total += this.sources[i].concentration(x, y);
+          }
+          return total;
+        }
+
+        update(dt) {
+          for (var i = 0; i < this.sources.length; i += 1) {
+            this.sources[i].update(dt);
+          }
+        }
+
+        consumeAt(x, y, amount) {
+          if (amount <= 0 || this.sources.length === 0) {
+            return 0;
+          }
+          var contributions = [];
+          var total = 0;
+          for (var i = 0; i < this.sources.length; i += 1) {
+            var contribution = this.sources[i].concentration(x, y);
+            contributions.push(contribution);
+            total += contribution;
+          }
+          if (total <= 1e-12) {
+            return 0;
+          }
+          var eaten = 0;
+          for (var j = 0; j < this.sources.length; j += 1) {
+            eaten += this.sources[j].consume(amount * contributions[j] / total);
+          }
+          return eaten;
+        }
+
+        addSource(x, y, sigma, mass, regrowthRateS, name) {
+          this.sources.push(new FoodSource(
+            x,
+            y,
+            sigma,
+            mass,
+            Math.max(1, mass),
+            regrowthRateS,
+            name
+          ));
+        }
+      }
+
+      function makeInternalState() {
+        return {
+          membraneMv: CONFIG.restingVoltageMv,
+          voltageNoiseMv: 0,
+          somaticCa: CONFIG.caRest,
+          ciliaryCa: CONFIG.caRest,
+          channelAvailability: 1,
+          camp: 0,
+          adaptation: 0,
+          foodRate: 0,
+          energy: 0.78,
+          valence: 0,
+          refractory: 0,
+          anteriorTouchDrive: 0,
+          posteriorTouchDrive: 0,
+          depolarizingKick: 0,
+          headingNoise: 0,
+          speed: 0,
+          angularVelocity: 0,
+          mode: "FORWARD"
+        };
+      }
+
+      class Paramecium {
+        constructor(identifier, x, y, heading, seed) {
+          this.identifier = identifier;
+          this.x = x;
+          this.y = y;
+          this.heading = heading;
+          this.rng = new RandomSource(seed);
+          this.state = makeInternalState();
+          this.sensory = {
+            centerFood: 0,
+            anteriorFood: 0,
+            posteriorFood: 0,
+            leftFood: 0,
+            rightFood: 0
+          };
+          this.previousVoltage = CONFIG.restingVoltageMv;
+          this.turnSign = this.rng.choice([-1, 1]);
+          this.touchCooldown = 0;
+          this.historyAccumulator = 0;
+          this.trailAccumulator = 0;
+          this.history = [];
+          this.trail = [];
+          this.events = [];
+          this.plotEvents = [];
+          this.maxHistory = Math.max(10, Math.floor(CONFIG.historyWindowS * CONFIG.historySampleHz) + 5);
+          this.maxTrail = Math.max(10, Math.floor(CONFIG.trailWindowS * CONFIG.trailSampleHz) + 5);
+          this.maxPlotEvents = Math.max(64, Math.floor(CONFIG.historyWindowS * 4));
+          this.totalFoodEaten = 0;
+          this.totalTurns = 0;
+          this.totalCollisions = 0;
+          this.distanceTravelled = 0;
+          this.lastFoodForRate = 0;
+          this.contactColorTimer = 0;
+          this.feedingColorTimer = 0;
+          this.contactEvokedAvoidance = false;
+        }
+
+        forwardVector() {
+          return [Math.cos(this.heading), Math.sin(this.heading)];
+        }
+
+        bodyPoint(longitudinal, lateral) {
+          var side = lateral || 0;
+          var forward = this.forwardVector();
+          var lx = -forward[1];
+          var ly = forward[0];
+          return [
+            this.x + forward[0] * longitudinal + lx * side,
+            this.y + forward[1] * longitudinal + ly * side
+          ];
+        }
+
+        sense(field) {
+          var halfLength = CONFIG.bodyLength * 0.5;
+          var halfWidth = CONFIG.bodyWidth * 0.55;
+          var anterior = this.bodyPoint(halfLength, 0);
+          var posterior = this.bodyPoint(-halfLength, 0);
+          var left = this.bodyPoint(4, halfWidth);
+          var right = this.bodyPoint(4, -halfWidth);
+          this.sensory = {
+            centerFood: field.concentration(this.x, this.y),
+            anteriorFood: field.concentration(anterior[0], anterior[1]),
+            posteriorFood: field.concentration(posterior[0], posterior[1]),
+            leftFood: field.concentration(left[0], left[1]),
+            rightFood: field.concentration(right[0], right[1])
+          };
+        }
+
+        logEvent(timeS, message) {
+          this.events.unshift([timeS, message]);
+          if (this.events.length > 10) {
+            this.events.length = 10;
+          }
+        }
+
+        recordPlotEvent(timeS, category) {
+          pushBounded(this.plotEvents, [timeS, category], this.maxPlotEvents);
+        }
+
+        displayState() {
+          if (this.contactColorTimer > 0 || (
+            this.state.mode !== "FORWARD" && this.contactEvokedAvoidance
+          )) {
+            return "CONTACT";
+          }
+          if (this.feedingColorTimer > 0) {
+            return "FEEDING";
+          }
+          if (this.state.mode === "REVERSE" || this.state.mode === "PIVOT") {
+            return "AVOIDANCE";
+          }
+          return "NORMAL";
+        }
+
+        decayDisplayEvents(dt) {
+          this.contactColorTimer = Math.max(0, this.contactColorTimer - dt);
+          this.feedingColorTimer = Math.max(0, this.feedingColorTimer - dt);
+        }
+
+        anteriorTouch(intensity, timeS, reason) {
+          if (this.touchCooldown > 0) {
+            return;
+          }
+          var strength = clamp(intensity, 0.2, 2);
+          var newContact = this.contactColorTimer <= 0;
+          this.state.anteriorTouchDrive += 19 * strength;
+          this.touchCooldown = 0.22;
+          this.contactColorTimer = CONFIG.contactColorHoldS;
+          this.totalCollisions += 1;
+          this.logEvent(timeS, reason || "anterior touch");
+          if (newContact) {
+            this.recordPlotEvent(timeS, "contact");
+          }
+        }
+
+        posteriorTouch(intensity, timeS, reason) {
+          if (this.touchCooldown > 0) {
+            return;
+          }
+          var strength = clamp(intensity, 0.2, 2);
+          var newContact = this.contactColorTimer <= 0;
+          this.state.posteriorTouchDrive += 8 * strength;
+          this.touchCooldown = 0.20;
+          this.contactColorTimer = CONFIG.contactColorHoldS;
+          this.logEvent(timeS, reason || "posterior touch");
+          if (newContact) {
+            this.recordPlotEvent(timeS, "contact");
+          }
+        }
+
+        triggerAvoidance(timeS, reason, strength) {
+          var state = this.state;
+          if (state.refractory > 0) {
+            return;
+          }
+          var eventStrength = clamp(strength === undefined ? 1 : strength, 0.6, 1.8);
+          state.ciliaryCa += CONFIG.ciliaryCaSpike * eventStrength * state.channelAvailability;
+          state.ciliaryCa = Math.min(state.ciliaryCa, 4.5);
+          state.channelAvailability *= 0.35;
+          state.membraneMv = Math.max(state.membraneMv, 2 + 5 * (eventStrength - 1));
+          state.refractory = CONFIG.refractoryS;
+          this.contactEvokedAvoidance = reason.indexOf("touch") >= 0 || reason.indexOf("contact") >= 0;
+          this.turnSign = this.rng.choice([-1, 1]);
+          this.totalTurns += 1;
+          this.logEvent(timeS, reason);
+          if (!this.contactEvokedAvoidance) {
+            this.recordPlotEvent(timeS, "avoidance");
+          }
+        }
+
+        updatePhysiology(dt, timeS) {
+          var state = this.state;
+          var sensory = this.sensory;
+          var rawFoodRate = (sensory.centerFood - this.lastFoodForRate) / Math.max(dt, 1e-9);
+          state.foodRate = smoothToward(state.foodRate, rawFoodRate, CONFIG.foodRateTauS, dt);
+          this.lastFoodForRate = sensory.centerFood;
+
+          state.adaptation = smoothToward(
+            state.adaptation,
+            sensory.centerFood,
+            CONFIG.adaptationTauS,
+            dt
+          );
+
+          var campTarget = hill(sensory.centerFood, 0.24, 1.2);
+          state.camp = smoothToward(state.camp, campTarget, CONFIG.campTauS, dt);
+
+          var scale = 0.10 + state.adaptation;
+          var leavingSignal = clamp((state.adaptation - sensory.centerFood) / scale, 0, 2);
+          var enteringSignal = clamp(state.foodRate / 1.8, 0, 1.5);
+          var foodTone = hill(sensory.centerFood, 0.22, 1.1);
+
+          var noiseTau = CONFIG.voltageNoiseTauS;
+          state.voltageNoiseMv += (
+            -state.voltageNoiseMv / noiseTau * dt
+            + CONFIG.voltageNoiseSigmaMv
+              * Math.sqrt(2 / noiseTau)
+              * Math.sqrt(dt)
+              * this.rng.gauss()
+          );
+
+          var caPositive = 7 * hill(state.somaticCa, 0.22, 2);
+          var caNegative = 10.5 * hill(state.somaticCa, 0.82, 3);
+          var calciumFeedbackMv = caPositive - caNegative;
+
+          var hazard = 1 / CONFIG.spontaneousTurnIntervalS;
+          hazard *= Math.exp(1.85 * leavingSignal - 1.20 * enteringSignal);
+          hazard *= 1 + 0.45 * Math.max(0, 0.35 - state.energy);
+          hazard = clamp(hazard, 0.015, 2);
+          if (state.refractory <= 0 && this.rng.random() < hazard * dt) {
+            state.depolarizingKick += this.rng.uniform(7.5, 12.5);
+          }
+
+          state.anteriorTouchDrive = smoothToward(state.anteriorTouchDrive, 0, 0.10, dt);
+          state.posteriorTouchDrive = smoothToward(state.posteriorTouchDrive, 0, 0.16, dt);
+          state.depolarizingKick = smoothToward(state.depolarizingKick, 0, 0.09, dt);
+
+          var voltageTarget = CONFIG.restingVoltageMv;
+          voltageTarget -= 4.8 * foodTone;
+          voltageTarget -= 2.1 * state.camp;
+          voltageTarget -= 1.8 * enteringSignal;
+          voltageTarget += 10 * leavingSignal;
+          voltageTarget += state.anteriorTouchDrive;
+          voltageTarget -= state.posteriorTouchDrive;
+          voltageTarget += state.depolarizingKick;
+          voltageTarget += state.voltageNoiseMv;
+          voltageTarget += calciumFeedbackMv;
+
+          this.previousVoltage = state.membraneMv;
+          state.membraneMv = smoothToward(
+            state.membraneMv,
+            voltageTarget,
+            CONFIG.voltageTauS,
+            dt
+          );
+          state.membraneMv = clamp(state.membraneMv, -58, 30);
+
+          var somaInflux = 0.52 * hill(Math.max(0, state.membraneMv + 27), 4, 2);
+          state.somaticCa = smoothToward(
+            state.somaticCa,
+            CONFIG.caRest + somaInflux,
+            CONFIG.somaCaTauS,
+            dt
+          );
+
+          var ciliaryInflux = 0.22 * hill(Math.max(0, state.membraneMv + 19), 4, 2);
+          state.ciliaryCa = smoothToward(
+            state.ciliaryCa,
+            CONFIG.caRest + ciliaryInflux,
+            CONFIG.ciliaryCaTauS,
+            dt
+          );
+
+          var availabilityTarget = 1 / (1 + 0.38 * state.ciliaryCa * state.ciliaryCa);
+          state.channelAvailability = smoothToward(
+            state.channelAvailability,
+            availabilityTarget,
+            CONFIG.channelRecoveryTauS,
+            dt
+          );
+          state.channelAvailability = clamp(state.channelAvailability, 0.05, 1);
+
+          var crossedThreshold = (
+            this.previousVoltage < CONFIG.spikeThresholdMv
+            && state.membraneMv >= CONFIG.spikeThresholdMv
+          );
+          if (crossedThreshold && state.refractory <= 0) {
+            var reason;
+            var strength;
+            if (state.anteriorTouchDrive > 1) {
+              reason = "touch-evoked avoidance";
+              strength = 1.25;
+            } else if (leavingSignal > 0.25) {
+              reason = "attractant off-response";
+              strength = 1 + 0.20 * leavingSignal;
+            } else {
+              reason = "spontaneous reorientation";
+              strength = 0.92;
+            }
+            this.triggerAvoidance(timeS, reason, strength);
+          }
+
+          state.refractory = Math.max(0, state.refractory - dt);
+          this.touchCooldown = Math.max(0, this.touchCooldown - dt);
+
+          if (state.ciliaryCa >= CONFIG.ciliaryCaReverseThreshold) {
+            state.mode = "REVERSE";
+          } else if (state.ciliaryCa >= CONFIG.ciliaryCaTurnThreshold) {
+            state.mode = "PIVOT";
+          } else {
+            state.mode = "FORWARD";
+            if (state.refractory <= 0) {
+              this.contactEvokedAvoidance = false;
+            }
+          }
+
+          state.valence = Math.tanh(
+            1.2 * enteringSignal
+            - 1.5 * leavingSignal
+            - 0.38 * Math.max(0, state.ciliaryCa - CONFIG.caRest)
+            + 0.45 * (state.energy - 0.45)
+          );
+        }
+
+        updateMotion(dt) {
+          var state = this.state;
+          var foodTone = hill(this.sensory.centerFood, 0.22, 1.1);
+
+          state.headingNoise += (
+            -state.headingNoise / CONFIG.headingNoiseTauS * dt
+            + CONFIG.headingNoiseSigmaRadS
+              * Math.sqrt(2 / CONFIG.headingNoiseTauS)
+              * Math.sqrt(dt)
+              * this.rng.gauss()
+          );
+
+          var energyFactor = CONFIG.lowEnergySpeedFloor
+            + (1 - CONFIG.lowEnergySpeedFloor) * clamp(state.energy, 0, 1);
+
+          var targetSpeed;
+          var targetOmega;
+          if (state.mode === "REVERSE") {
+            var caFactor = clamp(
+              (state.ciliaryCa - CONFIG.ciliaryCaReverseThreshold) / 1.8 + 0.65,
+              0.55,
+              1.25
+            );
+            targetSpeed = -CONFIG.baseBackwardSpeed * caFactor * energyFactor;
+            targetOmega = this.turnSign * (0.22 + 0.20 * caFactor);
+          } else if (state.mode === "PIVOT") {
+            var pivotFraction = clamp(
+              (state.ciliaryCa - CONFIG.ciliaryCaTurnThreshold)
+                / Math.max(1e-6, CONFIG.ciliaryCaReverseThreshold - CONFIG.ciliaryCaTurnThreshold),
+              0,
+              1
+            );
+            targetSpeed = CONFIG.pivotSpeed * (0.45 + 0.55 * (1 - pivotFraction));
+            targetOmega = this.turnSign
+              * CONFIG.pivotAngularSpeed
+              * (0.70 + 0.30 * pivotFraction);
+          } else {
+            var posteriorBoost = clamp(state.posteriorTouchDrive / 8, 0, 1);
+            targetSpeed = CONFIG.baseForwardSpeed * (
+              1 + 0.30 * foodTone + 0.12 * state.camp + 0.15 * posteriorBoost
+            );
+            targetSpeed *= energyFactor;
+            targetOmega = CONFIG.forwardCurvatureRadS + state.headingNoise;
+          }
+
+          state.speed = smoothToward(state.speed, targetSpeed, 0.11, dt);
+          state.angularVelocity = smoothToward(state.angularVelocity, targetOmega, 0.10, dt);
+          this.heading = wrapAngle(this.heading + state.angularVelocity * dt);
+
+          var oldX = this.x;
+          var oldY = this.y;
+          var forward = this.forwardVector();
+          this.x += forward[0] * state.speed * dt;
+          this.y += forward[1] * state.speed * dt;
+          this.distanceTravelled += Math.hypot(this.x - oldX, this.y - oldY);
+        }
+
+        resolveContacts(obstacles, timeS) {
+          var radius = CONFIG.collisionRadius;
+          var forward = this.forwardVector();
+          var contacts = [];
+
+          if (this.x < radius) {
+            contacts.push([-1, 0, radius - this.x, "left wall"]);
+            this.x = radius;
+          } else if (this.x > CONFIG.worldWidth - radius) {
+            contacts.push([1, 0, this.x - (CONFIG.worldWidth - radius), "right wall"]);
+            this.x = CONFIG.worldWidth - radius;
+          }
+
+          if (this.y < radius) {
+            contacts.push([0, -1, radius - this.y, "top wall"]);
+            this.y = radius;
+          } else if (this.y > CONFIG.worldHeight - radius) {
+            contacts.push([0, 1, this.y - (CONFIG.worldHeight - radius), "bottom wall"]);
+            this.y = CONFIG.worldHeight - radius;
+          }
+
+          for (var i = 0; i < contacts.length; i += 1) {
+            var contact = contacts[i];
+            var frontness = dot(forward[0], forward[1], contact[0], contact[1]);
+            var intensity = clamp(0.7 + contact[2] / Math.max(1, radius), 0.6, 1.5);
+            if (frontness >= 0) {
+              this.anteriorTouch(intensity, timeS, "anterior contact: " + contact[3]);
+            } else {
+              this.posteriorTouch(intensity, timeS, "posterior contact: " + contact[3]);
+            }
+          }
+
+          for (var j = 0; j < obstacles.length; j += 1) {
+            var obstacle = obstacles[j];
+            var dx = this.x - obstacle.x;
+            var dy = this.y - obstacle.y;
+            var minimumDistance = radius + obstacle.radius;
+            var distance = Math.hypot(dx, dy);
+            if (distance >= minimumDistance) {
+              continue;
+            }
+            var normal = normalized(dx, dy);
+            var penetration = minimumDistance - distance;
+            this.x += normal[0] * penetration;
+            this.y += normal[1] * penetration;
+            var front = dot(forward[0], forward[1], -normal[0], -normal[1]);
+            var collisionIntensity = clamp(0.75 + penetration / Math.max(1, radius), 0.6, 1.7);
+            if (front >= 0) {
+              this.anteriorTouch(collisionIntensity, timeS, "anterior contact: obstacle");
+            } else {
+              this.posteriorTouch(collisionIntensity, timeS, "posterior contact: obstacle");
+            }
+          }
+        }
+
+        feed(field, dt, timeS) {
+          var mouth = this.bodyPoint(7, CONFIG.bodyWidth * 0.32);
+          var localFood = field.concentration(mouth[0], mouth[1]);
+          var feedingGate = hill(localFood, 0.16, 1.4);
+          var nearFoodSource = false;
+
+          for (var i = 0; i < field.sources.length; i += 1) {
+            var source = field.sources[i];
+            if (
+              source.mass > 0
+              && Math.hypot(mouth[0] - source.x, mouth[1] - source.y)
+                <= CONFIG.feedingColorRadiusSigma * source.sigma
+            ) {
+              nearFoodSource = true;
+              break;
+            }
+          }
+
+          var consumed = field.consumeAt(
+            mouth[0],
+            mouth[1],
+            CONFIG.foodConsumptionRateS * feedingGate * dt
+          );
+
+          if (consumed > 0) {
+            var oldEnergy = this.state.energy;
+            this.state.energy = clamp(
+              this.state.energy + CONFIG.feedingEnergyGain * consumed,
+              0,
+              1
+            );
+            this.totalFoodEaten += consumed;
+            var visibleAmount = (
+              CONFIG.foodConsumptionRateS
+              * CONFIG.feedingColorRateFraction
+              * dt
+            );
+            if (consumed >= visibleAmount && nearFoodSource) {
+              var newFoodEncounter = this.feedingColorTimer <= 0;
+              this.feedingColorTimer = CONFIG.feedingColorHoldS;
+              if (newFoodEncounter) {
+                this.logEvent(timeS, "food encountered");
+                this.recordPlotEvent(timeS, "food");
+              }
+            }
+            if (oldEnergy < 0.98 && this.state.energy >= 0.98) {
+              this.logEvent(timeS, "energy reserve replenished");
+            }
+          }
+        }
+
+        updateEnergy(dt) {
+          var speedFraction = Math.abs(this.state.speed) / Math.max(1, CONFIG.baseForwardSpeed);
+          var cost = CONFIG.basalEnergyCostS
+            + CONFIG.motionEnergyCostS * speedFraction * speedFraction;
+          this.state.energy = clamp(this.state.energy - cost * dt, 0, 1);
+        }
+
+        record(dt, timeS) {
+          this.historyAccumulator += dt;
+          var samplePeriod = 1 / CONFIG.historySampleHz;
+          if (this.historyAccumulator >= samplePeriod) {
+            this.historyAccumulator %= samplePeriod;
+            var modeCode = this.state.mode === "REVERSE"
+              ? 1
+              : this.state.mode === "PIVOT" ? 0.5 : 0;
+            pushBounded(this.history, {
+              timeS: timeS,
+              membraneMv: this.state.membraneMv,
+              somaticCa: this.state.somaticCa,
+              ciliaryCa: this.state.ciliaryCa,
+              channelAvailability: this.state.channelAvailability,
+              camp: this.state.camp,
+              adaptation: this.state.adaptation,
+              food: this.sensory.centerFood,
+              foodRate: this.state.foodRate,
+              energy: this.state.energy,
+              valence: this.state.valence,
+              speed: this.state.speed,
+              modeCode: modeCode
+            }, this.maxHistory);
+          }
+
+          this.trailAccumulator += dt;
+          var trailPeriod = 1 / CONFIG.trailSampleHz;
+          if (this.trailAccumulator >= trailPeriod) {
+            this.trailAccumulator %= trailPeriod;
+            pushBounded(this.trail, [this.x, this.y, timeS], this.maxTrail);
+          }
+        }
+
+        update(dt, timeS, field, obstacles) {
+          this.decayDisplayEvents(dt);
+          this.sense(field);
+          this.updatePhysiology(dt, timeS);
+          this.updateMotion(dt);
+          this.resolveContacts(obstacles, timeS);
+          this.feed(field, dt, timeS);
+          this.updateEnergy(dt);
+          this.record(dt, timeS);
+        }
+      }
+
+      class Simulation {
+        constructor(seed, agentCount) {
+          this.seed = seed || 7;
+          this.rng = new RandomSource(this.seed);
+          this.timeS = 0;
+          this.field = new ChemicalField([]);
+          this.obstacles = [];
+          this.agents = [];
+          this.selectedIndex = 0;
+          this.reset(agentCount || 1);
+        }
+
+        get selected() {
+          this.selectedIndex = ((this.selectedIndex % this.agents.length) + this.agents.length)
+            % this.agents.length;
+          return this.agents[this.selectedIndex];
+        }
+
+        reset(agentCount) {
+          this.timeS = 0;
+          this.rng = new RandomSource(this.seed);
+          this.field = new ChemicalField([
+            new FoodSource(178, 155, 72, 1.00, 1.00, CONFIG.foodRegrowthRateS, "glutamate-like"),
+            new FoodSource(735, 175, 90, 0.85, 1.00, CONFIG.foodRegrowthRateS, "bacterial patch"),
+            new FoodSource(690, 555, 76, 0.95, 1.00, CONFIG.foodRegrowthRateS, "folate-like"),
+            new FoodSource(245, 545, 105, 0.70, 1.00, CONFIG.foodRegrowthRateS, "diffuse food")
+          ]);
+          this.obstacles = [
+            {x: 445, y: 260, radius: 42},
+            {x: 540, y: 455, radius: 55},
+            {x: 365, y: 485, radius: 26}
+          ];
+          this.agents = [];
+          for (var i = 0; i < Math.max(1, agentCount || 1); i += 1) {
+            this.addAgent(undefined, undefined, false);
+          }
+          this.selectedIndex = 0;
+        }
+
+        addAgent(x, y, log) {
+          var identifier = this.agents.length + 1;
+          var agentX = x === undefined
+            ? this.rng.uniform(0.34 * CONFIG.worldWidth, 0.64 * CONFIG.worldWidth)
+            : x;
+          var agentY = y === undefined
+            ? this.rng.uniform(0.32 * CONFIG.worldHeight, 0.67 * CONFIG.worldHeight)
+            : y;
+          var heading = this.rng.uniform(-Math.PI, Math.PI);
+          var agentSeed = this.seed * 10007 + identifier * 7919;
+          var agent = new Paramecium(identifier, agentX, agentY, heading, agentSeed);
+          agent.sense(this.field);
+          agent.lastFoodForRate = agent.sensory.centerFood;
+          if (log !== false) {
+            agent.logEvent(this.timeS, "organism added");
+          }
+          this.agents.push(agent);
+          return agent;
+        }
+
+        addFood(x, y, mass) {
+          this.field.addSource(
+            clamp(x, 0, CONFIG.worldWidth),
+            clamp(y, 0, CONFIG.worldHeight),
+            CONFIG.defaultFoodSigma,
+            mass || 1,
+            CONFIG.foodRegrowthRateS,
+            "food " + (this.field.sources.length + 1)
+          );
+        }
+
+        addObstacle(x, y, radius) {
+          var r = radius || 30;
+          this.obstacles.push({
+            x: clamp(x, r, CONFIG.worldWidth - r),
+            y: clamp(y, r, CONFIG.worldHeight - r),
+            radius: r
+          });
+        }
+
+        step(dt) {
+          var stepDt = dt || CONFIG.fixedDt;
+          this.timeS += stepDt;
+          this.field.update(stepDt);
+          for (var i = 0; i < this.agents.length; i += 1) {
+            this.agents[i].update(
+              stepDt,
+              this.timeS,
+              this.field,
+              this.obstacles
+            );
+          }
+        }
+      }
+
+      var arena = document.getElementById("arena");
+      var chartCanvases = {
+        voltage: document.getElementById("voltageChart"),
+        calcium: document.getElementById("calciumChart"),
+        chemical: document.getElementById("chemicalChart"),
+        organism: document.getElementById("organismChart")
+      };
+
+      var sim = new Simulation(7, 1);
+      var paused = false;
+      var simulationSpeed = 1;
+      var showField = true;
+      var showTrails = true;
+      var selectedTool = "food";
+      var accumulator = 0;
+      var lastFrameTime = performance.now();
+      var lastUiUpdate = 0;
+      var toastTimer = 0;
+      var pausedBeforeHelp = false;
+
+      var elements = {
+        liveStatus: document.getElementById("liveStatus"),
+        pauseButton: document.getElementById("pauseButton"),
+        speedSelect: document.getElementById("speedSelect"),
+        resetButton: document.getElementById("resetButton"),
+        frontTouchButton: document.getElementById("frontTouchButton"),
+        rearTouchButton: document.getElementById("rearTouchButton"),
+        addAgentButton: document.getElementById("addAgentButton"),
+        selectAgentButton: document.getElementById("selectAgentButton"),
+        fieldButton: document.getElementById("fieldButton"),
+        trailButton: document.getElementById("trailButton"),
+        csvButton: document.getElementById("csvButton"),
+        pngButton: document.getElementById("pngButton"),
+        clearFoodButton: document.getElementById("clearFoodButton"),
+        clearObstaclesButton: document.getElementById("clearObstaclesButton"),
+        helpButton: document.getElementById("helpButton"),
+        helpDialog: document.getElementById("helpDialog"),
+        closeHelpButton: document.getElementById("closeHelpButton"),
+        arenaToolNote: document.getElementById("arenaToolNote"),
+        telemetryHeading: document.getElementById("telemetryHeading"),
+        modePill: document.getElementById("modePill"),
+        displayPill: document.getElementById("displayPill"),
+        timeValue: document.getElementById("timeValue"),
+        speedValue: document.getElementById("speedValue"),
+        foodValue: document.getElementById("foodValue"),
+        energyValue: document.getElementById("energyValue"),
+        hiddenStats: document.getElementById("hiddenStats"),
+        recentEvent: document.getElementById("recentEvent"),
+        toast: document.getElementById("toast")
+      };
+
+      function setToast(message) {
+        elements.toast.textContent = message;
+        elements.toast.classList.add("show");
+        window.clearTimeout(toastTimer);
+        toastTimer = window.setTimeout(function () {
+          elements.toast.classList.remove("show");
+        }, 2400);
+      }
+
+      function setPaused(value) {
+        paused = value;
+        elements.pauseButton.textContent = paused ? "Resume" : "Pause";
+        elements.pauseButton.setAttribute("aria-pressed", String(paused));
+        updateControlState();
+      }
+
+      function updateControlState() {
+        elements.fieldButton.setAttribute("aria-pressed", String(showField));
+        elements.trailButton.setAttribute("aria-pressed", String(showTrails));
+        elements.liveStatus.textContent = (paused ? "paused" : "running")
+          + " · " + simulationSpeed + "×";
+      }
+
+      function selectNextAgent() {
+        sim.selectedIndex = (sim.selectedIndex + 1) % sim.agents.length;
+        setToast("Selected organism " + sim.selected.identifier);
+      }
+
+      function setTool(tool) {
+        selectedTool = tool;
+        var labels = {
+          food: "Click or tap to add a food source",
+          obstacle: "Click or tap to add an obstacle",
+          move: "Click or tap to relocate the selected organism",
+          probe: "Click or tap to stimulate the anterior membrane"
+        };
+        elements.arenaToolNote.textContent = labels[tool];
+        var buttons = document.querySelectorAll("[data-tool]");
+        for (var i = 0; i < buttons.length; i += 1) {
+          buttons[i].setAttribute("aria-pressed", String(buttons[i].dataset.tool === tool));
+        }
+      }
+
+      function fitCanvas(canvas) {
+        var rect = canvas.getBoundingClientRect();
+        var dpr = Math.min(2, window.devicePixelRatio || 1);
+        var width = Math.max(1, Math.round(rect.width * dpr));
+        var height = Math.max(1, Math.round(rect.height * dpr));
+        if (canvas.width !== width || canvas.height !== height) {
+          canvas.width = width;
+          canvas.height = height;
+        }
+        var context = canvas.getContext("2d");
+        context.setTransform(dpr, 0, 0, dpr, 0, 0);
+        context.lineCap = "round";
+        context.lineJoin = "round";
+        return {
+          context: context,
+          width: rect.width,
+          height: rect.height,
+          dpr: dpr
+        };
+      }
+
+      function bodyColor(agent) {
+        var display = agent.displayState();
+        if (display === "CONTACT") {
+          return COLORS.bodyContact;
+        }
+        if (display === "FEEDING") {
+          return COLORS.bodyFeeding;
+        }
+        if (display === "AVOIDANCE") {
+          return COLORS.bodyAvoidance;
+        }
+        return COLORS.body;
+      }
+
+      function drawArena() {
+        var fitted = fitCanvas(arena);
+        var ctx = fitted.context;
+        var width = fitted.width;
+        var height = fitted.height;
+        var sx = width / CONFIG.worldWidth;
+        var sy = height / CONFIG.worldHeight;
+        var scale = Math.min(sx, sy);
+
+        ctx.clearRect(0, 0, width, height);
+        ctx.fillStyle = COLORS.arena;
+        ctx.fillRect(0, 0, width, height);
+
+        ctx.save();
+        ctx.scale(sx, sy);
+
+        ctx.strokeStyle = COLORS.arenaGrid;
+        ctx.lineWidth = 1 / scale;
+        for (var gx = 115; gx < CONFIG.worldWidth; gx += 115) {
+          ctx.beginPath();
+          ctx.moveTo(gx, 0);
+          ctx.lineTo(gx, CONFIG.worldHeight);
+          ctx.stroke();
+        }
+        for (var gy = 100; gy < CONFIG.worldHeight; gy += 100) {
+          ctx.beginPath();
+          ctx.moveTo(0, gy);
+          ctx.lineTo(CONFIG.worldWidth, gy);
+          ctx.stroke();
+        }
+
+        if (showField) {
+          for (var i = 0; i < sim.field.sources.length; i += 1) {
+            var source = sim.field.sources[i];
+            var massFraction = clamp(source.mass / Math.max(1e-9, source.maxMass), 0, 1);
+            var fieldRadius = source.sigma * 1.85;
+            var gradient = ctx.createRadialGradient(
+              source.x,
+              source.y,
+              0,
+              source.x,
+              source.y,
+              fieldRadius
+            );
+            gradient.addColorStop(0, "rgba(100,207,111," + (0.27 * massFraction).toFixed(3) + ")");
+            gradient.addColorStop(0.28, "rgba(100,207,111," + (0.16 * massFraction).toFixed(3) + ")");
+            gradient.addColorStop(0.62, "rgba(100,207,111," + (0.07 * massFraction).toFixed(3) + ")");
+            gradient.addColorStop(1, "rgba(100,207,111,0)");
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.arc(source.x, source.y, fieldRadius, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.fillStyle = COLORS.foodCore;
+            ctx.globalAlpha = 0.45 + 0.45 * massFraction;
+            ctx.beginPath();
+            ctx.arc(source.x, source.y, 7 + 6 * massFraction, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.globalAlpha = 1;
+          }
+        }
+
+        if (showTrails) {
+          for (var agentIndex = 0; agentIndex < sim.agents.length; agentIndex += 1) {
+            var trail = sim.agents[agentIndex].trail;
+            for (var t = 1; t < trail.length; t += 1) {
+              var age = clamp(
+                (sim.timeS - trail[t][2]) / CONFIG.trailWindowS,
+                0,
+                1
+              );
+              ctx.strokeStyle = "rgba(75,210,225," + (0.72 * (1 - age) + 0.06).toFixed(3) + ")";
+              ctx.lineWidth = 1.2 / scale;
+              ctx.beginPath();
+              ctx.moveTo(trail[t - 1][0], trail[t - 1][1]);
+              ctx.lineTo(trail[t][0], trail[t][1]);
+              ctx.stroke();
+            }
+          }
+        }
+
+        for (var obstacleIndex = 0; obstacleIndex < sim.obstacles.length; obstacleIndex += 1) {
+          var obstacle = sim.obstacles[obstacleIndex];
+          ctx.fillStyle = COLORS.obstacle;
+          ctx.strokeStyle = COLORS.obstacleEdge;
+          ctx.lineWidth = 2 / scale;
+          ctx.beginPath();
+          ctx.arc(obstacle.x, obstacle.y, obstacle.radius, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.arc(obstacle.x - obstacle.radius * 0.22, obstacle.y - obstacle.radius * 0.18, obstacle.radius * 0.13, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+
+        for (var a = 0; a < sim.agents.length; a += 1) {
+          drawAgent(ctx, sim.agents[a], a === sim.selectedIndex, scale);
+        }
+
+        ctx.restore();
+
+        ctx.strokeStyle = "rgba(143,158,164,0.58)";
+        ctx.lineWidth = 1;
+        ctx.strokeRect(0.5, 0.5, width - 1, height - 1);
+      }
+
+      function drawAgent(ctx, agent, selected, scale) {
+        var state = agent.state;
+        ctx.save();
+        ctx.translate(agent.x, agent.y);
+        ctx.rotate(agent.heading);
+
+        if (selected) {
+          ctx.strokeStyle = COLORS.selected;
+          ctx.lineWidth = 1.2 / scale;
+          ctx.beginPath();
+          ctx.ellipse(0, 0, CONFIG.bodyLength * 0.78, CONFIG.bodyLength * 0.78, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+
+        ctx.fillStyle = bodyColor(agent);
+        ctx.strokeStyle = "rgba(220,244,246,0.92)";
+        ctx.lineWidth = 1.2 / scale;
+        ctx.beginPath();
+        ctx.ellipse(0, 0, CONFIG.bodyLength * 0.5, CONFIG.bodyWidth * 0.5, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = COLORS.nucleus;
+        ctx.beginPath();
+        ctx.ellipse(
+          CONFIG.bodyLength * 0.07,
+          0,
+          CONFIG.bodyLength * 0.17,
+          CONFIG.bodyWidth * 0.24,
+          0,
+          0,
+          Math.PI * 2
+        );
+        ctx.fill();
+
+        var inclusions = [[-9, -3, 3], [4, 5, 2], [10, -5, 2]];
+        ctx.fillStyle = "#ade6d2";
+        for (var v = 0; v < inclusions.length; v += 1) {
+          ctx.beginPath();
+          ctx.arc(inclusions[v][0], inclusions[v][1], inclusions[v][2], 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        var phase = sim.timeS * (state.mode === "FORWARD" ? 15 : -11);
+        ctx.strokeStyle = COLORS.cilia;
+        ctx.lineWidth = 1 / scale;
+        for (var index = 0; index < 24; index += 1) {
+          var angle = 2 * Math.PI * index / 24;
+          var ex = 0.5 * CONFIG.bodyLength * Math.cos(angle);
+          var ey = 0.5 * CONFIG.bodyWidth * Math.sin(angle);
+          var normalX = Math.cos(angle);
+          var normalY = Math.sin(angle);
+          var tangentX = -Math.sin(angle);
+          var tangentY = Math.cos(angle);
+          var strokePhase = Math.sin(phase + index * 0.7);
+          var ciliaLength = 7;
+          ctx.beginPath();
+          ctx.moveTo(ex, ey);
+          ctx.lineTo(
+            ex + normalX * ciliaLength + tangentX * 2.4 * strokePhase,
+            ey + normalY * ciliaLength + tangentY * 2.4 * strokePhase
+          );
+          ctx.stroke();
+        }
+
+        ctx.fillStyle = selected ? COLORS.selected : COLORS.text;
+        ctx.beginPath();
+        ctx.arc(CONFIG.bodyLength * 0.66, 0, 2.3, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+
+      function drawEventMarker(ctx, x, y, category, size) {
+        if (category === "food") {
+          ctx.fillStyle = COLORS.bodyFeeding;
+          ctx.beginPath();
+          ctx.arc(x, y, size, 0, Math.PI * 2);
+          ctx.fill();
+        } else if (category === "contact") {
+          ctx.fillStyle = COLORS.bodyContact;
+          ctx.beginPath();
+          ctx.moveTo(x, y - size);
+          ctx.lineTo(x + size, y);
+          ctx.lineTo(x, y + size);
+          ctx.lineTo(x - size, y);
+          ctx.closePath();
+          ctx.fill();
+        } else if (category === "avoidance") {
+          ctx.fillStyle = COLORS.bodyAvoidance;
+          ctx.beginPath();
+          ctx.moveTo(x, y - size);
+          ctx.lineTo(x + size, y + size);
+          ctx.lineTo(x - size, y + size);
+          ctx.closePath();
+          ctx.fill();
+        }
+      }
+
+      function drawChart(canvas, title, series) {
+        var fitted = fitCanvas(canvas);
+        var ctx = fitted.context;
+        var width = fitted.width;
+        var height = fitted.height;
+        var agent = sim.selected;
+        var history = agent.history;
+        var latest = history.length > 0 ? history[history.length - 1] : null;
+
+        ctx.clearRect(0, 0, width, height);
+        ctx.fillStyle = COLORS.panelAlt;
+        ctx.fillRect(0, 0, width, height);
+
+        ctx.font = "700 11px system-ui, sans-serif";
+        ctx.textBaseline = "top";
+        ctx.fillStyle = COLORS.text;
+        ctx.fillText(title, 7, 5);
+
+        ctx.font = "700 10px ui-monospace, monospace";
+        var legendX = width - 7;
+        for (var reverseIndex = series.length - 1; reverseIndex >= 0; reverseIndex -= 1) {
+          var legendSeries = series[reverseIndex];
+          var value = latest ? latest[legendSeries.key] : 0;
+          var legendText = legendSeries.label + " " + value.toFixed(2);
+          var legendWidth = ctx.measureText(legendText).width;
+          legendX -= legendWidth;
+          ctx.fillStyle = legendSeries.color;
+          ctx.fillText(legendText, legendX, 5);
+          legendX -= 10;
+        }
+
+        var plot = {
+          left: 37,
+          top: 28,
+          right: width - 7,
+          bottom: height - 14
+        };
+        plot.width = Math.max(10, plot.right - plot.left);
+        plot.height = Math.max(10, plot.bottom - plot.top);
+
+        ctx.strokeStyle = COLORS.chartGrid;
+        ctx.lineWidth = 1;
+        for (var gy = 0; gy <= 2; gy += 1) {
+          var y = plot.bottom - (gy / 2) * plot.height;
+          ctx.beginPath();
+          ctx.moveTo(plot.left, y);
+          ctx.lineTo(plot.right, y);
+          ctx.stroke();
+        }
+        for (var gx = 1; gx <= 3; gx += 1) {
+          var x = plot.left + (gx / 4) * plot.width;
+          ctx.beginPath();
+          ctx.moveTo(x, plot.top);
+          ctx.lineTo(x, plot.bottom);
+          ctx.stroke();
+        }
+
+        var startTime = sim.timeS - CONFIG.historyWindowS;
+        for (var s = 0; s < series.length; s += 1) {
+          var item = series[s];
+          var span = Math.max(1e-9, item.max - item.min);
+          var hasPoint = false;
+          ctx.strokeStyle = item.color;
+          ctx.lineWidth = 1.7;
+          ctx.beginPath();
+          for (var h = 0; h < history.length; h += 1) {
+            var sample = history[h];
+            if (sample.timeS < startTime) {
+              continue;
+            }
+            var xf = clamp((sample.timeS - startTime) / CONFIG.historyWindowS, 0, 1);
+            var yf = clamp((sample[item.key] - item.min) / span, 0, 1);
+            var px = plot.left + xf * plot.width;
+            var py = plot.bottom - yf * plot.height;
+            if (!hasPoint) {
+              ctx.moveTo(px, py);
+              hasPoint = true;
+            } else {
+              ctx.lineTo(px, py);
+            }
+          }
+          if (hasPoint) {
+            ctx.stroke();
+          }
+        }
+
+        var laneY = {
+          food: plot.top + 4,
+          contact: plot.top + 11,
+          avoidance: plot.top + 18
+        };
+        for (var eventIndex = 0; eventIndex < agent.plotEvents.length; eventIndex += 1) {
+          var event = agent.plotEvents[eventIndex];
+          if (event[0] < startTime || laneY[event[1]] === undefined) {
+            continue;
+          }
+          var eventX = plot.left
+            + clamp((event[0] - startTime) / CONFIG.historyWindowS, 0, 1) * plot.width;
+          drawEventMarker(ctx, eventX, laneY[event[1]], event[1], 3);
+        }
+
+        ctx.font = "10px ui-monospace, monospace";
+        ctx.fillStyle = COLORS.muted;
+        ctx.textAlign = "right";
+        ctx.fillText(String(series[0].max), plot.left - 5, plot.top - 4);
+        ctx.fillText(String(series[0].min), plot.left - 5, plot.bottom - 7);
+        ctx.textAlign = "left";
+        ctx.fillText("−42s", plot.left, height - 11);
+        ctx.textAlign = "right";
+        ctx.fillText("now", plot.right, height - 11);
+        ctx.textAlign = "left";
+      }
+
+      function drawCharts() {
+        drawChart(chartCanvases.voltage, "Membrane potential (mV)", [
+          {label: "V", key: "membraneMv", min: -50, max: 15, color: COLORS.vm}
+        ]);
+        drawChart(chartCanvases.calcium, "Calcium compartments", [
+          {label: "cilia", key: "ciliaryCa", min: 0, max: 4, color: COLORS.caCil},
+          {label: "soma", key: "somaticCa", min: 0, max: 4, color: COLORS.caSoma}
+        ]);
+        drawChart(chartCanvases.chemical, "Chemical present", [
+          {label: "cAMP", key: "camp", min: 0, max: 1.35, color: COLORS.camp},
+          {label: "food", key: "food", min: 0, max: 1.35, color: COLORS.foodLine},
+          {label: "memory", key: "adaptation", min: 0, max: 1.35, color: COLORS.adaptation}
+        ]);
+        drawChart(chartCanvases.organism, "Organism-level state", [
+          {label: "energy", key: "energy", min: -1, max: 1, color: COLORS.energy},
+          {label: "valence", key: "valence", min: -1, max: 1, color: COLORS.valence},
+          {label: "mode", key: "modeCode", min: -1, max: 1, color: COLORS.mode}
+        ]);
+      }
+
+      function updateTelemetry() {
+        var agent = sim.selected;
+        var state = agent.state;
+        var display = agent.displayState();
+
+        elements.telemetryHeading.textContent = "Organism " + agent.identifier;
+        elements.modePill.textContent = state.mode;
+        elements.displayPill.textContent = display;
+        elements.timeValue.textContent = sim.timeS.toFixed(1) + " s";
+        elements.speedValue.textContent = state.speed.toFixed(1);
+        elements.foodValue.textContent = agent.sensory.centerFood.toFixed(2);
+        elements.energyValue.textContent = state.energy.toFixed(2);
+
+        var displayColors = {
+          NORMAL: COLORS.body,
+          CONTACT: COLORS.bodyContact,
+          FEEDING: COLORS.bodyFeeding,
+          AVOIDANCE: COLORS.bodyAvoidance
+        };
+        elements.displayPill.style.background = displayColors[display];
+
+        elements.hiddenStats.textContent = "channel availability "
+          + state.channelAvailability.toFixed(2)
+          + " · food rate " + (state.foodRate >= 0 ? "+" : "") + state.foodRate.toFixed(2)
+          + " · turns " + agent.totalTurns
+          + " · contacts " + agent.totalCollisions;
+
+        if (agent.events.length > 0) {
+          var recent = agent.events.slice(0, 2).map(function (event) {
+            return event[0].toFixed(1) + "s " + event[1];
+          });
+          elements.recentEvent.textContent = recent.join(" · ");
+        } else {
+          elements.recentEvent.textContent = "No events yet";
+        }
+      }
+
+      function downloadBlob(blob, filename) {
+        var url = URL.createObjectURL(blob);
+        var anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = filename;
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+        window.setTimeout(function () {
+          URL.revokeObjectURL(url);
+        }, 1000);
+      }
+
+      function exportCsv() {
+        var agent = sim.selected;
+        var fields = [
+          "time_s",
+          "membrane_mv",
+          "somatic_ca",
+          "ciliary_ca",
+          "channel_availability",
+          "camp",
+          "adaptation",
+          "food",
+          "food_rate",
+          "energy",
+          "valence",
+          "speed",
+          "mode_code"
+        ];
+        var keys = [
+          "timeS",
+          "membraneMv",
+          "somaticCa",
+          "ciliaryCa",
+          "channelAvailability",
+          "camp",
+          "adaptation",
+          "food",
+          "foodRate",
+          "energy",
+          "valence",
+          "speed",
+          "modeCode"
+        ];
+        var rows = [fields.join(",")];
+        for (var i = 0; i < agent.history.length; i += 1) {
+          var sample = agent.history[i];
+          rows.push(keys.map(function (key) {
+            return sample[key];
+          }).join(","));
+        }
+        downloadBlob(
+          new Blob([rows.join("\n") + "\n"], {type: "text/csv;charset=utf-8"}),
+          "paramecium_" + agent.identifier + "_telemetry.csv"
+        );
+        setToast("Telemetry CSV downloaded");
+      }
+
+      function exportPng() {
+        var anchor = document.createElement("a");
+        anchor.href = arena.toDataURL("image/png");
+        anchor.download = "paramecium_arena.png";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+        setToast("Arena image downloaded");
+      }
+
+      function arenaWorldPoint(event) {
+        var rect = arena.getBoundingClientRect();
+        return [
+          clamp((event.clientX - rect.left) / rect.width * CONFIG.worldWidth, 0, CONFIG.worldWidth),
+          clamp((event.clientY - rect.top) / rect.height * CONFIG.worldHeight, 0, CONFIG.worldHeight)
+        ];
+      }
+
+      function handleArenaPointer(event) {
+        event.preventDefault();
+        arena.focus({preventScroll: true});
+        var point = arenaWorldPoint(event);
+        var effectiveTool = selectedTool;
+
+        if (event.button === 2) {
+          effectiveTool = "obstacle";
+        } else if (event.button === 1) {
+          effectiveTool = "probe";
+        } else if (event.shiftKey) {
+          effectiveTool = "move";
+        }
+
+        if (effectiveTool === "food") {
+          sim.addFood(point[0], point[1], 1);
+          setToast("Food source added");
+        } else if (effectiveTool === "obstacle") {
+          sim.addObstacle(point[0], point[1], 30);
+          setToast("Obstacle added");
+        } else if (effectiveTool === "move") {
+          sim.selected.x = point[0];
+          sim.selected.y = point[1];
+          sim.selected.trail = [];
+          sim.selected.logEvent(sim.timeS, "manually relocated");
+          setToast("Selected organism relocated");
+        } else if (effectiveTool === "probe") {
+          sim.selected.anteriorTouch(1.4, sim.timeS, "manual anterior probe");
+          setToast("Anterior membrane probed");
+        }
+      }
+
+      function openHelp() {
+        pausedBeforeHelp = paused;
+        setPaused(true);
+        elements.helpDialog.showModal();
+        elements.closeHelpButton.focus();
+      }
+
+      function closeHelp() {
+        elements.helpDialog.close();
+      }
+
+      function resetSimulation() {
+        var count = sim.agents.length;
+        sim.reset(count);
+        accumulator = 0;
+        setToast("Simulation reset");
+      }
+
+      elements.pauseButton.addEventListener("click", function () {
+        setPaused(!paused);
+      });
+      elements.speedSelect.addEventListener("change", function () {
+        simulationSpeed = Number(elements.speedSelect.value);
+        updateControlState();
+      });
+      elements.resetButton.addEventListener("click", resetSimulation);
+      elements.frontTouchButton.addEventListener("click", function () {
+        sim.selected.anteriorTouch(1.2, sim.timeS, "manual anterior touch");
+        setToast("Anterior touch delivered");
+      });
+      elements.rearTouchButton.addEventListener("click", function () {
+        sim.selected.posteriorTouch(1.2, sim.timeS, "manual posterior touch");
+        setToast("Posterior touch delivered");
+      });
+      elements.addAgentButton.addEventListener("click", function () {
+        sim.addAgent();
+        sim.selectedIndex = sim.agents.length - 1;
+        setToast("Added and selected organism " + sim.selected.identifier);
+      });
+      elements.selectAgentButton.addEventListener("click", selectNextAgent);
+      elements.fieldButton.addEventListener("click", function () {
+        showField = !showField;
+        updateControlState();
+      });
+      elements.trailButton.addEventListener("click", function () {
+        showTrails = !showTrails;
+        updateControlState();
+      });
+      elements.csvButton.addEventListener("click", exportCsv);
+      elements.pngButton.addEventListener("click", exportPng);
+      elements.clearFoodButton.addEventListener("click", function () {
+        sim.field.sources = [];
+        setToast("Food sources cleared");
+      });
+      elements.clearObstaclesButton.addEventListener("click", function () {
+        sim.obstacles = [];
+        setToast("Obstacles cleared");
+      });
+      elements.helpButton.addEventListener("click", openHelp);
+      elements.closeHelpButton.addEventListener("click", closeHelp);
+
+      elements.helpDialog.addEventListener("close", function () {
+        setPaused(pausedBeforeHelp);
+        elements.helpButton.focus();
+      });
+      elements.helpDialog.addEventListener("click", function (event) {
+        var rect = elements.helpDialog.getBoundingClientRect();
+        var outside = (
+          event.clientX < rect.left
+          || event.clientX > rect.right
+          || event.clientY < rect.top
+          || event.clientY > rect.bottom
+        );
+        if (outside) {
+          closeHelp();
+        }
+      });
+
+      var toolButtons = document.querySelectorAll("[data-tool]");
+      for (var toolIndex = 0; toolIndex < toolButtons.length; toolIndex += 1) {
+        toolButtons[toolIndex].addEventListener("click", function (event) {
+          setTool(event.currentTarget.dataset.tool);
+        });
+      }
+
+      arena.addEventListener("pointerdown", handleArenaPointer);
+      arena.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+
+      document.addEventListener("keydown", function (event) {
+        var target = event.target;
+        var tagName = target && target.tagName ? target.tagName.toLowerCase() : "";
+        if (
+          tagName === "select"
+          || tagName === "input"
+          || tagName === "textarea"
+          || tagName === "button"
+          || tagName === "a"
+        ) {
+          return;
+        }
+        if (elements.helpDialog.open) {
+          if (event.key === "Escape") {
+            event.preventDefault();
+            closeHelp();
+          }
+          return;
+        }
+
+        var key = event.key.toLowerCase();
+        if (event.code === "Space") {
+          event.preventDefault();
+          setPaused(!paused);
+        } else if (key === "r") {
+          resetSimulation();
+        } else if (key === "n") {
+          sim.addAgent();
+          sim.selectedIndex = sim.agents.length - 1;
+          setToast("Added and selected organism " + sim.selected.identifier);
+        } else if (key === "c") {
+          selectNextAgent();
+        } else if (key === "g") {
+          showField = !showField;
+          updateControlState();
+        } else if (key === "t") {
+          showTrails = !showTrails;
+          updateControlState();
+        } else if (key === "a") {
+          sim.selected.anteriorTouch(1.2, sim.timeS, "manual anterior touch");
+        } else if (key === "p") {
+          sim.selected.posteriorTouch(1.2, sim.timeS, "manual posterior touch");
+        } else if (key === "e") {
+          exportCsv();
+        } else if (key === "s") {
+          exportPng();
+        } else if (key === "h" || event.key === "?") {
+          openHelp();
+        } else if (event.key === "Backspace") {
+          event.preventDefault();
+          sim.obstacles = [];
+          setToast("Obstacles cleared");
+        } else if (event.key === "Delete") {
+          sim.field.sources = [];
+          setToast("Food sources cleared");
+        } else if (["1", "2", "3", "4"].indexOf(event.key) >= 0) {
+          var speedByKey = {"1": 0.25, "2": 1, "3": 4, "4": 10};
+          simulationSpeed = speedByKey[event.key];
+          elements.speedSelect.value = String(simulationSpeed);
+          updateControlState();
+        }
+      });
+
+      window.addEventListener("resize", function () {
+        drawArena();
+        drawCharts();
+      });
+
+      document.addEventListener("visibilitychange", function () {
+        lastFrameTime = performance.now();
+      });
+
+      function animationFrame(timestamp) {
+        var realDt = Math.min(0.10, Math.max(0, (timestamp - lastFrameTime) / 1000));
+        lastFrameTime = timestamp;
+
+        if (!paused) {
+          accumulator += realDt * simulationSpeed;
+          var steps = 0;
+          while (accumulator >= CONFIG.fixedDt && steps < 500) {
+            sim.step(CONFIG.fixedDt);
+            accumulator -= CONFIG.fixedDt;
+            steps += 1;
+          }
+          if (steps >= 500) {
+            accumulator = 0;
+          }
+        }
+
+        drawArena();
+        drawCharts();
+        if (timestamp - lastUiUpdate >= 80) {
+          updateTelemetry();
+          lastUiUpdate = timestamp;
+        }
+
+        document.body.dataset.simTime = sim.timeS.toFixed(3);
+        window.requestAnimationFrame(animationFrame);
+      }
+
+      window.__parameciumApp = {
+        simulation: sim,
+        config: CONFIG,
+        setPaused: setPaused,
+        setTool: setTool,
+        openHelp: openHelp,
+        snapshot: function () {
+          return {
+            timeS: sim.timeS,
+            agents: sim.agents.length,
+            foods: sim.field.sources.length,
+            obstacles: sim.obstacles.length,
+            selectedMode: sim.selected.state.mode,
+            selectedDisplay: sim.selected.displayState(),
+            historySamples: sim.selected.history.length
+          };
+        }
+      };
+
+      setTool("food");
+      updateControlState();
+      updateTelemetry();
+      document.body.dataset.ready = "true";
+      if (window.location.hash === "#help") {
+        window.setTimeout(openHelp, 0);
+      }
+      window.requestAnimationFrame(animationFrame);
+    }());
+  </script>
+</body>
+</html>
+
