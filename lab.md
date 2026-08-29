@@ -92,11 +92,19 @@ Link: [Theses](/pub_topic/#Theses)
 1. Raghav Hari Kris Vembu (CS): MS student. 2019 Fall - 2020 Spring. SharkNinja. (co-advised by Prof. Hangue Park, TAMU ECE).
 1. Shivashriganesh Prasad Mahato (CS): MS student. 2023 Spring - 2023 Spring. Georgia Tech Phd program.
 1. Tanu Shree (CS): MS student. 2022 Fall - 2024 Spring. 
-1. William Kang (CS): MS student. 2024 Fall - present.
+1. William Kang (CS): MS student. 2024 Fall - 2026 Spring. Amazon
 1. Chris Anand (CS): MS student. 2024 Fall - present.
-1. Aayush Bhandari (CS): MS student. 2024 Fall - present.
+1. Aayush Bhandari (CS): MS student. 2024 Fall - 2026 Spring. Texas A&M University Ph.D. Program
+1. Non-Thesis (MCS): 
+   - Helga Kocurek (CS/Philosophy: graduated 12/2007)
+   - Noah Smith (CS: graduated 8/2007)
+   - Randall Reams (CS): 2014 Fall - 2017 summer
+   - Jiyoon Hwang (CS): Spring 2023
+   - Rohith Kadivendi (CS): Spring 2023
+   - Venkata Bhanu Teja Pallakonda (CS): Spring 2023
+   - Vinodheni Ramasrinivasan (CS): 2024 Fall.
+   - Jonathon Vega (CS): 2026 Summer - present.
 1. Visiting student: Michael Freitag (University of Passau, Germany. Fullbright scholar: 2015-2016).
-1. Others (MCS): Helga Kocurek (CS/Philosophy: graduated 12/2007); Noah Smith (CS: graduated 8/2007) ; Randall Reams (CS): 2014 Fall - 2017 summer; Jiyoon Hwang (CS): Spring 2023; Rohith Kadivendi (CS): Spring 2023; Venkata Bhanu Teja Pallakonda (CS): Spring 2023. Vinodheni Ramasrinivasan (CS): 2024 Fall.
 
 <a name="ug"></a>
 ### Undergraduate Students
@@ -149,12 +157,13 @@ Link: [Theses](/pub_topic/#Theses)
 1. Anish Karthik (TAMU, Computer Science): Fall 2023-Spring 2024. Thesis
 1. Seo Hyeon Beom (TAMU, Computer Science): Fall 2024.
 1. Cyril John (TAMU, Computer Science): Fall 2024.
-
 1. Alex Alvarez (TAMU, Computer Science): Fall 2024-2025.
 1. Vijay Seetharam (TAMU, Computer Science): Fall 2024-2025.
 1. Arjun Madana (TAMU, Computer Science): Fall 2024-2025. Thesis
 
 Current undergrad students
+1. Fredy Cortez (TAMU, Computer Science): Fall 2026-present. Thesis
+1. Mayank Chaudhuri (TAMU, Computer Science): Fall 2026-present. Thesis
 
 <a name="intern"></a>
 ### Interns (Volunteer)
