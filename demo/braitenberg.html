@@ -1,0 +1,747 @@
+<!doctype html>
+
+<!-- written with ChatGPT Codex : gpt-5.6-sol xhigh -->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121a2a">
+  <title>Braitenberg Lab</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f4f0e8;
+      --muted: #9da8b8;
+      --line: rgba(255, 255, 255, 0.11);
+      --seek: #65e6d4;
+      --avoid: #ff806c;
+      --sun: #ffd166;
+      --focus: #9cf6e8;
+    }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: radial-gradient(circle at 12% -10%, rgba(77,112,151,.34), transparent 36rem), #0b111d;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    button, input { font: inherit; }
+    button { color: inherit; border: 0; }
+    button:focus-visible, input:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+    .app { min-height: 100vh; display: grid; grid-template-columns: minmax(250px, 310px) minmax(0, 1fr); }
+    aside {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 30px 24px 22px;
+      background: rgba(14, 22, 35, 0.92);
+      border-right: 1px solid var(--line);
+      box-shadow: 22px 0 70px rgba(0,0,0,.18);
+      backdrop-filter: blur(18px);
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--seek);
+      font-size: .68rem;
+      font-weight: 800;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); font-weight: 750; letter-spacing: -.06em; line-height: .95; }
+    .intro { max-width: 27rem; margin: 14px 0 26px; color: var(--muted); font-size: .88rem; line-height: 1.55; }
+    .controls { display: grid; gap: 11px; }
+    .counter {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 36px 38px 36px;
+      align-items: center;
+      min-height: 64px;
+      padding: 9px 9px 9px 13px;
+      background: rgba(255,255,255,.035);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+    .counter-copy {
+      min-width: 0;
+      display: grid;
+      grid-template-columns: 10px minmax(0, 1fr);
+      gap: 0 9px;
+      align-items: center;
+    }
+    .dot {
+      grid-row: 1 / 3;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 14px currentColor;
+    }
+    .seek { color: var(--seek); }
+    .avoid { color: var(--avoid); }
+    .sun { color: var(--sun); }
+    .counter strong {
+      overflow: hidden;
+      color: var(--ink);
+      font-size: .86rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .counter small {
+      overflow: hidden;
+      margin-top: 2px;
+      color: var(--muted);
+      font: .63rem/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .stepper {
+      display: grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      color: var(--muted);
+      background: rgba(255,255,255,.055);
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      cursor: pointer;
+      font-size: 1.15rem;
+      line-height: 1;
+      transition: color 140ms ease, background 140ms ease, transform 140ms ease;
+    }
+    .stepper:hover:not(:disabled) { color: var(--ink); background: rgba(255,255,255,.12); transform: translateY(-1px); }
+    .stepper:active:not(:disabled) { transform: translateY(1px); }
+    .stepper:disabled { cursor: not-allowed; opacity: .28; }
+    output { color: var(--ink); font-variant-numeric: tabular-nums; font-weight: 800; text-align: center; }
+    .switches { display: grid; gap: 2px; margin-top: 8px; padding-top: 12px; border-top: 1px solid var(--line); }
+    .switch-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 42px;
+      gap: 14px;
+      color: #cbd2dc;
+      font-size: .82rem;
+    }
+    .switch {
+      position: relative;
+      width: 43px;
+      height: 24px;
+      flex: 0 0 auto;
+      padding: 0;
+      background: #293548;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 150ms ease;
+    }
+    .switch::after {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 16px;
+      height: 16px;
+      content: "";
+      background: #909bab;
+      border-radius: 50%;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+    .switch[aria-checked="true"] { background: #225e59; }
+    .switch[aria-checked="true"]::after { background: var(--seek); transform: translateX(19px); }
+    .speed-wrap { margin-top: 8px; padding-top: 15px; border-top: 1px solid var(--line); }
+    .speed-label { display: flex; justify-content: space-between; color: #cbd2dc; font-size: .79rem; }
+    .speed-label output { color: var(--seek); }
+    input[type="range"] { width: 100%; margin: 12px 0 3px; accent-color: var(--seek); cursor: pointer; }
+    .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 19px; }
+    .action {
+      min-height: 42px;
+      padding: 0 12px;
+      color: #dce2ea;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      cursor: pointer;
+      font-size: .78rem;
+      font-weight: 700;
+      transition: background 140ms ease, transform 140ms ease;
+    }
+    .action:hover { background: rgba(255,255,255,.11); }
+    .action:active { transform: translateY(1px); }
+    .action.primary { color: #10201f; background: var(--seek); border-color: transparent; }
+    .action.primary:hover { background: #8aeee0; }
+    .hint { margin: auto 0 0; padding-top: 26px; color: #7f8b9d; font-size: .7rem; line-height: 1.55; }
+    kbd {
+      display: inline-grid;
+      min-width: 19px;
+      min-height: 18px;
+      place-items: center;
+      padding: 0 4px;
+      color: #b9c2ce;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      font: .62rem ui-monospace, monospace;
+    }
+    main { position: relative; min-width: 0; min-height: 100vh; overflow: hidden; background: #09101b; }
+    canvas { display: block; width: 100%; height: 100%; cursor: default; touch-action: none; }
+    canvas.dragging { cursor: grabbing; }
+    .status {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 12px;
+      color: #c6ced9;
+      background: rgba(11,17,29,.73);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      backdrop-filter: blur(10px);
+      font: .68rem ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      pointer-events: none;
+    }
+    .live-dot { width: 7px; height: 7px; background: var(--seek); border-radius: 50%; box-shadow: 0 0 10px var(--seek); }
+    .paused .live-dot { background: var(--avoid); box-shadow: none; }
+    .legend {
+      position: absolute;
+      right: 22px;
+      bottom: 20px;
+      max-width: 325px;
+      padding: 12px 14px;
+      color: #9ca8b8;
+      background: rgba(11,17,29,.73);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      font-size: .7rem;
+      line-height: 1.45;
+      pointer-events: none;
+    }
+    @media (max-width: 760px) {
+      .app { grid-template-columns: 1fr; grid-template-rows: auto minmax(58vh, 1fr); }
+      aside { min-height: 0; padding: 20px 16px 16px; border-right: 0; border-bottom: 1px solid var(--line); }
+      h1 { font-size: 2rem; }
+      .intro { margin: 8px 0 16px; }
+      .controls { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+      .counter { grid-template-columns: 1fr 29px 29px; padding: 8px; }
+      .counter-copy { grid-column: 1 / -1; margin-bottom: 7px; }
+      .stepper { width: 27px; height: 27px; }
+      .switches { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; }
+      .speed-wrap, .actions { grid-column: 1 / -1; }
+      .hint { display: none; }
+      main { min-height: 58vh; }
+      .legend { right: 10px; bottom: 10px; left: 10px; max-width: none; }
+      .status { top: 10px; right: 10px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside aria-label="Simulation controls">
+      <p class="eyebrow">Behavior study 01</p>
+      <h1>Braitenberg<br>Lab</h1>
+      <p class="intro">Tiny vehicles. Two sensors. Two motors. Watch complex behavior emerge from almost no brain at all.</p>
+      <div class="controls">
+        <div class="counter">
+          <div class="counter-copy seek">
+            <span class="dot" aria-hidden="true"></span>
+            <strong>Light seekers</strong>
+            <small>LS→RW · RS→LW</small>
+          </div>
+          <button class="stepper" type="button" data-kind="seeker" data-delta="-1" aria-label="Remove one light seeker">−</button>
+          <output id="seeker-count" aria-live="polite">6</output>
+          <button class="stepper" type="button" data-kind="seeker" data-delta="1" aria-label="Add one light seeker">+</button>
+        </div>
+        <div class="counter">
+          <div class="counter-copy avoid">
+            <span class="dot" aria-hidden="true"></span>
+            <strong>Light avoiders</strong>
+            <small>LS→LW · RS→RW</small>
+          </div>
+          <button class="stepper" type="button" data-kind="avoider" data-delta="-1" aria-label="Remove one light avoider">−</button>
+          <output id="avoider-count" aria-live="polite">4</output>
+          <button class="stepper" type="button" data-kind="avoider" data-delta="1" aria-label="Add one light avoider">+</button>
+        </div>
+        <div class="counter">
+          <div class="counter-copy sun">
+            <span class="dot" aria-hidden="true"></span>
+            <strong>Light sources</strong>
+            <small>DRAG TO REPOSITION</small>
+          </div>
+          <button class="stepper" type="button" data-kind="light" data-delta="-1" aria-label="Remove one light source">−</button>
+          <output id="light-count" aria-live="polite">3</output>
+          <button class="stepper" type="button" data-kind="light" data-delta="1" aria-label="Add one light source">+</button>
+        </div>
+        <div class="switches">
+          <div class="switch-row">
+            <span>Vehicle lights</span>
+            <button id="vehicle-lights" class="switch" type="button" role="switch" aria-checked="false" aria-label="Toggle lights carried by vehicles"></button>
+          </div>
+          <div class="switch-row">
+            <span>Motion trails</span>
+            <button id="trails" class="switch" type="button" role="switch" aria-checked="true" aria-label="Toggle motion trails"></button>
+          </div>
+        </div>
+        <div class="speed-wrap">
+          <label class="speed-label" for="speed"><span>Simulation speed</span><output id="speed-value">1.00×</output></label>
+          <input id="speed" type="range" min="0.25" max="2" step="0.25" value="1" aria-label="Simulation speed">
+        </div>
+      </div>
+      <div class="actions">
+        <button id="pause" class="action primary" type="button">Pause</button>
+        <button id="reset" class="action" type="button">New layout</button>
+      </div>
+      <p class="hint"><kbd>Space</kbd> pause &nbsp; <kbd>T</kbd> trails &nbsp; <kbd>L</kbd> vehicle lights<br>Arrow keys move every standalone light.</p>
+    </aside>
+    <main id="stage">
+      <canvas id="world" aria-label="Animated Braitenberg vehicle simulation"></canvas>
+      <div id="status" class="status"><span class="live-dot" aria-hidden="true"></span><span id="status-text">RUNNING · 13 OBJECTS</span></div>
+      <div class="legend">Each front sensor drives one wheel. Crossed wiring turns a vehicle toward brighter light; direct wiring turns it away.</div>
+    </main>
+  </div>
+
+  <script>
+    (() => {
+      "use strict";
+      const TAU = Math.PI * 2;
+      const MAX_VEHICLES_PER_TYPE = 30;
+      const MAX_LIGHTS = 12;
+      const COLORS = {
+        background: "#09101b",
+        grid: "rgba(138, 166, 195, 0.09)",
+        seeker: "#65e6d4",
+        avoider: "#ff806c",
+        light: "#ffd166",
+        sensorLow: [130, 146, 164]
+      };
+
+      class Vehicle {
+        constructor(x, y, type, hasLight = false) {
+          this.x = x;
+          this.y = y;
+          this.angle = Math.random() * TAU;
+          this.leftSensor = 0;
+          this.rightSensor = 0;
+          this.speed = 3;
+          this.size = 20;
+          this.type = type;
+          this.hasLight = hasLight;
+          this.trajectory = [];
+        }
+        get connections() {
+          return this.type === "seeker"
+            ? [["ls", "rw"], ["rs", "lw"]]
+            : [["ls", "lw"], ["rs", "rw"]];
+        }
+      }
+
+      class Light {
+        constructor(x, y, intensity = 1000) {
+          this.x = x;
+          this.y = y;
+          this.intensity = intensity;
+        }
+      }
+
+      class BraitenbergSimulation {
+        constructor(canvas) {
+          this.canvas = canvas;
+          this.ctx = canvas.getContext("2d");
+          this.width = 800;
+          this.height = 600;
+          this.vehicles = [];
+          this.lights = [];
+          this.showTrajectory = true;
+          this.vehicleLights = false;
+          this.paused = false;
+          this.speedMultiplier = 1;
+          this.draggedLight = null;
+          this.lastFrame = performance.now();
+          this.accumulator = 0;
+          this.resizeObserver = new ResizeObserver(() => this.resize());
+          this.resizeObserver.observe(canvas.parentElement);
+          this.resize();
+        }
+
+        resize() {
+          const rect = this.canvas.parentElement.getBoundingClientRect();
+          const nextWidth = Math.max(320, rect.width);
+          const nextHeight = Math.max(360, rect.height);
+          const scaleX = nextWidth / this.width;
+          const scaleY = nextHeight / this.height;
+          if (Number.isFinite(scaleX) && Number.isFinite(scaleY)) {
+            for (const item of [...this.vehicles, ...this.lights]) {
+              item.x *= scaleX;
+              item.y *= scaleY;
+            }
+            for (const vehicle of this.vehicles) vehicle.trajectory.length = 0;
+          }
+          this.width = nextWidth;
+          this.height = nextHeight;
+          const dpr = Math.min(window.devicePixelRatio || 1, 2);
+          this.canvas.width = Math.round(this.width * dpr);
+          this.canvas.height = Math.round(this.height * dpr);
+          this.canvas.style.width = `${this.width}px`;
+          this.canvas.style.height = `${this.height}px`;
+          this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          this.draw();
+        }
+
+        randomPoint(padding = 46) {
+          const usableWidth = Math.max(1, this.width - padding * 2);
+          const usableHeight = Math.max(1, this.height - padding * 2);
+          return { x: padding + Math.random() * usableWidth, y: padding + Math.random() * usableHeight };
+        }
+        addVehicle(type) {
+          const point = this.randomPoint();
+          this.vehicles.push(new Vehicle(point.x, point.y, type, this.vehicleLights));
+        }
+        removeVehicle(type) {
+          const index = this.vehicles.findLastIndex(vehicle => vehicle.type === type);
+          if (index >= 0) this.vehicles.splice(index, 1);
+        }
+        addLight() {
+          const point = this.randomPoint(60);
+          this.lights.push(new Light(point.x, point.y));
+        }
+        removeLight() {
+          const removed = this.lights.pop();
+          if (removed === this.draggedLight) this.stopDragging();
+        }
+
+        calculateSensorResponse(distance, intensity) {
+          const maxDistance = 400;
+          const minDistance = 20;
+          const clampedDistance = Math.max(minDistance, distance);
+          if (clampedDistance > maxDistance) return 0;
+          const normalizedDistance = (maxDistance - clampedDistance) / (maxDistance - minDistance);
+          return intensity * normalizedDistance ** 2 * Math.exp(normalizedDistance - 1);
+        }
+
+        calculateSensorValues(vehicle) {
+          const offset = vehicle.size / 2;
+          const leftX = vehicle.x + Math.cos(vehicle.angle - Math.PI / 4) * offset;
+          const leftY = vehicle.y + Math.sin(vehicle.angle - Math.PI / 4) * offset;
+          const rightX = vehicle.x + Math.cos(vehicle.angle + Math.PI / 4) * offset;
+          const rightY = vehicle.y + Math.sin(vehicle.angle + Math.PI / 4) * offset;
+          let leftValue = 0;
+          let rightValue = 0;
+          const sample = (x, y, intensity) => {
+            leftValue += this.calculateSensorResponse(Math.hypot(leftX - x, leftY - y), intensity);
+            rightValue += this.calculateSensorResponse(Math.hypot(rightX - x, rightY - y), intensity);
+          };
+          for (const light of this.lights) sample(light.x, light.y, light.intensity);
+          for (const other of this.vehicles) {
+            if (other !== vehicle && other.hasLight) sample(other.x, other.y, 500);
+          }
+          return [leftValue, rightValue];
+        }
+
+        updateVehicle(vehicle) {
+          const [leftValue, rightValue] = this.calculateSensorValues(vehicle);
+          vehicle.leftSensor = leftValue;
+          vehicle.rightSensor = rightValue;
+          let leftWheel = 0;
+          let rightWheel = 0;
+          for (const [sensor, wheel] of vehicle.connections) {
+            const value = sensor === "ls" ? leftValue : rightValue;
+            if (wheel === "lw") leftWheel += value;
+            else rightWheel += value;
+          }
+          const maxWheelSpeed = Math.max(Math.abs(leftWheel), Math.abs(rightWheel), 1);
+          leftWheel /= maxWheelSpeed;
+          rightWheel /= maxWheelSpeed;
+          const averageSpeed = (leftWheel + rightWheel) * vehicle.speed / 2;
+          // Canvas y grows downward, so rotation has the opposite Cartesian sign.
+          const angularVelocity = (leftWheel - rightWheel) * vehicle.speed / vehicle.size * 50;
+          vehicle.angle = (vehicle.angle + angularVelocity * .15 + TAU) % TAU;
+          vehicle.x += Math.cos(vehicle.angle) * averageSpeed;
+          vehicle.y += Math.sin(vehicle.angle) * averageSpeed;
+          if (this.showTrajectory) {
+            vehicle.trajectory.push([vehicle.x, vehicle.y]);
+            if (vehicle.trajectory.length > 200) vehicle.trajectory.shift();
+          }
+          const oldX = vehicle.x;
+          const oldY = vehicle.y;
+          vehicle.x = ((vehicle.x % this.width) + this.width) % this.width;
+          vehicle.y = ((vehicle.y % this.height) + this.height) % this.height;
+          if (Math.abs(oldX - vehicle.x) > this.width - 10 || Math.abs(oldY - vehicle.y) > this.height - 10) {
+            vehicle.trajectory.length = 0;
+          }
+        }
+        step() { for (const vehicle of this.vehicles) this.updateVehicle(vehicle); }
+
+        drawBackground() {
+          const ctx = this.ctx;
+          ctx.fillStyle = COLORS.background;
+          ctx.fillRect(0, 0, this.width, this.height);
+          ctx.fillStyle = COLORS.grid;
+          for (let y = 26; y < this.height; y += 34) {
+            for (let x = 26; x < this.width; x += 34) ctx.fillRect(x, y, 1, 1);
+          }
+        }
+        drawTrajectory(vehicle) {
+          if (!this.showTrajectory || vehicle.trajectory.length < 2) return;
+          const ctx = this.ctx;
+          const color = vehicle.type === "seeker" ? COLORS.seeker : COLORS.avoider;
+          ctx.save();
+          ctx.beginPath();
+          ctx.moveTo(vehicle.trajectory[0][0], vehicle.trajectory[0][1]);
+          for (let i = 1; i < vehicle.trajectory.length; i += 1) ctx.lineTo(vehicle.trajectory[i][0], vehicle.trajectory[i][1]);
+          ctx.strokeStyle = color;
+          ctx.globalAlpha = .24;
+          ctx.lineWidth = 1.25;
+          ctx.stroke();
+          ctx.restore();
+        }
+        drawLight(light) {
+          const ctx = this.ctx;
+          ctx.save();
+          const glow = ctx.createRadialGradient(light.x, light.y, 1, light.x, light.y, 34);
+          glow.addColorStop(0, "rgba(255,232,153,.46)");
+          glow.addColorStop(.25, "rgba(255,209,102,.17)");
+          glow.addColorStop(1, "rgba(255,209,102,0)");
+          ctx.fillStyle = glow;
+          ctx.beginPath();
+          ctx.arc(light.x, light.y, 34, 0, TAU);
+          ctx.fill();
+          ctx.fillStyle = COLORS.light;
+          ctx.shadowColor = COLORS.light;
+          ctx.shadowBlur = 17;
+          ctx.beginPath();
+          ctx.arc(light.x, light.y, 7.5, 0, TAU);
+          ctx.fill();
+          ctx.restore();
+        }
+        sensorColor(value) {
+          const strength = Math.min(1, value / 255);
+          const [r, g, b] = COLORS.sensorLow;
+          return `rgb(${Math.round(r + (255-r)*strength)} ${Math.round(g + (245-g)*strength)} ${Math.round(b + (190-b)*strength)})`;
+        }
+        drawVehicle(vehicle) {
+          if (vehicle.x < 10 || vehicle.x > this.width-10 || vehicle.y < 10 || vehicle.y > this.height-10) return;
+          const ctx = this.ctx;
+          const color = vehicle.type === "seeker" ? COLORS.seeker : COLORS.avoider;
+          const offset = vehicle.size / 2;
+          const leftX = vehicle.x + Math.cos(vehicle.angle - Math.PI/4) * offset;
+          const leftY = vehicle.y + Math.sin(vehicle.angle - Math.PI/4) * offset;
+          const rightX = vehicle.x + Math.cos(vehicle.angle + Math.PI/4) * offset;
+          const rightY = vehicle.y + Math.sin(vehicle.angle + Math.PI/4) * offset;
+          ctx.save();
+          ctx.translate(vehicle.x, vehicle.y);
+          ctx.rotate(vehicle.angle);
+          ctx.fillStyle = color;
+          ctx.shadowColor = color;
+          ctx.shadowBlur = 8;
+          ctx.beginPath();
+          ctx.moveTo(vehicle.size, 0);
+          ctx.lineTo(Math.cos(2.4)*offset, Math.sin(2.4)*offset);
+          ctx.lineTo(Math.cos(-2.4)*offset, Math.sin(-2.4)*offset);
+          ctx.closePath();
+          ctx.fill();
+          ctx.shadowBlur = 0;
+          ctx.fillStyle = "rgba(9,16,27,.62)";
+          ctx.fillRect(-7, -2.5, 10, 5);
+          if (vehicle.hasLight) {
+            ctx.fillStyle = COLORS.light;
+            ctx.shadowColor = COLORS.light;
+            ctx.shadowBlur = 11;
+            ctx.beginPath();
+            ctx.arc(-2, 0, 4, 0, TAU);
+            ctx.fill();
+          }
+          ctx.restore();
+          for (const [x,y,value] of [[leftX,leftY,vehicle.leftSensor],[rightX,rightY,vehicle.rightSensor]]) {
+            ctx.fillStyle = this.sensorColor(value);
+            ctx.beginPath();
+            ctx.arc(x, y, 3.2, 0, TAU);
+            ctx.fill();
+          }
+        }
+        draw() {
+          if (!this.ctx) return;
+          this.drawBackground();
+          for (const vehicle of this.vehicles) this.drawTrajectory(vehicle);
+          for (const light of this.lights) this.drawLight(light);
+          for (const vehicle of this.vehicles) this.drawVehicle(vehicle);
+        }
+        animate(now) {
+          const elapsed = Math.min(100, now - this.lastFrame);
+          this.lastFrame = now;
+          if (!this.paused) {
+            this.accumulator += elapsed * this.speedMultiplier;
+            const fixedStep = 1000 / 60;
+            let safety = 0;
+            while (this.accumulator >= fixedStep && safety < 8) {
+              this.step();
+              this.accumulator -= fixedStep;
+              safety += 1;
+            }
+          }
+          this.draw();
+          requestAnimationFrame(time => this.animate(time));
+        }
+        setVehicleLights(enabled) {
+          this.vehicleLights = enabled;
+          for (const vehicle of this.vehicles) vehicle.hasLight = enabled;
+        }
+        clearTrails() { for (const vehicle of this.vehicles) vehicle.trajectory.length = 0; }
+        randomize() {
+          for (const item of [...this.vehicles, ...this.lights]) {
+            const point = this.randomPoint(item instanceof Light ? 60 : 46);
+            item.x = point.x;
+            item.y = point.y;
+            if (item instanceof Vehicle) item.angle = Math.random() * TAU;
+          }
+          this.clearTrails();
+        }
+        canvasPoint(event) {
+          const rect = this.canvas.getBoundingClientRect();
+          return {
+            x: (event.clientX - rect.left) * this.width / rect.width,
+            y: (event.clientY - rect.top) * this.height / rect.height
+          };
+        }
+        startDragging(event) {
+          const point = this.canvasPoint(event);
+          let closest = null;
+          let distance = 25;
+          for (const light of this.lights) {
+            const candidate = Math.hypot(point.x-light.x, point.y-light.y);
+            if (candidate < distance) {
+              distance = candidate;
+              closest = light;
+            }
+          }
+          if (!closest) return;
+          this.draggedLight = closest;
+          this.canvas.classList.add("dragging");
+          this.canvas.setPointerCapture(event.pointerId);
+          this.dragLight(event);
+        }
+        dragLight(event) {
+          if (!this.draggedLight) return;
+          const point = this.canvasPoint(event);
+          this.draggedLight.x = Math.max(8, Math.min(this.width-8, point.x));
+          this.draggedLight.y = Math.max(8, Math.min(this.height-8, point.y));
+        }
+        stopDragging() {
+          this.draggedLight = null;
+          this.canvas.classList.remove("dragging");
+        }
+      }
+
+      const canvas = document.querySelector("#world");
+      const simulation = new BraitenbergSimulation(canvas);
+      const outputs = {
+        seeker: document.querySelector("#seeker-count"),
+        avoider: document.querySelector("#avoider-count"),
+        light: document.querySelector("#light-count")
+      };
+      const vehicleLightsButton = document.querySelector("#vehicle-lights");
+      const trailsButton = document.querySelector("#trails");
+      const pauseButton = document.querySelector("#pause");
+      const status = document.querySelector("#status");
+      const statusText = document.querySelector("#status-text");
+      const speedInput = document.querySelector("#speed");
+      const speedValue = document.querySelector("#speed-value");
+
+      function count(kind) {
+        if (kind === "light") return simulation.lights.length;
+        return simulation.vehicles.filter(vehicle => vehicle.type === kind).length;
+      }
+      function updateInterface() {
+        for (const [kind, output] of Object.entries(outputs)) output.value = count(kind);
+        document.querySelectorAll("[data-kind][data-delta]").forEach(button => {
+          const kind = button.dataset.kind;
+          const value = count(kind);
+          const max = kind === "light" ? MAX_LIGHTS : MAX_VEHICLES_PER_TYPE;
+          button.disabled = button.dataset.delta === "-1" ? value === 0 : value >= max;
+        });
+        const objectCount = simulation.vehicles.length + simulation.lights.length;
+        status.classList.toggle("paused", simulation.paused);
+        statusText.textContent = `${simulation.paused ? "PAUSED" : "RUNNING"} · ${objectCount} OBJECT${objectCount === 1 ? "" : "S"}`;
+        pauseButton.textContent = simulation.paused ? "Resume" : "Pause";
+        vehicleLightsButton.setAttribute("aria-checked", String(simulation.vehicleLights));
+        trailsButton.setAttribute("aria-checked", String(simulation.showTrajectory));
+      }
+      function adjust(kind, delta) {
+        if (kind === "light") {
+          if (delta > 0 && count(kind) < MAX_LIGHTS) simulation.addLight();
+          if (delta < 0) simulation.removeLight();
+        } else {
+          if (delta > 0 && count(kind) < MAX_VEHICLES_PER_TYPE) simulation.addVehicle(kind);
+          if (delta < 0) simulation.removeVehicle(kind);
+        }
+        updateInterface();
+      }
+      function togglePause() {
+        simulation.paused = !simulation.paused;
+        simulation.accumulator = 0;
+        updateInterface();
+      }
+      function toggleTrails() {
+        simulation.showTrajectory = !simulation.showTrajectory;
+        if (!simulation.showTrajectory) simulation.clearTrails();
+        updateInterface();
+      }
+      function toggleVehicleLights() {
+        simulation.setVehicleLights(!simulation.vehicleLights);
+        updateInterface();
+      }
+
+      document.querySelectorAll("[data-kind][data-delta]").forEach(button => {
+        button.addEventListener("click", () => adjust(button.dataset.kind, Number(button.dataset.delta)));
+      });
+      vehicleLightsButton.addEventListener("click", toggleVehicleLights);
+      trailsButton.addEventListener("click", toggleTrails);
+      pauseButton.addEventListener("click", togglePause);
+      document.querySelector("#reset").addEventListener("click", () => simulation.randomize());
+      speedInput.addEventListener("input", () => {
+        simulation.speedMultiplier = Number(speedInput.value);
+        speedValue.value = `${simulation.speedMultiplier.toFixed(2)}×`;
+      });
+      canvas.addEventListener("pointerdown", event => simulation.startDragging(event));
+      canvas.addEventListener("pointermove", event => simulation.dragLight(event));
+      canvas.addEventListener("pointerup", () => simulation.stopDragging());
+      canvas.addEventListener("pointercancel", () => simulation.stopDragging());
+      window.addEventListener("keydown", event => {
+        if (event.target instanceof HTMLInputElement) return;
+        const key = event.key.toLowerCase();
+        if (event.code === "Space") {
+          event.preventDefault();
+          togglePause();
+        } else if (key === "t") {
+          toggleTrails();
+        } else if (key === "l") {
+          toggleVehicleLights();
+        } else if (["arrowleft","arrowright","arrowup","arrowdown"].includes(key)) {
+          event.preventDefault();
+          const dx = key === "arrowleft" ? -10 : key === "arrowright" ? 10 : 0;
+          const dy = key === "arrowup" ? -10 : key === "arrowdown" ? 10 : 0;
+          for (const light of simulation.lights) {
+            light.x = (light.x + dx + simulation.width) % simulation.width;
+            light.y = (light.y + dy + simulation.height) % simulation.height;
+          }
+        }
+      });
+
+      for (let i = 0; i < 6; i += 1) simulation.addVehicle("seeker");
+      for (let i = 0; i < 4; i += 1) simulation.addVehicle("avoider");
+      for (let i = 0; i < 3; i += 1) simulation.addLight();
+      updateInterface();
+      requestAnimationFrame(time => {
+        simulation.lastFrame = time;
+        simulation.animate(time);
+      });
+    })();
+  </script>
+</body>
+</html>
