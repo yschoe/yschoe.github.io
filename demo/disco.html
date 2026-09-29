@@ -83,14 +83,112 @@
 
     .ceiling {
       position: relative;
+      z-index: 2;
       display: grid;
       place-items: center;
       min-height: 0;
+      isolation: isolate;
       pointer-events: none;
+    }
+
+    .haze {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 0;
+      width: clamp(18rem, 58vmin, 45rem);
+      height: clamp(9rem, 30vmin, 23rem);
+      border-radius: 50%;
+      background:
+        radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.2) 0 4%, rgba(187, 224, 255, 0.1) 24%, transparent 68%),
+        radial-gradient(ellipse at 32% 58%, rgba(52, 203, 255, 0.14), transparent 46%),
+        radial-gradient(ellipse at 70% 40%, rgba(255, 67, 176, 0.14), transparent 48%);
+      filter: blur(18px);
+      opacity: 0.72;
+      transform: translate(-50%, -50%);
+      animation: hazeBreathe 8s ease-in-out infinite alternate;
+    }
+
+    .haze::before,
+    .haze::after {
+      position: absolute;
+      inset: -18%;
+      border-radius: 50%;
+      content: "";
+      mix-blend-mode: screen;
+    }
+
+    .haze::before {
+      background:
+        radial-gradient(ellipse at 28% 48%, rgba(142, 222, 255, 0.17), transparent 35%),
+        radial-gradient(ellipse at 68% 54%, rgba(255, 255, 255, 0.12), transparent 38%);
+      filter: blur(13px);
+      animation: hazeDrift 11s ease-in-out infinite alternate;
+    }
+
+    .haze::after {
+      background:
+        radial-gradient(ellipse at 42% 30%, rgba(255, 85, 192, 0.15), transparent 30%),
+        radial-gradient(ellipse at 60% 68%, rgba(255, 211, 116, 0.1), transparent 36%);
+      filter: blur(20px);
+      animation: hazeDrift 14s ease-in-out -6s infinite alternate-reverse;
+    }
+
+    .mirror-field {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: visible;
+      mix-blend-mode: screen;
+    }
+
+    .reflection-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      animation: mirrorSpin 29s linear infinite;
+    }
+
+    .reflection-ring.reverse {
+      animation: mirrorSpinReverse 41s linear infinite;
+    }
+
+    .reflection {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: var(--size);
+      aspect-ratio: 1;
+      transform:
+        rotate(var(--angle))
+        translateX(var(--radius-landscape))
+        rotate(45deg);
+      transform-origin: 0 0;
+    }
+
+    .reflection::before {
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(255, 255, 255, 0.76);
+      border-radius: 12%;
+      content: "";
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.92), transparent 38%),
+        var(--reflection-color);
+      box-shadow:
+        0 0 0.35rem white,
+        0 0 1.1rem var(--reflection-color),
+        0 0 2.2rem var(--reflection-color);
+      opacity: 0.1;
+      filter: blur(0.2px);
+      animation: mirrorGlint var(--pulse) ease-in-out var(--delay) infinite;
     }
 
     .disco-ball {
       position: relative;
+      z-index: 2;
       width: clamp(4.75rem, 12vmin, 8rem);
       aspect-ratio: 1;
       border: 2px solid rgba(255, 255, 255, 0.75);
@@ -249,6 +347,30 @@
       to { background-position: 15% 0, 0 15%, 0 0, 0 0, 0 0; }
     }
 
+    @keyframes hazeBreathe {
+      from { opacity: .52; transform: translate(-50%, -50%) scale(.92); }
+      to { opacity: .84; transform: translate(-50%, -50%) scale(1.08); }
+    }
+
+    @keyframes hazeDrift {
+      from { transform: translate3d(-6%, 3%, 0) rotate(-4deg) scale(.94); }
+      to { transform: translate3d(7%, -4%, 0) rotate(5deg) scale(1.08); }
+    }
+
+    @keyframes mirrorSpin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes mirrorSpinReverse {
+      to { transform: rotate(-360deg); }
+    }
+
+    @keyframes mirrorGlint {
+      0%, 72%, 100% { opacity: .06; filter: blur(.8px); }
+      18% { opacity: .68; filter: blur(0); }
+      30% { opacity: .22; filter: blur(.25px); }
+    }
+
     @keyframes sweep {
       from { transform: rotate(-5deg) scaleX(.85); opacity: .35; }
       to { transform: rotate(7deg) scaleX(1.1); opacity: .78; }
@@ -276,6 +398,13 @@
         width: clamp(4.25rem, 19vw, 7rem);
       }
 
+      .reflection {
+        transform:
+          rotate(var(--angle))
+          translateX(var(--radius-portrait))
+          rotate(45deg);
+      }
+
       .hint {
         right: 50%;
         bottom: max(.8rem, env(safe-area-inset-bottom));
@@ -301,8 +430,17 @@
     @media (prefers-reduced-motion: reduce) {
       .club::before,
       .club::after,
-      .disco-ball {
+      .disco-ball,
+      .haze,
+      .haze::before,
+      .haze::after,
+      .reflection-ring,
+      .reflection::before {
         animation: none;
+      }
+
+      .reflection::before {
+        opacity: .2;
       }
 
       .tile {
@@ -314,6 +452,8 @@
 <body>
   <main class="club" aria-label="Animated 1970s-style disco dance floor">
     <div class="ceiling" aria-hidden="true">
+      <div class="haze"></div>
+      <div class="mirror-field" id="mirrorField"></div>
       <div class="disco-ball"></div>
     </div>
 
@@ -330,6 +470,7 @@
 
       const floor = document.querySelector("#floor");
       const hint = document.querySelector(".hint");
+      const mirrorField = document.querySelector("#mirrorField");
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
       const colors = [
         "#ffad08", // amber
@@ -340,6 +481,34 @@
         "#00dda6", // turquoise
         "#ffe047"  // yellow
       ];
+
+      const reflectionColors = ["#fff6c7", "#a9efff", "#ffb1e2", "#ffd878"];
+
+      [false, true].forEach((reverse, ringIndex) => {
+        const ring = document.createElement("div");
+        ring.className = `reflection-ring${reverse ? " reverse" : ""}`;
+
+        Array.from({ length: 22 }, (_, index) => {
+          const reflection = document.createElement("i");
+          const spoke = index * (360 / 22) + ringIndex * 7;
+          const band = (index * 3 + ringIndex) % 6;
+
+          reflection.className = "reflection";
+          reflection.style.setProperty("--angle", `${spoke}deg`);
+          reflection.style.setProperty("--radius-landscape", `${16 + band * 10}vmin`);
+          reflection.style.setProperty("--radius-portrait", `${14 + band * 13}vmax`);
+          reflection.style.setProperty("--size", `${5 + (index % 4) * 2}px`);
+          reflection.style.setProperty("--delay", `${-(index * 0.31 + ringIndex * 0.7)}s`);
+          reflection.style.setProperty("--pulse", `${2.8 + (index % 5) * 0.42}s`);
+          reflection.style.setProperty(
+            "--reflection-color",
+            reflectionColors[(index + ringIndex) % reflectionColors.length]
+          );
+          ring.appendChild(reflection);
+        });
+
+        mirrorField.appendChild(ring);
+      });
 
       const tiles = Array.from({ length: 15 }, (_, index) => {
         const tile = document.createElement("button");
