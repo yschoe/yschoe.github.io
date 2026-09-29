@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#09050f">
+  <title>Disco Floor</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #07040d;
+      --line: rgba(255, 235, 185, 0.88);
+      --floor-gap: clamp(5px, 1vw, 12px);
+      --gold: #ffd56a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: var(--ink);
+    }
+
+    body {
+      min-height: 100svh;
+      font-family: "Arial Black", Impact, Haettenschweiler, sans-serif;
+      isolation: isolate;
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -4;
+      content: "";
+      background:
+        radial-gradient(circle at 50% 15%, rgba(255, 48, 157, 0.24), transparent 29%),
+        radial-gradient(ellipse at 12% 45%, rgba(0, 208, 255, 0.16), transparent 31%),
+        radial-gradient(ellipse at 88% 47%, rgba(255, 83, 29, 0.14), transparent 30%),
+        linear-gradient(180deg, #18091f 0%, #0a0611 48%, #030205 100%);
+    }
+
+    .club {
+      position: relative;
+      display: grid;
+      grid-template-rows: minmax(7rem, 27svh) 1fr;
+      width: 100%;
+      height: 100svh;
+      overflow: hidden;
+    }
+
+    .club::before,
+    .club::after {
+      position: absolute;
+      top: 0;
+      bottom: 24%;
+      z-index: -2;
+      width: 38%;
+      content: "";
+      opacity: 0.65;
+      filter: blur(2px);
+      transform-origin: top;
+      animation: sweep 8s ease-in-out infinite alternate;
+    }
+
+    .club::before {
+      left: -5%;
+      background: linear-gradient(112deg, rgba(46, 219, 255, 0.32), transparent 55%);
+      clip-path: polygon(7% 0, 22% 0, 100% 100%, 55% 100%);
+    }
+
+    .club::after {
+      right: -5%;
+      background: linear-gradient(248deg, rgba(255, 44, 145, 0.3), transparent 55%);
+      clip-path: polygon(78% 0, 93% 0, 45% 100%, 0 100%);
+      animation-delay: -4s;
+    }
+
+    .ceiling {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 0;
+      pointer-events: none;
+    }
+
+    .disco-ball {
+      position: relative;
+      width: clamp(4.75rem, 12vmin, 8rem);
+      aspect-ratio: 1;
+      border: 2px solid rgba(255, 255, 255, 0.75);
+      border-radius: 50%;
+      background-color: #8f93a9;
+      background-image:
+        linear-gradient(rgba(255,255,255,.45) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.45) 1px, transparent 1px),
+        radial-gradient(circle at 32% 26%, #fff 0 4%, #ffef88 5% 9%, transparent 10%),
+        radial-gradient(circle at 62% 61%, #ff74c9 0 5%, transparent 6%),
+        radial-gradient(circle at 50% 50%, #e9eaf2, #73778d 72%, #262735 100%);
+      background-size: 15% 15%, 15% 15%, 100% 100%, 100% 100%, 100% 100%;
+      box-shadow:
+        0 0 1.25rem rgba(255, 255, 255, 0.8),
+        0 0 4rem rgba(255, 50, 183, 0.45),
+        0 0 7rem rgba(62, 213, 255, 0.25);
+      animation: shimmer 4s linear infinite;
+    }
+
+    .disco-ball::before {
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 1px);
+      width: 3px;
+      height: 18svh;
+      content: "";
+      background: linear-gradient(#050309, #ddd 65%, #fff);
+      transform: translateX(-50%);
+    }
+
+    .disco-ball::after {
+      position: absolute;
+      inset: 14% 22% auto;
+      height: 11%;
+      border-radius: 50%;
+      content: "";
+      background: rgba(255, 255, 255, 0.88);
+      filter: blur(4px);
+      transform: rotate(-22deg);
+    }
+
+    .floor-stage {
+      position: relative;
+      min-height: 0;
+      perspective: 900px;
+      perspective-origin: 50% 15%;
+    }
+
+    .floor-stage::before {
+      position: absolute;
+      inset: -10% -20% 0;
+      z-index: -1;
+      content: "";
+      background: radial-gradient(ellipse at 50% 38%, rgba(255, 192, 84, 0.22), transparent 57%);
+      filter: blur(24px);
+    }
+
+    .floor {
+      position: absolute;
+      left: 50%;
+      bottom: max(1.5vmin, env(safe-area-inset-bottom));
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-rows: repeat(3, minmax(0, 1fr));
+      gap: var(--floor-gap);
+      width: min(91vw, 72rem);
+      height: min(67svh, 44rem);
+      padding: var(--floor-gap);
+      border: clamp(3px, .7vmin, 8px) solid #211826;
+      border-radius: 0.8rem;
+      background: #0a080c;
+      box-shadow:
+        0 0 0 2px rgba(255, 226, 158, 0.55),
+        0 -1.5rem 5rem rgba(255, 75, 26, 0.15),
+        0 2rem 5rem #000;
+      transform: translateX(-50%) rotateX(7deg);
+      transform-origin: bottom center;
+    }
+
+    .tile {
+      --tile-color: #ffb000;
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255, 250, 226, 0.7);
+      border-radius: clamp(3px, .6vmin, 8px);
+      appearance: none;
+      background-color: var(--tile-color);
+      box-shadow:
+        inset 0 0 1.1rem rgba(255, 255, 255, 0.72),
+        inset 0 -1.2rem 2.2rem rgba(90, 0, 50, 0.17),
+        0 0 1.1rem var(--tile-color);
+      transition:
+        background-color 440ms cubic-bezier(.2, .8, .2, 1),
+        box-shadow 440ms cubic-bezier(.2, .8, .2, 1),
+        transform 180ms ease;
+      touch-action: manipulation;
+      will-change: background-color, box-shadow;
+    }
+
+    .tile::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.62), transparent 22%, transparent 72%, rgba(255,255,255,.12)),
+        repeating-linear-gradient(0deg, transparent 0 8px, rgba(255,255,255,.025) 9px 10px);
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .tile::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      opacity: 0;
+      background: white;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .tile.flash::after {
+      animation: flash 360ms ease-out;
+    }
+
+    .tile:active {
+      transform: scale(0.97);
+    }
+
+    .tile:focus-visible {
+      z-index: 1;
+      outline: 3px solid white;
+      outline-offset: -5px;
+    }
+
+    .hint {
+      position: fixed;
+      right: max(1rem, env(safe-area-inset-right));
+      bottom: max(1rem, env(safe-area-inset-bottom));
+      z-index: 2;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.54);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: clamp(.62rem, 1.15vw, .78rem);
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      text-shadow: 0 1px 5px #000;
+      transition: opacity 500ms ease;
+      pointer-events: none;
+    }
+
+    @keyframes shimmer {
+      to { background-position: 15% 0, 0 15%, 0 0, 0 0, 0 0; }
+    }
+
+    @keyframes sweep {
+      from { transform: rotate(-5deg) scaleX(.85); opacity: .35; }
+      to { transform: rotate(7deg) scaleX(1.1); opacity: .78; }
+    }
+
+    @keyframes flash {
+      0% { opacity: .82; }
+      100% { opacity: 0; }
+    }
+
+    @media (orientation: portrait) {
+      .club {
+        grid-template-rows: minmax(6rem, 21svh) 1fr;
+      }
+
+      .floor {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(5, minmax(0, 1fr));
+        width: min(93vw, 35rem);
+        height: min(77svh, 58rem);
+        transform: translateX(-50%) rotateX(4deg);
+      }
+
+      .disco-ball {
+        width: clamp(4.25rem, 19vw, 7rem);
+      }
+
+      .hint {
+        right: 50%;
+        bottom: max(.8rem, env(safe-area-inset-bottom));
+        transform: translateX(50%);
+        white-space: nowrap;
+      }
+    }
+
+    @media (max-height: 520px) and (orientation: landscape) {
+      .club {
+        grid-template-rows: 18svh 1fr;
+      }
+
+      .disco-ball {
+        width: clamp(3.1rem, 14svh, 4.5rem);
+      }
+
+      .floor {
+        height: 78svh;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .club::before,
+      .club::after,
+      .disco-ball {
+        animation: none;
+      }
+
+      .tile {
+        transition-duration: 900ms;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="club" aria-label="Animated 1970s-style disco dance floor">
+    <div class="ceiling" aria-hidden="true">
+      <div class="disco-ball"></div>
+    </div>
+
+    <div class="floor-stage">
+      <div class="floor" id="floor" aria-label="Interactive illuminated dance floor"></div>
+    </div>
+
+    <p class="hint" aria-hidden="true">Tap the floor</p>
+  </main>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const floor = document.querySelector("#floor");
+      const hint = document.querySelector(".hint");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const colors = [
+        "#ffad08", // amber
+        "#ff4c19", // orange
+        "#ff176f", // hot pink
+        "#d81bff", // violet
+        "#00bde7", // electric blue
+        "#00dda6", // turquoise
+        "#ffe047"  // yellow
+      ];
+
+      const tiles = Array.from({ length: 15 }, (_, index) => {
+        const tile = document.createElement("button");
+        tile.className = "tile";
+        tile.type = "button";
+        tile.setAttribute("aria-label", `Light panel ${index + 1}`);
+        tile.style.setProperty("--tile-color", colors[index % colors.length]);
+        floor.appendChild(tile);
+        return tile;
+      });
+
+      let step = 0;
+      let timer;
+
+      function paint(spotlight = -1) {
+        const columns = matchMedia("(orientation: portrait)").matches ? 3 : 5;
+
+        tiles.forEach((tile, index) => {
+          const row = Math.floor(index / columns);
+          const column = index % columns;
+          const wave = step + column + row * 2;
+          const colorIndex = (wave + (index % 2 ? 2 : 0)) % colors.length;
+          tile.style.setProperty("--tile-color", colors[colorIndex]);
+
+          const shouldFlash = index === spotlight || (index + step) % 11 === 0;
+          tile.classList.toggle("flash", shouldFlash);
+        });
+
+        step = (step + 1) % (colors.length * 2);
+      }
+
+      function start() {
+        window.clearInterval(timer);
+        paint();
+        if (!reduceMotion.matches) {
+          timer = window.setInterval(paint, 620);
+        }
+      }
+
+      function pulseFrom(source) {
+        const center = tiles.indexOf(source);
+        if (center < 0) return;
+
+        hint.style.opacity = "0";
+        tiles.forEach((tile, index) => {
+          const delay = Math.abs(index - center) * 42;
+          window.setTimeout(() => {
+            tile.style.setProperty("--tile-color", colors[(index + center + step) % colors.length]);
+            tile.classList.remove("flash");
+            void tile.offsetWidth;
+            tile.classList.add("flash");
+          }, delay);
+        });
+      }
+
+      floor.addEventListener("pointerdown", event => {
+        const tile = event.target.closest(".tile");
+        if (tile) pulseFrom(tile);
+      });
+
+      floor.addEventListener("keydown", event => {
+        if ((event.key === "Enter" || event.key === " ") && event.target.matches(".tile")) {
+          pulseFrom(event.target);
+        }
+      });
+
+      window.addEventListener("orientationchange", paint);
+      reduceMotion.addEventListener?.("change", start);
+      start();
+    })();
+  </script>
+</body>
+</html>
