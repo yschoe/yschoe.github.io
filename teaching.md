@@ -22,21 +22,23 @@ permalink: /teaching/
 
 <a name="current"></a>
 ### Current
+* Fall 2026
+  * CSCE 625-600 Artificial Intelligence. TR 9:35am-10:50am EABB 106
+  * CSCE 420-500 Artificial Intelligence. TR 11:10am-12:25pm EABB 106
+  * CSCE 625-700 Artificial Intelligence. ONLINE. 
+
+<a name="future"></a>
+### Future
+<a name="past"></a>
+* Spring 2027
+  * CSCE 625-601 Artificial Intelligence
+  * CSCE 625-700 Artificial Intelligence. ONLINE.
+
+### Past
 * Spring 2026
   * CSCE 625-600 Artificial Intelligence. MWF11:30am-12:20am HRBB 124
   * CSCE 625-700 Artificial Intelligence. ONLINE.  Midterm 3/6/2036 5:30pm, Final 5/5/2026 5:30pm
   * CSCE 331H-970 Foundations of Software Engineering. MWF 10:20am-11:10am HRBB 126, Lab: MW 4:10pm-5:00pm
-
-<a name="future"></a>
-### Future
-* Fall 2026
-  * CSCE 625 TR 9:35am-10:50am EABB 106
-  * CSCE 420 TR 11:10am-12:25pm EABB 106
-
-<a name="past"></a>
-
-### Past
-
 * Fall 2025
   * CSCE 625-600 Artificial Intelligence. MWF9:10am-10:00am HRBB 124
   * CSCE 625-700 Artificial Intelligence. ONLINE. 
